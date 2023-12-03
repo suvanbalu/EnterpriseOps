@@ -1,6 +1,7 @@
 import { TextField } from '@mui/material';
 import React, { useEffect, useState } from 'react'
-import { IoCheckmarkCircle, IoChevronBack } from "react-icons/io5";
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
+import { IoChevronBack } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
@@ -9,24 +10,19 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from 'dayjs';
 import RealTimeInputTable from './RealTimeInputTable';
-import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
 const AddEditPurchaseScreen = () => {
   const navigate = useNavigate();
   const [billNo, setBillNo] = useState("");
-  const [amount, setAmount] = useState(0);
   const today = dayjs();
   const [date, setDate] = useState(today);
   const [totalAmount, setTotalAmount] = useState(0);
   const [totalQuantity, setTotalQuantity] = useState(0);
+  const [invalid, setInvalid] = useState(false);
 
   const [tableData, setTableData] = useState([
     { productId: '', productName: '', quantity: '', rate: '', amount: '' },
   ]);
-
-  const handleSearchChange = (event) => {
-    setBillNo(event.target.value);
-  }
 
   useEffect(() => {
     const tot = tableData.reduce((sum, row) => {
@@ -64,7 +60,7 @@ const AddEditPurchaseScreen = () => {
           variant="outlined"
           margin="normal"
           value={billNo}
-          onChange={handleSearchChange}
+          onChange={(e) => { setBillNo(e.target.value) }}
           className='w-1/4'
           InputProps={{
             sx: { borderRadius: 3, },
@@ -104,15 +100,33 @@ const AddEditPurchaseScreen = () => {
 
       <RealTimeInputTable tableData={tableData} setTableData={setTableData} />
 
-      <div className='flex justify-end'>
+      <div className='flex justify-end mt-4'>
         <button
           className='flex flex-row gap-2 items-center text-lg font-semibold rounded-xl text-orange-700 bg-orange-50 w-fit px-4 py-3 shadow-md'
           onClick={() => {
-            navigate('/purchases/')
+            let valid = true;
+
+            if (billNo === null || billNo === undefined || billNo === '') {
+              valid = false;
+              return window.alert('Enter bill number');
+            }
+
+            tableData.forEach((item) => {
+              Object.values(item).forEach((value) => {
+                if (value === null || value === undefined || value === '') {
+                  valid = false;
+                  return window.alert('Enter all fields in the table');
+                }
+              });
+            });
+
+            if (valid) {
+              navigate('/purchases/');
+            }
           }}
         >
           <IoMdCheckmarkCircleOutline />
-          {'Add Purchase'}
+          {'Confirm & Add Purchase'}
         </button>
       </div>
     </div>

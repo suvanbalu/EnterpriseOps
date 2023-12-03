@@ -17,6 +17,7 @@ import {
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import SearchIcon from '@mui/icons-material/Search';
+import { FaArrowUpShortWide, FaArrowDownWideShort } from "react-icons/fa6";
 
 
 const CollapsibleTable = ({ data }) => {
@@ -83,6 +84,20 @@ const CollapsibleTable = ({ data }) => {
       }
     });
 
+  const OuterTableHeaders = {
+    'Bill Number': 'billNumber',
+    'Date': 'date',
+    'Total Amount': 'totalAmount'
+  }
+
+  const InnerTableHeaders = {
+    'Product ID': 'productId',
+    'Product Name': 'productName',
+    'Quantity': 'quantity',
+    'Rate': 'rate',
+    'Amount': 'amount'
+  }
+
   return (
     <div className='flex flex-col gap-6'>
       <div className='flex flex-row gap-2 justify-between items-end'>
@@ -112,20 +127,22 @@ const CollapsibleTable = ({ data }) => {
         <Table size="small" dense>
           <TableHead>
             <TableRow>
-              <TableCell>S.No.</TableCell>
-              <TableCell onClick={() => handleSort('billNumber')}>
-                Bill Number
-                {sortBy === 'billNumber' && (
-                  <span>&nbsp;{sortOrder === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </TableCell>
-              <TableCell onClick={() => handleSort('date')}>Date</TableCell>
-              <TableCell onClick={() => handleSort('totalAmount')}>
-                Total Amount
-                {sortBy === 'totalAmount' && (
-                  <span>&nbsp;{sortOrder === 'asc' ? '↑' : '↓'}</span>
-                )}
-              </TableCell>
+              <TableCell style={{ fontWeight: "bold", width: 200 }}>S.No.</TableCell>
+              {
+                Object.keys(OuterTableHeaders).map((item) => (
+                  <TableCell style={{ fontWeight: "bold", width: 300 }}
+                    onClick={() => handleSort(OuterTableHeaders[item])}
+                    className='group'
+                  >
+                    {item}
+                    {sortBy === OuterTableHeaders[item] ? (
+                      sortOrder === 'asc' ? <FaArrowUpShortWide className='inline-block ml-2' /> : <FaArrowDownWideShort className='inline-block ml-2' />
+                    ) : (
+                      <FaArrowUpShortWide className='hidden group-hover:inline-block ml-2 text-gray-500' />
+                    )}
+                  </TableCell>
+                ))
+              }
               <TableCell />
             </TableRow>
           </TableHead>
@@ -189,48 +206,22 @@ const CollapsibleTable = ({ data }) => {
                           >
                             <TableHead>
                               <TableRow>
-                                <TableCell>S.No.</TableCell>
-                                <TableCell
-                                  onClick={() => handleSort('productId', true)}
-                                >
-                                  Product ID
-                                  {innerSortBy === 'productId' && (
-                                    <span>&nbsp;{innerSortOrder === 'asc' ? '↑' : '↓'}</span>
-                                  )}
-                                </TableCell>
-                                <TableCell
-                                  onClick={() => handleSort('productName', true)}
-                                  className={``}
-                                >
-                                  Product Name
-                                  {innerSortBy === 'productName' && (
-                                    <span>&nbsp;{innerSortOrder === 'asc' ? '↑' : '↓'}</span>
-                                  )}
-                                </TableCell>
-                                <TableCell
-                                  onClick={() => handleSort('quantity', true)}
-                                >
-                                  Quantity
-                                  {innerSortBy === 'quantity' && (
-                                    <span>&nbsp;{innerSortOrder === 'asc' ? '↑' : '↓'}</span>
-                                  )}
-                                </TableCell>
-                                <TableCell
-                                  onClick={() => handleSort('rate', true)}
-                                >
-                                  Rate
-                                  {innerSortBy === 'rate' && (
-                                    <span>&nbsp;{innerSortOrder === 'asc' ? '↑' : '↓'}</span>
-                                  )}
-                                </TableCell>
-                                <TableCell
-                                  onClick={() => handleSort('amount', true)}
-                                >
-                                  Amount
-                                  {innerSortBy === 'amount' && (
-                                    <span>&nbsp;{innerSortOrder === 'asc' ? '↑' : '↓'}</span>
-                                  )}
-                                </TableCell>
+                                <TableCell style={{ fontWeight: "bold", width: 100 }}>S.No.</TableCell>
+                                {
+                                  Object.keys(InnerTableHeaders).map((item) => (
+                                    <TableCell style={{ fontWeight: "bold", width: 200 }}
+                                      onClick={() => handleSort(InnerTableHeaders[item], true)}
+                                      className='group'
+                                    >
+                                      {item}
+                                      {innerSortBy === InnerTableHeaders[item] ? (
+                                        innerSortOrder === 'asc' ? <FaArrowUpShortWide className='inline-block ml-2' /> : <FaArrowDownWideShort className='inline-block ml-2' />
+                                      ) : (
+                                        <FaArrowUpShortWide className='hidden group-hover:inline-block ml-2 text-gray-500' />
+                                      )}
+                                    </TableCell>
+                                  ))
+                                }
                               </TableRow>
                             </TableHead>
                             <TableBody>
