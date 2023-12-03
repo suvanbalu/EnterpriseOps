@@ -32,7 +32,7 @@ function InnerTable({ rows, order, orderBy, onRequestSort }) {
       <TableHead>
         <TableRow>
           {innerHeadCells.map((headCell) => (
-            <TableCell key={headCell.id}>
+            <TableCell key={headCell.id} style={{fontWeight:"bold"}}>
               <TableSortLabel
                 active={orderBy === headCell.id}
                 direction={orderBy === headCell.id ? order : 'asc'}

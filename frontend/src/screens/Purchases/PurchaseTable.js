@@ -142,7 +142,7 @@ function PurchaseTable() {
     <div>
       <div className='flex flex-row gap-6 mt-4 mb-8 justify-end'>
         <input
-          className='p-3 rounded-xl bg-gray-100 w-1/2 outline-none'
+          className='p-3 rounded-xl bg-gray-100 w-1/2 outline-0'
           placeholder='Search'
           value={searchText}
           onChange={handleSearchChange}
@@ -162,6 +162,7 @@ function PurchaseTable() {
             orderBy={orderBy}
             onRequestSort={handleRequestSort}
             headCells={headCells}
+            // style={{fontWeight:'bold'}}
           />
           <TableBody>
             {sortedRows.map((row, index) => (
