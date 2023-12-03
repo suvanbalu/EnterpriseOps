@@ -1,5 +1,5 @@
 import { TextField } from '@mui/material';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { IoChevronBack } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 
@@ -13,6 +13,7 @@ import RealTimeInputTable from './RealTimeInputTable';
 const AddEditPurchaseScreen = () => {
   const navigate = useNavigate();
   const [billNo, setBillNo] = useState("");
+  const [amount, setAmount] = useState(0);
   const today = dayjs();
   const [date, setDate] = useState(today);
   const [output,setOutput] = useState("");
@@ -28,6 +29,15 @@ const AddEditPurchaseScreen = () => {
     // console.log("Shared State: ",sharedState);
   }
 
+  useEffect(() => {
+    let totalAmount = 0;
+    sharedState.forEach(item => {
+      const quantity = parseInt(item.quantity, 10); // Convert to integer
+      const itemAmount = parseFloat(item.amount); // Convert to float
+      totalAmount += quantity * itemAmount;
+    });
+    setAmount(totalAmount);
+  }, [sharedState]);
 
   const handleSearchChange = (event) => {
     setBillNo(event.target.value);
@@ -81,7 +91,7 @@ const AddEditPurchaseScreen = () => {
 
         <div className='flex flex-col gap-1 text-right w-1/4'>
           <p className='text-xs text-gray-700'>Total Amount</p>
-          <p className='text-2xl font-semibold'>Rs. 5000</p>
+          <p className='text-2xl font-semibold'>{amount}</p>
         </div>
 
       </div>

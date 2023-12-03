@@ -20,11 +20,11 @@ const RealTimeInputTable = ({ shared, setShared }) => {
     const newData = [...tableData];
     newData[index][field] = value;
     setTableData(newData);
-    setShared(newData);
   };
 
   const handleAddRow = () => {
     setTableData([...tableData, { productId: '', productName: '', quantity: '', rate: '', amount: '' }]);
+    setShared(tableData);
   };
 
   const handleRemoveRow = (index) => {
