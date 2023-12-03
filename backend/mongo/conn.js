@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const connectionString =
-  "mongodb+srv://suvan:yk8aSW26njv.LZ-@cluster0.ldaw2fl.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://esshatraderscbe:SuvanJeyam@cluster0.g13plfr.mongodb.net/?retryWrites=true&w=majority";
 
 export const connect = (callBack) => {
   mongoose.set('strictQuery', false);
