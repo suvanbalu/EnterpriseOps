@@ -10,8 +10,8 @@ const rows = [
     date: '2022-12-01',
     totalAmount: 500,
     details: [
-      { product_id: 'P001', quantity: 2, rateOfProduct: 200 },
-      { product_id: 'P002', quantity: 3, rateOfProduct: 100 },
+      { product_name: 'P001', quantity: 2, rateOfProduct: 200 },
+      { product_name: 'P002', quantity: 3, rateOfProduct: 100 },
     ],
   },
   {
@@ -19,8 +19,8 @@ const rows = [
     date: '2023-12-01',
     totalAmount: 700,
     details: [
-      { product_id: 'P001', quantity: 2, rateOfProduct: 200 },
-      { product_id: 'P002', quantity: 3, rateOfProduct: 100 },
+      { product_name: 'P001', quantity: 2, rateOfProduct: 200 },
+      { product_name: 'P002', quantity: 3, rateOfProduct: 100 },
     ],
   },
   // Add more rows as needed
@@ -100,7 +100,7 @@ function PurchaseTable() {
   const [searchText, setSearchText] = useState('');
 
   const [innerOrder, setInnerOrder] = useState('asc');
-  const [innerOrderBy, setInnerOrderBy] = useState('product_id');
+  const [innerOrderBy, setInnerOrderBy] = useState('product_name');
 
   const handleInnerRequestSort = (event, property) => {
     const isAsc = innerOrderBy === property && innerOrder === 'asc';
@@ -128,7 +128,7 @@ function PurchaseTable() {
       row.date.toLowerCase().includes(searchLower) ||
       row.totalAmount.toString().toLowerCase().includes(searchLower) ||
       row.details.some(detail =>
-        detail.product_id.toLowerCase().includes(searchLower) ||
+        detail.product_name.toLowerCase().includes(searchLower) ||
         detail.quantity.toString().toLowerCase().includes(searchLower) ||
         detail.rateOfProduct.toString().toLowerCase().includes(searchLower)
       )

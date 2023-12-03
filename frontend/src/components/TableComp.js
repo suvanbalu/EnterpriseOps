@@ -17,7 +17,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 const innerHeadCells = [
-  { id: 'product_id', label: 'Product ID' },
+  { id: 'product_name', label: 'Product Name' },
   { id: 'quantity', label: 'Quantity' },
   { id: 'rateOfProduct', label: 'Rate' },
 ];
@@ -47,7 +47,7 @@ function InnerTable({ rows, order, orderBy, onRequestSort }) {
       <TableBody>
         {rows.map((row, index) => (
           <TableRow key={index}>
-            <TableCell>{row.product_id}</TableCell>
+            <TableCell>{row.product_name}</TableCell>
             <TableCell>{row.quantity}</TableCell>
             <TableCell>{row.rateOfProduct}</TableCell>
           </TableRow>

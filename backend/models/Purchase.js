@@ -1,7 +1,7 @@
 import mongoose, { Schema, model } from "mongoose";
 
 const purchaseSchema = new Schema({
-  pbillno:{
+  billno:{
     type: String,
     unique: true
   },
