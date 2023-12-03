@@ -9,6 +9,7 @@ import {
   TextField,
   Paper,
   Button,
+  buttonBaseClasses,
 } from '@mui/material';
 
 const RealTimeInputTable = () => {
@@ -21,19 +22,17 @@ const RealTimeInputTable = () => {
   };
 
   const handleAddRow = () => {
-    setTableData([...tableData, { productId: '', productName: '', quantity: '', rate: '', amount: '' }]);
+    setTableData([...tableData, { productId: '', quantity: '', amount: '' }]);
   };
 
   return (
     <TableContainer component={Paper}>
       <Table>
         <TableHead>
-          <TableRow>
-            <TableCell>Product ID</TableCell>
-            <TableCell>Product Name</TableCell>
-            <TableCell>Quantity</TableCell>
-            <TableCell>Rate</TableCell>
-            <TableCell>Amount</TableCell>
+          <TableRow >
+            <TableCell style={{fontWeight:"bold"}}>Product ID</TableCell>
+            <TableCell style={{fontWeight:"bold"}}>Quantity</TableCell>
+            <TableCell style={{fontWeight:"bold"}}>Amount</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -47,18 +46,9 @@ const RealTimeInputTable = () => {
               </TableCell>
               <TableCell>
                 <TextField
-                  value={row.productName}
-                  onChange={(e) => handleInputChange(index, 'productName', e.target.value)}
-                />
-              </TableCell>
-              <TableCell>
-                <TextField
                   value={row.quantity}
                   onChange={(e) => handleInputChange(index, 'quantity', e.target.value)}
                 />
-              </TableCell>
-              <TableCell>
-                <TextField value={row.rate} onChange={(e) => handleInputChange(index, 'rate', e.target.value)} />
               </TableCell>
               <TableCell>
                 <TextField

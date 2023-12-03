@@ -16,6 +16,10 @@ const AddEditPurchaseScreen = () => {
   const today = dayjs();
   const [date, setDate] = useState(today);
 
+  const handleClick= ()=>{
+    return;
+  }
+  
   const handleSearchChange = (event) => {
     setBillNo(event.target.value);
   }
@@ -74,6 +78,10 @@ const AddEditPurchaseScreen = () => {
       </div>
 
       <RealTimeInputTable />
+
+      <div className='flex items-center justify-center'>
+        <button className='rounded-l bg-green-700 text-white px-4 py-2' onClick={handleClick()}>Submit</button>
+      </div>
     </div>
   )
 }
