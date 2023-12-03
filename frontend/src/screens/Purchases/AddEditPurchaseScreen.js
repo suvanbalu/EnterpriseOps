@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { IoChevronBack } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
+import dummyData from '../../components/dummyData';
 
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -18,26 +19,40 @@ const AddEditPurchaseScreen = () => {
   const [date, setDate] = useState(today);
   const [totalAmount, setTotalAmount] = useState(0);
   const [totalQuantity, setTotalQuantity] = useState(0);
-  const [invalid, setInvalid] = useState(false);
-
   const [tableData, setTableData] = useState([
     { productId: '', productName: '', quantity: '', rate: '', amount: '' },
   ]);
+  const [edit, setEdit] = useState(false);
 
   useEffect(() => {
-    const tot = tableData.reduce((sum, row) => {
-      const rowAmount = parseFloat(row.amount);
-      return isNaN(rowAmount) ? sum : sum + rowAmount;
-    }, 0);
+    if (window.location.pathname.split('/')[2] === 'edit') {
+      setEdit(true);
 
-    setTotalAmount(tot.toFixed(2));
+      const data = dummyData.filter((item) => item.billNumber === window.location.pathname.split('/')[3])[0];
+      console.log(data);
 
-    const quant = tableData.reduce((sum, row) => {
-      const rowQuantity = parseInt(row.quantity);
-      return isNaN(rowQuantity) ? sum : sum + rowQuantity;
-    }, 0);
+      setBillNo(data.billNumber);
+      // add date
+      setTableData(data.details);
+    }
+  }, []);
 
-    setTotalQuantity(quant);
+  useEffect(() => {
+    if (tableData) {
+      const tot = tableData.reduce((sum, row) => {
+        const rowAmount = parseFloat(row.amount);
+        return isNaN(rowAmount) ? sum : sum + rowAmount;
+      }, 0);
+
+      setTotalAmount(tot.toFixed(2));
+
+      const quant = tableData.reduce((sum, row) => {
+        const rowQuantity = parseInt(row.quantity);
+        return isNaN(rowQuantity) ? sum : sum + rowQuantity;
+      }, 0);
+
+      setTotalQuantity(quant);
+    }
   }, [tableData])
 
   return (
@@ -51,7 +66,7 @@ const AddEditPurchaseScreen = () => {
         >
           <IoChevronBack />
         </button>
-        <p className='text-2xl text-orange-700 font-semibold'>Add New Purchase</p>
+        <p className='text-2xl text-orange-700 font-semibold'>{`${edit ? 'Edit' : 'Add New'} Purchase`}</p>
       </div>
 
       <div className='flex flex-row mt-8 items-center gap-8 w-full'>
@@ -98,7 +113,7 @@ const AddEditPurchaseScreen = () => {
 
       </div>
 
-      <RealTimeInputTable tableData={tableData} setTableData={setTableData} />
+      <RealTimeInputTable tableState={[tableData, setTableData]} />
 
       <div className='flex justify-end mt-4'>
         <button
@@ -121,12 +136,13 @@ const AddEditPurchaseScreen = () => {
             });
 
             if (valid) {
+              console.log(billNo, date, tableData);
               navigate('/purchases/');
             }
           }}
         >
           <IoMdCheckmarkCircleOutline />
-          {'Confirm & Add Purchase'}
+          {`Confirm & ${edit ? 'Edit' : 'Add'} Purchase`}
         </button>
       </div>
     </div>

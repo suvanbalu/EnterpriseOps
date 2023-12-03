@@ -17,8 +17,9 @@ import {
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import SearchIcon from '@mui/icons-material/Search';
+import { MdOutlineEdit } from "react-icons/md";
 import { FaArrowUpShortWide, FaArrowDownWideShort } from "react-icons/fa6";
-
+import { useNavigate } from 'react-router-dom';
 
 const CollapsibleTable = ({ data }) => {
   const [openRows, setOpenRows] = useState([]);
@@ -27,6 +28,7 @@ const CollapsibleTable = ({ data }) => {
   const [innerSortBy, setInnerSortBy] = useState('');
   const [innerSortOrder, setInnerSortOrder] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
 
   const handleToggleCollapse = (index) => {
     const isOpen = openRows.includes(index);
@@ -172,16 +174,25 @@ const CollapsibleTable = ({ data }) => {
                     <TableCell>{row.date}</TableCell>
                     <TableCell>{row.totalAmount}</TableCell>
                     <TableCell>
-                      <IconButton
-                        size="small"
-                        onClick={() => handleToggleCollapse(index)}
-                      >
-                        {openRows.includes(index) ? (
-                          <KeyboardArrowUpIcon />
-                        ) : (
-                          <KeyboardArrowDownIcon />
-                        )}
-                      </IconButton>
+                      <div className='flex items-center'>
+                        <IconButton
+                          size="small"
+                          onClick={() => handleToggleCollapse(index)}
+                        >
+                          {openRows.includes(index) ? (
+                            <KeyboardArrowUpIcon />
+                          ) : (
+                            <KeyboardArrowDownIcon />
+                          )}
+                        </IconButton>
+                        <button className='text-lg text-gray-600 hover:bg-gray-100 rounded-full p-2'
+                          onClick={() => {
+                            navigate('/purchases/edit/' + row.billNumber)
+                          }}
+                        >
+                          <MdOutlineEdit />
+                        </button>
+                      </div>
                     </TableCell>
                   </TableRow>
                   <TableRow>

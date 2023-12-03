@@ -8,16 +8,13 @@ import {
   TableCell,
   TextField,
   Paper,
-  Button,
-  Select,
-  MenuItem,
-  InputLabel,
   FormControl,
   Autocomplete
 } from '@mui/material';
 import { IoMdAdd, IoMdClose } from 'react-icons/io';
 
-const RealTimeInputTable = ({ tableData, setTableData }) => {
+const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
+  const [tableData, setTableData] = tableState;
 
   const handleInputChange = (index, field, value) => {
     const newData = [...tableData];
