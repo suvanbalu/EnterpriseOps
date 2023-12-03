@@ -3,7 +3,9 @@ import cors from "cors";
 import { connect } from './mongo/conn.js';
 // import bodyParser from "body-parser";
 
-import sales from "./routes/salesEntry.js"; 
+import sales from "./routes/salesentry.js"; 
+import product from "./routes/product.js";
+import purchase from "./routes/purchase.js";
 
 const app = express();
 const PORT = process.env.PORT||3001;
@@ -17,6 +19,8 @@ app.listen(PORT,()=>{
 })
 
 app.use("/sales",sales);
+app.use("/product",product);
+app.use("/purchase",purchase);
 
 connect(function (err) {
   if (err) {

@@ -14,6 +14,7 @@ import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 const AddEditPurchaseScreen = () => {
   const navigate = useNavigate();
   const [billNo, setBillNo] = useState("");
+  const [amount, setAmount] = useState(0);
   const today = dayjs();
   const [date, setDate] = useState(today);
   const [totalAmount, setTotalAmount] = useState(0);
