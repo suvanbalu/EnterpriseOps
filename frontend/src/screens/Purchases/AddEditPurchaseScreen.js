@@ -15,11 +15,20 @@ const AddEditPurchaseScreen = () => {
   const [billNo, setBillNo] = useState("");
   const today = dayjs();
   const [date, setDate] = useState(today);
+  const [output,setOutput] = useState("");
 
+  const [sharedState, setSharedState] = useState([])
   const handleClick= ()=>{
-    return;
+    if(sharedState.length==0 || sharedState[0].productId=='' || sharedState[0].quantitiy=='' || sharedState[0].amount==''){
+      setOutput("Check the inputs or Enter a value")
+    }
+    else{
+      setOutput("")
+    }
+    // console.log("Shared State: ",sharedState);
   }
-  
+
+
   const handleSearchChange = (event) => {
     setBillNo(event.target.value);
   }
@@ -77,11 +86,13 @@ const AddEditPurchaseScreen = () => {
 
       </div>
 
-      <RealTimeInputTable />
+      <RealTimeInputTable shared={sharedState} setShared={setSharedState}/>
 
-      <div className='flex items-center justify-center'>
-        <button className='rounded-l bg-green-700 text-white px-4 py-2' onClick={handleClick()}>Submit</button>
+      <div className='flex flex-col items-center justify-center'>
+        <button className='rounded-l bg-green-700 text-white px-4 py-2 mb-2' onClick={handleClick}>Submit</button>
+        <div className={output.substring("Check")?"text-red-500":"text-green-500"}>{output}</div>
       </div>
+      
     </div>
   )
 }
