@@ -67,6 +67,7 @@ function EnhancedTableHead(props) {
         {headCells.map((headCell) => (
           <TableCell
             key={headCell.id}
+            style={{ fontWeight: 'bold' }}
             sortDirection={orderBy === headCell.id ? order : false}
           >
             {headCell.disableSorting ? (
@@ -117,9 +118,23 @@ function PurchaseTable() {
     setSearchText(event.target.value);
   };
 
-  const filteredRows = rows.filter((row) =>
-    row.pbillno.toLowerCase().includes(searchText.toLowerCase())
-  );
+  const filteredRows = rows.filter((row) => {
+    // Convert all values to lowercase for case-insensitive comparison
+    const searchLower = searchText.toLowerCase();
+
+    // Check if any field matches the search text
+    return (
+      row.pbillno.toLowerCase().includes(searchLower) ||
+      row.date.toLowerCase().includes(searchLower) ||
+      row.totalAmount.toString().toLowerCase().includes(searchLower) ||
+      row.details.some(detail =>
+        detail.product_id.toLowerCase().includes(searchLower) ||
+        detail.quantity.toString().toLowerCase().includes(searchLower) ||
+        detail.rateOfProduct.toString().toLowerCase().includes(searchLower)
+      )
+    );
+  });
+
 
   const sortedRows = stableSort(filteredRows, getComparator(order, orderBy));
 
