@@ -12,6 +12,7 @@ router.post("/addentry", async (req, res) => {
   try {
     // Iterate over each item in the details array and check if the product exists
     for (const detail of req.body.details) {
+      // console.log("PID , ",detail.p_id)
       const productExists = await Product.exists({ p_id: detail.p_id });
       if (!productExists) {
         return res.status(404).send(`Product not found: ${detail.p_id}`);
@@ -43,7 +44,7 @@ router.get("/getentry", async (req, res) => {
 
     const transformedPurchases = await Promise.all(purchases.map(async (purchase) => {
       const details = await Promise.all(purchase.details.map(async detail => {
-        const product = await Product.findOne({ p_id: detail.product_id });
+        const product = await Product.findOne({ p_id: detail.p_id });
         return {
           product_name: product ? product.productName : "Unknown", 
           quantity: detail.quantity,

@@ -15,7 +15,7 @@ const purchaseSchema = new Schema({
   },
   details: [
     {
-      product_id: {
+      p_id: {
         type: String,  // Assuming productID is a string, change the type accordingly
         required: true,
       },
