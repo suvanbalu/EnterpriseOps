@@ -1,6 +1,10 @@
 import mongoose, { Schema, model } from "mongoose";
 
 const purchaseSchema = new Schema({
+  pbillno:{
+    type: String,
+    unique: true
+  },
   date: {
     type: Date,
     required: true,
