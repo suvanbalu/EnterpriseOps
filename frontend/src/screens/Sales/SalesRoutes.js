@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import SalesScreen from './screens/SalesScreen';
-import AddEditSalesScreen from './screens/AddEditSalesScreen';
+import SalesScreen from './SalesScreen';
+import AddEditSalesScreen from './AddEditSalesScreen';
 
 const SalesRoutes = () => {
   return (

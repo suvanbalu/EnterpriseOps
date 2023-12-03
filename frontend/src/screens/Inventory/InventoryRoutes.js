@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import InventoryScreen from './screens/InventoryScreen';
-import UpdateInventoryScreen from './screens/UpdateInventoryScreen';
+import InventoryScreen from './InventoryScreen';
+import UpdateInventoryScreen from './UpdateInventoryScreen';
 
 const InventoryRoutes = () => {
   return (

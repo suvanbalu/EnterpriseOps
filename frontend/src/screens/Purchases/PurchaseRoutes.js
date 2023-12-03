@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import PurchasesScreen from './screens/PurchasesScreen';
-import AddEditPurchaseScreen from './screens/AddEditPurchaseScreen';
+import PurchasesScreen from './PurchasesScreen';
+import AddEditPurchaseScreen from './AddEditPurchaseScreen';
 
 const PurchasesRoutes = () => {
   return (
