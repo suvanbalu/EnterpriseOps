@@ -1,6 +1,6 @@
 import { TextField } from '@mui/material';
-import React, { useState } from 'react'
-import { IoChevronBack } from "react-icons/io5";
+import React, { useEffect, useState } from 'react'
+import { IoCheckmarkCircle, IoChevronBack } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
@@ -9,16 +9,39 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from 'dayjs';
 import RealTimeInputTable from './RealTimeInputTable';
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
 const AddEditPurchaseScreen = () => {
   const navigate = useNavigate();
   const [billNo, setBillNo] = useState("");
   const today = dayjs();
   const [date, setDate] = useState(today);
+  const [totalAmount, setTotalAmount] = useState(0);
+  const [totalQuantity, setTotalQuantity] = useState(0);
+
+  const [tableData, setTableData] = useState([
+    { productId: '', productName: '', quantity: '', rate: '', amount: '' },
+  ]);
 
   const handleSearchChange = (event) => {
     setBillNo(event.target.value);
   }
+
+  useEffect(() => {
+    const tot = tableData.reduce((sum, row) => {
+      const rowAmount = parseFloat(row.amount);
+      return isNaN(rowAmount) ? sum : sum + rowAmount;
+    }, 0);
+
+    setTotalAmount(tot.toFixed(2));
+
+    const quant = tableData.reduce((sum, row) => {
+      const rowQuantity = parseInt(row.quantity);
+      return isNaN(rowQuantity) ? sum : sum + rowQuantity;
+    }, 0);
+
+    setTotalQuantity(quant);
+  }, [tableData])
 
   return (
     <div className='px-8 flex flex-col gap-4 w-full'>
@@ -66,14 +89,31 @@ const AddEditPurchaseScreen = () => {
           </LocalizationProvider>
         </div>
 
-        <div className='flex flex-col gap-1 text-right w-1/4'>
+        <div className='flex flex-col gap-1 text-center w-1/4'>
+          <p className='text-xs text-gray-700'>Total Quantity</p>
+          <p className='text-2xl font-semibold'>{totalQuantity}</p>
+        </div>
+
+        <div className='flex flex-col gap-1 text-center w-1/4'>
           <p className='text-xs text-gray-700'>Total Amount</p>
-          <p className='text-2xl font-semibold'>Rs. 5000</p>
+          <p className='text-2xl font-semibold'>Rs. {totalAmount}</p>
         </div>
 
       </div>
 
-      <RealTimeInputTable />
+      <RealTimeInputTable tableData={tableData} setTableData={setTableData} />
+
+      <div className='flex justify-end'>
+        <button
+          className='flex flex-row gap-2 items-center text-lg font-semibold rounded-xl text-orange-700 bg-orange-50 w-fit px-4 py-3 shadow-md'
+          onClick={() => {
+            navigate('/purchases/')
+          }}
+        >
+          <IoMdCheckmarkCircleOutline />
+          {'Add Purchase'}
+        </button>
+      </div>
     </div>
   )
 }
