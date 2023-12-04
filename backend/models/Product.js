@@ -26,6 +26,14 @@ const productSchema = new Schema({
     CGST: { type: Number },
     SGST: { type: Number },
   },
+  quantity:{
+    type:Number,
+    required: true
+  },
+  unit:{
+    type:String,
+    required: true
+  }
 });
 
 export default model("Product", productSchema);

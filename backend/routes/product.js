@@ -1,5 +1,6 @@
 import express from "express";
 import Product from "../models/Product.js";
+import Purchase from "../models/Purchase.js";
 
 const router = express.Router();
 
@@ -44,11 +45,24 @@ router.put("/updateproduct/:p_id", async (req, res) => {
     }
 
     const updatedProduct = await Product.findOneAndUpdate({ p_id }, req.body, { new: true });
+    if (req.body.p_id != p_id) {
+      try {
+        // Update all purchases with the new p_id
+        const updatedPurchases = await Purchase.updateMany(
+          { "details.p_id": p_id },
+          { $set: { "details.$.p_id": req.body.p_id } }
+        );
+      } catch (err) {
+        return res.status(500).send(err.message); // Send an error response and return
+      }
+    }
+    // Send a success response
     res.status(200).json(updatedProduct);
   } catch (err) {
     res.status(500).send(err.message);
   }
 });
+
 
 router.delete("/deleteproduct/:p_id", async (req, res) => {
   const { p_id } = req.params;

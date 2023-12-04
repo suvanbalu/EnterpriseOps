@@ -47,6 +47,7 @@ router.get("/getentry", async (req, res) => {
         const product = await Product.findOne({ p_id: detail.p_id });
         return {
           product_name: product ? product.productName : "Unknown", 
+          product_id: product ? product.p_id:"Unknown",
           quantity: detail.quantity,
           rateOfProduct: detail.rateOfProduct
         };
