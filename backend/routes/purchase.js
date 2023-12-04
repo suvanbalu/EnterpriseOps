@@ -27,7 +27,7 @@ router.post("/addentry", async (req, res) => {
     const dateObject = parsedDate.toDate();
     const entry = new Purchase({
       ...req.body,
-      date: dateObject 
+      date: dateObject
     });
     await entry.save();
 
@@ -38,7 +38,7 @@ router.post("/addentry", async (req, res) => {
 });
 
 
-router.get("/getentry", async (req, res) => {
+router.get("/get-all-entry", async (req, res) => {
   try {
     const purchases = await Purchase.find({});
 
@@ -46,16 +46,16 @@ router.get("/getentry", async (req, res) => {
       const details = await Promise.all(purchase.details.map(async detail => {
         const product = await Product.findOne({ p_id: detail.p_id });
         return {
-          product_name: product ? product.productName : "Unknown", 
-          product_id: product ? product.p_id:"Unknown",
+          productName: product ? product.productName : "Unknown",
+          p_id: product ? product.p_id : "Unknown",
           quantity: detail.quantity,
           rateOfProduct: detail.rateOfProduct
         };
       }));
 
       return {
-        pbillno: purchase.billno,
-        date: purchase.date.toISOString().split('T')[0], 
+        billno: purchase.billno,
+        date: purchase.date.toLocaleString(),
         totalAmount: purchase.totalAmount,
         details
       };
@@ -67,18 +67,42 @@ router.get("/getentry", async (req, res) => {
   }
 });
 
-router.put("/updateentry/:billno", async (req, res) => {
-  const { billno } = req.params;
+router.get("/get-bill-entry/:billno", async (req, res) => {
+  try {
+    const purchase = await Purchase.findOne({ billno: req.params.billno })
 
+    const details = await Promise.all(purchase.details.map(async detail => {
+      const product = await Product.findOne({ p_id: detail.p_id });
+      return {
+        productName: product ? product.productName : "Unknown",
+        p_id: product ? product.p_id : "Unknown",
+        quantity: detail.quantity,
+        rateOfProduct: detail.rateOfProduct
+      };
+    }));
+
+    const transformedPurchase = {
+      billno: purchase.billno,
+      date: purchase.date.toLocaleString(),
+      totalAmount: purchase.totalAmount,
+      details
+    };
+    res.status(200).json(transformedPurchase);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+router.put("/updateentry/:billno", async (req, res) => {
   try {
     // Check if the purchase exists
-    const purchase = await Purchase.findOne({ billno });
+    const purchase = await Purchase.findOne({ billno: req.params.billno });
     if (!purchase) {
       return res.status(404).send(`Purchase with bill number ${billno} not found`);
     }
 
     // Update the purchase
-    const updatedPurchase = await Purchase.findOneAndUpdate({ billno }, req.body, { new: true });
+    const updatedPurchase = await Purchase.findOneAndUpdate({ billno: req.params.billno }, req.body, { new: true });
     res.status(200).send(updatedPurchase);
   } catch (err) {
     res.status(500).send(err.message);

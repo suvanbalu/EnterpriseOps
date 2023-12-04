@@ -2,7 +2,7 @@ import { TextField } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { IoChevronBack } from "react-icons/io5";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import dummyData from '../../components/dummyData';
 
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
@@ -13,30 +13,44 @@ import dayjs from 'dayjs';
 import RealTimeInputTable from '../../components/RealTimeInputTable';
 import CustomButton from '../../components/CustomButton';
 import HighlightedNumber from '../../components/HighlightedNumber';
+import axios from 'axios';
+import { PURCHASE_URL } from '../../API/calls';
 
 const AddEditPurchaseScreen = () => {
   const navigate = useNavigate();
-  const [billNo, setBillNo] = useState("");
+  const [billno, setBillno] = useState("");
   const [date, setDate] = useState(dayjs());
   const [totalAmount, setTotalAmount] = useState(0);
   const [totalQuantity, setTotalQuantity] = useState(0);
   const [tableData, setTableData] = useState([
-    { productId: '', productName: '', quantity: '', rate: '', amount: '' },
+    { p_id: '', productName: '', quantity: '', rateOfProduct: '', amount: '' },
   ]);
   const [edit, setEdit] = useState(false);
 
+  const { id } = useParams();
+
+
   useEffect(() => {
-    if (window.location.pathname.split('/')[2] === 'edit') {
+    if (id) {
       setEdit(true);
 
-      const data = dummyData.filter((item) => item.billNumber === window.location.pathname.split('/')[3])[0];
-      console.log(data);
+      // const data = dummyData.filter((item) => item.billNumber === window.location.pathname.split('/')[3])[0];
+      // console.log(data);
 
-      setBillNo(data.billNumber);
-      setDate(dayjs(data.date));
-      setTableData(data.details);
+      // setBillNo(data.billNumber);
+      // setDate(dayjs(data.date));
+      // setTableData(data.details);
+
+      axios.get(`${PURCHASE_URL}/get-bill-entry/${id} `)
+        .then((res) => {
+          console.log(res);
+          setBillno(res.data.billno);
+          setDate(dayjs(res.data.date));
+          setTotalAmount(res.data.totalAmount);
+          setTableData(res.data.details);
+        })
     }
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     if (tableData) {
@@ -74,8 +88,8 @@ const AddEditPurchaseScreen = () => {
           label="Bill Number"
           variant="outlined"
           margin="normal"
-          value={billNo}
-          onChange={(e) => { setBillNo(e.target.value) }}
+          value={billno}
+          onChange={(e) => { setBillno(e.target.value) }}
           className='w-1/4'
           InputProps={{
             sx: { borderRadius: 3, },
@@ -104,7 +118,7 @@ const AddEditPurchaseScreen = () => {
 
         <HighlightedNumber
           title={'Total Amount'}
-          value={`Rs. ${totalAmount}`}
+          value={`Rs. ${totalAmount} `}
         />
 
       </div>
@@ -116,7 +130,7 @@ const AddEditPurchaseScreen = () => {
           onClick={() => {
             let valid = true;
 
-            if (billNo === null || billNo === undefined || billNo === '') {
+            if (billno === null || billno === undefined || billno === '') {
               valid = false;
               return window.alert('Enter bill number');
             }
@@ -125,14 +139,58 @@ const AddEditPurchaseScreen = () => {
               Object.values(item).forEach((value) => {
                 if (value === null || value === undefined || value === '') {
                   valid = false;
-                  return window.alert('Enter all fields in the table');
                 }
               });
             });
 
             if (valid) {
-              console.log(billNo, date, tableData);
-              navigate('/purchases/');
+              console.log(billno);
+              console.log(tableData);
+              console.log(date.format('DD-MMM-YYYY'));
+
+              if (edit) {
+                axios.put(`${PURCHASE_URL}/updateentry/${id}`, {
+                  billno: billno,
+                  totalAmount: totalAmount,
+                  date: date.format('DD-MMM-YYYY'),
+                  details: tableData.map((item) => {
+                    return {
+                      p_id: item.p_id,
+                      rateOfProduct: item.rateOfProduct,
+                      quantity: item.quantity
+                    }
+                  })
+                })
+                  .then((res) => {
+                    console.log(res)
+                    navigate('/purchases/');
+                  })
+                  .catch((err) => {
+                    console.log(err);
+                  })
+              } else {
+                axios.post(`${PURCHASE_URL}/addentry`, {
+                  billno: billno,
+                  totalAmount: totalAmount,
+                  date: date.format('DD-MMM-YYYY'),
+                  details: tableData.map((item) => {
+                    return {
+                      p_id: item.p_id,
+                      rateOfProduct: item.rateOfProduct,
+                      quantity: item.quantity
+                    }
+                  })
+                })
+                  .then((res) => {
+                    console.log(res)
+                    navigate('/purchases/');
+                  })
+                  .catch((err) => {
+                    console.log(err);
+                  })
+              }
+            } else {
+              window.alert('Enter all fields in the table');
             }
           }}
           icon={<IoMdCheckmarkCircleOutline />}

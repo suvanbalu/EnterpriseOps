@@ -13,37 +13,53 @@ import {
 } from '@mui/material';
 import { IoMdAdd, IoMdClose } from 'react-icons/io';
 import CustomButton from './CustomButton';
+import axios from 'axios';
+import { PRODUCT_URL } from '../API/calls';
 
 const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
   const [tableData, setTableData] = tableState;
+  const [products, setProducts] = useState([]);
+  const [productNames, setProductNames] = useState([]);
 
   const handleInputChange = (index, field, value) => {
     const newData = [...tableData];
     newData[index][field] = value;
 
     if (field === 'productName') {
-      if (value === 'Option 1') {
-        newData[index].productId = 'A12BC';
-        newData[index].rate = 105;
-      }
-      if (value === 'Option 2') {
-        newData[index].productId = 'X723B';
-        newData[index].rate = 78;
-      }
+      const element = products.filter((item) => item.productName === value)[0]
+      console.log(element)
+      newData[index].p_id = element?.p_id;
+      newData[index].rateOfProduct = element?.price;
     }
 
     // Update the 'amount' field based on changes in 'quantity' or 'rate'
-    if (field === 'quantity' || field === 'rate') {
-      newData[index].amount = calculateAmount(newData[index].quantity, newData[index].rate);
+    if (field === 'quantity' || field === 'rateOfProduct') {
+      newData[index].amount = calculateAmount(newData[index].quantity, newData[index].rateOfProduct);
     }
 
     setTableData(newData);
   };
 
+  useEffect(() => {
+    axios.get(`${PRODUCT_URL}/getproducts`)
+      .then((res) => {
+        setProducts(res.data);
+        setProductNames(res.data.map((item) => item.productName))
+      })
+  }, [])
+
+  useEffect(() => {
+    const newData = [...tableData];
+
+    newData.forEach((item) => {
+      item.amount = calculateAmount(item.quantity, item.rateOfProduct);
+    })
+  }, [tableState])
+
   const handleAddRow = () => {
     setTableData([
       ...tableData,
-      { productId: '', productName: '', quantity: '', rate: '', amount: '' },
+      { p_id: '', productName: '', quantity: '', rateOfProduct: '', amount: '' },
     ]);
   };
 
@@ -63,7 +79,7 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
   };
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} style={{ minHeight: '450px' }}>
       <Table size="small" dense>
         <TableHead>
           <TableRow>
@@ -95,8 +111,8 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
                     onChange={(event, newValue) => {
                       handleInputChange(index, 'productName', newValue);
                     }}
-                    options={["Option 1", "Option 2"]}
-                    sx={{ width: 275 }}
+                    options={productNames}
+                    sx={{ width: 400 }}
                     renderInput={(params) => <TextField
                       {...params}
                       variant="standard"
@@ -108,7 +124,7 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
               <TableCell>
                 <TextField
                   InputProps={{ disableUnderline: true }}
-                  value={row.productId}
+                  value={row.p_id}
                   onChange={(e) => handleInputChange(index, 'productId', e.target.value)}
                   variant="standard"
                   size="small"
@@ -128,8 +144,8 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
                 <TextField
                   InputProps={{ disableUnderline: true }}
                   type="number"
-                  value={row.rate}
-                  onChange={(e) => handleInputChange(index, 'rate', e.target.value)}
+                  value={row.rateOfProduct}
+                  onChange={(e) => handleInputChange(index, 'rateOfProduct', e.target.value)}
                   variant="standard"
                   size="small"
                 />

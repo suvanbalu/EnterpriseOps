@@ -28,6 +28,11 @@ import { DatePicker } from '@mui/x-date-pickers';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import dayjs from 'dayjs';
 import HighlightedNumber from './HighlightedNumber';
+import axios from 'axios';
+import utc from 'dayjs/plugin/utc';
+import { PURCHASE_URL } from '../API/calls';
+
+dayjs.extend(utc);
 
 const CollapsibleTable = ({ data }) => {
   const [openRows, setOpenRows] = useState([]);
@@ -117,13 +122,13 @@ const CollapsibleTable = ({ data }) => {
   }, 0);
 
   const OuterTableHeaders = {
-    'Bill Number': 'billNumber',
+    'Bill Number': 'billno',
     'Date': 'date',
     'Total Amount': 'totalAmount'
   }
 
   const InnerTableHeaders = {
-    'Product ID': 'productId',
+    'Product ID': 'p_id',
     'Product Name': 'productName',
     'Quantity': 'quantity',
     'Rate': 'rate',
@@ -251,8 +256,8 @@ const CollapsibleTable = ({ data }) => {
                 <React.Fragment key={index}>
                   <TableRow>
                     <TableCell>{index + 1}</TableCell>
-                    <TableCell>{row.billNumber}</TableCell>
-                    <TableCell>{dayjs(row.date).format('DD-MMM-YYYY')}</TableCell>
+                    <TableCell>{row.billno}</TableCell>
+                    <TableCell>{dayjs(row.date).local().format('DD-MMM-YYYY')}</TableCell>
                     <TableCell>{row.totalAmount}</TableCell>
                     <TableCell>
                       <div className='flex items-center gap-2'>
@@ -268,7 +273,7 @@ const CollapsibleTable = ({ data }) => {
                         </IconButton>
                         <button className='text-lg text-gray-600 hover:bg-gray-100 rounded-full p-2'
                           onClick={() => {
-                            navigate('/purchases/edit/' + row.billNumber)
+                            navigate('/purchases/edit/' + row.billno)
                           }}
                         >
                           <MdOutlineEdit />
@@ -276,10 +281,16 @@ const CollapsibleTable = ({ data }) => {
                         <button className='text-lg text-gray-600 hover:bg-red-100 rounded-full p-2'
                           onClick={() => {
                             if (window.confirm("Confirm Delete ?")) {
-                              data.splice(index, 1);
-                              window.location.reload();
+
+                              axios.delete(`${PURCHASE_URL}/deleteentry/${row.billno}`)
+                                .then((res) => {
+                                  console.log(res)
+                                  window.location.reload();
+                                })
+                                .catch((err) => {
+                                  console.log(err)
+                                })
                             }
-                            // ADD THIS PART AFTER FINISHING BACKEND
                           }}
                         >
                           <MdDelete />
@@ -314,7 +325,7 @@ const CollapsibleTable = ({ data }) => {
                                 <TableCell style={{ fontWeight: "bold", width: 100 }}>S.No.</TableCell>
                                 {
                                   Object.keys(InnerTableHeaders).map((item) => (
-                                    <TableCell style={{ fontWeight: "bold", width: 200 }}
+                                    <TableCell style={{ fontWeight: "bold", }}
                                       onClick={() => handleSort(InnerTableHeaders[item], true)}
                                       className='group'
                                     >
@@ -333,11 +344,11 @@ const CollapsibleTable = ({ data }) => {
                               {filteredRow.map((detail, detailIndex) => (
                                 <TableRow key={detailIndex}>
                                   <TableCell>{detailIndex + 1}</TableCell>
-                                  <TableCell>{detail.productId}</TableCell>
+                                  <TableCell>{detail.p_id}</TableCell>
                                   <TableCell>{detail.productName}</TableCell>
                                   <TableCell>{detail.quantity}</TableCell>
-                                  <TableCell>{detail.rate}</TableCell>
-                                  <TableCell>{detail.amount}</TableCell>
+                                  <TableCell>{detail.rateOfProduct}</TableCell>
+                                  <TableCell>{detail.quantity * detail.rateOfProduct}</TableCell>
                                 </TableRow>
                               ))}
                             </TableBody>
