@@ -27,6 +27,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import dayjs from 'dayjs';
+import HighlightedNumber from './HighlightedNumber';
 
 const CollapsibleTable = ({ data }) => {
   const [openRows, setOpenRows] = useState([]);
@@ -192,15 +193,18 @@ const CollapsibleTable = ({ data }) => {
           </div>
         </div>
 
-        <div className='flex flex-col gap-1 text-right w-1/6'>
-          <p className='text-xs text-gray-700'>Total Purchase Amount</p>
-          <p className='text-2xl font-semibold'>Rs. {totalPurchaseAmount}</p>
-        </div>
+        <HighlightedNumber
+          className={'text-right w-1/6'}
+          title={'Total Purchase Amount'}
+          value={`Rs. ${totalPurchaseAmount}`}
+        />
 
-        <div className='flex flex-col gap-1 text-right w-1/6'>
-          <p className='text-xs text-gray-700'>Total Entries</p>
-          <p className='text-2xl font-semibold'>{Object.keys(filteredData).length}</p>
-        </div>
+        <HighlightedNumber
+          className={'text-right w-1/6'}
+          title={'Total Entries'}
+          value={Object.keys(filteredData).length}
+        />
+
       </div>
       <TableContainer component={Paper}>
         <Table size="small" dense>
