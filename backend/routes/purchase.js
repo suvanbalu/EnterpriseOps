@@ -66,4 +66,37 @@ router.get("/getentry", async (req, res) => {
   }
 });
 
+router.put("/updateentry/:billno", async (req, res) => {
+  const { billno } = req.params;
+
+  try {
+    // Check if the purchase exists
+    const purchase = await Purchase.findOne({ billno });
+    if (!purchase) {
+      return res.status(404).send(`Purchase with bill number ${billno} not found`);
+    }
+
+    // Update the purchase
+    const updatedPurchase = await Purchase.findOneAndUpdate({ billno }, req.body, { new: true });
+    res.status(200).send(updatedPurchase);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+router.delete("/deleteentry/:billno", async (req, res) => {
+  const { billno } = req.params;
+
+  try {
+    const result = await Purchase.findOneAndDelete({ billno });
+    if (!result) {
+      return res.status(404).send(`Purchase with bill number ${billno} not found`);
+    }
+
+    res.status(200).send(`Purchase with bill number ${billno} successfully deleted`);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
 export default router;

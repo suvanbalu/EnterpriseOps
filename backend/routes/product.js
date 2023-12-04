@@ -34,4 +34,36 @@ router.get('/getproducts', async (req, res) => {
   }
 });
 
+router.put("/updateproduct/:p_id", async (req, res) => {
+  const { p_id } = req.params;
+
+  try {
+    const product = await Product.findOne({ p_id });
+    if (!product) {
+      return res.status(404).send(`Product with ID ${p_id} not found`);
+    }
+
+    const updatedProduct = await Product.findOneAndUpdate({ p_id }, req.body, { new: true });
+    res.status(200).json(updatedProduct);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+router.delete("/deleteproduct/:p_id", async (req, res) => {
+  const { p_id } = req.params;
+
+  try {
+    const result = await Product.findOneAndDelete({ p_id });
+    if (!result) {
+      return res.status(404).send(`Product with ID ${p_id} not found`);
+    }
+
+    res.status(200).send(`Product with ID ${p_id} successfully deleted`);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+
 export default router;
