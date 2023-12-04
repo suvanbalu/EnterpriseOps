@@ -17,9 +17,16 @@ import {
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import SearchIcon from '@mui/icons-material/Search';
-import { MdOutlineEdit } from "react-icons/md";
+import { MdOutlineEdit, MdDelete } from "react-icons/md";
 import { FaArrowUpShortWide, FaArrowDownWideShort } from "react-icons/fa6";
+import { IoMdClose } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
+
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DatePicker } from '@mui/x-date-pickers';
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import dayjs from 'dayjs';
 
 const CollapsibleTable = ({ data }) => {
   const [openRows, setOpenRows] = useState([]);
@@ -28,6 +35,8 @@ const CollapsibleTable = ({ data }) => {
   const [innerSortBy, setInnerSortBy] = useState('');
   const [innerSortOrder, setInnerSortOrder] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
   const navigate = useNavigate();
 
   const handleToggleCollapse = (index) => {
@@ -58,24 +67,39 @@ const CollapsibleTable = ({ data }) => {
 
   const filteredData = data
     .filter((row) => {
-      if (!searchQuery) return true;
+      if (!searchQuery) {
+        const isInRange = (!startDate || !endDate || (
+          (dayjs(row.date).isSame(startDate) || dayjs(row.date).isAfter(startDate)) &&
+          (dayjs(row.date).isSame(endDate) || dayjs(row.date).isBefore(endDate))
+        ));
+        return isInRange;
+      }
+
       const searchString = searchQuery.toLowerCase();
+      const isInRange = (!startDate || !endDate || (
+        (dayjs(row.date).isSame(startDate) || dayjs(row.date).isAfter(startDate)) &&
+        (dayjs(row.date).isSame(endDate) || dayjs(row.date).isBefore(endDate))
+      ));
+
       return (
-        row.billNumber.toLowerCase().includes(searchString) ||
-        row.date.toLowerCase().includes(searchString) ||
-        String(row.totalAmount).includes(searchString) ||
-        row.details.some((detail) =>
-          Object.values(detail).some((value) =>
-            String(value).toLowerCase().includes(searchString)
-          )
-        )
+        (isInRange &&
+          (row.billNumber.toLowerCase().includes(searchString) ||
+            row.date.toLowerCase().includes(searchString) ||
+            String(row.totalAmount).includes(searchString) ||
+            row.details.some((detail) =>
+              Object.values(detail).some((value) =>
+                String(value).toLowerCase().includes(searchString)
+              )
+            )))
       );
     })
     .sort((a, b) => {
       if (!sortBy) return 0;
 
-      const compareValueA = a[sortBy];
-      const compareValueB = b[sortBy];
+      const compareValueA =
+        sortBy === 'date' ? dayjs(a[sortBy]) : a[sortBy];
+      const compareValueB =
+        sortBy === 'date' ? dayjs(b[sortBy]) : b[sortBy];
 
       if (compareValueA < compareValueB) {
         return sortOrder === 'asc' ? -1 : 1;
@@ -85,6 +109,11 @@ const CollapsibleTable = ({ data }) => {
         return 0;
       }
     });
+
+  const totalPurchaseAmount = filteredData.reduce((sum, row) => {
+    const rowAmount = parseFloat(row.totalAmount);
+    return isNaN(rowAmount) ? sum : sum + rowAmount;
+  }, 0);
 
   const OuterTableHeaders = {
     'Bill Number': 'billNumber',
@@ -102,7 +131,7 @@ const CollapsibleTable = ({ data }) => {
 
   return (
     <div className='flex flex-col gap-6'>
-      <div className='flex flex-row gap-2 justify-between items-end'>
+      <div className='flex flex-row gap-6 justify-between items-center'>
         <TextField
           label="Search"
           variant="outlined"
@@ -120,9 +149,57 @@ const CollapsibleTable = ({ data }) => {
           }}
         />
 
-        <div className='flex flex-col gap-1 text-right w-1/4'>
+        <div className='w-1/2 flex flex-row gap-2 items-center'>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={['DatePicker']}>
+              <DatePicker
+                value={startDate}
+                onChange={(newValue) => setStartDate(newValue)}
+                sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
+                label='Start Date'
+                format="DD-MMM-YYYY"
+                className='w-1/2'
+              />
+            </DemoContainer>
+          </LocalizationProvider>
+
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={['DatePicker']}>
+              <DatePicker
+                value={endDate}
+                onChange={(newValue) => setEndDate(newValue)}
+                disabled={!startDate}
+                minDate={startDate}
+                sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
+                label='End Date'
+                format="DD-MMM-YYYY"
+                className='w-1/2'
+              />
+            </DemoContainer>
+          </LocalizationProvider>
+
+          <div className='w-10'>
+            {(startDate || endDate) && (
+              <button
+                onClick={() => {
+                  setStartDate(null);
+                  setEndDate(null);
+                }}
+                className='text-xl hover:text-red-500 mt-2'>
+                <IoMdClose />
+              </button>
+            )}
+          </div>
+        </div>
+
+        <div className='flex flex-col gap-1 text-right w-1/6'>
+          <p className='text-xs text-gray-700'>Total Purchase Amount</p>
+          <p className='text-2xl font-semibold'>Rs. {totalPurchaseAmount}</p>
+        </div>
+
+        <div className='flex flex-col gap-1 text-right w-1/6'>
           <p className='text-xs text-gray-700'>Total Entries</p>
-          <p className='text-2xl font-semibold'>{Object.keys(data).length}</p>
+          <p className='text-2xl font-semibold'>{Object.keys(filteredData).length}</p>
         </div>
       </div>
       <TableContainer component={Paper}>
@@ -171,10 +248,10 @@ const CollapsibleTable = ({ data }) => {
                   <TableRow>
                     <TableCell>{index + 1}</TableCell>
                     <TableCell>{row.billNumber}</TableCell>
-                    <TableCell>{row.date}</TableCell>
+                    <TableCell>{dayjs(row.date).format('DD-MMM-YYYY')}</TableCell>
                     <TableCell>{row.totalAmount}</TableCell>
                     <TableCell>
-                      <div className='flex items-center'>
+                      <div className='flex items-center gap-2'>
                         <IconButton
                           size="small"
                           onClick={() => handleToggleCollapse(index)}
@@ -192,6 +269,17 @@ const CollapsibleTable = ({ data }) => {
                         >
                           <MdOutlineEdit />
                         </button>
+                        <button className='text-lg text-gray-600 hover:bg-red-100 rounded-full p-2'
+                          onClick={() => {
+                            if (window.confirm("Confirm Delete ?")) {
+                              data.splice(index, 1);
+                              window.location.reload();
+                            }
+                            // ADD THIS PART AFTER FINISHING BACKEND
+                          }}
+                        >
+                          <MdDelete />
+                        </button>
                       </div>
                     </TableCell>
                   </TableRow>
@@ -207,9 +295,11 @@ const CollapsibleTable = ({ data }) => {
                             variant="h6"
                             gutterBottom
                             component="div"
+                            fontWeight="600"
                           >
                             Purchase Details
                           </Typography>
+                          {/* <p className='text-xl font-semibold'>Purchase Details</p> */}
                           <Table
                             size="small"
                             aria-label="purchase-details"

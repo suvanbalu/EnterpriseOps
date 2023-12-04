@@ -10,7 +10,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from 'dayjs';
-import RealTimeInputTable from './RealTimeInputTable';
+import RealTimeInputTable from '../../components/RealTimeInputTable';
 
 const AddEditPurchaseScreen = () => {
   const navigate = useNavigate();
@@ -88,11 +88,7 @@ const AddEditPurchaseScreen = () => {
               <DatePicker
                 value={date}
                 onChange={(newValue) => setDate(newValue)}
-                sx={{
-                  '& .MuiOutlinedInput-root': {
-                    borderRadius: 3, // Adjust the border radius as needed
-                  },
-                }}
+                sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
                 label='Date'
                 format="DD-MMM-YYYY"
                 className='w-full'
