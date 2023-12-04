@@ -1,7 +1,9 @@
 import { TextField } from '@mui/material';
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { IoChevronBack } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
+import dummyData from '../../components/dummyData';
 
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -13,35 +15,45 @@ import RealTimeInputTable from './RealTimeInputTable';
 const AddEditPurchaseScreen = () => {
   const navigate = useNavigate();
   const [billNo, setBillNo] = useState("");
-  const [amount, setAmount] = useState(0);
   const today = dayjs();
   const [date, setDate] = useState(today);
-  const [output,setOutput] = useState("");
-
-  const [sharedState, setSharedState] = useState([])
-  const handleClick= ()=>{
-    if(sharedState.length==0 || sharedState[0].productId=='' || sharedState[0].quantitiy=='' || sharedState[0].amount==''){
-      setOutput("Check the inputs or Enter a value")
-    }
-    else{
-      setOutput("")
-    }
-    // console.log("Shared State: ",sharedState);
-  }
+  const [totalAmount, setTotalAmount] = useState(0);
+  const [totalQuantity, setTotalQuantity] = useState(0);
+  const [tableData, setTableData] = useState([
+    { productId: '', productName: '', quantity: '', rate: '', amount: '' },
+  ]);
+  const [edit, setEdit] = useState(false);
 
   useEffect(() => {
-    let totalAmount = 0;
-    sharedState.forEach(item => {
-      const quantity = parseInt(item.quantity, 10); // Convert to integer
-      const itemAmount = parseFloat(item.amount); // Convert to float
-      totalAmount += quantity * itemAmount;
-    });
-    setAmount(totalAmount);
-  }, [sharedState]);
+    if (window.location.pathname.split('/')[2] === 'edit') {
+      setEdit(true);
 
-  const handleSearchChange = (event) => {
-    setBillNo(event.target.value);
-  }
+      const data = dummyData.filter((item) => item.billNumber === window.location.pathname.split('/')[3])[0];
+      console.log(data);
+
+      setBillNo(data.billNumber);
+      // add date
+      setTableData(data.details);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (tableData) {
+      const tot = tableData.reduce((sum, row) => {
+        const rowAmount = parseFloat(row.amount);
+        return isNaN(rowAmount) ? sum : sum + rowAmount;
+      }, 0);
+
+      setTotalAmount(tot.toFixed(2));
+
+      const quant = tableData.reduce((sum, row) => {
+        const rowQuantity = parseInt(row.quantity);
+        return isNaN(rowQuantity) ? sum : sum + rowQuantity;
+      }, 0);
+
+      setTotalQuantity(quant);
+    }
+  }, [tableData])
 
   return (
     <div className='px-8 flex flex-col gap-4 w-full'>
@@ -54,7 +66,7 @@ const AddEditPurchaseScreen = () => {
         >
           <IoChevronBack />
         </button>
-        <p className='text-2xl text-orange-700 font-semibold'>Add New Purchase</p>
+        <p className='text-2xl text-orange-700 font-semibold'>{`${edit ? 'Edit' : 'Add New'} Purchase`}</p>
       </div>
 
       <div className='flex flex-row mt-8 items-center gap-8 w-full'>
@@ -63,7 +75,7 @@ const AddEditPurchaseScreen = () => {
           variant="outlined"
           margin="normal"
           value={billNo}
-          onChange={handleSearchChange}
+          onChange={(e) => { setBillNo(e.target.value) }}
           className='w-1/4'
           InputProps={{
             sx: { borderRadius: 3, },
@@ -89,20 +101,50 @@ const AddEditPurchaseScreen = () => {
           </LocalizationProvider>
         </div>
 
-        <div className='flex flex-col gap-1 text-right w-1/4'>
+        <div className='flex flex-col gap-1 text-center w-1/4'>
+          <p className='text-xs text-gray-700'>Total Quantity</p>
+          <p className='text-2xl font-semibold'>{totalQuantity}</p>
+        </div>
+
+        <div className='flex flex-col gap-1 text-center w-1/4'>
           <p className='text-xs text-gray-700'>Total Amount</p>
-          <p className='text-2xl font-semibold'>{amount}</p>
+          <p className='text-2xl font-semibold'>Rs. {totalAmount}</p>
         </div>
 
       </div>
 
-      <RealTimeInputTable shared={sharedState} setShared={setSharedState}/>
+      <RealTimeInputTable tableState={[tableData, setTableData]} />
 
-      <div className='flex flex-col items-center justify-center'>
-        <button className='rounded-l bg-green-700 text-white px-4 py-2 mb-2' onClick={handleClick}>Submit</button>
-        <div className={output.substring("Check")?"text-red-500":"text-green-500"}>{output}</div>
+      <div className='flex justify-end mt-4'>
+        <button
+          className='flex flex-row gap-2 items-center text-lg font-semibold rounded-xl text-orange-700 bg-orange-50 w-fit px-4 py-3 shadow-md'
+          onClick={() => {
+            let valid = true;
+
+            if (billNo === null || billNo === undefined || billNo === '') {
+              valid = false;
+              return window.alert('Enter bill number');
+            }
+
+            tableData.forEach((item) => {
+              Object.values(item).forEach((value) => {
+                if (value === null || value === undefined || value === '') {
+                  valid = false;
+                  return window.alert('Enter all fields in the table');
+                }
+              });
+            });
+
+            if (valid) {
+              console.log(billNo, date, tableData);
+              navigate('/purchases/');
+            }
+          }}
+        >
+          <IoMdCheckmarkCircleOutline />
+          {`Confirm & ${edit ? 'Edit' : 'Add'} Purchase`}
+        </button>
       </div>
-      
     </div>
   )
 }
