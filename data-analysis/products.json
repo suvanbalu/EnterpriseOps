@@ -1,7 +1,7 @@
 [
     {
         "p_id": 1379,
-        "productName": "7 UP",
+        "productName": "7 UP PET 1.25 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 65.0,
@@ -15,7 +15,7 @@
     },
     {
         "p_id": 1376,
-        "productName": "7 UP",
+        "productName": "7 UP PET 1.5 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 65.0,
@@ -29,7 +29,7 @@
     },
     {
         "p_id": 3585,
-        "productName": "7 UP",
+        "productName": "7 UP CAN 150.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 20.0,
@@ -43,7 +43,7 @@
     },
     {
         "p_id": 4787,
-        "productName": "7 UP",
+        "productName": "7 UP CAN 180.0 ml",
         "piecesPerCase": 30,
         "category": "CAN",
         "price": 30.0,
@@ -57,7 +57,7 @@
     },
     {
         "p_id": 2211,
-        "productName": "7 UP",
+        "productName": "7 UP PET 1.0 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 35.0,
@@ -71,7 +71,7 @@
     },
     {
         "p_id": 2535,
-        "productName": "7 UP",
+        "productName": "7 UP PET 2.25 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 70.0,
@@ -85,7 +85,7 @@
     },
     {
         "p_id": 1008,
-        "productName": "7 UP",
+        "productName": "7 UP RGP 200.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 10.0,
@@ -99,7 +99,7 @@
     },
     {
         "p_id": 1453,
-        "productName": "7 UP",
+        "productName": "7 UP CAN 250.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 20.0,
@@ -113,7 +113,7 @@
     },
     {
         "p_id": 1466,
-        "productName": "7 UP",
+        "productName": "7 UP PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 15.0,
@@ -127,7 +127,7 @@
     },
     {
         "p_id": 2499,
-        "productName": "7 UP",
+        "productName": "7 UP PET 2.0 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 65.0,
@@ -141,7 +141,7 @@
     },
     {
         "p_id": 1114,
-        "productName": "7 UP",
+        "productName": "7 UP RGP 300.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 25.0,
@@ -155,7 +155,7 @@
     },
     {
         "p_id": 1940,
-        "productName": "7 UP",
+        "productName": "7 UP PET 300.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -169,7 +169,7 @@
     },
     {
         "p_id": 4255,
-        "productName": "7 UP",
+        "productName": "7 UP CAN 300.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 30.0,
@@ -183,7 +183,7 @@
     },
     {
         "p_id": 1907,
-        "productName": "7 UP",
+        "productName": "7 UP PET 330.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -197,7 +197,7 @@
     },
     {
         "p_id": 7141,
-        "productName": "7 UP",
+        "productName": "7 UP CAN 330.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 60.0,
@@ -211,7 +211,7 @@
     },
     {
         "p_id": 3120,
-        "productName": "7 UP",
+        "productName": "7 UP PET 400.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -225,7 +225,7 @@
     },
     {
         "p_id": 1884,
-        "productName": "7 UP",
+        "productName": "7 UP PET 475.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -239,7 +239,7 @@
     },
     {
         "p_id": 1872,
-        "productName": "7 UP",
+        "productName": "7 UP PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 60.0,
@@ -253,7 +253,7 @@
     },
     {
         "p_id": 1890,
-        "productName": "7 UP",
+        "productName": "7 UP PET 600.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 30.0,
@@ -267,7 +267,7 @@
     },
     {
         "p_id": 3114,
-        "productName": "7 UP",
+        "productName": "7 UP PET 750.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 38.0,
@@ -281,7 +281,7 @@
     },
     {
         "p_id": 4762,
-        "productName": "7 UP",
+        "productName": "7 UP TETRA 125.0 ml",
         "piecesPerCase": 40,
         "category": "TETRA",
         "price": 10.0,
@@ -295,7 +295,7 @@
     },
     {
         "p_id": 1875,
-        "productName": "7 UP",
+        "productName": "7 UP PET 350.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 25.0,
@@ -309,7 +309,7 @@
     },
     {
         "p_id": 2802,
-        "productName": "AQUAFINA",
+        "productName": "AQUAFINA PET 1.0 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 12.0,
@@ -323,7 +323,7 @@
     },
     {
         "p_id": 4232,
-        "productName": "AQUAFINA",
+        "productName": "AQUAFINA PET 250.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 6.0,
@@ -337,7 +337,7 @@
     },
     {
         "p_id": 2826,
-        "productName": "AQUAFINA",
+        "productName": "AQUAFINA PET 2.0 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 25.0,
@@ -351,7 +351,7 @@
     },
     {
         "p_id": 2813,
-        "productName": "AQUAFINA",
+        "productName": "AQUAFINA PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 10.0,
@@ -365,7 +365,7 @@
     },
     {
         "p_id": 2899,
-        "productName": "AQUAVESS",
+        "productName": "AQUAVESS PET 1.0 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 50.0,
@@ -379,7 +379,7 @@
     },
     {
         "p_id": 4713,
-        "productName": "AQUAVESS",
+        "productName": "AQUAVESS PET 500.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 30.0,
@@ -393,7 +393,7 @@
     },
     {
         "p_id": 8554,
-        "productName": "CB MILK BUTTERSCOTCH",
+        "productName": "CB MILK BUTTERSCOTCH PET 180.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 35.0,
@@ -407,7 +407,7 @@
     },
     {
         "p_id": 8629,
-        "productName": "CB MILK CHOCOLATE",
+        "productName": "CB MILK CHOCOLATE PET 180.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -421,7 +421,7 @@
     },
     {
         "p_id": 8608,
-        "productName": "CB MILK CHOCOLATE",
+        "productName": "CB MILK CHOCOLATE PET 200.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 30.0,
@@ -435,7 +435,7 @@
     },
     {
         "p_id": 8628,
-        "productName": "CB MILK COFFEE",
+        "productName": "CB MILK COFFEE PET 180.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -449,7 +449,7 @@
     },
     {
         "p_id": 8609,
-        "productName": "CB MILK COFFEE",
+        "productName": "CB MILK COFFEE PET 200.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 30.0,
@@ -463,7 +463,7 @@
     },
     {
         "p_id": 8627,
-        "productName": "CB MILK ELAICHI",
+        "productName": "CB MILK ELAICHI PET 180.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -477,7 +477,7 @@
     },
     {
         "p_id": 8618,
-        "productName": "CB MILK ELAICHI",
+        "productName": "CB MILK ELAICHI PET 200.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -491,7 +491,7 @@
     },
     {
         "p_id": 8626,
-        "productName": "CB MILK KESAR BADAM",
+        "productName": "CB MILK KESAR BADAM PET 180.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -505,7 +505,7 @@
     },
     {
         "p_id": 8617,
-        "productName": "CB MILK KESAR BADAM",
+        "productName": "CB MILK KESAR BADAM PET 200.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -519,7 +519,7 @@
     },
     {
         "p_id": 8630,
-        "productName": "CB MILK MANGO",
+        "productName": "CB MILK MANGO PET 180.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -533,7 +533,7 @@
     },
     {
         "p_id": 8607,
-        "productName": "CB MILK MANGO",
+        "productName": "CB MILK MANGO PET 200.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 30.0,
@@ -547,7 +547,7 @@
     },
     {
         "p_id": 8615,
-        "productName": "CB TADKA CHAACH",
+        "productName": "CB TADKA CHAACH TETRA 125.0 ml",
         "piecesPerCase": 40,
         "category": "TETRA",
         "price": 10.0,
@@ -561,7 +561,7 @@
     },
     {
         "p_id": 8614,
-        "productName": "CB TADKA CHAACH",
+        "productName": "CB TADKA CHAACH TETRA 200.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 15.0,
@@ -575,7 +575,7 @@
     },
     {
         "p_id": 2626,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA PET 1.25 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 25.0,
@@ -589,7 +589,7 @@
     },
     {
         "p_id": 2611,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA PET 1.0 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 20.0,
@@ -603,7 +603,7 @@
     },
     {
         "p_id": 2658,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA PET 2.25 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 35.0,
@@ -617,7 +617,7 @@
     },
     {
         "p_id": 2659,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 10.0,
@@ -631,7 +631,7 @@
     },
     {
         "p_id": 7390,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA CAN 250.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 25.0,
@@ -645,7 +645,7 @@
     },
     {
         "p_id": 2610,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA PET 2.0 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 30.0,
@@ -659,7 +659,7 @@
     },
     {
         "p_id": 2600,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA RGP 300.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 6.0,
@@ -673,7 +673,7 @@
     },
     {
         "p_id": 1909,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA PET 330.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 10.0,
@@ -687,7 +687,7 @@
     },
     {
         "p_id": 2612,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA PET 600.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 15.0,
@@ -701,7 +701,7 @@
     },
     {
         "p_id": 2655,
-        "productName": "EVERVESS SODA",
+        "productName": "EVERVESS SODA PET 750.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -715,7 +715,7 @@
     },
     {
         "p_id": 1381,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 1.25 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 65.0,
@@ -729,7 +729,7 @@
     },
     {
         "p_id": 1336,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 1.5 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 65.0,
@@ -743,7 +743,7 @@
     },
     {
         "p_id": 3584,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE CAN 150.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 20.0,
@@ -757,7 +757,7 @@
     },
     {
         "p_id": 2209,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 1.0 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 35.0,
@@ -771,7 +771,7 @@
     },
     {
         "p_id": 2533,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 2.25 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 70.0,
@@ -785,7 +785,7 @@
     },
     {
         "p_id": 3979,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 2.25 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 85.0,
@@ -799,7 +799,7 @@
     },
     {
         "p_id": 1006,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE RGP 200.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 10.0,
@@ -813,7 +813,7 @@
     },
     {
         "p_id": 1423,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE CAN 250.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 20.0,
@@ -827,7 +827,7 @@
     },
     {
         "p_id": 1465,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 15.0,
@@ -841,7 +841,7 @@
     },
     {
         "p_id": 2701,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 2.0 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 65.0,
@@ -855,7 +855,7 @@
     },
     {
         "p_id": 1232,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE RGP 300.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 14.0,
@@ -869,7 +869,7 @@
     },
     {
         "p_id": 1941,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 300.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -883,7 +883,7 @@
     },
     {
         "p_id": 4256,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE CAN 300.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 30.0,
@@ -897,7 +897,7 @@
     },
     {
         "p_id": 1697,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE CAN 330.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 60.0,
@@ -911,7 +911,7 @@
     },
     {
         "p_id": 1908,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 330.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -925,7 +925,7 @@
     },
     {
         "p_id": 3121,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 400.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -939,7 +939,7 @@
     },
     {
         "p_id": 4171,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 475.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 60.0,
@@ -953,7 +953,7 @@
     },
     {
         "p_id": 1870,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 60.0,
@@ -967,7 +967,7 @@
     },
     {
         "p_id": 1889,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 600.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 30.0,
@@ -981,7 +981,7 @@
     },
     {
         "p_id": 3115,
-        "productName": "MIRINDA ORANGE",
+        "productName": "MIRINDA ORANGE PET 750.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 38.0,
@@ -995,7 +995,7 @@
     },
     {
         "p_id": 1386,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 1.25 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 65.0,
@@ -1009,7 +1009,7 @@
     },
     {
         "p_id": 1337,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 1.5 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 65.0,
@@ -1023,7 +1023,7 @@
     },
     {
         "p_id": 3583,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW CAN 150.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 20.0,
@@ -1037,7 +1037,7 @@
     },
     {
         "p_id": 2212,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 1.0 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 35.0,
@@ -1051,7 +1051,7 @@
     },
     {
         "p_id": 1397,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 2.25 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 99.0,
@@ -1065,7 +1065,7 @@
     },
     {
         "p_id": 1009,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW RGP 200.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 10.0,
@@ -1079,7 +1079,7 @@
     },
     {
         "p_id": 1424,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW CAN 250.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 20.0,
@@ -1093,7 +1093,7 @@
     },
     {
         "p_id": 1467,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 15.0,
@@ -1107,7 +1107,7 @@
     },
     {
         "p_id": 2700,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 2.0 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 65.0,
@@ -1121,7 +1121,7 @@
     },
     {
         "p_id": 1115,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW RGP 300.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 25.0,
@@ -1135,7 +1135,7 @@
     },
     {
         "p_id": 1942,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 300.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -1149,7 +1149,7 @@
     },
     {
         "p_id": 4254,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW CAN 300.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 30.0,
@@ -1163,7 +1163,7 @@
     },
     {
         "p_id": 1698,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW CAN 330.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 60.0,
@@ -1177,7 +1177,7 @@
     },
     {
         "p_id": 1910,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 330.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -1191,7 +1191,7 @@
     },
     {
         "p_id": 3122,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 400.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -1205,7 +1205,7 @@
     },
     {
         "p_id": 1880,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 60.0,
@@ -1219,7 +1219,7 @@
     },
     {
         "p_id": 2024,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 600.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -1233,7 +1233,7 @@
     },
     {
         "p_id": 3116,
-        "productName": "MOUNTAIN DEW",
+        "productName": "MOUNTAIN DEW PET 750.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 38.0,
@@ -1247,7 +1247,7 @@
     },
     {
         "p_id": 4367,
-        "productName": "MOUNTAIN DEW ICE",
+        "productName": "MOUNTAIN DEW ICE PET 1.25 L",
         "piecesPerCase": 15,
         "category": "PET",
         "price": 50.0,
@@ -1261,7 +1261,7 @@
     },
     {
         "p_id": 4248,
-        "productName": "MOUNTAIN DEW ICE",
+        "productName": "MOUNTAIN DEW ICE PET 2.25 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 90.0,
@@ -1275,7 +1275,7 @@
     },
     {
         "p_id": 1898,
-        "productName": "MOUNTAIN DEW ICE",
+        "productName": "MOUNTAIN DEW ICE PET 250.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -1289,7 +1289,7 @@
     },
     {
         "p_id": 4241,
-        "productName": "MOUNTAIN DEW ICE",
+        "productName": "MOUNTAIN DEW ICE PET 600.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -1303,7 +1303,7 @@
     },
     {
         "p_id": 1085,
-        "productName": "NIMBOOZ MASALA SODA",
+        "productName": "NIMBOOZ MASALA SODA RGP 200.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 10.0,
@@ -1317,7 +1317,7 @@
     },
     {
         "p_id": 4977,
-        "productName": "NIMBOOZ MASALA SODA",
+        "productName": "NIMBOOZ MASALA SODA PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -1331,7 +1331,7 @@
     },
     {
         "p_id": 1943,
-        "productName": "NIMBOOZ MASALA SODA",
+        "productName": "NIMBOOZ MASALA SODA PET 300.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -1345,7 +1345,7 @@
     },
     {
         "p_id": 4105,
-        "productName": "NIMBOOZ MASALA SODA",
+        "productName": "NIMBOOZ MASALA SODA PET 330.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -1359,7 +1359,7 @@
     },
     {
         "p_id": 2392,
-        "productName": "NIMBOOZ MASALA SODA",
+        "productName": "NIMBOOZ MASALA SODA PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 32.0,
@@ -1373,7 +1373,7 @@
     },
     {
         "p_id": 2325,
-        "productName": "NIMBOOZ MASALA SODA",
+        "productName": "NIMBOOZ MASALA SODA PET 600.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -1387,7 +1387,7 @@
     },
     {
         "p_id": 2294,
-        "productName": "PEPSI",
+        "productName": "PEPSI PET 1.25 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 52.0,
@@ -1401,7 +1401,7 @@
     },
     {
         "p_id": 4991,
-        "productName": "PEPSI",
+        "productName": "PEPSI CAN 250.0 ml",
         "piecesPerCase": 6,
         "category": "CAN",
         "price": 99.0,
@@ -1415,7 +1415,7 @@
     },
     {
         "p_id": 1944,
-        "productName": "PEPSI",
+        "productName": "PEPSI PET 300.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -1429,7 +1429,7 @@
     },
     {
         "p_id": 4781,
-        "productName": "PEPSI BLACK",
+        "productName": "PEPSI BLACK PET 1.5 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 50.0,
@@ -1443,7 +1443,7 @@
     },
     {
         "p_id": 4786,
-        "productName": "PEPSI BLACK",
+        "productName": "PEPSI BLACK CAN 180.0 ml",
         "piecesPerCase": 30,
         "category": "CAN",
         "price": 30.0,
@@ -1457,7 +1457,7 @@
     },
     {
         "p_id": 1978,
-        "productName": "PEPSI BLACK",
+        "productName": "PEPSI BLACK PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -1471,7 +1471,7 @@
     },
     {
         "p_id": 3537,
-        "productName": "PEPSI BLACK",
+        "productName": "PEPSI BLACK CAN 250.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 25.0,
@@ -1485,7 +1485,7 @@
     },
     {
         "p_id": 4738,
-        "productName": "PEPSI BLACK",
+        "productName": "PEPSI BLACK CAN 300.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 60.0,
@@ -1499,7 +1499,7 @@
     },
     {
         "p_id": 7142,
-        "productName": "PEPSI BLACK",
+        "productName": "PEPSI BLACK CAN 330.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 60.0,
@@ -1513,7 +1513,7 @@
     },
     {
         "p_id": 1994,
-        "productName": "PEPSI BLACK",
+        "productName": "PEPSI BLACK PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -1527,7 +1527,7 @@
     },
     {
         "p_id": 4782,
-        "productName": "PEPSI BLACK",
+        "productName": "PEPSI BLACK PET 600.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -1541,7 +1541,7 @@
     },
     {
         "p_id": 1380,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 1.25 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 65.0,
@@ -1555,7 +1555,7 @@
     },
     {
         "p_id": 1335,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 1.5 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 65.0,
@@ -1569,7 +1569,7 @@
     },
     {
         "p_id": 3582,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA CAN 150.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 20.0,
@@ -1583,7 +1583,7 @@
     },
     {
         "p_id": 2210,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 1.0 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 35.0,
@@ -1597,7 +1597,7 @@
     },
     {
         "p_id": 1398,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 2.25 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 99.0,
@@ -1611,7 +1611,7 @@
     },
     {
         "p_id": 1000,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA RGP 200.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 8.0,
@@ -1625,7 +1625,7 @@
     },
     {
         "p_id": 1425,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA CAN 250.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 20.0,
@@ -1639,7 +1639,7 @@
     },
     {
         "p_id": 1464,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 15.0,
@@ -1653,7 +1653,7 @@
     },
     {
         "p_id": 1549,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 295.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 49.0,
@@ -1667,7 +1667,7 @@
     },
     {
         "p_id": 2498,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 2.0 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 65.0,
@@ -1681,7 +1681,7 @@
     },
     {
         "p_id": 1113,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA RGP 300.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 25.0,
@@ -1695,7 +1695,7 @@
     },
     {
         "p_id": 4253,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA CAN 300.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 30.0,
@@ -1709,7 +1709,7 @@
     },
     {
         "p_id": 1699,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA CAN 330.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 60.0,
@@ -1723,7 +1723,7 @@
     },
     {
         "p_id": 1911,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 330.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -1737,7 +1737,7 @@
     },
     {
         "p_id": 3119,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 400.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -1751,7 +1751,7 @@
     },
     {
         "p_id": 4168,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 475.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 60.0,
@@ -1765,7 +1765,7 @@
     },
     {
         "p_id": 1871,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 60.0,
@@ -1779,7 +1779,7 @@
     },
     {
         "p_id": 1888,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 600.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 30.0,
@@ -1793,7 +1793,7 @@
     },
     {
         "p_id": 3113,
-        "productName": "PEPSI COLA",
+        "productName": "PEPSI COLA PET 750.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 38.0,
@@ -1807,7 +1807,7 @@
     },
     {
         "p_id": 3224,
-        "productName": "SLICE MANGO",
+        "productName": "SLICE MANGO PET 1.2 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 55.0,
@@ -1821,7 +1821,7 @@
     },
     {
         "p_id": 3376,
-        "productName": "SLICE MANGO",
+        "productName": "SLICE MANGO PET 1.75 L",
         "piecesPerCase": 9,
         "category": "PET",
         "price": 85.0,
@@ -1835,7 +1835,7 @@
     },
     {
         "p_id": 3581,
-        "productName": "SLICE MANGO",
+        "productName": "SLICE MANGO TETRA 125.0 ml",
         "piecesPerCase": 40,
         "category": "TETRA",
         "price": 10.0,
@@ -1849,7 +1849,7 @@
     },
     {
         "p_id": 3218,
-        "productName": "SLICE MANGO",
+        "productName": "SLICE MANGO TETRA 200.0 ml",
         "piecesPerCase": 24,
         "category": "TETRA",
         "price": 12.0,
@@ -1863,7 +1863,7 @@
     },
     {
         "p_id": 3240,
-        "productName": "SLICE MANGO",
+        "productName": "SLICE MANGO RGP 200.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 10.0,
@@ -1877,7 +1877,7 @@
     },
     {
         "p_id": 3283,
-        "productName": "SLICE MANGO",
+        "productName": "SLICE MANGO RGP 250.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 14.0,
@@ -1891,7 +1891,7 @@
     },
     {
         "p_id": 3268,
-        "productName": "SLICE MANGO",
+        "productName": "SLICE MANGO PET 350.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -1905,7 +1905,7 @@
     },
     {
         "p_id": 3213,
-        "productName": "SLICE MANGO",
+        "productName": "SLICE MANGO PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 25.0,
@@ -1919,7 +1919,7 @@
     },
     {
         "p_id": 3293,
-        "productName": "SLICE MANGO",
+        "productName": "SLICE MANGO PET 600.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 32.0,
@@ -1933,7 +1933,7 @@
     },
     {
         "p_id": 4149,
-        "productName": "STING",
+        "productName": "STING RGP 200.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 15.0,
@@ -1947,7 +1947,7 @@
     },
     {
         "p_id": 1886,
-        "productName": "STING",
+        "productName": "STING CAN 250.0 ml",
         "piecesPerCase": 24,
         "category": "CAN",
         "price": 35.0,
@@ -1961,7 +1961,7 @@
     },
     {
         "p_id": 1922,
-        "productName": "STING",
+        "productName": "STING PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -1975,7 +1975,7 @@
     },
     {
         "p_id": 4044,
-        "productName": "STING",
+        "productName": "STING PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -1989,7 +1989,7 @@
     },
     {
         "p_id": 4785,
-        "productName": "STING BLUE",
+        "productName": "STING BLUE PET 250.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2003,7 +2003,7 @@
     },
     {
         "p_id": 2618,
-        "productName": "TEEM SODA",
+        "productName": "TEEM SODA RGP 300.0 ml",
         "piecesPerCase": 24,
         "category": "RGP",
         "price": 4.5,
@@ -2017,7 +2017,7 @@
     },
     {
         "p_id": 1912,
-        "productName": "TEEM SODA",
+        "productName": "TEEM SODA PET 330.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 10.0,
@@ -2031,7 +2031,7 @@
     },
     {
         "p_id": 3354,
-        "productName": "TROPICANA MIX FRUIT",
+        "productName": "TROPICANA MIX FRUIT PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 40.0,
@@ -2045,7 +2045,7 @@
     },
     {
         "p_id": 8400,
-        "productName": "TROPICANA APPLE",
+        "productName": "TROPICANA APPLE TETRA 1.0 L",
         "piecesPerCase": 12,
         "category": "TETRA",
         "price": 120.0,
@@ -2059,7 +2059,7 @@
     },
     {
         "p_id": 3619,
-        "productName": "TROPICANA APPLE",
+        "productName": "TROPICANA APPLE TETRA 200.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2073,7 +2073,7 @@
     },
     {
         "p_id": 8473,
-        "productName": "TROPICANA APPLE",
+        "productName": "TROPICANA APPLE PET 200.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -2087,7 +2087,7 @@
     },
     {
         "p_id": 8406,
-        "productName": "TROPICANA GRAPE",
+        "productName": "TROPICANA GRAPE TETRA 1.0 L",
         "piecesPerCase": 12,
         "category": "TETRA",
         "price": 120.0,
@@ -2101,7 +2101,7 @@
     },
     {
         "p_id": 8407,
-        "productName": "TROPICANA MIX FRUIT",
+        "productName": "TROPICANA MIX FRUIT TETRA 1.0 L",
         "piecesPerCase": 12,
         "category": "TETRA",
         "price": 120.0,
@@ -2115,7 +2115,7 @@
     },
     {
         "p_id": 3615,
-        "productName": "TROPICANA MIX FRUIT",
+        "productName": "TROPICANA MIX FRUIT TETRA 200.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2129,7 +2129,7 @@
     },
     {
         "p_id": 8472,
-        "productName": "TROPICANA MIX FRUIT",
+        "productName": "TROPICANA MIX FRUIT PET 200.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -2143,7 +2143,7 @@
     },
     {
         "p_id": 8409,
-        "productName": "TROPICANA ORANGE",
+        "productName": "TROPICANA ORANGE TETRA 1.0 L",
         "piecesPerCase": 12,
         "category": "TETRA",
         "price": 120.0,
@@ -2157,7 +2157,7 @@
     },
     {
         "p_id": 3621,
-        "productName": "TROPICANA ORANGE",
+        "productName": "TROPICANA ORANGE TETRA 200.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2171,7 +2171,7 @@
     },
     {
         "p_id": 8474,
-        "productName": "TROPICANA ORANGE",
+        "productName": "TROPICANA ORANGE PET 200.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 30.0,
@@ -2185,7 +2185,7 @@
     },
     {
         "p_id": 8308,
-        "productName": "TROPICANA APPLE",
+        "productName": "TROPICANA APPLE PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 40.0,
@@ -2199,7 +2199,7 @@
     },
     {
         "p_id": 8319,
-        "productName": "TROPICANA APPLE",
+        "productName": "TROPICANA APPLE PET 180.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2213,7 +2213,7 @@
     },
     {
         "p_id": 8493,
-        "productName": "TROPICANA APPLE",
+        "productName": "TROPICANA APPLE PET 1.0 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 80.0,
@@ -2227,7 +2227,7 @@
     },
     {
         "p_id": 8498,
-        "productName": "TROPICANA APPLE",
+        "productName": "TROPICANA APPLE PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -2241,7 +2241,7 @@
     },
     {
         "p_id": 8323,
-        "productName": "TROPICANA CRANBERRY",
+        "productName": "TROPICANA CRANBERRY TETRA 1.0 L",
         "piecesPerCase": 12,
         "category": "TETRA",
         "price": 135.0,
@@ -2255,7 +2255,7 @@
     },
     {
         "p_id": 8411,
-        "productName": "TROPICANA GUAVA",
+        "productName": "TROPICANA GUAVA TETRA 1.0 L",
         "piecesPerCase": 12,
         "category": "TETRA",
         "price": 99.0,
@@ -2269,7 +2269,7 @@
     },
     {
         "p_id": 3655,
-        "productName": "TROPICANA GUAVA",
+        "productName": "TROPICANA GUAVA TETRA 200.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2283,7 +2283,7 @@
     },
     {
         "p_id": 8480,
-        "productName": "TROPICANA GUAVA",
+        "productName": "TROPICANA GUAVA PET 1000.0 ml",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 100.0,
@@ -2297,7 +2297,7 @@
     },
     {
         "p_id": 8307,
-        "productName": "TROPICANA GUAVA",
+        "productName": "TROPICANA GUAVA PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 40.0,
@@ -2311,7 +2311,7 @@
     },
     {
         "p_id": 8321,
-        "productName": "TROPICANA GUAVA",
+        "productName": "TROPICANA GUAVA PET 180.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2325,7 +2325,7 @@
     },
     {
         "p_id": 3681,
-        "productName": "TROPICANA GUAVA",
+        "productName": "TROPICANA GUAVA PET 200.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -2339,7 +2339,7 @@
     },
     {
         "p_id": 8500,
-        "productName": "TROPICANA GUAVA",
+        "productName": "TROPICANA GUAVA PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -2353,7 +2353,7 @@
     },
     {
         "p_id": 8519,
-        "productName": "TROPICANA APPLE",
+        "productName": "TROPICANA APPLE TETRA 125.0 ml",
         "piecesPerCase": 40,
         "category": "TETRA",
         "price": 10.0,
@@ -2367,7 +2367,7 @@
     },
     {
         "p_id": 4138,
-        "productName": "TROPICANA APPLE",
+        "productName": "TROPICANA APPLE TETRA 180.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2381,7 +2381,7 @@
     },
     {
         "p_id": 8310,
-        "productName": "TROPICANA LYCHEE",
+        "productName": "TROPICANA LYCHEE PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 40.0,
@@ -2395,7 +2395,7 @@
     },
     {
         "p_id": 8320,
-        "productName": "TROPICANA LYCHEE",
+        "productName": "TROPICANA LYCHEE PET 180.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2409,7 +2409,7 @@
     },
     {
         "p_id": 3698,
-        "productName": "TROPICANA LYCHEE",
+        "productName": "TROPICANA LYCHEE PET 200.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2423,7 +2423,7 @@
     },
     {
         "p_id": 4145,
-        "productName": "TROPICANA LYCHEE",
+        "productName": "TROPICANA LYCHEE TETRA 180.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2437,7 +2437,7 @@
     },
     {
         "p_id": 4267,
-        "productName": "TROPICANA LYCHEE",
+        "productName": "TROPICANA LYCHEE PET 250.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2451,7 +2451,7 @@
     },
     {
         "p_id": 8300,
-        "productName": "TROPICANA LYCHEE",
+        "productName": "TROPICANA LYCHEE TETRA 200.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2465,7 +2465,7 @@
     },
     {
         "p_id": 8414,
-        "productName": "TROPICANA LYCHEE",
+        "productName": "TROPICANA LYCHEE TETRA 1.0 L",
         "piecesPerCase": 12,
         "category": "TETRA",
         "price": 99.0,
@@ -2479,7 +2479,7 @@
     },
     {
         "p_id": 3673,
-        "productName": "TROPICANA MANGO",
+        "productName": "TROPICANA MANGO TETRA 200.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2493,7 +2493,7 @@
     },
     {
         "p_id": 4155,
-        "productName": "TROPICANA MANGO",
+        "productName": "TROPICANA MANGO TETRA 180.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2507,7 +2507,7 @@
     },
     {
         "p_id": 8322,
-        "productName": "TROPICANA MIX FRUIT",
+        "productName": "TROPICANA MIX FRUIT PET 180.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2521,7 +2521,7 @@
     },
     {
         "p_id": 8499,
-        "productName": "TROPICANA MIX FRUIT",
+        "productName": "TROPICANA MIX FRUIT PET 250.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 20.0,
@@ -2535,7 +2535,7 @@
     },
     {
         "p_id": 8483,
-        "productName": "TROPICANA MIX FRUIT",
+        "productName": "TROPICANA MIX FRUIT PET 1000.0 ml",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 100.0,
@@ -2549,7 +2549,7 @@
     },
     {
         "p_id": 8478,
-        "productName": "TROPICANA ORANGE",
+        "productName": "TROPICANA ORANGE PET 1.0 L",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 110.0,
@@ -2563,7 +2563,7 @@
     },
     {
         "p_id": 8491,
-        "productName": "TROPICANA ORANGE",
+        "productName": "TROPICANA ORANGE PET 1000.0 ml",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 80.0,
@@ -2577,7 +2577,7 @@
     },
     {
         "p_id": 8317,
-        "productName": "TROPICANA ORANGE",
+        "productName": "TROPICANA ORANGE PET 180.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2591,7 +2591,7 @@
     },
     {
         "p_id": 4153,
-        "productName": "TROPICANA ORANGE",
+        "productName": "TROPICANA ORANGE TETRA 180.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2605,7 +2605,7 @@
     },
     {
         "p_id": 8492,
-        "productName": "TROPICANA POMEGRANATE",
+        "productName": "TROPICANA POMEGRANATE PET 1000.0 ml",
         "piecesPerCase": 12,
         "category": "PET",
         "price": 80.0,
@@ -2619,7 +2619,7 @@
     },
     {
         "p_id": 4151,
-        "productName": "TROPICANA POMEGRANATE",
+        "productName": "TROPICANA POMEGRANATE TETRA 180.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2633,7 +2633,7 @@
     },
     {
         "p_id": 8316,
-        "productName": "TROPICANA POMEGRANATE",
+        "productName": "TROPICANA POMEGRANATE PET 200.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2647,7 +2647,7 @@
     },
     {
         "p_id": 8421,
-        "productName": "TROPICANA POMEGRANATE",
+        "productName": "TROPICANA POMEGRANATE TETRA 1.0 L",
         "piecesPerCase": 12,
         "category": "TETRA",
         "price": 110.0,
@@ -2661,7 +2661,7 @@
     },
     {
         "p_id": 3651,
-        "productName": "TROPICANA POMEGRANATE",
+        "productName": "TROPICANA POMEGRANATE TETRA 200.0 ml",
         "piecesPerCase": 30,
         "category": "TETRA",
         "price": 20.0,
@@ -2675,7 +2675,7 @@
     },
     {
         "p_id": 8318,
-        "productName": "TROPICANA POMEGRANATE",
+        "productName": "TROPICANA POMEGRANATE PET 180.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
@@ -2689,7 +2689,7 @@
     },
     {
         "p_id": 3689,
-        "productName": "TROPICANA POMEGRANATE",
+        "productName": "TROPICANA POMEGRANATE PET 500.0 ml",
         "piecesPerCase": 24,
         "category": "PET",
         "price": 40.0,
@@ -2703,7 +2703,7 @@
     },
     {
         "p_id": 4268,
-        "productName": "TROPICANA POMEGRANATE",
+        "productName": "TROPICANA POMEGRANATE PET 250.0 ml",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20.0,
