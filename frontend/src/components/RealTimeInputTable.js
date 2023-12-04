@@ -12,6 +12,7 @@ import {
   Autocomplete
 } from '@mui/material';
 import { IoMdAdd, IoMdClose } from 'react-icons/io';
+import CustomButton from './CustomButton';
 
 const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
   const [tableData, setTableData] = tableState;
@@ -145,13 +146,12 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
           ))}
         </TableBody>
       </Table>
-      <button
-        className='flex flex-row gap-2 items-center font-semibold rounded-xl text-orange-700 bg-orange-50 w-fit px-4 py-3 shadow-md m-4'
+      <CustomButton
+        className={'!text-sm m-4'}
         onClick={handleAddRow}
-      >
-        <IoMdAdd />
-        {'Add Row'}
-      </button>
+        icon={<IoMdAdd />}
+        text={'Add Row'}
+      />
     </TableContainer>
   );
 };

@@ -3,15 +3,17 @@ import { useNavigate, Outlet } from 'react-router-dom';
 import { MdDashboard, MdOutlineSell, MdInventory } from "react-icons/md";
 import { BiSolidPurchaseTag } from "react-icons/bi";
 import { FaMoneyCheck, FaUsers, FaMoneyCheckAlt } from "react-icons/fa";
-import { IoCalendarOutline, IoSearch } from "react-icons/io5";
+import { IoCalendarOutline } from "react-icons/io5";
 
 const Navigation = () => {
+  const navigate = useNavigate();
+
   return (
     <div className='flex flex-col gap-12 py-8 w-screen'>
-      <div className='flex flex-row gap-2 items-center pl-2 pr-12'>
+      <button className='flex flex-row gap-2 items-center pl-2 pr-12' onClick={() => { navigate('/') }}>
         <img src="https://static.vecteezy.com/system/resources/thumbnails/004/334/170/small/hand-drawn-smoothie-cocktail-element-vector.jpg" alt="Juice" className='w-16' />
         <p className="text-4xl font-semibold text-orange-800 font-[Poppins] whitespace-nowrap tracking-tight">Essha Traders</p>
-      </div>
+      </button>
       <div className='flex flex-row gap-6 w-full'>
         <div className='flex flex-col pl-4 w-1/5'>
           <NavButton title='Dashboard' link='/' icon={<MdDashboard />} />
@@ -34,10 +36,11 @@ const Navigation = () => {
 
 const NavButton = ({ title, link, icon }) => {
   const navigate = useNavigate();
+  const loc = window.location.pathname;
 
   return (
     <button
-      className={`p-2 rounded-xl text-left text-lg flex flex-row items-center gap-3 ${window.location.pathname === link ? 'text-orange-700 font-semibold bg-orange-100' : 'text-gray-700 font-medium'}`}
+      className={`p-2 rounded-xl text-left text-lg flex flex-row items-center gap-3 ${((loc === link) || (link !== '/' && loc.startsWith(link))) ? 'text-orange-700 font-semibold bg-orange-100' : 'text-gray-700 font-medium'}`}
       onClick={() => navigate(link)}
     >
       {icon && React.cloneElement(icon)} {title}
