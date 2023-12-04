@@ -88,11 +88,7 @@ const AddEditPurchaseScreen = () => {
               <DatePicker
                 value={date}
                 onChange={(newValue) => setDate(newValue)}
-                sx={{
-                  '& .MuiOutlinedInput-root': {
-                    borderRadius: 3, // Adjust the border radius as needed
-                  },
-                }}
+                sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
                 label='Date'
                 format="DD-MMM-YYYY"
                 className='w-full'

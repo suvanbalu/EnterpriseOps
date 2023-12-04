@@ -19,13 +19,12 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import SearchIcon from '@mui/icons-material/Search';
 import { MdOutlineEdit, MdDelete } from "react-icons/md";
 import { FaArrowUpShortWide, FaArrowDownWideShort } from "react-icons/fa6";
+import { IoMdClose } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
 
-import Calendar from '@mui/icons-material/Event';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
-import { SingleInputDateRangeField } from '@mui/x-date-pickers-pro/SingleInputDateRangeField';
+import { DatePicker } from '@mui/x-date-pickers';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import dayjs from 'dayjs';
 
@@ -36,7 +35,8 @@ const CollapsibleTable = ({ data }) => {
   const [innerSortBy, setInnerSortBy] = useState('');
   const [innerSortOrder, setInnerSortOrder] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
-  const [dateRange, setDateRange] = useState();
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
   const navigate = useNavigate();
 
   const handleToggleCollapse = (index) => {
@@ -68,17 +68,17 @@ const CollapsibleTable = ({ data }) => {
   const filteredData = data
     .filter((row) => {
       if (!searchQuery) {
-        const isInRange = (!dateRange || dateRange.length === 0 || (
-          (dayjs(row.date).isSame(dateRange[0]) || dayjs(row.date).isAfter(dateRange[0])) &&
-          (dayjs(row.date).isSame(dateRange[1]) || dayjs(row.date).isBefore(dateRange[1]))
+        const isInRange = (!startDate || !endDate || (
+          (dayjs(row.date).isSame(startDate) || dayjs(row.date).isAfter(startDate)) &&
+          (dayjs(row.date).isSame(endDate) || dayjs(row.date).isBefore(endDate))
         ));
         return isInRange;
       }
 
       const searchString = searchQuery.toLowerCase();
-      const isInRange = (!dateRange || dateRange.length === 0 || (
-        (dayjs(row.date).isSame(dateRange[0]) || dayjs(row.date).isAfter(dateRange[0])) &&
-        (dayjs(row.date).isSame(dateRange[1]) || dayjs(row.date).isBefore(dateRange[1]))
+      const isInRange = (!startDate || !endDate || (
+        (dayjs(row.date).isSame(startDate) || dayjs(row.date).isAfter(startDate)) &&
+        (dayjs(row.date).isSame(endDate) || dayjs(row.date).isBefore(endDate))
       ));
 
       return (
@@ -131,7 +131,7 @@ const CollapsibleTable = ({ data }) => {
 
   return (
     <div className='flex flex-col gap-6'>
-      <div className='flex flex-row gap-12 justify-between items-center'>
+      <div className='flex flex-row gap-6 justify-between items-center'>
         <TextField
           label="Search"
           variant="outlined"
@@ -149,26 +149,47 @@ const CollapsibleTable = ({ data }) => {
           }}
         />
 
-        <div className='w-1/3'>
+        <div className='w-1/2 flex flex-row gap-2 items-center'>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DemoContainer components={['SingleInputDateRangeField']}>
-              <DateRangePicker
-                slots={{ field: SingleInputDateRangeField }}
-                slotProps={{
-                  textField: {
-                    InputProps: {
-                      endAdornment: <Calendar />,
-                      sx: { borderRadius: 3 }
-                    }
-                  }
-                }}
-                value={dateRange}
-                onChange={(newValue) => setDateRange(newValue)}
-                format='DD-MMM-YYYY'
-                label='Date Range Filter'
+            <DemoContainer components={['DatePicker']}>
+              <DatePicker
+                value={startDate}
+                onChange={(newValue) => setStartDate(newValue)}
+                sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
+                label='Start Date'
+                format="DD-MMM-YYYY"
+                className='w-1/2'
               />
             </DemoContainer>
           </LocalizationProvider>
+
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={['DatePicker']}>
+              <DatePicker
+                value={endDate}
+                onChange={(newValue) => setEndDate(newValue)}
+                disabled={!startDate}
+                minDate={startDate}
+                sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
+                label='End Date'
+                format="DD-MMM-YYYY"
+                className='w-1/2'
+              />
+            </DemoContainer>
+          </LocalizationProvider>
+
+          <div className='w-10'>
+            {(startDate || endDate) && (
+              <button
+                onClick={() => {
+                  setStartDate(null);
+                  setEndDate(null);
+                }}
+                className='text-xl hover:text-red-500 mt-2'>
+                <IoMdClose />
+              </button>
+            )}
+          </div>
         </div>
 
         <div className='flex flex-col gap-1 text-right w-1/6'>
