@@ -31,7 +31,9 @@ import HighlightedNumber from './HighlightedNumber';
 import axios from 'axios';
 import utc from 'dayjs/plugin/utc';
 import { PURCHASE_URL } from '../API/calls';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
 
+dayjs.extend(customParseFormat)
 dayjs.extend(utc);
 
 const CollapsibleTable = ({ data }) => {
@@ -134,7 +136,6 @@ const CollapsibleTable = ({ data }) => {
     'Rate': 'rate',
     'Amount': 'amount'
   }
-
   return (
     <div className='flex flex-col gap-6'>
       <div className='flex flex-row gap-6 justify-between items-center'>
@@ -257,7 +258,8 @@ const CollapsibleTable = ({ data }) => {
                   <TableRow>
                     <TableCell>{index + 1}</TableCell>
                     <TableCell>{row.billno}</TableCell>
-                    <TableCell>{dayjs(row.date).local().format('DD-MMM-YYYY')}</TableCell>
+                    {console.log(dayjs(row.date))}
+                    <TableCell>{dayjs(row.date,'M/D/YYYY, h:mm:ss a').format('DD-MMM-YYYY')}</TableCell>
                     <TableCell>{row.totalAmount}</TableCell>
                     <TableCell>
                       <div className='flex items-center gap-2'>
