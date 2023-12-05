@@ -89,7 +89,7 @@ const CollapsibleTable = ({ data }) => {
 
       return (
         (isInRange &&
-          (row.billNumber.toLowerCase().includes(searchString) ||
+          (row.billno.toLowerCase().includes(searchString) ||
             row.date.toLowerCase().includes(searchString) ||
             String(row.totalAmount).includes(searchString) ||
             row.details.some((detail) =>
