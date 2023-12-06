@@ -79,7 +79,7 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
   };
 
   return (
-    <TableContainer component={Paper} style={{ minHeight: '450px' }}>
+    <TableContainer component={Paper}>
       <Table size="small" dense>
         <TableHead>
           <TableRow>
@@ -95,18 +95,7 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
             <TableRow key={index}>
               <TableCell>
                 <FormControl fullWidth>
-                  {/* <Select
-                    disableUnderline
-                    value={row.productName}
-                    onChange={(e) => handleInputChange(index, 'productName', e.target.value)}
-                    variant="standard"
-                    size="small"
-                  >
-                    <MenuItem value="Option 1">Option 1</MenuItem>
-                    <MenuItem value="Option 2">Option 2</MenuItem>
-                  </Select> */}
                   <Autocomplete
-                    disablePortal
                     value={row.productName}
                     onChange={(event, newValue) => {
                       handleInputChange(index, 'productName', newValue);
@@ -125,7 +114,7 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
                 <TextField
                   InputProps={{ disableUnderline: true }}
                   value={row.p_id}
-                  onChange={(e) => handleInputChange(index, 'productId', e.target.value)}
+                  onChange={(e) => handleInputChange(index, 'p_id', e.target.value)}
                   variant="standard"
                   size="small"
                 />

@@ -83,7 +83,7 @@ const AddEditPurchaseScreen = () => {
         <p className='text-2xl text-orange-700 font-semibold'>{`${edit ? 'Edit' : 'Add New'} Purchase`}</p>
       </div>
 
-      <div className='flex flex-row mt-8 items-center gap-8 w-full'>
+      <div className='flex flex-row items-center gap-8 w-full'>
         <TextField
           label="Bill Number"
           variant="outlined"

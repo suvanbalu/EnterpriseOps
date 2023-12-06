@@ -133,7 +133,7 @@ const CollapsibleTable = ({ data }) => {
     'Product ID': 'p_id',
     'Product Name': 'productName',
     'Quantity': 'quantity',
-    'Rate': 'rate',
+    'Rate': 'rateOfProduct',
     'Amount': 'amount'
   }
   return (

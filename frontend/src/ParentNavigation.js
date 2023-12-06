@@ -9,7 +9,7 @@ const Navigation = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='flex flex-col gap-12 py-8 w-screen'>
+    <div className='flex flex-col gap-8 py-4 w-screen'>
       <button className='flex flex-row gap-2 items-center pl-2 pr-12' onClick={() => { navigate('/') }}>
         <img src="https://static.vecteezy.com/system/resources/thumbnails/004/334/170/small/hand-drawn-smoothie-cocktail-element-vector.jpg" alt="Juice" className='w-16' />
         <p className="text-4xl font-semibold text-orange-800 font-[Poppins] whitespace-nowrap tracking-tight">Essha Traders</p>
