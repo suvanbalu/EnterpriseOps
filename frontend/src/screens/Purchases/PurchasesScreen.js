@@ -19,6 +19,30 @@ const PurchasesScreen = () => {
         setFetchedData(res.data);
       })
   }, [])
+  const outerTableHeaders = {
+    'Bill Number': 'billno',
+    'Date': 'date',
+    'Total Amount': 'totalAmount'
+  };
+
+  const innerTableHeaders = {
+    'Product ID': 'p_id',
+    'Product Name': 'productName',
+    'Quantity': 'quantity',
+    'Rate': 'rateOfProduct',
+    'Amount': 'amount'
+  };
+
+  const totalAmountTitle = 'Total Purchase Amount';
+  const totalAmountFunction = (filteredData) => {
+    return filteredData.reduce((sum, row) => {
+      const rowAmount = parseFloat(row.totalAmount);
+      return isNaN(rowAmount) ? sum : sum + rowAmount;
+    }, 0);
+  };
+
+  const axiosUpdateLink = '/api/update';  // Replace with your actual update link.
+  const axiosDeleteLink = '/api/delete'; 
 
   return (
     <div className='pl-4 pr-12 flex flex-col gap-4 w-full'>
@@ -31,7 +55,16 @@ const PurchasesScreen = () => {
         />
       </div>
 
-      <CollapsibleTable data={fetchedData} />
+      {/* <CollapsibleTable data={fetchedData} /> */}
+      <CollapsibleTable
+      data={fetchedData}
+      outerTableHeaders={outerTableHeaders}
+      innerTableHeaders={innerTableHeaders}
+      collapseTitle={"Purchase Detail"}
+      totalAmountTitle={totalAmountTitle}
+      totalAmountFunction={totalAmountFunction}
+      enableDateSearch={true}  // Set to false if you want to disable date search.
+    />
 
     </div>
   )
