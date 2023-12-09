@@ -31,9 +31,26 @@ import HighlightedNumber from './HighlightedNumber';
 import axios from 'axios';
 import utc from 'dayjs/plugin/utc';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
+import { styled } from '@mui/system';
 
 dayjs.extend(customParseFormat)
 dayjs.extend(utc);
+
+const StyledTableContainer = styled(TableContainer)`
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
+    pointer-events: none;
+  }
+`;
 
 const CollapsibleTable = ({
   data,
@@ -44,6 +61,8 @@ const CollapsibleTable = ({
   innerTableTitle = '',
   metadataTitle = '',
   metadataFunction = false,
+  metadataTitle2 = '',
+  metadataFunction2 = false,
   dateQuery = false,
 }) => {
   const [openRows, setOpenRows] = useState([]);
@@ -213,175 +232,185 @@ const CollapsibleTable = ({
           />
         )}
 
+        {metadataTitle2 && metadataFunction2 && (
+          <HighlightedNumber
+            className={'text-right w-1/6'}
+            title={metadataTitle2}
+            value={metadataFunction2(filteredData)}
+          />
+        )}
+
         <HighlightedNumber
           className={'text-right w-1/6'}
           title={'Total Entries'}
           value={Object.keys(filteredData).length}
         />
-
       </div>
-      <TableContainer component={Paper}>
-        <Table size="small" dense>
-          <TableHead>
-            <TableRow>
-              <TableCell style={{ fontWeight: "bold", width: 75 }}>S.No.</TableCell>
-              {
-                Object.keys(OuterTable).map((item) => (
-                  <TableCell style={{ fontWeight: "bold", width: OuterTable[item][1] }}
-                    onClick={() => handleSort(OuterTable[item][0])}
-                    className='group'
-                  >
-                    {item}
-                    {sortBy === OuterTable[item][0] ? (
-                      sortOrder === 'asc' ? <FaArrowUpShortWide className='inline-block ml-2' /> : <FaArrowDownWideShort className='inline-block ml-2' />
-                    ) : (
-                      <FaArrowUpShortWide className='hidden group-hover:inline-block ml-2 text-gray-500' />
-                    )}
-                  </TableCell>
-                ))
-              }
-              <TableCell />
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {filteredData.map((row, index) => {
-              const filteredRow = row.details && row.details
-                .sort((a, b) => {
-                  if (!innerSortBy) return 0;
 
-                  const compareValueA = a[innerSortBy];
-                  const compareValueB = b[innerSortBy];
-
-                  if (compareValueA < compareValueB) {
-                    return innerSortOrder === 'asc' ? -1 : 1;
-                  } else if (compareValueA > compareValueB) {
-                    return innerSortOrder === 'asc' ? 1 : -1;
-                  } else {
-                    return 0;
-                  }
-                });
-
-              const firstElementKey = row[OuterTable[Object.keys(OuterTable)[0]][0]];
-
-              return (
-                <React.Fragment key={index}>
-                  <TableRow>
-                    <TableCell>{index + 1}</TableCell>
-                    {Object.keys(OuterTable).map((item) => (
-                      <TableCell>{OuterTable[item][0] === 'date' ? dayjs(row.date, 'M/D/YYYY, h:mm:ss a').format('DD-MMM-YYYY') : row[OuterTable[item][0]]}</TableCell>
-                    ))}
-                    <TableCell>
-                      <div className='flex items-center gap-2'>
-                        {InnerTable && Object.keys(InnerTable).length > 0 && (
-                          <IconButton
-                            size="small"
-                            onClick={() => handleToggleCollapse(index)}
-                          >
-                            {openRows.includes(index) ? (
-                              <KeyboardArrowUpIcon />
-                            ) : (
-                              <KeyboardArrowDownIcon />
-                            )}
-                          </IconButton>
-                        )}
-                        {editUrl && (
-                          <button className='text-lg text-gray-600 hover:bg-gray-100 rounded-full p-2'
-                            onClick={() => {
-                              navigate(`${editUrl}/${firstElementKey}`)
-                            }}
-                          >
-                            <MdOutlineEdit />
-                          </button>
-                        )}
-                        {deleteUrl && (
-                          <button className='text-lg text-gray-600 hover:bg-red-100 rounded-full p-2'
-                            onClick={() => {
-                              if (window.confirm("Confirm Delete ?")) {
-
-                                axios.delete(`${deleteUrl}/${firstElementKey}`)
-                                  .then((res) => {
-                                    console.log(res)
-                                    window.location.reload();
-                                  })
-                                  .catch((err) => {
-                                    console.log(err)
-                                  })
-                              }
-                            }}
-                          >
-                            <MdDelete />
-                          </button>
-                        )}
-                      </div>
+      <StyledTableContainer component={Paper}>
+        <div className='max-h-[calc(100vh-19rem)] overflow-y-auto'>
+          <Table size="small" dense>
+            <TableHead>
+              <TableRow>
+                <TableCell style={{ fontWeight: "bold", width: 50 }}>S.No.</TableCell>
+                {
+                  Object.keys(OuterTable).map((item) => (
+                    <TableCell style={{ fontWeight: "bold", width: OuterTable[item][1] }}
+                      onClick={() => handleSort(OuterTable[item][0])}
+                      className='group'
+                    >
+                      {item}
+                      {sortBy === OuterTable[item][0] ? (
+                        sortOrder === 'asc' ? <FaArrowUpShortWide className='inline-block ml-2' /> : <FaArrowDownWideShort className='inline-block ml-2' />
+                      ) : (
+                        <FaArrowUpShortWide className='hidden group-hover:inline-block ml-2 text-gray-500' />
+                      )}
                     </TableCell>
-                  </TableRow>
+                  ))
+                }
+                <TableCell />
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {filteredData.map((row, index) => {
+                const filteredRow = row.details && row.details
+                  .sort((a, b) => {
+                    if (!innerSortBy) return 0;
 
-                  {InnerTable && Object.keys(InnerTable).length > 0 && row.details && (
+                    const compareValueA = a[innerSortBy];
+                    const compareValueB = b[innerSortBy];
+
+                    if (compareValueA < compareValueB) {
+                      return innerSortOrder === 'asc' ? -1 : 1;
+                    } else if (compareValueA > compareValueB) {
+                      return innerSortOrder === 'asc' ? 1 : -1;
+                    } else {
+                      return 0;
+                    }
+                  });
+
+                const firstElementKey = row[OuterTable[Object.keys(OuterTable)[0]][0]];
+
+                return (
+                  <React.Fragment key={index}>
                     <TableRow>
-                      <TableCell colSpan={Object.keys(OuterTable).length + 2} className='bg-gray-50'>
-                        <Collapse
-                          in={openRows.includes(index)}
-                          timeout="auto"
-                          unmountOnExit
-                        >
-                          <Box sx={{ margin: 1 }}>
-                            <Typography
-                              variant="h6"
-                              gutterBottom
-                              component="div"
-                              fontWeight="600"
-                            >
-                              {innerTableTitle}
-                            </Typography>
-                            {/* <p className='text-xl font-semibold'>Purchase Details</p> */}
-                            <Table
+                      <TableCell>{index + 1}</TableCell>
+                      {Object.keys(OuterTable).map((item) => (
+                        <TableCell>{OuterTable[item][0] === 'date' ? dayjs(row.date, 'M/D/YYYY, h:mm:ss a').format('DD-MMM-YYYY') : row[OuterTable[item][0]]}</TableCell>
+                      ))}
+                      <TableCell>
+                        <div className='flex items-center gap-2'>
+                          {InnerTable && Object.keys(InnerTable).length > 0 && (
+                            <IconButton
                               size="small"
-                              aria-label="details"
-                              dense
+                              onClick={() => handleToggleCollapse(index)}
                             >
-                              <TableHead>
-                                <TableRow>
-                                  <TableCell style={{ fontWeight: "bold", width: 100 }}>S.No.</TableCell>
-                                  {
-                                    Object.keys(InnerTable).map((item) => (
-                                      <TableCell style={{ fontWeight: "bold", width: InnerTable[item][1] }}
-                                        onClick={() => handleSort(InnerTable[item][0], true)}
-                                        className='group'
-                                      >
-                                        {item}
-                                        {innerSortBy === InnerTable[item][0] ? (
-                                          innerSortOrder === 'asc' ? <FaArrowUpShortWide className='inline-block ml-2' /> : <FaArrowDownWideShort className='inline-block ml-2' />
-                                        ) : (
-                                          <FaArrowUpShortWide className='hidden group-hover:inline-block ml-2 text-gray-500' />
-                                        )}
-                                      </TableCell>
-                                    ))
-                                  }
-                                </TableRow>
-                              </TableHead>
-                              <TableBody>
-                                {filteredRow.map((detail, detailIndex) => (
-                                  <TableRow key={detailIndex}>
-                                    <TableCell>{detailIndex + 1}</TableCell>
-                                    {Object.keys(InnerTable).map((item) => (
-                                      <TableCell>{detail[InnerTable[item][0]]}</TableCell>
-                                    ))}
-                                  </TableRow>
-                                ))}
-                              </TableBody>
-                            </Table>
-                          </Box>
-                        </Collapse>
+                              {openRows.includes(index) ? (
+                                <KeyboardArrowUpIcon />
+                              ) : (
+                                <KeyboardArrowDownIcon />
+                              )}
+                            </IconButton>
+                          )}
+                          {editUrl && (
+                            <button className='text-lg text-gray-600 hover:bg-gray-100 rounded-full p-2'
+                              onClick={() => {
+                                navigate(`${editUrl}/${firstElementKey}`)
+                              }}
+                            >
+                              <MdOutlineEdit />
+                            </button>
+                          )}
+                          {deleteUrl && (
+                            <button className='text-lg text-gray-600 hover:bg-red-100 rounded-full p-2'
+                              onClick={() => {
+                                if (window.confirm("Confirm Delete ?")) {
+
+                                  axios.delete(`${deleteUrl}/${firstElementKey}`)
+                                    .then((res) => {
+                                      console.log(res)
+                                      window.location.reload();
+                                    })
+                                    .catch((err) => {
+                                      console.log(err)
+                                    })
+                                }
+                              }}
+                            >
+                              <MdDelete />
+                            </button>
+                          )}
+                        </div>
                       </TableCell>
                     </TableRow>
-                  )}
-                </React.Fragment>
-              )
-            }
-            )}
-          </TableBody>
-        </Table>
-      </TableContainer>
+
+                    {InnerTable && Object.keys(InnerTable).length > 0 && row.details && (
+                      <TableRow>
+                        <TableCell colSpan={Object.keys(OuterTable).length + 2} className='bg-gray-50'>
+                          <Collapse
+                            in={openRows.includes(index)}
+                            timeout="auto"
+                            unmountOnExit
+                          >
+                            <Box sx={{ margin: 1 }}>
+                              <Typography
+                                variant="h6"
+                                gutterBottom
+                                component="div"
+                                fontWeight="600"
+                              >
+                                {innerTableTitle}
+                              </Typography>
+                              {/* <p className='text-xl font-semibold'>Purchase Details</p> */}
+                              <Table
+                                size="small"
+                                aria-label="details"
+                                dense
+                              >
+                                <TableHead>
+                                  <TableRow>
+                                    <TableCell style={{ fontWeight: "bold", width: 100 }}>S.No.</TableCell>
+                                    {
+                                      Object.keys(InnerTable).map((item) => (
+                                        <TableCell style={{ fontWeight: "bold", width: InnerTable[item][1] }}
+                                          onClick={() => handleSort(InnerTable[item][0], true)}
+                                          className='group'
+                                        >
+                                          {item}
+                                          {innerSortBy === InnerTable[item][0] ? (
+                                            innerSortOrder === 'asc' ? <FaArrowUpShortWide className='inline-block ml-2' /> : <FaArrowDownWideShort className='inline-block ml-2' />
+                                          ) : (
+                                            <FaArrowUpShortWide className='hidden group-hover:inline-block ml-2 text-gray-500' />
+                                          )}
+                                        </TableCell>
+                                      ))
+                                    }
+                                  </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                  {filteredRow.map((detail, detailIndex) => (
+                                    <TableRow key={detailIndex}>
+                                      <TableCell>{detailIndex + 1}</TableCell>
+                                      {Object.keys(InnerTable).map((item) => (
+                                        <TableCell>{detail[InnerTable[item][0]]}</TableCell>
+                                      ))}
+                                    </TableRow>
+                                  ))}
+                                </TableBody>
+                              </Table>
+                            </Box>
+                          </Collapse>
+                        </TableCell>
+                      </TableRow>
+                    )}
+                  </React.Fragment>
+                )
+              }
+              )}
+            </TableBody>
+          </Table>
+        </div>
+      </StyledTableContainer>
     </div>
   );
 };

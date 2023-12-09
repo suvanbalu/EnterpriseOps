@@ -38,7 +38,6 @@ const PurchasesScreen = () => {
     'Amount': ['amount', '10vw']
   }
 
-
   const metadataFunction = (data) => {
     const totalPurchaseAmount = data.reduce((sum, row) => {
       const rowAmount = parseFloat(row.totalAmount);
