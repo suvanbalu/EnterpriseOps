@@ -143,7 +143,7 @@ const AddEditPurchaseScreen = () => {
               console.log(date.format('DD-MMM-YYYY'));
 
               if (edit) {
-                axios.put(`${PURCHASE_URL}/updateentry/${id}`, {
+                axios.put(`${PURCHASE_URL}/update-entry/${id}`, {
                   billno: billno,
                   totalAmount: totalAmount,
                   date: date.format('DD-MMM-YYYY'),
@@ -163,7 +163,7 @@ const AddEditPurchaseScreen = () => {
                     console.log(err);
                   })
               } else {
-                axios.post(`${PURCHASE_URL}/addentry`, {
+                axios.post(`${PURCHASE_URL}/add-entry`, {
                   billno: billno,
                   totalAmount: totalAmount,
                   date: date.format('DD-MMM-YYYY'),

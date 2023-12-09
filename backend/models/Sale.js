@@ -1,47 +1,40 @@
 import mongoose, { Schema, model } from "mongoose";
 
 const saleSchema = new Schema({
-  sbillno:{
-    type:String,
-    required:true,
+  sbillno: {
+    type: String,
+    required: true,
   },
   party_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Party",
+    type: String,
     required: true,
   },
   date: {
     type: Date,
     required: true,
   },
-  gstApplicable: {
-    type: Boolean,
-    required: true,
-  },
   totalAmount: {
     type: Number,
     required: true,
   },
+  credit: {
+    type: Number,
+    min: 0,
+  },
   details: [
     {
-      product_id: {
-        type: String,  
-        required: true,
-      },
-      quantity: {
-        type: {
-          case : {type:Number},
-          piece : {type:Number}
-        },
-        required: true,
-      },
-      productRate: {
-        type: Number,
-        required: true,
-      },
-      quantityType: {
+      p_id: {
         type: String,
-        enum: ["cases", "pieces"],
+        required: true,
+      },
+
+      case: 
+      { type: Number },
+      piece: 
+      { type: Number },
+
+      saleRate: {
+        type: Number,
         required: true,
       },
     },

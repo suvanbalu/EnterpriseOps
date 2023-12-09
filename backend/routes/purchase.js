@@ -8,7 +8,7 @@ dayjs.extend(customParseFormat);
 
 const router = express.Router();
 
-router.post("/addentry", async (req, res) => {
+router.post("/add-entry", async (req, res) => {
   try {
     // Iterate over each item in the details array and check if the product exists
     for (const detail of req.body.details) {
@@ -93,7 +93,7 @@ router.get("/get-bill-entry/:billno", async (req, res) => {
   }
 });
 
-router.put("/updateentry/:billno", async (req, res) => {
+router.put("/update-entry/:billno", async (req, res) => {
   try {
     // Check if the purchase exists
     const purchase = await Purchase.findOne({ billno: req.params.billno });
@@ -109,7 +109,7 @@ router.put("/updateentry/:billno", async (req, res) => {
   }
 });
 
-router.delete("/deleteentry/:billno", async (req, res) => {
+router.delete("/delete-entry/:billno", async (req, res) => {
   const { billno } = req.params;
 
   try {

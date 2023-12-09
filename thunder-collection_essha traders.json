@@ -1,0 +1,337 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "essha traders",
+    "dateExported": "2023-12-09T21:39:51.712Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "e052d8e4-52d1-405b-8f6a-8e49096c4cb0",
+            "name": "Purchase",
+            "containerId": "",
+            "created": "2023-12-09T12:58:06.008Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "6c4326af-e995-4c08-ae17-bedde3c19c17",
+            "name": "Product",
+            "containerId": "",
+            "created": "2023-12-09T12:58:06.009Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "83671997-e610-4fb3-a7cf-ca380bd1b8d7",
+            "name": "Party",
+            "containerId": "",
+            "created": "2023-12-09T19:23:36.051Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "ff339529-e890-4b85-a5ad-bfb5543c93f8",
+            "name": "Sale",
+            "containerId": "",
+            "created": "2023-12-09T20:40:00.182Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "a499aab3-620c-44ae-a91f-9ded3f82e562",
+            "name": "SaleCollection",
+            "containerId": "",
+            "created": "2023-12-09T20:40:17.773Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "97d0dbff-e8ad-46ce-9aec-55b7504ed628",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "6c4326af-e995-4c08-ae17-bedde3c19c17",
+            "name": "addproducts",
+            "url": "localhost:3001/product/addproducts",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-09T12:58:06.008Z",
+            "modified": "2023-12-09T13:00:06.055Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\r\n    {\r\n        \"p_id\": 2977,\r\n        \"productName\": \"7 UP\",\r\n        \"piecesPerCase\": 12,\r\n        \"category\": \"PET\",\r\n        \"price\": 60,\r\n        \"quantity\": 1.25,\r\n        \"unit\": \"L\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4352,\r\n        \"productName\": \"7 UP\",\r\n        \"piecesPerCase\": 9,\r\n        \"category\": \"PET\",\r\n        \"price\": 99,\r\n        \"quantity\": 2.25,\r\n        \"unit\": \"L\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1008,\r\n        \"productName\": \"7 UP\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"RGP\",\r\n        \"price\": 10,\r\n        \"quantity\": 200.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 3591,\r\n        \"productName\": \"7 UP\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"CAN\",\r\n        \"price\": 35,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1961,\r\n        \"productName\": \"7 UP\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4949,\r\n        \"productName\": \"7 UP\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 40,\r\n        \"quantity\": 750.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1742,\r\n        \"productName\": \"7 UP ZERO SUGAR\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 15,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4762,\r\n        \"productName\": \"7 UP NIMBOZE\",\r\n        \"piecesPerCase\": 40,\r\n        \"category\": \"TETRA\",\r\n        \"price\": 10,\r\n        \"quantity\": 125.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4395,\r\n        \"productName\": \"7 UP NIMBOZE\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 15,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 2846,\r\n        \"productName\": \"AQUAFINA\",\r\n        \"piecesPerCase\": 12,\r\n        \"category\": \"PET\",\r\n        \"price\": 12,\r\n        \"quantity\": 1.0,\r\n        \"unit\": \"L\",\r\n        \"SGST\": 9,\r\n        \"CGST\": 9,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 4232,\r\n        \"productName\": \"AQUAFINA\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 6,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 9,\r\n        \"CGST\": 9,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 2813,\r\n        \"productName\": \"AQUAFINA\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 10,\r\n        \"quantity\": 500.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 9,\r\n        \"CGST\": 9,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 4710,\r\n        \"productName\": \"AQUAFINA\",\r\n        \"piecesPerCase\": 9,\r\n        \"category\": \"PET\",\r\n        \"price\": 25,\r\n        \"quantity\": 2.0,\r\n        \"unit\": \"L\",\r\n        \"SGST\": 9,\r\n        \"CGST\": 9,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 8554,\r\n        \"productName\": \"CB MILK BUTTERSCOTCH\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 35,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 8636,\r\n        \"productName\": \"CB MILK CHOCOLATE\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 35,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 8635,\r\n        \"productName\": \"CB MILK COFFEE\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 35,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 8627,\r\n        \"productName\": \"CB MILK ELAICHI\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 35,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 8633,\r\n        \"productName\": \"CB MILK KESAR BADAM\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 35,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 8630,\r\n        \"productName\": \"CB MILK MANGO\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 35,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 2655,\r\n        \"productName\": \"EVERVESS SODA\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 750.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1381,\r\n        \"productName\": \"MIRINDA ORANGE\",\r\n        \"piecesPerCase\": 12,\r\n        \"category\": \"PET\",\r\n        \"price\": 60,\r\n        \"quantity\": 1.25,\r\n        \"unit\": \"L\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4351,\r\n        \"productName\": \"MIRINDA ORANGE\",\r\n        \"piecesPerCase\": 9,\r\n        \"category\": \"PET\",\r\n        \"price\": 99,\r\n        \"quantity\": 2.25,\r\n        \"unit\": \"L\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1006,\r\n        \"productName\": \"MIRINDA ORANGE\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"RGP\",\r\n        \"price\": 10,\r\n        \"quantity\": 200.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1423,\r\n        \"productName\": \"MIRINDA ORANGE\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"CAN\",\r\n        \"price\": 35,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1962,\r\n        \"productName\": \"MIRINDA ORANGE\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4950,\r\n        \"productName\": \"MIRINDA ORANGE\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 40,\r\n        \"quantity\": 750.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1009,\r\n        \"productName\": \"MOUNTAIN DEW\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"RGP\",\r\n        \"price\": 10,\r\n        \"quantity\": 200.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 3588,\r\n        \"productName\": \"MOUNTAIN DEW\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"CAN\",\r\n        \"price\": 35,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1467,\r\n        \"productName\": \"MOUNTAIN DEW\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 15,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4767,\r\n        \"productName\": \"MOUNTAIN DEW\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 400.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4951,\r\n        \"productName\": \"MOUNTAIN DEW\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 40,\r\n        \"quantity\": 750.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 3537,\r\n        \"productName\": \"PEPSI BLACK\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"CAN\",\r\n        \"price\": 35,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4782,\r\n        \"productName\": \"PEPSI BLACK\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 30,\r\n        \"quantity\": 600.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 2976,\r\n        \"productName\": \"PEPSI COLA\",\r\n        \"piecesPerCase\": 12,\r\n        \"category\": \"PET\",\r\n        \"price\": 60,\r\n        \"quantity\": 1.25,\r\n        \"unit\": \"L\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1398,\r\n        \"productName\": \"PEPSI COLA\",\r\n        \"piecesPerCase\": 9,\r\n        \"category\": \"PET\",\r\n        \"price\": 99,\r\n        \"quantity\": 2.25,\r\n        \"unit\": \"L\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 3589,\r\n        \"productName\": \"PEPSI COLA\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"CAN\",\r\n        \"price\": 20,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1005,\r\n        \"productName\": \"PEPSI COLA\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"RGP\",\r\n        \"price\": 10,\r\n        \"quantity\": 200.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1965,\r\n        \"productName\": \"PEPSI COLA\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4906,\r\n        \"productName\": \"PEPSI COLA\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 40,\r\n        \"quantity\": 750.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4175,\r\n        \"productName\": \"SLICE MANGO\",\r\n        \"piecesPerCase\": 12,\r\n        \"category\": \"PET\",\r\n        \"price\": 75,\r\n        \"quantity\": 1.2,\r\n        \"unit\": \"L\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 4197,\r\n        \"productName\": \"SLICE MANGO\",\r\n        \"piecesPerCase\": 40,\r\n        \"category\": \"TETRA\",\r\n        \"price\": 10,\r\n        \"quantity\": 125.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 4198,\r\n        \"productName\": \"SLICE MANGO\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"RGP\",\r\n        \"price\": 10,\r\n        \"quantity\": 200.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 4199,\r\n        \"productName\": \"SLICE MANGO\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 4174,\r\n        \"productName\": \"SLICE MANGO\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"PET\",\r\n        \"price\": 40,\r\n        \"quantity\": 600.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 1886,\r\n        \"productName\": \"STING\",\r\n        \"piecesPerCase\": 24,\r\n        \"category\": \"CAN\",\r\n        \"price\": 35,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 1981,\r\n        \"productName\": \"STING\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 4785,\r\n        \"productName\": \"STING BLUE\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 250.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 7,\r\n        \"CGST\": 7,\r\n        \"CESS\": 12\r\n    },\r\n    {\r\n        \"p_id\": 8325,\r\n        \"productName\": \"TROPICANA APPLE\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 30,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 8329,\r\n        \"productName\": \"TROPICANA MIX FRUIT\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 15,\r\n        \"quantity\": 200.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 8317,\r\n        \"productName\": \"TROPICANA ORANGE\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 8327,\r\n        \"productName\": \"TROPICANA GUAVA\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 15,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 8326,\r\n        \"productName\": \"TROPICANA LYCHEE\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 15,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 8318,\r\n        \"productName\": \"TROPICANA POMEGRANATE\",\r\n        \"piecesPerCase\": 30,\r\n        \"category\": \"PET\",\r\n        \"price\": 20,\r\n        \"quantity\": 180.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    },\r\n    {\r\n        \"p_id\": 8519,\r\n        \"productName\": \"TROPICANA APPLE\",\r\n        \"piecesPerCase\": 40,\r\n        \"category\": \"TETRA\",\r\n        \"price\": 10,\r\n        \"quantity\": 125.0,\r\n        \"unit\": \"ml\",\r\n        \"SGST\": 6,\r\n        \"CGST\": 6,\r\n        \"CESS\": 0\r\n    }\r\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "90509d6b-e6ff-42ea-b107-d6953ed71f35",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "e052d8e4-52d1-405b-8f6a-8e49096c4cb0",
+            "name": "purchaseadd",
+            "url": "localhost:3001/purchase/addentry",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-09T12:58:06.009Z",
+            "modified": "2023-12-09T12:58:06.009Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"billno\": \"B001\",\n  \"date\": \"15-Feb-2023\",\n  \"totalAmount\": 1200,\n  \"details\": [\n    {\n      \"p_id\": \"1379\",\n      \"quantity\": 5,\n      \"rateOfProduct\": 200\n    },\n    {\n      \"p_id\": \"1380\",\n      \"quantity\": 3,\n      \"rateOfProduct\": 300\n    }\n  ]\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0d89529e-669c-4d5f-a3bb-2cad79a524e1",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "ff339529-e890-4b85-a5ad-bfb5543c93f8",
+            "name": "addSale",
+            "url": "localhost:3001/api/sale/add-sale",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-09T20:40:02.427Z",
+            "modified": "2023-12-09T20:40:02.427Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"sbillno\": \"S001\",\n  \"party_id\": \"P001\",\n  \"date\": \"2023-12-15T12:00:00.000Z\",\n  \"totalAmount\": 1500,\n  \"credit\": 1500,\n  \"details\": [\n    {\n      \"p_id\": \"2977\",\n      \"case\": 2,\n      \"piece\": 10,\n      \"saleRate\": 15.5\n    },\n    {\n      \"p_id\": \"4352\",\n      \"case\": 1,\n      \"piece\": 8,\n      \"saleRate\": 20.25\n    }\n  ]\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b43674fe-9442-46b1-afea-9518b394bc97",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "6c4326af-e995-4c08-ae17-bedde3c19c17",
+            "name": "viewprodcuts",
+            "url": "localhost:3001/api/product/get-products",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-09T12:58:06.011Z",
+            "modified": "2023-12-09T19:25:24.040Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bd1e5aba-18e9-4934-821f-4421a1520f19",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "e052d8e4-52d1-405b-8f6a-8e49096c4cb0",
+            "name": "updatepurchase",
+            "url": "localhost:3001/api/purchase/update-entry/123",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-12-09T12:58:06.012Z",
+            "modified": "2023-12-09T19:27:09.453Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"totalAmount\": 1300,\n  \"details\": [\n    {\n      \"p_id\": \"P1001\",\n      \"quantity\": 6,\n      \"rateOfProduct\": 200\n    },\n    {\n      \"p_id\": \"P1003\",\n      \"quantity\": 2,\n      \"rateOfProduct\": 400\n    }\n  ]\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "52676762-de94-4769-af61-f7b7d9bb40af",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "ff339529-e890-4b85-a5ad-bfb5543c93f8",
+            "name": "getSales",
+            "url": "localhost:3001/api/sale/get-sales",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-09T20:40:03.561Z",
+            "modified": "2023-12-09T20:40:03.561Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e08db3ae-77a6-4f9d-83f9-c385281337c6",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "e052d8e4-52d1-405b-8f6a-8e49096c4cb0",
+            "name": "purchaseview",
+            "url": "localhost:3001/purchase/getentry",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-12-09T12:58:06.010Z",
+            "modified": "2023-12-09T12:58:06.010Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c4aaaec6-e203-458c-81b8-df23ba7f2d60",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "ff339529-e890-4b85-a5ad-bfb5543c93f8",
+            "name": "getSale",
+            "url": "localhost:3001/api/sale/get-sale/S001",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-12-09T20:40:04.542Z",
+            "modified": "2023-12-09T20:40:04.542Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f5478977-531e-4dea-880b-5e855f42fc1c",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "e052d8e4-52d1-405b-8f6a-8e49096c4cb0",
+            "name": "deletepurchase",
+            "url": "localhost:3001/purchase/deleteentry/PB003",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-12-09T12:58:06.013Z",
+            "modified": "2023-12-09T12:58:06.013Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ea6b9c87-f4f9-4b5f-8d15-1a8be77cf70c",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "6c4326af-e995-4c08-ae17-bedde3c19c17",
+            "name": "updateproducts",
+            "url": "localhost:3001/product/updateproduct/13",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-12-09T12:58:06.014Z",
+            "modified": "2023-12-09T12:58:06.014Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"p_id\": \"1379\",\n    \"piecesPerCase\": 12,\n    \"category\": \"PET\",\n    \"productName\": \"7 UP\",\n    \"price\": 65,\n    \"taxInfo\": {\n      \"CESS\": 12,\n      \"CGST\": 7,\n      \"SGST\": 7\n    }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "21745eea-c748-4bed-a7e9-880a9ee15d65",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "6c4326af-e995-4c08-ae17-bedde3c19c17",
+            "name": "deleteproduct",
+            "url": "localhost:3001/product/deleteproduct/P1001",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-12-09T12:58:06.015Z",
+            "modified": "2023-12-09T12:58:06.015Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7680f5a5-bd27-4566-9f19-23c496d0e5a6",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "83671997-e610-4fb3-a7cf-ca380bd1b8d7",
+            "name": "addParties",
+            "url": "localhost:3001/api/party/add-parties",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-12-09T19:23:47.596Z",
+            "modified": "2023-12-09T20:03:37.697Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"party_id\": \"P001\",\n    \"partyName\": \"ABC Corporation\",\n    \"route\": \"Route A\",\n    \"phoneNumber\": \"123-456-7890\",\n    \"gstApplicable\": true,\n    \"available\": true\n  },\n  {\n    \"party_id\": \"P002\",\n    \"partyName\": \"XYZ Ltd.\",\n    \"route\": \"Route B\",\n    \"phoneNumber\": \"987-654-3210\",\n    \"gstApplicable\": false,\n    \"available\": true\n  },\n  {\n    \"party_id\": \"P003\",\n    \"partyName\": \"EFG Enterprises\",\n    \"route\": \"Route C\",\n    \"phoneNumber\": \"555-123-4567\",\n    \"gstApplicable\": true,\n    \"available\": true\n  }\n]\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5f5506a7-942c-4581-ad4e-e67ae5687dc8",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "83671997-e610-4fb3-a7cf-ca380bd1b8d7",
+            "name": "getParties",
+            "url": "localhost:3001/api/party/get-parties",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-12-09T19:30:43.698Z",
+            "modified": "2023-12-09T19:30:53.508Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7aefc0ae-d2fe-4f80-b430-dac24af034c0",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "83671997-e610-4fb3-a7cf-ca380bd1b8d7",
+            "name": "getParty",
+            "url": "localhost:3001/api/party/get-party/001",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-12-09T19:31:05.301Z",
+            "modified": "2023-12-09T19:31:21.805Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f855147b-a833-4aba-8e20-7aae1a20a387",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "a499aab3-620c-44ae-a91f-9ded3f82e562",
+            "name": "addsalecollection",
+            "url": "localhost:3001/api/salescollection/add-collections",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-12-09T20:40:30.496Z",
+            "modified": "2023-12-09T21:36:43.210Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"s_billNo\": \"S001\",\r\n  \"date\": \"2023-12-10T08:00:00Z\",\r\n  \"psr\": \"John Doe\",\r\n  \"amountCollected\": 100,\r\n  \"type\": \"Cash\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cbc88e48-fc57-4014-9175-2c2b64d341e5",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "a499aab3-620c-44ae-a91f-9ded3f82e562",
+            "name": "getcollection",
+            "url": "localhost:3001/api/salescollection/get-collection/S001",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-12-09T20:57:36.892Z",
+            "modified": "2023-12-09T20:58:15.564Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5b929fad-0d52-4762-855e-69ad493e47db",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "a499aab3-620c-44ae-a91f-9ded3f82e562",
+            "name": "editcollection",
+            "url": "localhost:3001/api/salescollection/update-collection/1",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-12-09T21:04:49.174Z",
+            "modified": "2023-12-09T21:37:21.848Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"s_billNo\": \"S001\",\r\n  \"date\": \"2023-12-10T08:00:00Z\",\r\n  \"psr\": \"John Doe\",\r\n  \"amountCollected\": 200,\r\n  \"type\": \"Cash\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d354ec66-605c-42ab-8006-580209a874b4",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "a499aab3-620c-44ae-a91f-9ded3f82e562",
+            "name": "deletecollection",
+            "url": "localhost:3001/api/salescollection/delete-collection/1",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2023-12-09T21:39:06.289Z",
+            "modified": "2023-12-09T21:39:20.946Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -64,7 +64,7 @@ const PurchasesScreen = () => {
         OuterTable={OuterTable}
         InnerTable={InnerTable}
         editUrl={'/purchases/edit'}
-        deleteUrl={`${PURCHASE_URL}/deleteentry`}
+        deleteUrl={`${PURCHASE_URL}/delete-entry`}
         innerTableTitle={'Purchase Details'}
         metadataTitle={'Total Purchase Amount'}
         metadataFunction={metadataFunction}

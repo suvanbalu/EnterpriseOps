@@ -3,9 +3,11 @@ import cors from "cors";
 import { connect } from './mongo/conn.js';
 // import bodyParser from "body-parser";
 
-import sales from "./routes/salesentry.js"; 
+import sales from "./routes/sale.js"; 
 import product from "./routes/product.js";
 import purchase from "./routes/purchase.js";
+import party from "./routes/party.js";
+import salescollection from "./routes/salescollection.js";
 
 const app = express();
 const PORT = process.env.PORT||3001;
@@ -18,9 +20,11 @@ app.listen(PORT,()=>{
   console.log("Server Listening to PORT - ",PORT);
 })
 
-app.use("/sales",sales);
-app.use("/product",product);
-app.use("/purchase",purchase);
+app.use("/api/sale",sales);
+app.use("/api/product",product);
+app.use("/api/purchase",purchase);
+app.use("/api/party",party);
+app.use("/api/salescollection",salescollection);
 
 connect(function (err) {
   if (err) {

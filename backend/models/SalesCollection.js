@@ -5,12 +5,15 @@ const salesCollectionSchema = new Schema({
     type: String,
     required: true,
   },
-  date: {
-    type: Date,
-    required: true,
+  sc_id:{
+    type:Number,
   },
   psr: {
     type: String,
+    required: true,
+  },
+  date: {
+    type: Date,
     required: true,
   },
   amountCollected: {
@@ -20,9 +23,6 @@ const salesCollectionSchema = new Schema({
   type: {
     type: String,
     required: true,
-  },
-  remainingAmount: {
-    type: Number,
   },
 });
 
