@@ -2,6 +2,10 @@ import express from "express";
 import Sale from "../models/Sale.js";
 import Party from "../models/Party.js";
 import Product from "../models/Product.js";
+import dayjs from "dayjs";
+import customParseFormat from 'dayjs/plugin/customParseFormat.js';
+
+dayjs.extend(customParseFormat);
 
 const router = express.Router();
 
@@ -38,6 +42,7 @@ router.get("/get-sales", async (req, res) => {
           _id: "$sbillno",
           party_id: { $first: "$party_id" },
           party_name: { $first: "$partyData.partyName" },
+          date: { $first: { $dateToString: { format: "%m-%d-%Y", date: "$date" } } },
           route: { $first: "$partyData.route" },
           totalAmount: { $first: "$totalAmount" },
           credit: { $first: "$credit" },
@@ -102,6 +107,7 @@ router.get("/get-sale/:sbillno", async (req, res) => {
           _id: "$sbillno",
           party_id: { $first: "$party_id" },
           party_name: { $first: "$partyData.partyName" },
+          date: { $first: { $dateToString: { format: "%m-%d-%Y", date: "$date" } } },
           route: { $first: "$partyData.route" },
           totalAmount: { $first: "$totalAmount" },
           credit: { $first: "$credit" },
@@ -167,7 +173,7 @@ router.post("/add-sale", async (req, res) => {
   }
 });
 
-router.put("/update-sale",async (req,res)=>{
+router.put("/update-sale", async (req, res) => {
   const updatedData = req.body;
   const updateResult = await Sale.findOneAndUpdate({})
 })

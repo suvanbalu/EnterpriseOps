@@ -9,8 +9,8 @@ const Navigation = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='flex flex-col gap-8 py-4 w-screen'>
-      <button className='flex flex-row gap-2 items-center pl-2 pr-12' onClick={() => { navigate('/') }}>
+    <div className='flex flex-col gap-4 py-4 w-screen'>
+      <button className='flex flex-row gap-2 items-center pl-2 pr-12 w-fit' onClick={() => { navigate('/') }}>
         <img src="https://static.vecteezy.com/system/resources/thumbnails/004/334/170/small/hand-drawn-smoothie-cocktail-element-vector.jpg" alt="Juice" className='w-16' />
         <p className="text-4xl font-semibold text-orange-800 font-[Poppins] whitespace-nowrap tracking-tight">Essha Traders</p>
       </button>
@@ -22,7 +22,7 @@ const Navigation = () => {
           <NavButton title='Inventory' link='/inventory' icon={<MdInventory />} />
           <NavButton title='Financials' link='/financials' icon={<FaMoneyCheck />} />
           <NavButton title='Parties' link='/parties' icon={<FaUsers />} />
-          <NavButton title='Sales Collection' link='/sales-collection' icon={<FaMoneyCheckAlt />} />
+          <NavButton title='Sales Collection' link='/collection' icon={<FaMoneyCheckAlt />} />
           <NavButton title='Yearly Summary' link='/yearly-summary' icon={<IoCalendarOutline />} />
         </div>
 

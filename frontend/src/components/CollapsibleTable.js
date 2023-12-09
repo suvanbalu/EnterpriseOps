@@ -248,8 +248,8 @@ const CollapsibleTable = ({
       </div>
 
       <StyledTableContainer component={Paper}>
-        <div className='max-h-[calc(100vh-19rem)] overflow-y-auto'>
-          <Table size="small" dense>
+        <div className='max-h-[calc(100vh-18rem)] overflow-y-auto'>
+          <Table size="small" dense stickyHeader>
             <TableHead>
               <TableRow>
                 <TableCell style={{ fontWeight: "bold", width: 50 }}>S.No.</TableCell>
@@ -296,7 +296,7 @@ const CollapsibleTable = ({
                     <TableRow>
                       <TableCell>{index + 1}</TableCell>
                       {Object.keys(OuterTable).map((item) => (
-                        <TableCell>{OuterTable[item][0] === 'date' ? dayjs(row.date, 'M/D/YYYY, h:mm:ss a').format('DD-MMM-YYYY') : row[OuterTable[item][0]]}</TableCell>
+                        <TableCell>{OuterTable[item][0] === 'date' ? dayjs(row.date, 'MM/DD/YYYY').format('DD-MMM-YYYY') : row[OuterTable[item][0]]}</TableCell>
                       ))}
                       <TableCell>
                         <div className='flex items-center gap-2'>
@@ -392,7 +392,7 @@ const CollapsibleTable = ({
                                     <TableRow key={detailIndex}>
                                       <TableCell>{detailIndex + 1}</TableCell>
                                       {Object.keys(InnerTable).map((item) => (
-                                        <TableCell>{detail[InnerTable[item][0]]}</TableCell>
+                                        <TableCell>{InnerTable[item][0] === 'date' ? dayjs(detail[InnerTable[item][0]], 'MM/DD/YYYY').format('DD-MMM-YYYY') : detail[InnerTable[item][0]]}</TableCell>
                                       ))}
                                     </TableRow>
                                   ))}

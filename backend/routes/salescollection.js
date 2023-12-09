@@ -16,16 +16,16 @@ router.post("/add-collections", async (req, res) => {
         return res.status(404).json({ error: `Sale not found with the provided sbillno: ${s_billNo}` });
       }
 
-      
+
       const updatedCredit = existingSale.credit - amountCollected;
       if (updatedCredit < 0) {
         return res.status(400).json({ error: "Invalid credit value after subtraction" });
       }
 
-      
+
       const lastCollection = await SalesCollection.findOne({}, {}, { sort: { sc_id: -1 } });
 
-      
+
       const newScId = lastCollection ? lastCollection.sc_id + 1 : 0;
 
       const newSalesCollection = new SalesCollection({
@@ -52,7 +52,40 @@ router.post("/add-collections", async (req, res) => {
   }
 });
 
+router.get("/get-collections", async (req, res) => {
+  try {
+    const collections = await SalesCollection.aggregate([
+      {
+        $group: {
+          _id: "$s_billNo",
+          psr: { $first: "$psr" },
+          details: {
+            $push: {
+              sc_id: "$sc_id",
+              date: {
+                $dateToString: {
+                  format: "%m/%d/%Y",
+                  date: "$date",
+                },
+              },
+              amountCollected: "$amountCollected",
+              type: "$type",
+            },
+          },
+        },
+      },
+    ]);
 
+    if (collections.length === 0) {
+      return res.status(404).json({ error: "No collections found for the provided s_billNo" });
+    }
+
+    res.json(collections);
+  } catch (error) {
+    console.error("Error getting collections:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 
 router.get("/get-collection/:s_billNo", async (req, res) => {
   try {
@@ -71,7 +104,12 @@ router.get("/get-collection/:s_billNo", async (req, res) => {
           details: {
             $push: {
               sc_id: "$sc_id",
-              date: "$date",
+              date: {
+                $dateToString: {
+                  format: "%m/%d/%Y",
+                  date: "$date",
+                },
+              },
               amountCollected: "$amountCollected",
               type: "$type",
             },
@@ -84,7 +122,7 @@ router.get("/get-collection/:s_billNo", async (req, res) => {
       return res.status(404).json({ error: "No collections found for the provided s_billNo" });
     }
 
-    res.json(collections[0]); 
+    res.json(collections[0]);
   } catch (error) {
     console.error("Error getting collections:", error);
     res.status(500).json({ error: "Internal Server Error" });
@@ -96,20 +134,20 @@ router.put("/update-collection/:sc_id", async (req, res) => {
     const { sc_id } = req.params;
     const { amountCollected } = req.body;
 
-    
+
     const existingCollection = await SalesCollection.findOne({ sc_id });
 
     if (!existingCollection) {
       return res.status(404).json({ error: `SalesCollection not found with the provided sc_id: ${sc_id}` });
     }
 
-    
+
     const creditAdjustment = existingCollection.amountCollected - amountCollected;
-    console.log("credit",creditAdjustment);
-    
+    console.log("credit", creditAdjustment);
+
     await SalesCollection.updateOne({ sc_id }, { $set: { amountCollected } });
 
-    
+
     await Sale.updateOne(
       { sbillno: existingCollection.s_billNo },
       { $inc: { credit: creditAdjustment } }

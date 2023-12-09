@@ -6,6 +6,7 @@ import DashboardScreen from './screens/DashboardScreen';
 import PurchasesRoutes from './screens/Purchases/PurchaseRoutes';
 import SalesRoutes from './screens/Sales/SalesRoutes';
 import InventoryRoutes from './screens/Inventory/InventoryRoutes';
+import SalesCollectionRoutes from './screens/SalesCollection/SalesCollectionRoutes';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="purchases/*" element={<PurchasesRoutes />} />
           <Route path="sales/*" element={<SalesRoutes />} />
           <Route path="inventory/*" element={<InventoryRoutes />} />
+          <Route path="collection/*" element={<SalesCollectionRoutes />} />
         </Route>
       </Routes>
     </Router>
