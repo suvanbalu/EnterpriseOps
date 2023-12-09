@@ -46,7 +46,7 @@ router.get("/get-all-entry", async (req, res) => {
       const details = await Promise.all(purchase.details.map(async detail => {
         const product = await Product.findOne({ p_id: detail.p_id });
         return {
-          productName: product ? product.productName : "Unknown",
+          productName: product ? `${product.productName} ${product.category} ${product.quantity} ${product.unit}` : "Unknown",
           p_id: product ? product.p_id : "Unknown",
           quantity: detail.quantity,
           rateOfProduct: detail.rateOfProduct
@@ -74,7 +74,7 @@ router.get("/get-bill-entry/:billno", async (req, res) => {
     const details = await Promise.all(purchase.details.map(async detail => {
       const product = await Product.findOne({ p_id: detail.p_id });
       return {
-        productName: product ? product.productName : "Unknown",
+        productName: product ? `${product.productName} ${product.category} ${product.quantity} ${product.unit}` : "Unknown",
         p_id: product ? product.p_id : "Unknown",
         quantity: detail.quantity,
         rateOfProduct: detail.rateOfProduct

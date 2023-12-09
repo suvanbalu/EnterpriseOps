@@ -26,7 +26,7 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
     newData[index][field] = value;
 
     if (field === 'productName') {
-      const element = products.filter((item) => item.productName === value)[0]
+      const element = products.filter((item) => `${item.productName} ${item.category} ${item.quantity} ${item.unit}` === value)[0]
       console.log(element)
       newData[index].p_id = element?.p_id;
       newData[index].rateOfProduct = element?.price;
@@ -41,10 +41,10 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
   };
 
   useEffect(() => {
-    axios.get(`${PRODUCT_URL}/getproducts`)
+    axios.get(`${PRODUCT_URL}/get-products`)
       .then((res) => {
         setProducts(res.data);
-        setProductNames(res.data.map((item) => item.productName))
+        setProductNames(res.data.map((item) => `${item.productName} ${item.category} ${item.quantity} ${item.unit}`))
       })
   }, [])
 
