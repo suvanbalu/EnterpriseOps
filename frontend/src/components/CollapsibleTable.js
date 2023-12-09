@@ -30,18 +30,27 @@ import dayjs from 'dayjs';
 import HighlightedNumber from './HighlightedNumber';
 import axios from 'axios';
 import utc from 'dayjs/plugin/utc';
-import { PURCHASE_URL } from '../API/calls';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 
 dayjs.extend(customParseFormat)
 dayjs.extend(utc);
 
-const CollapsibleTable = ({ data }) => {
+const CollapsibleTable = ({
+  data,
+  OuterTable = {},
+  InnerTable = {},
+  editUrl = '',
+  deleteUrl = '',
+  innerTableTitle = '',
+  metadataTitle = '',
+  metadataFunction = false,
+  dateQuery = false,
+}) => {
   const [openRows, setOpenRows] = useState([]);
   const [sortBy, setSortBy] = useState('');
   const [sortOrder, setSortOrder] = useState('asc');
   const [innerSortBy, setInnerSortBy] = useState('');
-  const [innerSortOrder, setInnerSortOrder] = useState('');
+  const [innerSortOrder, setInnerSortOrder] = useState('asc');
   const [searchQuery, setSearchQuery] = useState('');
   const [startDate, setStartDate] = useState();
   const [endDate, setEndDate] = useState();
@@ -69,37 +78,48 @@ const CollapsibleTable = ({ data }) => {
     }
   };
 
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
-
   const filteredData = data
     .filter((row) => {
-      if (!searchQuery) {
+      const searchString = searchQuery.toLowerCase();
+
+      if (dateQuery) {
+        if (!searchQuery) {
+          const isInRange = (!startDate || !endDate || (
+            (dayjs(row.date).isSame(startDate) || dayjs(row.date).isAfter(startDate)) &&
+            (dayjs(row.date).isSame(endDate) || dayjs(row.date).isBefore(endDate))
+          ));
+          return isInRange;
+        }
+
         const isInRange = (!startDate || !endDate || (
           (dayjs(row.date).isSame(startDate) || dayjs(row.date).isAfter(startDate)) &&
           (dayjs(row.date).isSame(endDate) || dayjs(row.date).isBefore(endDate))
         ));
-        return isInRange;
-      }
 
-      const searchString = searchQuery.toLowerCase();
-      const isInRange = (!startDate || !endDate || (
-        (dayjs(row.date).isSame(startDate) || dayjs(row.date).isAfter(startDate)) &&
-        (dayjs(row.date).isSame(endDate) || dayjs(row.date).isBefore(endDate))
-      ));
+        return (
+          (isInRange &&
+            (Object.values(row)?.some((value) =>
+              String(value)?.toLowerCase().includes(searchString)
+            ) ||
+              row.details?.some((detail) =>
+                Object.values(detail)?.some((value) =>
+                  String(value)?.toLowerCase().includes(searchString)
+                )
+              )))
+        );
 
-      return (
-        (isInRange &&
-          (row.billno.toLowerCase().includes(searchString) ||
-            row.date.toLowerCase().includes(searchString) ||
-            String(row.totalAmount).includes(searchString) ||
-            row.details.some((detail) =>
-              Object.values(detail).some((value) =>
-                String(value).toLowerCase().includes(searchString)
+      } else {
+        return (
+          (Object.values(row)?.some((value) =>
+            String(value)?.toLowerCase().includes(searchString)
+          ) ||
+            row.details?.some((detail) =>
+              Object.values(detail)?.some((value) =>
+                String(value)?.toLowerCase().includes(searchString)
               )
-            )))
-      );
+            ))
+        );
+      }
     })
     .sort((a, b) => {
       if (!sortBy) return 0;
@@ -118,24 +138,6 @@ const CollapsibleTable = ({ data }) => {
       }
     });
 
-  const totalPurchaseAmount = filteredData.reduce((sum, row) => {
-    const rowAmount = parseFloat(row.totalAmount);
-    return isNaN(rowAmount) ? sum : sum + rowAmount;
-  }, 0);
-
-  const OuterTableHeaders = {
-    'Bill Number': 'billno',
-    'Date': 'date',
-    'Total Amount': 'totalAmount'
-  }
-
-  const InnerTableHeaders = {
-    'Product ID': 'p_id',
-    'Product Name': 'productName',
-    'Quantity': 'quantity',
-    'Rate': 'rateOfProduct',
-    'Amount': 'amount'
-  }
   return (
     <div className='flex flex-col gap-6'>
       <div className='flex flex-row gap-6 justify-between items-center'>
@@ -145,7 +147,9 @@ const CollapsibleTable = ({ data }) => {
           margin="normal"
           className='w-1/3'
           value={searchQuery}
-          onChange={handleSearchChange}
+          onChange={(event) => {
+            setSearchQuery(event.target.value);
+          }}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -156,54 +160,58 @@ const CollapsibleTable = ({ data }) => {
           }}
         />
 
-        <div className='w-1/2 flex flex-row gap-2 items-center'>
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DemoContainer components={['DatePicker']}>
-              <DatePicker
-                value={startDate}
-                onChange={(newValue) => setStartDate(newValue)}
-                sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
-                label='Start Date'
-                format="DD-MMM-YYYY"
-                className='w-1/2'
-              />
-            </DemoContainer>
-          </LocalizationProvider>
+        {dateQuery && (
+          <div className='w-1/2 flex flex-row gap-2 items-center'>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DemoContainer components={['DatePicker']}>
+                <DatePicker
+                  value={startDate}
+                  onChange={(newValue) => setStartDate(newValue)}
+                  sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
+                  label='Start Date'
+                  format="DD-MMM-YYYY"
+                  className='w-1/2'
+                />
+              </DemoContainer>
+            </LocalizationProvider>
 
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DemoContainer components={['DatePicker']}>
-              <DatePicker
-                value={endDate}
-                onChange={(newValue) => setEndDate(newValue)}
-                disabled={!startDate}
-                minDate={startDate}
-                sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
-                label='End Date'
-                format="DD-MMM-YYYY"
-                className='w-1/2'
-              />
-            </DemoContainer>
-          </LocalizationProvider>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DemoContainer components={['DatePicker']}>
+                <DatePicker
+                  value={endDate}
+                  onChange={(newValue) => setEndDate(newValue)}
+                  disabled={!startDate}
+                  minDate={startDate}
+                  sx={{ '& .MuiOutlinedInput-root': { borderRadius: 3, }, }}
+                  label='End Date'
+                  format="DD-MMM-YYYY"
+                  className='w-1/2'
+                />
+              </DemoContainer>
+            </LocalizationProvider>
 
-          <div className='w-10'>
-            {(startDate || endDate) && (
-              <button
-                onClick={() => {
-                  setStartDate(null);
-                  setEndDate(null);
-                }}
-                className='text-xl hover:text-red-500 mt-2'>
-                <IoMdClose />
-              </button>
-            )}
+            <div className='w-10'>
+              {(startDate || endDate) && (
+                <button
+                  onClick={() => {
+                    setStartDate(null);
+                    setEndDate(null);
+                  }}
+                  className='text-xl hover:text-red-500 mt-2'>
+                  <IoMdClose />
+                </button>
+              )}
+            </div>
           </div>
-        </div>
+        )}
 
-        <HighlightedNumber
-          className={'text-right w-1/6'}
-          title={'Total Purchase Amount'}
-          value={`Rs. ${totalPurchaseAmount}`}
-        />
+        {metadataTitle && metadataFunction && (
+          <HighlightedNumber
+            className={'text-right w-1/6'}
+            title={metadataTitle}
+            value={metadataFunction(filteredData)}
+          />
+        )}
 
         <HighlightedNumber
           className={'text-right w-1/6'}
@@ -216,15 +224,15 @@ const CollapsibleTable = ({ data }) => {
         <Table size="small" dense>
           <TableHead>
             <TableRow>
-              <TableCell style={{ fontWeight: "bold", width: 200 }}>S.No.</TableCell>
+              <TableCell style={{ fontWeight: "bold", width: 75 }}>S.No.</TableCell>
               {
-                Object.keys(OuterTableHeaders).map((item) => (
-                  <TableCell style={{ fontWeight: "bold", width: 300 }}
-                    onClick={() => handleSort(OuterTableHeaders[item])}
+                Object.keys(OuterTable).map((item) => (
+                  <TableCell style={{ fontWeight: "bold", width: OuterTable[item][1] }}
+                    onClick={() => handleSort(OuterTable[item][0])}
                     className='group'
                   >
                     {item}
-                    {sortBy === OuterTableHeaders[item] ? (
+                    {sortBy === OuterTable[item][0] ? (
                       sortOrder === 'asc' ? <FaArrowUpShortWide className='inline-block ml-2' /> : <FaArrowDownWideShort className='inline-block ml-2' />
                     ) : (
                       <FaArrowUpShortWide className='hidden group-hover:inline-block ml-2 text-gray-500' />
@@ -237,7 +245,7 @@ const CollapsibleTable = ({ data }) => {
           </TableHead>
           <TableBody>
             {filteredData.map((row, index) => {
-              const filteredRow = row.details
+              const filteredRow = row.details && row.details
                 .sort((a, b) => {
                   if (!innerSortBy) return 0;
 
@@ -253,112 +261,120 @@ const CollapsibleTable = ({ data }) => {
                   }
                 });
 
+              const firstElementKey = row[OuterTable[Object.keys(OuterTable)[0]][0]];
+
               return (
                 <React.Fragment key={index}>
                   <TableRow>
                     <TableCell>{index + 1}</TableCell>
-                    <TableCell>{row.billno}</TableCell>
-                    {console.log(dayjs(row.date))}
-                    <TableCell>{dayjs(row.date,'M/D/YYYY, h:mm:ss a').format('DD-MMM-YYYY')}</TableCell>
-                    <TableCell>{row.totalAmount}</TableCell>
+                    {Object.keys(OuterTable).map((item) => (
+                      <TableCell>{OuterTable[item][0] === 'date' ? dayjs(row.date, 'M/D/YYYY, h:mm:ss a').format('DD-MMM-YYYY') : row[OuterTable[item][0]]}</TableCell>
+                    ))}
                     <TableCell>
                       <div className='flex items-center gap-2'>
-                        <IconButton
-                          size="small"
-                          onClick={() => handleToggleCollapse(index)}
-                        >
-                          {openRows.includes(index) ? (
-                            <KeyboardArrowUpIcon />
-                          ) : (
-                            <KeyboardArrowDownIcon />
-                          )}
-                        </IconButton>
-                        <button className='text-lg text-gray-600 hover:bg-gray-100 rounded-full p-2'
-                          onClick={() => {
-                            navigate('/purchases/edit/' + row.billno)
-                          }}
-                        >
-                          <MdOutlineEdit />
-                        </button>
-                        <button className='text-lg text-gray-600 hover:bg-red-100 rounded-full p-2'
-                          onClick={() => {
-                            if (window.confirm("Confirm Delete ?")) {
+                        {InnerTable && Object.keys(InnerTable).length > 0 && (
+                          <IconButton
+                            size="small"
+                            onClick={() => handleToggleCollapse(index)}
+                          >
+                            {openRows.includes(index) ? (
+                              <KeyboardArrowUpIcon />
+                            ) : (
+                              <KeyboardArrowDownIcon />
+                            )}
+                          </IconButton>
+                        )}
+                        {editUrl && (
+                          <button className='text-lg text-gray-600 hover:bg-gray-100 rounded-full p-2'
+                            onClick={() => {
+                              navigate(`${editUrl}/${firstElementKey}`)
+                            }}
+                          >
+                            <MdOutlineEdit />
+                          </button>
+                        )}
+                        {deleteUrl && (
+                          <button className='text-lg text-gray-600 hover:bg-red-100 rounded-full p-2'
+                            onClick={() => {
+                              if (window.confirm("Confirm Delete ?")) {
 
-                              axios.delete(`${PURCHASE_URL}/deleteentry/${row.billno}`)
-                                .then((res) => {
-                                  console.log(res)
-                                  window.location.reload();
-                                })
-                                .catch((err) => {
-                                  console.log(err)
-                                })
-                            }
-                          }}
-                        >
-                          <MdDelete />
-                        </button>
+                                axios.delete(`${deleteUrl}/${firstElementKey}`)
+                                  .then((res) => {
+                                    console.log(res)
+                                    window.location.reload();
+                                  })
+                                  .catch((err) => {
+                                    console.log(err)
+                                  })
+                              }
+                            }}
+                          >
+                            <MdDelete />
+                          </button>
+                        )}
                       </div>
                     </TableCell>
                   </TableRow>
-                  <TableRow>
-                    <TableCell colSpan={5} className='bg-gray-50'>
-                      <Collapse
-                        in={openRows.includes(index)}
-                        timeout="auto"
-                        unmountOnExit
-                      >
-                        <Box sx={{ margin: 1 }}>
-                          <Typography
-                            variant="h6"
-                            gutterBottom
-                            component="div"
-                            fontWeight="600"
-                          >
-                            Purchase Details
-                          </Typography>
-                          {/* <p className='text-xl font-semibold'>Purchase Details</p> */}
-                          <Table
-                            size="small"
-                            aria-label="purchase-details"
-                            dense
-                          >
-                            <TableHead>
-                              <TableRow>
-                                <TableCell style={{ fontWeight: "bold", width: 100 }}>S.No.</TableCell>
-                                {
-                                  Object.keys(InnerTableHeaders).map((item) => (
-                                    <TableCell style={{ fontWeight: "bold", }}
-                                      onClick={() => handleSort(InnerTableHeaders[item], true)}
-                                      className='group'
-                                    >
-                                      {item}
-                                      {innerSortBy === InnerTableHeaders[item] ? (
-                                        innerSortOrder === 'asc' ? <FaArrowUpShortWide className='inline-block ml-2' /> : <FaArrowDownWideShort className='inline-block ml-2' />
-                                      ) : (
-                                        <FaArrowUpShortWide className='hidden group-hover:inline-block ml-2 text-gray-500' />
-                                      )}
-                                    </TableCell>
-                                  ))
-                                }
-                              </TableRow>
-                            </TableHead>
-                            <TableBody>
-                              {filteredRow.map((detail, detailIndex) => (
-                                <TableRow key={detailIndex}>
-                                  <TableCell>{detailIndex + 1}</TableCell>
-                                  <TableCell>{detail.p_id}</TableCell>
-                                  <TableCell>{detail.productName}</TableCell>
-                                  <TableCell>{detail.quantity}</TableCell>
-                                  <TableCell>{detail.rateOfProduct}</TableCell>
-                                  <TableCell>{detail.quantity * detail.rateOfProduct}</TableCell>
+
+                  {InnerTable && Object.keys(InnerTable).length > 0 && row.details && (
+                    <TableRow>
+                      <TableCell colSpan={Object.keys(OuterTable).length + 2} className='bg-gray-50'>
+                        <Collapse
+                          in={openRows.includes(index)}
+                          timeout="auto"
+                          unmountOnExit
+                        >
+                          <Box sx={{ margin: 1 }}>
+                            <Typography
+                              variant="h6"
+                              gutterBottom
+                              component="div"
+                              fontWeight="600"
+                            >
+                              {innerTableTitle}
+                            </Typography>
+                            {/* <p className='text-xl font-semibold'>Purchase Details</p> */}
+                            <Table
+                              size="small"
+                              aria-label="details"
+                              dense
+                            >
+                              <TableHead>
+                                <TableRow>
+                                  <TableCell style={{ fontWeight: "bold", width: 100 }}>S.No.</TableCell>
+                                  {
+                                    Object.keys(InnerTable).map((item) => (
+                                      <TableCell style={{ fontWeight: "bold", width: InnerTable[item][1] }}
+                                        onClick={() => handleSort(InnerTable[item][0], true)}
+                                        className='group'
+                                      >
+                                        {item}
+                                        {innerSortBy === InnerTable[item][0] ? (
+                                          innerSortOrder === 'asc' ? <FaArrowUpShortWide className='inline-block ml-2' /> : <FaArrowDownWideShort className='inline-block ml-2' />
+                                        ) : (
+                                          <FaArrowUpShortWide className='hidden group-hover:inline-block ml-2 text-gray-500' />
+                                        )}
+                                      </TableCell>
+                                    ))
+                                  }
                                 </TableRow>
-                              ))}
-                            </TableBody>
-                          </Table>
-                        </Box>
-                      </Collapse>
-                    </TableCell>
-                  </TableRow>
+                              </TableHead>
+                              <TableBody>
+                                {filteredRow.map((detail, detailIndex) => (
+                                  <TableRow key={detailIndex}>
+                                    <TableCell>{detailIndex + 1}</TableCell>
+                                    {Object.keys(InnerTable).map((item) => (
+                                      <TableCell>{detail[InnerTable[item][0]]}</TableCell>
+                                    ))}
+                                  </TableRow>
+                                ))}
+                              </TableBody>
+                            </Table>
+                          </Box>
+                        </Collapse>
+                      </TableCell>
+                    </TableRow>
+                  )}
                 </React.Fragment>
               )
             }

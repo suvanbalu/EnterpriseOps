@@ -41,7 +41,6 @@ const dummyData = [
       },
     ],
   },
-  // Add more dummy data as needed
 ];
 
 export default dummyData;
