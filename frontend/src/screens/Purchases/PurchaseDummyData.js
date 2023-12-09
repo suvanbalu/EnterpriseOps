@@ -1,4 +1,4 @@
-const dummyData = [
+const PurchaseDummyData = [
   {
     billNumber: 'B001',
     date: '2023-04-01',
@@ -43,4 +43,4 @@ const dummyData = [
   },
 ];
 
-export default dummyData;
+export default PurchaseDummyData;

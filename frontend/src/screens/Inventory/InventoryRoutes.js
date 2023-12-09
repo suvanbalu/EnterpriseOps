@@ -7,7 +7,8 @@ const InventoryRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<InventoryScreen />} />
-      <Route path="update" element={<UpdateInventoryScreen />} />
+      <Route path="add" element={<UpdateInventoryScreen />} />
+      <Route path="edit/:id" element={<UpdateInventoryScreen />} />
     </Routes>
   );
 };

@@ -1,11 +1,11 @@
 import React from 'react'
 import { IoMdAdd } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
-import dummyData from './dummydata.js';
 import PageTitle from '../../components/PageTitle';
 import CustomButton from '../../components/CustomButton';
 import CollapsibleTable from '../../components/CollapsibleTable.js';
 import { PRODUCT_URL } from '../../API/calls';
+import InventoryDummyData from './InventoryDummyData.js';
 
 const InventoryScreen = () => {
   const navigate = useNavigate();
@@ -35,9 +35,9 @@ const InventoryScreen = () => {
       </div>
 
       <CollapsibleTable
-        data={dummyData}
+        data={InventoryDummyData}
         OuterTable={OuterTable}
-        editUrl={'/products/edit'}
+        editUrl={'/inventory/edit'}
         deleteUrl={`${PRODUCT_URL}/deleteentry`}
       />
 

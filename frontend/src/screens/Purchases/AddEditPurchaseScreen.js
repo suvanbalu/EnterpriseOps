@@ -1,18 +1,20 @@
 import { TextField } from '@mui/material';
 import React, { useEffect, useState } from 'react'
+import { useNavigate, useParams } from 'react-router-dom';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { IoChevronBack } from "react-icons/io5";
-import { useNavigate, useParams } from 'react-router-dom';
-import dummyData from '../../components/dummyData';
 
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from 'dayjs';
+
 import RealTimeInputTable from '../../components/RealTimeInputTable';
 import CustomButton from '../../components/CustomButton';
 import HighlightedNumber from '../../components/HighlightedNumber';
+import PageTitle from '../../components/PageTitle';
+
 import axios from 'axios';
 import { PURCHASE_URL } from '../../API/calls';
 
@@ -29,18 +31,10 @@ const AddEditPurchaseScreen = () => {
 
   const { id } = useParams();
 
-
   useEffect(() => {
     if (id) {
       setEdit(true);
-
-      // const data = dummyData.filter((item) => item.billNumber === window.location.pathname.split('/')[3])[0];
-      // console.log(data);
-
-      // setBillNo(data.billNumber);
-      // setDate(dayjs(data.date));
-      // setTableData(data.details);
-
+      
       axios.get(`${PURCHASE_URL}/get-bill-entry/${id} `)
         .then((res) => {
           console.log(res);
@@ -80,7 +74,7 @@ const AddEditPurchaseScreen = () => {
           }}
           icon={<IoChevronBack />}
         />
-        <p className='text-2xl text-orange-700 font-semibold'>{`${edit ? 'Edit' : 'Add New'} Purchase`}</p>
+        <PageTitle className={'!text-2xl'} title={`${edit ? 'Edit' : 'Add New'} Purchase`} />
       </div>
 
       <div className='flex flex-row items-center gap-8 w-full'>

@@ -1,4 +1,4 @@
-const dummyData = [
+const InventoryDummyData = [
     {
       p_id: 1379,
       productName: "7 UP",
@@ -38,5 +38,5 @@ const dummyData = [
     },
   ];
   
-  export default dummyData;
+  export default InventoryDummyData;
   
