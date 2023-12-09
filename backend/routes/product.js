@@ -36,15 +36,15 @@ router.get('/getproducts', async (req, res) => {
 });
 
 router.put("/updateproduct/:p_id", async (req, res) => {
-  const { p_id } = req.params;
+
 
   try {
-    const product = await Product.findOne({ p_id });
+    const product = await Product.findOne({ p_id:req.params.p_id });
     if (!product) {
       return res.status(404).send(`Product with ID ${p_id} not found`);
     }
 
-    const updatedProduct = await Product.findOneAndUpdate({ p_id }, req.body, { new: true });
+    const updatedProduct = await Product.findOneAndUpdate({ p_id:req.params.p_id }, req.body, { new: true });
     if (req.body.p_id != p_id) {
       try {
         // Update all purchases with the new p_id

@@ -2,8 +2,9 @@ import mongoose, { Schema, model } from "mongoose";
 
 const productSchema = new Schema({
   p_id: {
-    type: String,  // Assuming productID is a string, change the type accordingly
+    type: String, // Assuming productID is a string, change the type accordingly
     required: true,
+    unique: true,
   },
   piecesPerCase: {
     type: Number,
@@ -21,19 +22,19 @@ const productSchema = new Schema({
     type: Number,
     required: true,
   },
-  taxInfo: {
-    CESS: { type: Number },
-    CGST: { type: Number },
-    SGST: { type: Number },
+
+  CESS: { type: Number },
+  CGST: { type: Number },
+  SGST: { type: Number },
+
+  quantity: {
+    type: Number,
+    required: true,
   },
-  quantity:{
-    type:Number,
-    required: true
+  unit: {
+    type: String,
+    required: true,
   },
-  unit:{
-    type:String,
-    required: true
-  }
 });
 
 export default model("Product", productSchema);
