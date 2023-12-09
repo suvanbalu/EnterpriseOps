@@ -5,23 +5,8 @@ import InventoryTable from './inventoryTable';
 import dummyData from './dummydata.js';
 import PageTitle from '../../components/PageTitle';
 import CustomButton from '../../components/CustomButton';
-import CollapsibleTable from '../../components/CollapsibleTable.js';
 
 const InventoryScreen = () => {
-
-  const outerTableHeaders = {
-    'Product ID': 'p_id',
-    'Product Name': 'productName',
-    'Pieces per Case': 'piecesPerCase',
-    'Category': 'category',
-    'Price': 'price',
-    'Quantity': 'quantity',
-    'Unit': 'unit',
-    'CGST':'CGST',
-    'SGST' : 'SGST',
-    'CESS': 'CESS'
-  };
-
   const navigate = useNavigate();
 
   return (
@@ -35,13 +20,7 @@ const InventoryScreen = () => {
         />
       </div>
 
-      {/* <InventoryTable data={dummyData} /> */}
-      <CollapsibleTable
-      data={dummyData}
-      outerTableHeaders={outerTableHeaders}
-      collapseTitle={"Purchase Detail"}
-      enableDateSearch={false}
-    />
+      <InventoryTable data={dummyData} />
 
     </div>
   )
