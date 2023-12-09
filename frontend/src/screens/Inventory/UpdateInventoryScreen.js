@@ -19,16 +19,16 @@ const StyledAutocomplete = styled(Autocomplete)`
 
 const UpdateInventoryScreen = () => {
   const navigate = useNavigate();
-  const [productID, setProductID] = useState();
-  const [productName, setProductName] = useState();
-  const [piecesPerCase, setPiecesPerCase] = useState();
-  const [category, setCategory] = useState();
-  const [price, setPrice] = useState();
-  const [unit, setUnit] = useState();
-  const [quantity, setQuantity] = useState();
-  const [cess, setCess] = useState();
-  const [cgst, setCgst] = useState();
-  const [sgst, setSgst] = useState();
+  const [productID, setProductID] = useState('');
+  const [productName, setProductName] = useState('');
+  const [piecesPerCase, setPiecesPerCase] = useState('');
+  const [category, setCategory] = useState('');
+  const [price, setPrice] = useState('');
+  const [unit, setUnit] = useState('');
+  const [quantity, setQuantity] = useState('');
+  const [sgst, setSgst] = useState('');
+  const [cgst, setCgst] = useState('');
+  const [cess, setCess] = useState('');
   const [edit, setEdit] = useState(false);
 
   const { id } = useParams();
@@ -37,10 +37,19 @@ const UpdateInventoryScreen = () => {
     if (id) {
       setEdit(true);
 
-      // axios.get(`${PRODUCT_URL}/get-product/${id} `)
-      //   .then((res) => {
-      //     console.log(res);
-      //   })
+      axios.get(`${PRODUCT_URL}/get-product/${id} `)
+        .then((res) => {
+          setProductID(res.data.p_id);
+          setProductName(res.data.productName);
+          setPiecesPerCase(res.data.piecesPerCase);
+          setCategory(res.data.category);
+          setPrice(res.data.price);
+          setUnit(res.data.unit);
+          setQuantity(res.data.quantity);
+          setCess(res.data.CESS);
+          setCgst(res.data.CGST);
+          setSgst(res.data.SGST);
+        })
     }
   }, [id]);
 
@@ -145,17 +154,52 @@ const UpdateInventoryScreen = () => {
       <div className='flex justify-end mt-4'>
         <CustomButton
           onClick={() => {
-            let valid = true;
+            if (productID === '' || productName === '' || piecesPerCase === '' || category === '' || price === '' || unit === '' || quantity === '' || sgst === '' || cgst === '' || cess === '') {
+              return window.alert('Enter all fields in the table');
+            }
 
-            if (valid) {
-
-              if (edit) {
-
-              } else {
-
-              }
+            if (edit) {
+              axios.put(`${PRODUCT_URL}/update-product/${id}`, {
+                p_id: productID,
+                productName: productName,
+                piecesPerCase: piecesPerCase,
+                category: category,
+                price: price,
+                unit: unit,
+                quantity: quantity,
+                CESS: cess,
+                CGST: cgst,
+                SGST: sgst,
+              })
+                .then((res) => {
+                  window.alert('Product Updated Successfully');
+                  navigate('/inventory/');
+                })
+                .catch((err) => {
+                  console.log(err);
+                  window.alert('Error Updating Product');
+                })
             } else {
-              window.alert('Enter all fields in the table');
+              axios.post(`${PRODUCT_URL}/add-product`, {
+                p_id: productID,
+                productName: productName,
+                piecesPerCase: piecesPerCase,
+                category: category,
+                price: price,
+                unit: unit,
+                quantity: quantity,
+                CESS: cess,
+                CGST: cgst,
+                SGST: sgst,
+              })
+                .then((res) => {
+                  window.alert('Product Added Successfully');
+                  navigate('/inventory/');
+                })
+                .catch((err) => {
+                  console.log(err);
+                  window.alert('Error Adding Product');
+                })
             }
           }}
           icon={<IoMdCheckmarkCircleOutline />}

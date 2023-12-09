@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoMdAdd } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../components/PageTitle';
 import CustomButton from '../../components/CustomButton';
 import CollapsibleTable from '../../components/CollapsibleTable.js';
 import { PRODUCT_URL } from '../../API/calls';
-import InventoryDummyData from './InventoryDummyData.js';
+import axios from 'axios';
 
 const InventoryScreen = () => {
   const navigate = useNavigate();
+  const [fetchedData, setFetchedData] = useState([]);
+
+  useEffect(() => {
+    axios.get(`${PRODUCT_URL}/get-products`)
+      .then((res) => {
+        setFetchedData(res.data);
+      })
+  }, [])
 
   const OuterTable = {
     'Product ID': ['p_id', '15vw'],
@@ -35,10 +43,10 @@ const InventoryScreen = () => {
       </div>
 
       <CollapsibleTable
-        data={InventoryDummyData}
+        data={fetchedData}
         OuterTable={OuterTable}
         editUrl={'/inventory/edit'}
-        deleteUrl={`${PRODUCT_URL}/deleteentry`}
+        deleteUrl={`${PRODUCT_URL}/delete-product`}
       />
 
     </div>
