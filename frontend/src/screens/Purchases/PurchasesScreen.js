@@ -24,6 +24,8 @@ const PurchasesScreen = () => {
       })
   }, [])
 
+  console.log(fetchedData);
+
   const OuterTable = {
     'Bill Number': ['billno', '15vw'],
     'Date': ['date', '15vw'],

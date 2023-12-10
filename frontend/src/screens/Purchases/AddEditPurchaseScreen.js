@@ -18,6 +18,10 @@ import PageTitle from '../../components/PageTitle';
 import axios from 'axios';
 import { PURCHASE_URL } from '../../API/calls';
 
+import customParseFormat from 'dayjs/plugin/customParseFormat.js';
+
+dayjs.extend(customParseFormat);
+
 const AddEditPurchaseScreen = () => {
   const navigate = useNavigate();
   const [billno, setBillno] = useState("");

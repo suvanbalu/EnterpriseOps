@@ -19,15 +19,15 @@ router.post("/add-entry", async (req, res) => {
       }
     }
 
-    const parsedDate = dayjs(req.body.date, "DD-MMM-YYYY");
-    if (!parsedDate.isValid()) {
-      return res.status(400).send("Invalid date format");
-    }
+    // const parsedDate = dayjs(req.body.date, "DD-MMM-YYYY");
+    // if (!parsedDate.isValid()) {
+    //   return res.status(400).send("Invalid date format");
+    // }
 
-    const dateObject = parsedDate.toDate();
+    // const dateObject = parsedDate.toDate();
     const entry = new Purchase({
       ...req.body,
-      date: dateObject
+      // date: dateObject
     });
     await entry.save();
 
@@ -55,7 +55,7 @@ router.get("/get-all-entry", async (req, res) => {
 
       return {
         billno: purchase.billno,
-        date: purchase.date.toLocaleString(),
+        date: dayjs(purchase.date).format("MM-DD-YYYY"),
         totalAmount: purchase.totalAmount,
         details
       };
@@ -83,7 +83,7 @@ router.get("/get-bill-entry/:billno", async (req, res) => {
 
     const transformedPurchase = {
       billno: purchase.billno,
-      date: purchase.date.toLocaleString(),
+      date: dayjs(purchase.date).format("MM-DD-YYYY"),
       totalAmount: purchase.totalAmount,
       details
     };

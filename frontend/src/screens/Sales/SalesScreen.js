@@ -27,6 +27,8 @@ const SalesScreen = () => {
       })
   }, [])
 
+  console.log(fetchedData);
+
   const OuterTable = {
     'Bill Number': ['_id', '15vw'],
     'Party ID': ['party_id', '15vw'],
