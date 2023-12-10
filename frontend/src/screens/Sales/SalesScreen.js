@@ -82,7 +82,7 @@ const SalesScreen = () => {
         data={fetchedData}
         OuterTable={OuterTable}
         InnerTable={InnerTable}
-        editUrl={'/sale/edit'}
+        editUrl={'/sales/edit'}
         deleteUrl={`${SALE_URL}/delete-sale`}
         innerTableTitle={'Sales Details'}
         metadataTitle={'Total Sales Amount'}

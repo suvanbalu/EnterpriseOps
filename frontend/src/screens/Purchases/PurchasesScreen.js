@@ -50,7 +50,7 @@ const PurchasesScreen = () => {
   }
 
   const handleKeyPress = useCallback((event) => {
-    if (event.ctrlKey && event.shiftKey && event.key === 'Z') {
+    if (event.ctrlKey && event.code === "Enter") {
       navigate('/purchases/add');
     }
   }, []);

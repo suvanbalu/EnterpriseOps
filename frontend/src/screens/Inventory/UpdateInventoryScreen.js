@@ -3,11 +3,10 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { IoChevronBack } from "react-icons/io5";
 
-import { Autocomplete, InputAdornment, TextField } from '@mui/material';
-import { styled } from '@mui/system';
 import CustomButton from '../../components/CustomButton';
 import PageTitle from '../../components/PageTitle';
 import CustomTextField from '../../components/CustomTextField';
+import CustomAutoComplete from '../../components/CustomAutoComplete';
 
 import NumbersIcon from '@mui/icons-material/Numbers';
 import DnsIcon from '@mui/icons-material/Dns';
@@ -20,12 +19,6 @@ import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 
 import axios from 'axios';
 import { PRODUCT_URL } from '../../API/calls';
-
-const StyledAutocomplete = styled(Autocomplete)`
-  .MuiInputBase-root {
-    border-radius: 12px;
-  }
-`;
 
 const UpdateInventoryScreen = () => {
   const navigate = useNavigate();
@@ -218,36 +211,6 @@ const UpdateInventoryScreen = () => {
         />
       </div>
     </div>
-  )
-}
-
-const CustomAutoComplete = ({ label, valueState = ["", (e) => { }], options, width, icon }) => {
-  const [value, setValue] = valueState;
-
-  return (
-    <StyledAutocomplete
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      options={options}
-      sx={{ width: width }}
-      renderInput={(params) => <TextField
-        {...params}
-        label={label}
-        variant="outlined"
-        margin="normal"
-        InputProps={{
-          ...params.InputProps,
-          startAdornment: (
-            <InputAdornment position="start">
-              {icon}
-            </InputAdornment>
-          ),
-        }}
-      />
-      }
-    />
   )
 }
 
