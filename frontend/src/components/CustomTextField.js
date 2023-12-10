@@ -1,7 +1,7 @@
 import React from 'react';
 import { InputAdornment, TextField } from '@mui/material';
 
-const CustomTextField = ({ label, className, type = 'text', valueState = ["", (e) => { }], icon }) => {
+const CustomTextField = ({ label, className, type = 'text', valueState = ["", (e) => { }], icon, textarea = false }) => {
   const [val, setVal] = valueState;
 
   return (
@@ -10,6 +10,8 @@ const CustomTextField = ({ label, className, type = 'text', valueState = ["", (e
       variant="outlined"
       margin="normal"
       // size='small'
+      multiline={textarea}
+      rows={textarea ? 5 : 1}
       type={type}
       value={val}
       onChange={(e) => { setVal(e.target.value) }}

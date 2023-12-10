@@ -18,6 +18,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { MdOutlineEdit, MdDelete } from "react-icons/md";
 import { FaArrowUpShortWide, FaArrowDownWideShort } from "react-icons/fa6";
 import { IoMdClose } from 'react-icons/io';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { useNavigate } from 'react-router-dom';
 
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -283,7 +284,20 @@ const CollapsibleTable = ({
                     <TableRow>
                       <TableCell>{index + 1}</TableCell>
                       {Object.keys(OuterTable).map((item) => (
-                        <TableCell>{OuterTable[item][0] === 'date' ? dayjs(row.date, 'MM/DD/YYYY').format('DD-MMM-YYYY') : row[OuterTable[item][0]]}</TableCell>
+                        <TableCell>{
+                          OuterTable[item][0] === 'date' ? dayjs(row.date, 'MM/DD/YYYY').format('DD-MMM-YYYY') :
+                            OuterTable[item][0] === 'available' ? (row[OuterTable[item][0]] ? 'Yes' : 'No') :
+                              OuterTable[item][0] === 'coordinate' ? <button className='hover:text-blue-500' onClick={() => {
+                                // window.open(`https://www.google.com/maps/search/?api=1&query=${row[OuterTable[item][0]]}`, '_blank')
+                                window.open(`http://www.google.com/maps/place/${row[OuterTable[item][0]]}`, '_blank')
+                              }}>
+                                {row[OuterTable[item][0]]?.split(' ')[0]?.slice(0, 5)}
+                                {'\n'}
+                                {row[OuterTable[item][0]]?.split(' ')[1]?.slice(0, 5)}
+                                {row[OuterTable[item][0]] && <LocationOnIcon />}
+                              </button> :
+
+                                row[OuterTable[item][0]]}</TableCell>
                       ))}
                       <TableCell>
                         <div className='flex items-center gap-2'>
