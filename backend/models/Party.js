@@ -1,9 +1,9 @@
 import mongoose, { Schema, model } from "mongoose";
 
 const partySchema = new Schema({
-  party_id:{
-    type:String,
-    unique:true
+  party_id: {
+    type: String,
+    unique: true
   },
   partyName: {
     type: String,
@@ -16,13 +16,15 @@ const partySchema = new Schema({
   phoneNumber: {
     type: String,
   },
-  gstApplicable: {
-    type: Boolean,
-    required: true,
-  },
   available: {
-    type:Boolean,
+    type: Boolean,
     default: true
+  },
+  address: {
+    type: String,
+  },
+  coordinate: {
+    type: String,
   }
 });
 

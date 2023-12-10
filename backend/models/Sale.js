@@ -4,6 +4,7 @@ const saleSchema = new Schema({
   sbillno: {
     type: String,
     required: true,
+    unique:true
   },
   party_id: {
     type: String,

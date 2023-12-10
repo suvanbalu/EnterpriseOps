@@ -50,7 +50,7 @@ const PurchasesScreen = () => {
   }
 
   const handleKeyPress = useCallback((event) => {
-    if (event.ctrlKey && event.shiftKey && event.key === 'A') {
+    if (event.ctrlKey && event.shiftKey && event.key === 'Z') {
       navigate('/purchases/add');
     }
   }, []);

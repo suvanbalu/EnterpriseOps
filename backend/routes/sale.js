@@ -139,18 +139,19 @@ router.get("/get-sale/:sbillno", async (req, res) => {
 
 router.post("/add-sale", async (req, res) => {
   try {
-    const {
-      sbillno,
-      party_id,
-      date,
-      totalAmount,
-      credit,
-      details,
-    } = req.body;
+    const { sbillno, party_id, date, totalAmount, credit, details } = req.body;
 
     // Validate required fields
     if (!sbillno || !party_id || !date || !totalAmount || !details) {
       return res.status(400).json({ error: "Missing required fields" });
+    }
+
+    // Check if party with the given party_id exists
+    const partyfind = await Party.findOne({ party_id: party_id });
+
+    if (!partyfind) {
+      // If party is not found, send a response and exit early
+      return res.status(400).send("Party Not Found");
     }
 
     // Create a new Sale instance
@@ -166,12 +167,15 @@ router.post("/add-sale", async (req, res) => {
     // Save the sale to the database
     const savedSale = await newSale.save();
 
+    // Send a response after successful save
     res.status(201).json(savedSale);
   } catch (error) {
     console.error("Error adding sale:", error);
+    // Handle other errors and send an appropriate response
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+
 
 router.put("/update-sale", async (req, res) => {
   const updatedData = req.body;
