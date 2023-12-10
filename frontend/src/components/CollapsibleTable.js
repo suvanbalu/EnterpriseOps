@@ -11,8 +11,6 @@ import {
   Typography,
   Paper,
   IconButton,
-  TextField,
-  InputAdornment,
 } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
@@ -32,6 +30,7 @@ import axios from 'axios';
 import utc from 'dayjs/plugin/utc';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 import { styled } from '@mui/system';
+import CustomTextField from './CustomTextField';
 
 dayjs.extend(customParseFormat)
 dayjs.extend(utc);
@@ -160,23 +159,11 @@ const CollapsibleTable = ({
   return (
     <div className='flex flex-col gap-6'>
       <div className='flex flex-row gap-6 justify-between items-center'>
-        <TextField
-          label="Search"
-          variant="outlined"
-          margin="normal"
+        <CustomTextField
+          label='Search'
           className='w-1/3'
-          value={searchQuery}
-          onChange={(event) => {
-            setSearchQuery(event.target.value);
-          }}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            ),
-            sx: { borderRadius: 3 }
-          }}
+          valueState={[searchQuery, setSearchQuery]}
+          icon={<SearchIcon />}
         />
 
         {dateQuery && (
@@ -248,7 +235,7 @@ const CollapsibleTable = ({
       </div>
 
       <StyledTableContainer component={Paper}>
-        <div className='max-h-[calc(100vh-18rem)] overflow-y-auto'>
+        <div className='max-h-[calc(100vh-14rem)] overflow-y-auto'>
           <Table size="small" dense stickyHeader>
             <TableHead>
               <TableRow>

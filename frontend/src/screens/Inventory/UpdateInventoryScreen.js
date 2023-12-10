@@ -3,10 +3,20 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { IoChevronBack } from "react-icons/io5";
 
-import { Autocomplete, TextField } from '@mui/material';
+import { Autocomplete, InputAdornment, TextField } from '@mui/material';
 import { styled } from '@mui/system';
 import CustomButton from '../../components/CustomButton';
 import PageTitle from '../../components/PageTitle';
+import CustomTextField from '../../components/CustomTextField';
+
+import NumbersIcon from '@mui/icons-material/Numbers';
+import DnsIcon from '@mui/icons-material/Dns';
+import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
+import CategoryIcon from '@mui/icons-material/Category';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
+import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 
 import axios from 'axios';
 import { PRODUCT_URL } from '../../API/calls';
@@ -66,18 +76,20 @@ const UpdateInventoryScreen = () => {
         <PageTitle className={'!text-2xl'} title={`${edit ? 'Edit' : 'Add New'} Product`} />
       </div>
 
-      <div className='flex flex-row gap-4'>
+      <div className='flex flex-row gap-8'>
         <CustomTextField
           label='Product ID'
           className='w-1/3'
           valueState={[productID, setProductID]}
           type='number'
+          icon={<NumbersIcon />}
         />
 
         <CustomTextField
           label='Product Name'
           className='w-1/3'
           valueState={[productName, setProductName]}
+          icon={<DnsIcon />}
         />
 
         <CustomTextField
@@ -85,25 +97,17 @@ const UpdateInventoryScreen = () => {
           className='w-1/3'
           valueState={[piecesPerCase, setPiecesPerCase]}
           type='number'
+          icon={<WorkOutlineIcon />}
         />
       </div>
 
-      <div className='flex flex-row gap-4'>
-        <StyledAutocomplete
+      <div className='flex flex-row gap-8'>
+        <CustomAutoComplete
           label='Category'
-          value={category}
-          onChange={(event, newValue) => {
-            setCategory(newValue);
-          }}
+          valueState={[category, setCategory]}
           options={['CAN', 'TETRA', 'RGP', 'PET']}
-          sx={{ width: '25%' }}
-          renderInput={(params) => <TextField
-            {...params}
-            label="Category"
-            variant="outlined"
-            margin="normal"
-          />
-          }
+          width='25%'
+          icon={<CategoryIcon />}
         />
 
         <CustomTextField
@@ -111,6 +115,7 @@ const UpdateInventoryScreen = () => {
           className='w-1/4'
           valueState={[price, setPrice]}
           type='number'
+          icon={<CurrencyRupeeIcon />}
         />
 
         <CustomTextField
@@ -118,22 +123,26 @@ const UpdateInventoryScreen = () => {
           className='w-1/4'
           valueState={[quantity, setQuantity]}
           type='number'
+          icon={<LocalGroceryStoreIcon />}
         />
 
-        <CustomTextField
+        <CustomAutoComplete
           label='Unit'
-          className='w-1/4'
           valueState={[unit, setUnit]}
+          options={['ml', 'L']}
+          width='25%'
+          icon={<LocalOfferIcon />}
         />
       </div>
 
       <PageTitle title='Tax Info' className='!text-xl mt-4 -mb-4' />
-      <div className='flex flex-row gap-4'>
+      <div className='flex flex-row gap-8'>
         <CustomTextField
           label='SGST'
           className='w-1/3'
           valueState={[sgst, setSgst]}
           type='number'
+          icon={<ReceiptLongIcon />}
         />
 
         <CustomTextField
@@ -141,6 +150,7 @@ const UpdateInventoryScreen = () => {
           className='w-1/3'
           valueState={[cgst, setCgst]}
           type='number'
+          icon={<ReceiptLongIcon />}
         />
 
         <CustomTextField
@@ -148,6 +158,7 @@ const UpdateInventoryScreen = () => {
           className='w-1/3'
           valueState={[cess, setCess]}
           type='number'
+          icon={<ReceiptLongIcon />}
         />
       </div>
 
@@ -210,22 +221,32 @@ const UpdateInventoryScreen = () => {
   )
 }
 
-const CustomTextField = ({ label, className, type = 'text', valueState = ["", (e) => { }] }) => {
-  const [val, setVal] = valueState;
+const CustomAutoComplete = ({ label, valueState = ["", (e) => { }], options, width, icon }) => {
+  const [value, setValue] = valueState;
 
   return (
-    <TextField
-      label={label}
-      variant="outlined"
-      margin="normal"
-      // size='small'
-      type={type}
-      value={val}
-      onChange={(e) => { setVal(e.target.value) }}
-      className={className}
-      InputProps={{
-        sx: { borderRadius: 3, },
+    <StyledAutocomplete
+      value={value}
+      onChange={(event, newValue) => {
+        setValue(newValue);
       }}
+      options={options}
+      sx={{ width: width }}
+      renderInput={(params) => <TextField
+        {...params}
+        label={label}
+        variant="outlined"
+        margin="normal"
+        InputProps={{
+          ...params.InputProps,
+          startAdornment: (
+            <InputAdornment position="start">
+              {icon}
+            </InputAdornment>
+          ),
+        }}
+      />
+      }
     />
   )
 }

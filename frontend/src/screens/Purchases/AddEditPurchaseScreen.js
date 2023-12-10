@@ -14,11 +14,13 @@ import RealTimeInputTable from '../../components/RealTimeInputTable';
 import CustomButton from '../../components/CustomButton';
 import HighlightedNumber from '../../components/HighlightedNumber';
 import PageTitle from '../../components/PageTitle';
+import NumbersIcon from '@mui/icons-material/Numbers';
 
 import axios from 'axios';
 import { PURCHASE_URL } from '../../API/calls';
 
 import customParseFormat from 'dayjs/plugin/customParseFormat.js';
+import CustomTextField from '../../components/CustomTextField';
 
 dayjs.extend(customParseFormat);
 
@@ -82,16 +84,11 @@ const AddEditPurchaseScreen = () => {
       </div>
 
       <div className='flex flex-row items-center gap-8 w-full'>
-        <TextField
-          label="Bill Number"
-          variant="outlined"
-          margin="normal"
-          value={billno}
-          onChange={(e) => { setBillno(e.target.value) }}
+        <CustomTextField
+          label='Bill Number'
           className='w-1/4'
-          InputProps={{
-            sx: { borderRadius: 3, },
-          }}
+          valueState={[billno, setBillno]}
+          icon={<NumbersIcon />}
         />
 
         <div className='w-1/4'>
