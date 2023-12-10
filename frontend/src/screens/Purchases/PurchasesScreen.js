@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { IoMdAdd } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import CollapsibleTable from '../../components/CollapsibleTable';
@@ -49,10 +49,24 @@ const PurchasesScreen = () => {
     return `Rs. ${totalPurchaseAmount}`;
   }
 
+  const handleKeyPress = useCallback((event) => {
+    if (event.ctrlKey && event.shiftKey && event.key === 'A') {
+      navigate('/purchases/add');
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [handleKeyPress]);
+
   return (
-    <div className='pl-4 pr-12 flex flex-col gap-4 w-full'>
-      <div className='flex justify-between items-center'>
-        <PageTitle title={'All Purchases'} />
+    <div className='pl-4 pr-12 flex flex-col gap-4 w-full -mt-16'>
+      <div className='flex justify-between'>
+        <PageTitle title={'All Purchases'} className={'w-1/2 text-right'} />
         <CustomButton
           onClick={() => { navigate('/purchases/add') }}
           icon={<IoMdAdd />}

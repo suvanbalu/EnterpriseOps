@@ -235,7 +235,7 @@ const CollapsibleTable = ({
       </div>
 
       <StyledTableContainer component={Paper}>
-        <div className='max-h-[calc(100vh-18rem)] overflow-y-auto'>
+        <div className='max-h-[calc(100vh-14rem)] overflow-y-auto'>
           <Table size="small" dense stickyHeader>
             <TableHead>
               <TableRow>

@@ -57,9 +57,9 @@ const SalesCollectionScreen = () => {
   }
 
   return (
-    <div className='pl-4 pr-12 flex flex-col gap-4 w-full'>
-      <div className='flex justify-between items-center'>
-        <PageTitle title={'All Sales Collections'} />
+    <div className='pl-4 pr-12 flex flex-col gap-4 w-full -mt-16'>
+      <div className='flex justify-between'>
+        <PageTitle title={'All Sales Collections'} className={'w-1/2 text-right'} />
         <CustomButton
           onClick={() => { navigate('/sales/add') }}
           icon={<IoMdAdd />}
