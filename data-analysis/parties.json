@@ -27,7 +27,7 @@
         "gst": "33AAJCA0209M1ZW",
         "available": 1,
         "address": "352/1-A,2-A,KALLIKADU THOTTAM,THUDIYALUR ROAD SARAVANAMPATTI COIMBATORE 641035",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
         "party_id": "PA0003",
@@ -121,26 +121,6 @@
     },
     {
         "party_id": "PA0012",
-        "partyName": "AAVIN TEA STALL",
-        "route": "PSR4",
-        "phoneNumber": "8610979043",
-        "gst": "",
-        "available": 1,
-        "address": "S NO 16 VG RAO NAGAR GANAPATHY COIMBATORE Coimbatore 641006",
-        "coordinate": "11.035754 76.990638"
-    },
-    {
-        "party_id": "PA0013",
-        "partyName": "AAVIN TEA STALL",
-        "route": "PSR2",
-        "phoneNumber": "9952546078",
-        "gst": "",
-        "available": 1,
-        "address": "397/1 THUDIYALUR ROAD OPP KCT SARAVANAMPATTI CBE COIMBATORE 641035",
-        "coordinate": "11.082991 76.983861"
-    },
-    {
-        "party_id": "PA0014",
         "partyName": "ABIS AMBUR BIRIYANI",
         "route": "PSR3",
         "phoneNumber": "8825602027",
@@ -150,7 +130,7 @@
         "coordinate": "11.102168 77.011518"
     },
     {
-        "party_id": "PA0015",
+        "party_id": "PA0013",
         "partyName": "ABITHANJALI TRADERS",
         "route": "PSR2",
         "phoneNumber": "9443343364",
@@ -160,7 +140,7 @@
         "coordinate": "11.083137 76.984992"
     },
     {
-        "party_id": "PA0016",
+        "party_id": "PA0014",
         "partyName": "ADHAVA PACKAGING",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -170,7 +150,7 @@
         "coordinate": "11.097873 77.006705"
     },
     {
-        "party_id": "PA0017",
+        "party_id": "PA0015",
         "partyName": "ADITYA STORES",
         "route": "PSR2",
         "phoneNumber": "9751714231",
@@ -180,7 +160,7 @@
         "coordinate": "11.077839 77.003091"
     },
     {
-        "party_id": "PA0018",
+        "party_id": "PA0016",
         "partyName": "AFC RESTAURANT",
         "route": "PSR2",
         "phoneNumber": "9626971375",
@@ -190,7 +170,7 @@
         "coordinate": "11.081017 76.992771"
     },
     {
-        "party_id": "PA0019",
+        "party_id": "PA0017",
         "partyName": "AISHWARYA BAKERY",
         "route": "PSR5",
         "phoneNumber": "9842259883",
@@ -200,7 +180,7 @@
         "coordinate": "11.03538 76.973506"
     },
     {
-        "party_id": "PA0020",
+        "party_id": "PA0018",
         "partyName": "AKSHAYA STORE",
         "route": "PSR1",
         "phoneNumber": "9791215094",
@@ -210,7 +190,7 @@
         "coordinate": "11.059181 77.005861"
     },
     {
-        "party_id": "PA0021",
+        "party_id": "PA0019",
         "partyName": "ALL SEASONS",
         "route": "PSR2",
         "phoneNumber": "9898989898",
@@ -220,7 +200,7 @@
         "coordinate": "11.08727 76.982245"
     },
     {
-        "party_id": "PA0022",
+        "party_id": "PA0020",
         "partyName": "AMBUR BUM BRIYANI",
         "route": "PSR6",
         "phoneNumber": "6381494265",
@@ -230,7 +210,7 @@
         "coordinate": "11.053091 76.993855"
     },
     {
-        "party_id": "PA0023",
+        "party_id": "PA0021",
         "partyName": "AMMAN DEPT STORE",
         "route": "PSR5",
         "phoneNumber": "9842966565",
@@ -240,27 +220,7 @@
         "coordinate": "11.035606 76.956843"
     },
     {
-        "party_id": "PA0024",
-        "partyName": "AMMAN STORE",
-        "route": "PSR4",
-        "phoneNumber": "9092944776",
-        "gst": "",
-        "available": 1,
-        "address": "9TH STREET, VARATHARAJALU NAGAR GANAPATHY, COIMBATORE 641006",
-        "coordinate": "11.039826 76.988855"
-    },
-    {
-        "party_id": "PA0025",
-        "partyName": "AMMAN STORE",
-        "route": "PSR5",
-        "phoneNumber": "9080909016",
-        "gst": "",
-        "available": 1,
-        "address": "17C PERIYASAMY LAYOUT RATHNAPURI COIMBATORE 641027",
-        "coordinate": "11.06261 76.972288"
-    },
-    {
-        "party_id": "PA0026",
+        "party_id": "PA0022",
         "partyName": "AMMAN STORE",
         "route": "PSR5",
         "phoneNumber": "9842111658",
@@ -270,17 +230,7 @@
         "coordinate": "11.049719 76.967626"
     },
     {
-        "party_id": "PA0027",
-        "partyName": "AMMAN STORE",
-        "route": "PSR1",
-        "phoneNumber": "9003640463",
-        "gst": "",
-        "available": 1,
-        "address": "20 VISUVASAPURAM SARAVANAMPATTI Coimbatore COIMBATORE 641035",
-        "coordinate": "11.087951 77.008758"
-    },
-    {
-        "party_id": "PA0028",
+        "party_id": "PA0023",
         "partyName": "AMUDHAM DEPARTMENTAL STORES",
         "route": "PSR6",
         "phoneNumber": "7356983596",
@@ -290,7 +240,7 @@
         "coordinate": "11.063063 76.991693"
     },
     {
-        "party_id": "PA0029",
+        "party_id": "PA0024",
         "partyName": "AMUDHASURABI FOODS (BUBBLY APPLE)",
         "route": "PSR2",
         "phoneNumber": "9944900889",
@@ -300,7 +250,7 @@
         "coordinate": "11.080063 76.997426"
     },
     {
-        "party_id": "PA0030",
+        "party_id": "PA0025",
         "partyName": "ANANDA BAKERY",
         "route": "PSR5",
         "phoneNumber": "9443823468",
@@ -310,7 +260,7 @@
         "coordinate": "11.027096 76.965363"
     },
     {
-        "party_id": "PA0031",
+        "party_id": "PA0026",
         "partyName": "ANANDHA BAKERY",
         "route": "PSR4",
         "phoneNumber": "8903756666",
@@ -320,27 +270,7 @@
         "coordinate": "11.040722 76.994541"
     },
     {
-        "party_id": "PA0032",
-        "partyName": "ANANDHA BAKERY",
-        "route": "PSR4",
-        "phoneNumber": "9443758779",
-        "gst": "",
-        "available": 1,
-        "address": "3 1 FCI ROAD GANAPATHY Coimbatore Coimbatore Coimbatore Coimbatore 641006",
-        "coordinate": "11.039953 76.995761"
-    },
-    {
-        "party_id": "PA0033",
-        "partyName": "ANANDHA BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "9443758779",
-        "gst": "",
-        "available": 1,
-        "address": "MANIYAKARA ROAD COIMBATORE 641006",
-        "coordinate": "11.082518 76.98952"
-    },
-    {
-        "party_id": "PA0034",
+        "party_id": "PA0027",
         "partyName": "ANANDHA BAKES",
         "route": "PSR6",
         "phoneNumber": "9443823468",
@@ -350,7 +280,7 @@
         "coordinate": "11.039051 76.98036"
     },
     {
-        "party_id": "PA0035",
+        "party_id": "PA0028",
         "partyName": "ANANDHA STORE",
         "route": "PSR3",
         "phoneNumber": "9944945179",
@@ -360,7 +290,7 @@
         "coordinate": "11.096751 77.019147"
     },
     {
-        "party_id": "PA0036",
+        "party_id": "PA0029",
         "partyName": "ANANDHAM RESTAURANT AND CATERING",
         "route": "PSR1",
         "phoneNumber": "9865047871",
@@ -370,7 +300,7 @@
         "coordinate": "11.06505 77.014669"
     },
     {
-        "party_id": "PA0037",
+        "party_id": "PA0030",
         "partyName": "ANANDHAM SUPER MARKET",
         "route": "PSR1",
         "phoneNumber": "8072987559",
@@ -380,7 +310,7 @@
         "coordinate": "11.073696 77.012023"
     },
     {
-        "party_id": "PA0038",
+        "party_id": "PA0031",
         "partyName": "ANANYA'S SUPER STORE",
         "route": "PSR1",
         "phoneNumber": "9843899443",
@@ -390,7 +320,7 @@
         "coordinate": "11.080788 77.004854"
     },
     {
-        "party_id": "PA0039",
+        "party_id": "PA0032",
         "partyName": "ANDAL STORE",
         "route": "PSR1",
         "phoneNumber": "8098487307",
@@ -400,7 +330,7 @@
         "coordinate": "11.097899 77.006674"
     },
     {
-        "party_id": "PA0040",
+        "party_id": "PA0033",
         "partyName": "ANGEL MESS",
         "route": "PSR2",
         "phoneNumber": "9894222678",
@@ -410,7 +340,7 @@
         "coordinate": "11.08149 76.989862"
     },
     {
-        "party_id": "PA0041",
+        "party_id": "PA0034",
         "partyName": "ANNAI NARPAVI VEGETABLES MARKET",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -420,7 +350,7 @@
         "coordinate": "11.097926 77.006625"
     },
     {
-        "party_id": "PA0042",
+        "party_id": "PA0035",
         "partyName": "ANNALAKSHMI STORE",
         "route": "PSR1",
         "phoneNumber": "9787836692",
@@ -430,7 +360,7 @@
         "coordinate": "11.097808 77.006633"
     },
     {
-        "party_id": "PA0043",
+        "party_id": "PA0036",
         "partyName": "ANNAM STORE",
         "route": "PSR5",
         "phoneNumber": "9626160933",
@@ -440,17 +370,7 @@
         "coordinate": "11.031076 76.95563"
     },
     {
-        "party_id": "PA0044",
-        "partyName": "ANNAM STORE",
-        "route": "PSR5",
-        "phoneNumber": "9876543210",
-        "gst": "",
-        "available": 1,
-        "address": "THAIR ITTERY RD  KANNAPPA NAGAR  COIMBAT COIMBATORE 641027",
-        "coordinate": "11.031178 76.955645"
-    },
-    {
-        "party_id": "PA0045",
+        "party_id": "PA0037",
         "partyName": "ANTHONI STORE",
         "route": "PSR6",
         "phoneNumber": "9597072015",
@@ -460,17 +380,7 @@
         "coordinate": "11.095511 77.010143"
     },
     {
-        "party_id": "PA0046",
-        "partyName": "ANTHONY STORE",
-        "route": "PSR5",
-        "phoneNumber": "9092944775",
-        "gst": "",
-        "available": 1,
-        "address": "32 3,VSR NAGAR,GANAPATHY COIMBATORE Coimbatore 641006",
-        "coordinate": "11.043513 76.976828"
-    },
-    {
-        "party_id": "PA0047",
+        "party_id": "PA0038",
         "partyName": "ANTHONY STORE",
         "route": "PSR4",
         "phoneNumber": "9092944775",
@@ -480,17 +390,7 @@
         "coordinate": "11.040107 76.98943"
     },
     {
-        "party_id": "PA0048",
-        "partyName": "AR BAKERY",
-        "route": "PSR6",
-        "phoneNumber": "9994062356",
-        "gst": "",
-        "available": 1,
-        "address": "KAMAKOTTI NAGAR COIMBATORE KAMAKOTTI NAGAR Coimbatore 641006",
-        "coordinate": "11.044317 76.985639"
-    },
-    {
-        "party_id": "PA0049",
+        "party_id": "PA0039",
         "partyName": "AR BAKERY",
         "route": "PSR2",
         "phoneNumber": "9842353649",
@@ -500,7 +400,7 @@
         "coordinate": "11.037394 76.967918"
     },
     {
-        "party_id": "PA0050",
+        "party_id": "PA0040",
         "partyName": "AR BAKES RESTAURANT",
         "route": "PSR6",
         "phoneNumber": "9940649140",
@@ -510,17 +410,7 @@
         "coordinate": "11.044291 76.985566"
     },
     {
-        "party_id": "PA0051",
-        "partyName": "AR BAKES RESTAURANT",
-        "route": "PSR2",
-        "phoneNumber": "9585370259",
-        "gst": "",
-        "available": 1,
-        "address": "SF N 349/1 SV PATTY THUDIYALUR RD COVAI COIMBATORE 641035",
-        "coordinate": "11.078821 77.003184"
-    },
-    {
-        "party_id": "PA0052",
+        "party_id": "PA0041",
         "partyName": "AR SUPER MARKET",
         "route": "PSR2",
         "phoneNumber": "9787870240",
@@ -530,7 +420,7 @@
         "coordinate": "11.079881 76.998504"
     },
     {
-        "party_id": "PA0053",
+        "party_id": "PA0042",
         "partyName": "AROKYA BAKERY",
         "route": "PSR6",
         "phoneNumber": "9940996558",
@@ -540,7 +430,7 @@
         "coordinate": "11.030845 76.975625"
     },
     {
-        "party_id": "PA0054",
+        "party_id": "PA0043",
         "partyName": "ARUNACHALAM STORES",
         "route": "PSR6",
         "phoneNumber": "8883510282",
@@ -550,7 +440,7 @@
         "coordinate": "11.027318 76.903197"
     },
     {
-        "party_id": "PA0055",
+        "party_id": "PA0044",
         "partyName": "ARV BAKERY",
         "route": "PSR5",
         "phoneNumber": "9890458860",
@@ -560,7 +450,7 @@
         "coordinate": "11.035798 76.955561"
     },
     {
-        "party_id": "PA0056",
+        "party_id": "PA0045",
         "partyName": "ASAI PALAMUDHIR",
         "route": "PSR1",
         "phoneNumber": "9585296222",
@@ -570,7 +460,7 @@
         "coordinate": "11.088191 77.007286"
     },
     {
-        "party_id": "PA0057",
+        "party_id": "PA0046",
         "partyName": "ASHWINI RAGAM BAKERY",
         "route": "PSR1",
         "phoneNumber": "7871677313",
@@ -580,7 +470,7 @@
         "coordinate": "11.073691 77.012015"
     },
     {
-        "party_id": "PA0058",
+        "party_id": "PA0047",
         "partyName": "ASHWINI RAGAM BAKES",
         "route": "PSR4",
         "phoneNumber": "9442520713",
@@ -590,17 +480,7 @@
         "coordinate": "11.042207 77.00333"
     },
     {
-        "party_id": "PA0059",
-        "partyName": "ASHWINI RAGAM BAKES",
-        "route": "PSR6",
-        "phoneNumber": "8668043088",
-        "gst": "",
-        "available": 1,
-        "address": "1 GANDHI MAA NAGAR OPP BSNL OFF PEELAMEDU,COIMBATORE 641004",
-        "coordinate": "11.097846 77.006652"
-    },
-    {
-        "party_id": "PA0060",
+        "party_id": "PA0048",
         "partyName": "ASSETCARE SERVICES PVT LTD",
         "route": "PSR2",
         "phoneNumber": "9360580603",
@@ -610,27 +490,7 @@
         "coordinate": "11.071608 76.984647"
     },
     {
-        "party_id": "PA0061",
-        "partyName": "ASWINI RAGAM BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "6379819653",
-        "gst": "",
-        "available": 1,
-        "address": "VK ROAD VINAYAKAPURAM COIMBATORE 641006",
-        "coordinate": "11.05747 77.004446"
-    },
-    {
-        "party_id": "PA0062",
-        "partyName": "ASWINI RAGAM BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "9611629278",
-        "gst": "",
-        "available": 1,
-        "address": "THANNEERPANDHAL ROAD COIMBATORE 641006",
-        "coordinate": "11.097828 77.006653"
-    },
-    {
-        "party_id": "PA0063",
+        "party_id": "PA0049",
         "partyName": "ASWINI RAGAM BAKERY",
         "route": "PSR1",
         "phoneNumber": "9443525713",
@@ -640,7 +500,7 @@
         "coordinate": "11.097896 77.006663"
     },
     {
-        "party_id": "PA0064",
+        "party_id": "PA0050",
         "partyName": "ASWINI RAGAM BAKES",
         "route": "PSR4",
         "phoneNumber": "9442520713",
@@ -650,7 +510,7 @@
         "coordinate": "11.040474 77.003586"
     },
     {
-        "party_id": "PA0065",
+        "party_id": "PA0051",
         "partyName": "ATM CAKES",
         "route": "PSR2",
         "phoneNumber": "8056228093",
@@ -660,7 +520,7 @@
         "coordinate": "11.081287 76.990772"
     },
     {
-        "party_id": "PA0066",
+        "party_id": "PA0052",
         "partyName": "AVIN PALAGAM",
         "route": "PSR4",
         "phoneNumber": "7094644520",
@@ -670,7 +530,7 @@
         "coordinate": "11.035705 76.990578"
     },
     {
-        "party_id": "PA0067",
+        "party_id": "PA0053",
         "partyName": "AVP MALIGAI",
         "route": "PSR4",
         "phoneNumber": "9626797947",
@@ -680,7 +540,7 @@
         "coordinate": "11.050699 76.999656"
     },
     {
-        "party_id": "PA0068",
+        "party_id": "PA0054",
         "partyName": "AYYA PETTY SHOP",
         "route": "PSR1",
         "phoneNumber": "9360818740",
@@ -690,7 +550,7 @@
         "coordinate": "11.005817 76.910257"
     },
     {
-        "party_id": "PA0069",
+        "party_id": "PA0055",
         "partyName": "AYYANAR BAKERY",
         "route": "PSR5",
         "phoneNumber": "9597922951",
@@ -700,7 +560,7 @@
         "coordinate": "11.035401 76.974158"
     },
     {
-        "party_id": "PA0070",
+        "party_id": "PA0056",
         "partyName": "AYYANAR STORE",
         "route": "PSR4",
         "phoneNumber": "9952621319",
@@ -710,7 +570,7 @@
         "coordinate": "11.039542 76.996876"
     },
     {
-        "party_id": "PA0071",
+        "party_id": "PA0057",
         "partyName": "Aadhi bhavan store",
         "route": "PSR2",
         "phoneNumber": "9751714231",
@@ -720,7 +580,7 @@
         "coordinate": "11.071608 76.984647"
     },
     {
-        "party_id": "PA0072",
+        "party_id": "PA0058",
         "partyName": "Amber dum briyani",
         "route": "PSR6",
         "phoneNumber": "9786956486",
@@ -730,7 +590,7 @@
         "coordinate": "11.053114 76.99382"
     },
     {
-        "party_id": "PA0073",
+        "party_id": "PA0059",
         "partyName": "Anthony Store",
         "route": "PSR4",
         "phoneNumber": "9245639109",
@@ -740,7 +600,7 @@
         "coordinate": "11.039938 76.989464"
     },
     {
-        "party_id": "PA0074",
+        "party_id": "PA0060",
         "partyName": "Asai Bakery",
         "route": "PSR6",
         "phoneNumber": "9865271432",
@@ -750,7 +610,7 @@
         "coordinate": "11.044891 76.985415"
     },
     {
-        "party_id": "PA0075",
+        "party_id": "PA0061",
         "partyName": "Assetcare service pvt ltd",
         "route": "PSR2",
         "phoneNumber": "9159591596",
@@ -760,7 +620,7 @@
         "coordinate": "11.073889 76.981936"
     },
     {
-        "party_id": "PA0076",
+        "party_id": "PA0062",
         "partyName": "BABY SNACKS and FOODS",
         "route": "PSR1",
         "phoneNumber": "9994681202",
@@ -770,7 +630,7 @@
         "coordinate": "11.097873 77.006633"
     },
     {
-        "party_id": "PA0077",
+        "party_id": "PA0063",
         "partyName": "BAI BIRIYANI",
         "route": "PSR4",
         "phoneNumber": "9751088313",
@@ -780,17 +640,7 @@
         "coordinate": "11.052277 76.995246"
     },
     {
-        "party_id": "PA0078",
-        "partyName": "BALAJI BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "9898989898",
-        "gst": "",
-        "available": 1,
-        "address": "VK ROAD IT PARK ROAD COIMBATORE 641035",
-        "coordinate": "11.073731 77.012026"
-    },
-    {
-        "party_id": "PA0079",
+        "party_id": "PA0064",
         "partyName": "BALAJI BAKERY",
         "route": "PSR5",
         "phoneNumber": "8610519100",
@@ -800,7 +650,7 @@
         "coordinate": "11.03518 76.9725"
     },
     {
-        "party_id": "PA0080",
+        "party_id": "PA0065",
         "partyName": "BALAJI STORE",
         "route": "PSR4",
         "phoneNumber": "9215412441",
@@ -810,7 +660,7 @@
         "coordinate": "11.116451 77.015724"
     },
     {
-        "party_id": "PA0081",
+        "party_id": "PA0066",
         "partyName": "BALAJI TEA STALL",
         "route": "PSR6",
         "phoneNumber": "7733890029",
@@ -820,7 +670,7 @@
         "coordinate": "11.058967 76.996782"
     },
     {
-        "party_id": "PA0082",
+        "party_id": "PA0067",
         "partyName": "BALAN TEA STALL",
         "route": "PSR6",
         "phoneNumber": "9787451441",
@@ -830,7 +680,7 @@
         "coordinate": "11.048578 76.989201"
     },
     {
-        "party_id": "PA0083",
+        "party_id": "PA0068",
         "partyName": "BANNARI AMMAN CATERING",
         "route": "PSR1",
         "phoneNumber": "9942596804",
@@ -840,7 +690,7 @@
         "coordinate": "11.073718 77.011935"
     },
     {
-        "party_id": "PA0084",
+        "party_id": "PA0069",
         "partyName": "BENNY YEL STORE",
         "route": "PSR1",
         "phoneNumber": "9942578242",
@@ -850,7 +700,7 @@
         "coordinate": "11.069288 77.011526"
     },
     {
-        "party_id": "PA0085",
+        "party_id": "PA0070",
         "partyName": "BHAI BIRIYANI",
         "route": "PSR2",
         "phoneNumber": "9344482041",
@@ -860,7 +710,7 @@
         "coordinate": "11.075271 77.002272"
     },
     {
-        "party_id": "PA0086",
+        "party_id": "PA0071",
         "partyName": "BHARATHAN SUPERMART ( FOOD WORKS )",
         "route": "PSR5",
         "phoneNumber": "7373978788",
@@ -870,7 +720,7 @@
         "coordinate": "11.038988 76.960581"
     },
     {
-        "party_id": "PA0087",
+        "party_id": "PA0072",
         "partyName": "BIG FAT BURGER (United Enterprises)",
         "route": "PSR2",
         "phoneNumber": "9659024261",
@@ -880,7 +730,7 @@
         "coordinate": "11.080731 77.002363"
     },
     {
-        "party_id": "PA0088",
+        "party_id": "PA0073",
         "partyName": "BISMILLAH THAMBIYANNAN BIRIYANI",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -890,7 +740,7 @@
         "coordinate": "11.052118 76.9932"
     },
     {
-        "party_id": "PA0089",
+        "party_id": "PA0074",
         "partyName": "BJ STORE",
         "route": "PSR5",
         "phoneNumber": "9080715658",
@@ -900,7 +750,7 @@
         "coordinate": "11.047754 76.961273"
     },
     {
-        "party_id": "PA0090",
+        "party_id": "PA0075",
         "partyName": "BLACK BOX",
         "route": "PSR2",
         "phoneNumber": "8825970615",
@@ -910,7 +760,7 @@
         "coordinate": "11.081711 76.975463"
     },
     {
-        "party_id": "PA0091",
+        "party_id": "PA0076",
         "partyName": "BURP FOOD  AND BEVERAGES",
         "route": "PSR5",
         "phoneNumber": "8870866113",
@@ -920,7 +770,7 @@
         "coordinate": "11.047533 76.975611"
     },
     {
-        "party_id": "PA0092",
+        "party_id": "PA0077",
         "partyName": "BVIC FOOD FACTORY",
         "route": "PSR2",
         "phoneNumber": "8778228008",
@@ -930,7 +780,7 @@
         "coordinate": "11.081213 76.991777"
     },
     {
-        "party_id": "PA0093",
+        "party_id": "PA0078",
         "partyName": "BYAGIYALASHMI BAKERY",
         "route": "PSR6",
         "phoneNumber": "9943432677",
@@ -940,7 +790,7 @@
         "coordinate": "11.050523 76.990551"
     },
     {
-        "party_id": "PA0094",
+        "party_id": "PA0079",
         "partyName": "Balan tea stall",
         "route": "PSR6",
         "phoneNumber": "9787451441",
@@ -950,7 +800,7 @@
         "coordinate": "11.048592 76.989246"
     },
     {
-        "party_id": "PA0095",
+        "party_id": "PA0080",
         "partyName": "Briyani Anda",
         "route": "PSR6",
         "phoneNumber": "7200539896",
@@ -960,7 +810,7 @@
         "coordinate": "11.097866 77.006638"
     },
     {
-        "party_id": "PA0096",
+        "party_id": "PA0081",
         "partyName": "C R I PUMPS P LTD",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -970,7 +820,7 @@
         "coordinate": "11.081892 77.005384"
     },
     {
-        "party_id": "PA0097",
+        "party_id": "PA0082",
         "partyName": "C R I TRUST HEALTHCARE PHARMACY",
         "route": "PSR1",
         "phoneNumber": "8248355849",
@@ -980,7 +830,7 @@
         "coordinate": "11.081706 77.005255"
     },
     {
-        "party_id": "PA0098",
+        "party_id": "PA0083",
         "partyName": "C S K BAKERY",
         "route": "PSR5",
         "phoneNumber": "9566930111",
@@ -990,7 +840,7 @@
         "coordinate": "11.049566 76.967658"
     },
     {
-        "party_id": "PA0099",
+        "party_id": "PA0084",
         "partyName": "CAFETERIA CMS COLLEGE",
         "route": "PSR2",
         "phoneNumber": "9898989898",
@@ -1000,7 +850,7 @@
         "coordinate": "11.073891 76.981923"
     },
     {
-        "party_id": "PA0100",
+        "party_id": "PA0085",
         "partyName": "CFC INDIAN CRISPY FRIED CHICKEN",
         "route": "PSR3",
         "phoneNumber": "9633358004",
@@ -1010,7 +860,7 @@
         "coordinate": "11.108753 77.024884"
     },
     {
-        "party_id": "PA0101",
+        "party_id": "PA0086",
         "partyName": "CHARLES MALIGAI",
         "route": "PSR1",
         "phoneNumber": "9486446972",
@@ -1020,7 +870,7 @@
         "coordinate": "11.061426 77.002532"
     },
     {
-        "party_id": "PA0102",
+        "party_id": "PA0087",
         "partyName": "CHENDUR MURUGAN MART",
         "route": "PSR5",
         "phoneNumber": "9994449989",
@@ -1030,7 +880,7 @@
         "coordinate": "11.097876 77.00656"
     },
     {
-        "party_id": "PA0103",
+        "party_id": "PA0088",
         "partyName": "CHERAN SUPER MARKET",
         "route": "PSR3",
         "phoneNumber": "8098848887",
@@ -1040,7 +890,7 @@
         "coordinate": "11.112573 77.029774"
     },
     {
-        "party_id": "PA0104",
+        "party_id": "PA0089",
         "partyName": "CHERMAN STORE",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -1050,7 +900,7 @@
         "coordinate": "11.05367 76.992694"
     },
     {
-        "party_id": "PA0105",
+        "party_id": "PA0090",
         "partyName": "CHICK INN",
         "route": "PSR1",
         "phoneNumber": "8056820899",
@@ -1060,7 +910,7 @@
         "coordinate": "11.057576 77.0044"
     },
     {
-        "party_id": "PA0106",
+        "party_id": "PA0091",
         "partyName": "CHILL ZONE",
         "route": "PSR6",
         "phoneNumber": "9342512355",
@@ -1070,7 +920,7 @@
         "coordinate": "11.097881 77.006456"
     },
     {
-        "party_id": "PA0107",
+        "party_id": "PA0092",
         "partyName": "CHINNATHAMBI HOTEL",
         "route": "PSR2",
         "phoneNumber": "8526851230",
@@ -1080,7 +930,7 @@
         "coordinate": "11.076207 77.00124"
     },
     {
-        "party_id": "PA0108",
+        "party_id": "PA0093",
         "partyName": "CHOCOLATE MONARCH",
         "route": "PSR2",
         "phoneNumber": "9976799295",
@@ -1090,17 +940,7 @@
         "coordinate": "11.08334 76.978562"
     },
     {
-        "party_id": "PA0109",
-        "partyName": "CITY BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "9360784764",
-        "gst": "",
-        "available": 1,
-        "address": "809,ATHIPALAYAMPIRIVU COIMBATORE 641035",
-        "coordinate": "11.049883 76.98379"
-    },
-    {
-        "party_id": "PA0110",
+        "party_id": "PA0094",
         "partyName": "CITY BAKERY",
         "route": "PSR5",
         "phoneNumber": "9688795457",
@@ -1110,27 +950,7 @@
         "coordinate": "11.047748 76.968636"
     },
     {
-        "party_id": "PA0111",
-        "partyName": "CITY BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "9843280488",
-        "gst": "",
-        "available": 1,
-        "address": "MANIYAKARANPALAYAM RD CHINNAVEDAMPATTI Coimbatore 641035",
-        "coordinate": "11.047653 76.974716"
-    },
-    {
-        "party_id": "PA0112",
-        "partyName": "CITY BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "9486253252",
-        "gst": "",
-        "available": 1,
-        "address": "244/2 VK VILLAGE VK ROAD BALKARA THOTTAM .COIMBATORE Coimbatore Coimbatore 641004",
-        "coordinate": "11.07361 77.01672"
-    },
-    {
-        "party_id": "PA0113",
+        "party_id": "PA0095",
         "partyName": "CITY CAKE SHOP",
         "route": "PSR1",
         "phoneNumber": "9042222691",
@@ -1140,7 +960,7 @@
         "coordinate": "11.060797 77.008568"
     },
     {
-        "party_id": "PA0114",
+        "party_id": "PA0096",
         "partyName": "CITY PAZHAMUTHIR NILAYAM",
         "route": "PSR2",
         "phoneNumber": "9566999253",
@@ -1150,7 +970,7 @@
         "coordinate": "11.072876 77.001771"
     },
     {
-        "party_id": "PA0115",
+        "party_id": "PA0097",
         "partyName": "CMC SCHOOL CANTEEN",
         "route": "PSR6",
         "phoneNumber": "9952717996",
@@ -1160,7 +980,7 @@
         "coordinate": "11.04037 76.981678"
     },
     {
-        "party_id": "PA0116",
+        "party_id": "PA0098",
         "partyName": "CMS COLLEGE CANTEEN",
         "route": "PSR2",
         "phoneNumber": "9944540863",
@@ -1170,7 +990,7 @@
         "coordinate": "11.073575 76.982127"
     },
     {
-        "party_id": "PA0117",
+        "party_id": "PA0099",
         "partyName": "CMS COLLEGE CANTEEN 2",
         "route": "PSR2",
         "phoneNumber": "9842552543",
@@ -1180,7 +1000,7 @@
         "coordinate": "11.073893 76.981937"
     },
     {
-        "party_id": "PA0118",
+        "party_id": "PA0100",
         "partyName": "COME 4 COFFEE",
         "route": "PSR2",
         "phoneNumber": "9047377167",
@@ -1190,7 +1010,7 @@
         "coordinate": "11.082943 76.98493"
     },
     {
-        "party_id": "PA0119",
+        "party_id": "PA0101",
         "partyName": "CURRY FACTORY",
         "route": "PSR2",
         "phoneNumber": "9994794448",
@@ -1200,7 +1020,7 @@
         "coordinate": "11.080773 76.993556"
     },
     {
-        "party_id": "PA0120",
+        "party_id": "PA0102",
         "partyName": "Chairman Store",
         "route": "PSR1",
         "phoneNumber": "9362583291",
@@ -1210,7 +1030,7 @@
         "coordinate": "11.073755 77.012161"
     },
     {
-        "party_id": "PA0121",
+        "party_id": "PA0103",
         "partyName": "City Bakery",
         "route": "PSR5",
         "phoneNumber": "7598848473",
@@ -1220,7 +1040,7 @@
         "coordinate": "11.047641 76.974698"
     },
     {
-        "party_id": "PA0122",
+        "party_id": "PA0104",
         "partyName": "Cocaraco Hotel",
         "route": "PSR2",
         "phoneNumber": "9443777455",
@@ -1230,7 +1050,7 @@
         "coordinate": "11.079124 77.003928"
     },
     {
-        "party_id": "PA0123",
+        "party_id": "PA0105",
         "partyName": "D DEVADASS MALIGAI STORE",
         "route": "PSR4",
         "phoneNumber": "9865296523",
@@ -1240,27 +1060,7 @@
         "coordinate": "11.097927 77.006597"
     },
     {
-        "party_id": "PA0124",
-        "partyName": "DEEPAM BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "9876543210",
-        "gst": "",
-        "available": 1,
-        "address": "BHARATHIYAR RAOD  GANAPATY COIMBATORE BHARATHIYAR RAOD  GANAPATY 641006",
-        "coordinate": "11.045323 76.974623"
-    },
-    {
-        "party_id": "PA0125",
-        "partyName": "DEEPAM BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "8098874105",
-        "gst": "",
-        "available": 1,
-        "address": "177-A, M.K.P.COLONY,BHARATHIAR ROAD COIMBATORE 641006",
-        "coordinate": "11.04532 76.974643"
-    },
-    {
-        "party_id": "PA0126",
+        "party_id": "PA0106",
         "partyName": "DEEPAM BAKERY",
         "route": "PSR5",
         "phoneNumber": "9840654716",
@@ -1270,7 +1070,7 @@
         "coordinate": "11.045315 76.974615"
     },
     {
-        "party_id": "PA0127",
+        "party_id": "PA0107",
         "partyName": "DEEPAN STORES",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -1280,7 +1080,7 @@
         "coordinate": "11.07118 77.01714"
     },
     {
-        "party_id": "PA0128",
+        "party_id": "PA0108",
         "partyName": "DENMARK",
         "route": "PSR6",
         "phoneNumber": "9843339295",
@@ -1290,7 +1090,7 @@
         "coordinate": "11.036399 76.977904"
     },
     {
-        "party_id": "PA0129",
+        "party_id": "PA0109",
         "partyName": "DEVA BAKERY",
         "route": "PSR5",
         "phoneNumber": "9486923345",
@@ -1300,7 +1100,7 @@
         "coordinate": "11.042471 76.960581"
     },
     {
-        "party_id": "PA0130",
+        "party_id": "PA0110",
         "partyName": "DHANALAXMI STORE",
         "route": "PSR1",
         "phoneNumber": "7299303880",
@@ -1310,7 +1110,7 @@
         "coordinate": "11.056178 77.002116"
     },
     {
-        "party_id": "PA0131",
+        "party_id": "PA0111",
         "partyName": "DHANEESH STORE",
         "route": "PSR1",
         "phoneNumber": "9843073651",
@@ -1320,7 +1120,7 @@
         "coordinate": "11.073757 77.012112"
     },
     {
-        "party_id": "PA0132",
+        "party_id": "PA0112",
         "partyName": "DHARSHINI MESS",
         "route": "PSR1",
         "phoneNumber": "9789759200",
@@ -1330,7 +1130,7 @@
         "coordinate": "11.079401 77.004329"
     },
     {
-        "party_id": "PA0133",
+        "party_id": "PA0113",
         "partyName": "DHIYANALINGA BAKERY",
         "route": "PSR6",
         "phoneNumber": "7373535899",
@@ -1340,7 +1140,7 @@
         "coordinate": "11.035505 76.976046"
     },
     {
-        "party_id": "PA0134",
+        "party_id": "PA0114",
         "partyName": "DHYNALINGA BAKERY",
         "route": "PSR1",
         "phoneNumber": "9786024205",
@@ -1350,7 +1150,7 @@
         "coordinate": "11.073716 77.011943"
     },
     {
-        "party_id": "PA0135",
+        "party_id": "PA0115",
         "partyName": "DIRECT VEG.COM",
         "route": "PSR1",
         "phoneNumber": "9342609922",
@@ -1360,7 +1160,7 @@
         "coordinate": "11.057806 77.005426"
     },
     {
-        "party_id": "PA0136",
+        "party_id": "PA0116",
         "partyName": "DIYANALINGAM BAKERY",
         "route": "PSR1",
         "phoneNumber": "8012213323",
@@ -1370,7 +1170,7 @@
         "coordinate": "11.064257 77.01308"
     },
     {
-        "party_id": "PA0137",
+        "party_id": "PA0117",
         "partyName": "DR . IDLI",
         "route": "PSR2",
         "phoneNumber": "9789136010",
@@ -1380,7 +1180,7 @@
         "coordinate": "11.079295 77.002028"
     },
     {
-        "party_id": "PA0138",
+        "party_id": "PA0118",
         "partyName": "DRAUPATHI PAZHAMUDIR and STORE",
         "route": "PSR6",
         "phoneNumber": "8428673224",
@@ -1390,7 +1190,7 @@
         "coordinate": "11.095535 77.010135"
     },
     {
-        "party_id": "PA0139",
+        "party_id": "PA0119",
         "partyName": "DYO DSIGN YOUR OFFERS",
         "route": "PSR2",
         "phoneNumber": "9994030002",
@@ -1400,7 +1200,7 @@
         "coordinate": "11.080763 76.99368"
     },
     {
-        "party_id": "PA0140",
+        "party_id": "PA0120",
         "partyName": "Dhanaya tea stall",
         "route": "PSR1",
         "phoneNumber": "9629229297",
@@ -1410,17 +1210,7 @@
         "coordinate": "11.058225 77.005635"
     },
     {
-        "party_id": "PA0141",
-        "partyName": "Dhanu Bakery",
-        "route": "PSR3",
-        "phoneNumber": "9865679997",
-        "gst": "",
-        "available": 1,
-        "address": "Kondayampalayam Road, Lakshmi Garden COIMBATORE 641035",
-        "coordinate": "11.096868 77.019067"
-    },
-    {
-        "party_id": "PA0142",
+        "party_id": "PA0121",
         "partyName": "Dhanu Bakery",
         "route": "PSR3",
         "phoneNumber": "7538895823",
@@ -1430,7 +1220,7 @@
         "coordinate": "11.104019 77.011805"
     },
     {
-        "party_id": "PA0143",
+        "party_id": "PA0122",
         "partyName": "Divya Chettinadu Mess and Bakery",
         "route": "PSR2",
         "phoneNumber": "9787044201",
@@ -1440,7 +1230,7 @@
         "coordinate": "11.080793 76.993584"
     },
     {
-        "party_id": "PA0144",
+        "party_id": "PA0123",
         "partyName": "ELITE MESS",
         "route": "PSR6",
         "phoneNumber": "9840389983",
@@ -1450,7 +1240,7 @@
         "coordinate": "11.062601 76.999559"
     },
     {
-        "party_id": "PA0145",
+        "party_id": "PA0124",
         "partyName": "ESWARI STORE",
         "route": "PSR5",
         "phoneNumber": "8110814238",
@@ -1460,7 +1250,7 @@
         "coordinate": "11.081629 76.989534"
     },
     {
-        "party_id": "PA0146",
+        "party_id": "PA0125",
         "partyName": "FARM TO HOME",
         "route": "PSR5",
         "phoneNumber": "9786563180",
@@ -1470,7 +1260,7 @@
         "coordinate": "11.02575 76.971408"
     },
     {
-        "party_id": "PA0147",
+        "party_id": "PA0126",
         "partyName": "FOOD CARE HOME NEEDS",
         "route": "PSR3",
         "phoneNumber": "9750375518",
@@ -1480,7 +1270,7 @@
         "coordinate": "11.100015 77.021307"
     },
     {
-        "party_id": "PA0148",
+        "party_id": "PA0127",
         "partyName": "FOOD LAND RESTAURANT",
         "route": "PSR4",
         "phoneNumber": "6385379893",
@@ -1490,7 +1280,7 @@
         "coordinate": "11.050402 76.999757"
     },
     {
-        "party_id": "PA0149",
+        "party_id": "PA0128",
         "partyName": "FOUR SEASON RESTAURENT",
         "route": "PSR3",
         "phoneNumber": "9842275925",
@@ -1500,7 +1290,7 @@
         "coordinate": "11.096195 77.015275"
     },
     {
-        "party_id": "PA0150",
+        "party_id": "PA0129",
         "partyName": "FOUR SEASONS",
         "route": "PSR3",
         "phoneNumber": "9842275925",
@@ -1510,7 +1300,7 @@
         "coordinate": "11.095997 77.015376"
     },
     {
-        "party_id": "PA0151",
+        "party_id": "PA0130",
         "partyName": "FRIENDS BAKERY",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -1520,7 +1310,7 @@
         "coordinate": "11.073701 77.012006"
     },
     {
-        "party_id": "PA0152",
+        "party_id": "PA0131",
         "partyName": "G S Maligai",
         "route": "PSR6",
         "phoneNumber": "9489546392",
@@ -1530,7 +1320,7 @@
         "coordinate": "11.062686 76.992909"
     },
     {
-        "party_id": "PA0153",
+        "party_id": "PA0132",
         "partyName": "G.S.K PETTY SHOP",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -1540,7 +1330,7 @@
         "coordinate": "11.073738 77.012099"
     },
     {
-        "party_id": "PA0154",
+        "party_id": "PA0133",
         "partyName": "GANAPATHY STORE",
         "route": "PSR3",
         "phoneNumber": "8870667165",
@@ -1550,7 +1340,7 @@
         "coordinate": "11.097517 77.020057"
     },
     {
-        "party_id": "PA0155",
+        "party_id": "PA0134",
         "partyName": "GARRISON TAVERN",
         "route": "PSR5",
         "phoneNumber": "8610178329",
@@ -1560,7 +1350,7 @@
         "coordinate": "11.097861 77.006538"
     },
     {
-        "party_id": "PA0156",
+        "party_id": "PA0135",
         "partyName": "GEETH PRIYA BAKERY",
         "route": "PSR6",
         "phoneNumber": "9787218745",
@@ -1570,7 +1360,7 @@
         "coordinate": "11.097755 77.006622"
     },
     {
-        "party_id": "PA0157",
+        "party_id": "PA0136",
         "partyName": "GEETHA AAVIN HI-TECH MILK PARLOUR",
         "route": "PSR5",
         "phoneNumber": "9443998091",
@@ -1580,7 +1370,7 @@
         "coordinate": "11.03764 76.973385"
     },
     {
-        "party_id": "PA0158",
+        "party_id": "PA0137",
         "partyName": "GENERATION FOODIE",
         "route": "PSR6",
         "phoneNumber": "9790580240",
@@ -1590,17 +1380,7 @@
         "coordinate": "11.097825 77.006541"
     },
     {
-        "party_id": "PA0159",
-        "partyName": "GOKULAM BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "9944394275",
-        "gst": "",
-        "available": 1,
-        "address": "37,BHARATHIYAR RD, MASAKALIPALAYAM COIMBATORE 641006",
-        "coordinate": "11.043835 76.976828"
-    },
-    {
-        "party_id": "PA0160",
+        "party_id": "PA0138",
         "partyName": "GOKULAM BAKERY",
         "route": "PSR5",
         "phoneNumber": "9944894275",
@@ -1610,7 +1390,7 @@
         "coordinate": "11.04384 76.976761"
     },
     {
-        "party_id": "PA0161",
+        "party_id": "PA0139",
         "partyName": "GORGEOUS GREENS ENTERPRISES LLP",
         "route": "PSR1",
         "phoneNumber": "8903459200",
@@ -1620,7 +1400,7 @@
         "coordinate": "11.074873 77.007982"
     },
     {
-        "party_id": "PA0162",
+        "party_id": "PA0140",
         "partyName": "GRACE PALAMUTHIR",
         "route": "PSR1",
         "phoneNumber": "9787200400",
@@ -1630,7 +1410,7 @@
         "coordinate": "11.076786 77.025625"
     },
     {
-        "party_id": "PA0163",
+        "party_id": "PA0141",
         "partyName": "GRAND RESTAURANT",
         "route": "PSR6",
         "phoneNumber": "9743963087",
@@ -1640,7 +1420,7 @@
         "coordinate": "11.095525 77.010168"
     },
     {
-        "party_id": "PA0164",
+        "party_id": "PA0142",
         "partyName": "GREEN BANANA RESTAURANT",
         "route": "PSR2",
         "phoneNumber": "8903556666",
@@ -1650,7 +1430,7 @@
         "coordinate": "11.081556 76.989255"
     },
     {
-        "party_id": "PA0165",
+        "party_id": "PA0143",
         "partyName": "GREEN LEAF",
         "route": "PSR1",
         "phoneNumber": "8903556666",
@@ -1660,7 +1440,7 @@
         "coordinate": "11.078703 77.003875"
     },
     {
-        "party_id": "PA0166",
+        "party_id": "PA0144",
         "partyName": "GREEN TREE RESTARANT",
         "route": "PSR2",
         "phoneNumber": "8903756666",
@@ -1670,7 +1450,7 @@
         "coordinate": "11.079842 76.998653"
     },
     {
-        "party_id": "PA0167",
+        "party_id": "PA0145",
         "partyName": "GRILL NIGHTS",
         "route": "PSR2",
         "phoneNumber": "8807292528",
@@ -1680,7 +1460,7 @@
         "coordinate": "11.07068 77.00204"
     },
     {
-        "party_id": "PA0168",
+        "party_id": "PA0146",
         "partyName": "GRS MINI STORE",
         "route": "PSR4",
         "phoneNumber": "9843441188",
@@ -1690,7 +1470,7 @@
         "coordinate": "11.041119 76.998143"
     },
     {
-        "party_id": "PA0169",
+        "party_id": "PA0147",
         "partyName": "GURU AMUTHAS",
         "route": "PSR2",
         "phoneNumber": "8973833444",
@@ -1700,7 +1480,7 @@
         "coordinate": "11.073603 77.001669"
     },
     {
-        "party_id": "PA0170",
+        "party_id": "PA0148",
         "partyName": "Goki Bakers",
         "route": "PSR5",
         "phoneNumber": "9843866997",
@@ -1710,7 +1490,7 @@
         "coordinate": "11.047692 76.971885"
     },
     {
-        "party_id": "PA0171",
+        "party_id": "PA0149",
         "partyName": "HEAD START RETAIL TECHNOLOGIES",
         "route": "PSR2",
         "phoneNumber": "7540042021",
@@ -1720,7 +1500,7 @@
         "coordinate": "11.087275 76.982193"
     },
     {
-        "party_id": "PA0172",
+        "party_id": "PA0150",
         "partyName": "HELEN BAKERY",
         "route": "PSR6",
         "phoneNumber": "9943345933",
@@ -1730,7 +1510,7 @@
         "coordinate": "11.034051 76.974731"
     },
     {
-        "party_id": "PA0173",
+        "party_id": "PA0151",
         "partyName": "HOLIDAY FOOD COURT",
         "route": "PSR2",
         "phoneNumber": "9898989898",
@@ -1740,7 +1520,7 @@
         "coordinate": "11.079758 76.998589"
     },
     {
-        "party_id": "PA0174",
+        "party_id": "PA0152",
         "partyName": "HOLY GROUND CAFETERIA",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -1750,7 +1530,7 @@
         "coordinate": "11.043518 76.985161"
     },
     {
-        "party_id": "PA0175",
+        "party_id": "PA0153",
         "partyName": "HOT CHIPS",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -1760,7 +1540,7 @@
         "coordinate": "11.073689 77.012005"
     },
     {
-        "party_id": "PA0176",
+        "party_id": "PA0154",
         "partyName": "HOT SNACKS",
         "route": "PSR4",
         "phoneNumber": "9994637444",
@@ -1770,7 +1550,7 @@
         "coordinate": "11.041264 77.003449"
     },
     {
-        "party_id": "PA0177",
+        "party_id": "PA0155",
         "partyName": "HOTAL JANSI",
         "route": "PSR2",
         "phoneNumber": "9677636866",
@@ -1780,7 +1560,7 @@
         "coordinate": "11.082986 76.983863"
     },
     {
-        "party_id": "PA0178",
+        "party_id": "PA0156",
         "partyName": "HOTEL BIRIYANI DARBAR",
         "route": "PSR6",
         "phoneNumber": "9842245949",
@@ -1790,7 +1570,7 @@
         "coordinate": "11.037896 76.97914"
     },
     {
-        "party_id": "PA0179",
+        "party_id": "PA0157",
         "partyName": "HOTEL FRIENDS",
         "route": "PSR5",
         "phoneNumber": "9159890605",
@@ -1800,7 +1580,7 @@
         "coordinate": "11.035521 76.955545"
     },
     {
-        "party_id": "PA0180",
+        "party_id": "PA0158",
         "partyName": "HOTEL GM FOOD LAND",
         "route": "PSR2",
         "phoneNumber": "9789584455",
@@ -1810,7 +1590,7 @@
         "coordinate": "11.076353 77.001265"
     },
     {
-        "party_id": "PA0181",
+        "party_id": "PA0159",
         "partyName": "HOTEL JOTHI GRAND",
         "route": "PSR2",
         "phoneNumber": "7305043384",
@@ -1820,7 +1600,7 @@
         "coordinate": "11.081503 76.987576"
     },
     {
-        "party_id": "PA0182",
+        "party_id": "PA0160",
         "partyName": "HOTEL KANNAPPA",
         "route": "PSR6",
         "phoneNumber": "9500406165",
@@ -1830,7 +1610,7 @@
         "coordinate": "11.041335 76.982735"
     },
     {
-        "party_id": "PA0183",
+        "party_id": "PA0161",
         "partyName": "HOTEL MAHIMA",
         "route": "PSR4",
         "phoneNumber": "9943697921",
@@ -1840,7 +1620,7 @@
         "coordinate": "11.041293 76.998709"
     },
     {
-        "party_id": "PA0184",
+        "party_id": "PA0162",
         "partyName": "HOTEL PENGUIN",
         "route": "PSR4",
         "phoneNumber": "9751774053",
@@ -1850,7 +1630,7 @@
         "coordinate": "11.043997 77.002737"
     },
     {
-        "party_id": "PA0185",
+        "party_id": "PA0163",
         "partyName": "HOTEL SANDEEP",
         "route": "PSR6",
         "phoneNumber": "9894653256",
@@ -1860,7 +1640,7 @@
         "coordinate": "11.042141 76.983641"
     },
     {
-        "party_id": "PA0186",
+        "party_id": "PA0164",
         "partyName": "HOTEL SATHAR ROWTHER BIRIYANI",
         "route": "PSR2",
         "phoneNumber": "9787048255",
@@ -1870,7 +1650,7 @@
         "coordinate": "11.080803 76.993698"
     },
     {
-        "party_id": "PA0187",
+        "party_id": "PA0165",
         "partyName": "HOTEL SRI BALAJI",
         "route": "PSR5",
         "phoneNumber": "9842712917",
@@ -1880,7 +1660,7 @@
         "coordinate": "11.043881 76.960303"
     },
     {
-        "party_id": "PA0188",
+        "party_id": "PA0166",
         "partyName": "HOTEL SRI DEVI",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -1890,7 +1670,7 @@
         "coordinate": "11.074186 77.001895"
     },
     {
-        "party_id": "PA0189",
+        "party_id": "PA0167",
         "partyName": "HOTEL SRI RAAGAVA CHETTINADU",
         "route": "PSR6",
         "phoneNumber": "9751153580",
@@ -1900,7 +1680,7 @@
         "coordinate": "11.09556 77.010178"
     },
     {
-        "party_id": "PA0190",
+        "party_id": "PA0168",
         "partyName": "HYDREBAD BRIYANI",
         "route": "PSR4",
         "phoneNumber": "9543870560",
@@ -1910,7 +1690,7 @@
         "coordinate": "11.116447 77.015723"
     },
     {
-        "party_id": "PA0191",
+        "party_id": "PA0169",
         "partyName": "Hotel sri annamibgaa",
         "route": "PSR6",
         "phoneNumber": "8111076999",
@@ -1920,7 +1700,7 @@
         "coordinate": "11.030004 76.975331"
     },
     {
-        "party_id": "PA0192",
+        "party_id": "PA0170",
         "partyName": "Hungry Helpers (Thirumal Enterprises)",
         "route": "PSR1",
         "phoneNumber": "8825756587",
@@ -1930,7 +1710,7 @@
         "coordinate": "11.006166 76.910408"
     },
     {
-        "party_id": "PA0193",
+        "party_id": "PA0171",
         "partyName": "INFINITY STORES",
         "route": "PSR6",
         "phoneNumber": "9842648380",
@@ -1940,7 +1720,7 @@
         "coordinate": "11.058972 76.996782"
     },
     {
-        "party_id": "PA0194",
+        "party_id": "PA0172",
         "partyName": "ISHAA BAKERY",
         "route": "PSR1",
         "phoneNumber": "9626290714",
@@ -1950,7 +1730,7 @@
         "coordinate": "11.060499 77.007729"
     },
     {
-        "party_id": "PA0195",
+        "party_id": "PA0173",
         "partyName": "ISHEN TEA SPOT",
         "route": "PSR5",
         "phoneNumber": "9843023632",
@@ -1960,17 +1740,7 @@
         "coordinate": "11.045781 76.961273"
     },
     {
-        "party_id": "PA0196",
-        "partyName": "ISWARYA BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "8754728686",
-        "gst": "",
-        "available": 1,
-        "address": "RATHINAPURI ,GANAPATHY COIMBATORE 641027",
-        "coordinate": "11.02601 76.965208"
-    },
-    {
-        "party_id": "PA0197",
+        "party_id": "PA0174",
         "partyName": "ISWARYA BAKERY",
         "route": "PSR5",
         "phoneNumber": "9898989898",
@@ -1980,7 +1750,7 @@
         "coordinate": "11.026281 76.965121"
     },
     {
-        "party_id": "PA0198",
+        "party_id": "PA0175",
         "partyName": "IT TASMAC 1566",
         "route": "PSR2",
         "phoneNumber": "9750777788",
@@ -1990,7 +1760,7 @@
         "coordinate": "11.081618 76.9895"
     },
     {
-        "party_id": "PA0199",
+        "party_id": "PA0176",
         "partyName": "IYAPPA POOJA STORE",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -2000,7 +1770,7 @@
         "coordinate": "11.073695 77.012021"
     },
     {
-        "party_id": "PA0200",
+        "party_id": "PA0177",
         "partyName": "J A S MALIGAI",
         "route": "PSR5",
         "phoneNumber": "9843083587",
@@ -2010,7 +1780,7 @@
         "coordinate": "11.034521 76.967676"
     },
     {
-        "party_id": "PA0201",
+        "party_id": "PA0178",
         "partyName": "J.P. MESS",
         "route": "PSR1",
         "phoneNumber": "9789539530",
@@ -2020,7 +1790,7 @@
         "coordinate": "11.073686 77.012048"
     },
     {
-        "party_id": "PA0202",
+        "party_id": "PA0179",
         "partyName": "JAI ANJANEYA BAKES and SNACKS",
         "route": "PSR4",
         "phoneNumber": "7867948353",
@@ -2030,7 +1800,7 @@
         "coordinate": "11.051218 76.999309"
     },
     {
-        "party_id": "PA0203",
+        "party_id": "PA0180",
         "partyName": "JAI BAKERY AND MESS",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -2040,7 +1810,7 @@
         "coordinate": "11.073723 77.011953"
     },
     {
-        "party_id": "PA0204",
+        "party_id": "PA0181",
         "partyName": "JAI HOME NEEDS BRANCH",
         "route": "PSR3",
         "phoneNumber": "9943304929",
@@ -2050,7 +1820,7 @@
         "coordinate": "11.100169 77.021218"
     },
     {
-        "party_id": "PA0205",
+        "party_id": "PA0182",
         "partyName": "JAI MEGA MART  COMPLETE HOME NEEDS",
         "route": "PSR5",
         "phoneNumber": "9150003872",
@@ -2060,7 +1830,7 @@
         "coordinate": "11.045358 76.95883"
     },
     {
-        "party_id": "PA0206",
+        "party_id": "PA0183",
         "partyName": "JANU'S KITCHEN",
         "route": "PSR6",
         "phoneNumber": "9500999578",
@@ -2070,7 +1840,7 @@
         "coordinate": "11.050616 76.990471"
     },
     {
-        "party_id": "PA0207",
+        "party_id": "PA0184",
         "partyName": "JAS MALLIGAI",
         "route": "PSR5",
         "phoneNumber": "9176324789",
@@ -2080,7 +1850,7 @@
         "coordinate": "11.03439 76.967716"
     },
     {
-        "party_id": "PA0208",
+        "party_id": "PA0185",
         "partyName": "JAYA MALIGAI",
         "route": "PSR5",
         "phoneNumber": "9597609228",
@@ -2090,7 +1860,7 @@
         "coordinate": "11.097913 77.006683"
     },
     {
-        "party_id": "PA0209",
+        "party_id": "PA0186",
         "partyName": "JAYAM BAKES AND RESTAURANT",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -2100,17 +1870,17 @@
         "coordinate": "11.042375 76.983978"
     },
     {
-        "party_id": "PA0210",
+        "party_id": "PA0187",
         "partyName": "JERIN STORE",
         "route": "PSR1",
         "phoneNumber": "8870644533",
         "gst": "",
         "available": 1,
         "address": "SRI SAKTHI NAGAR,SARAVANAMPATTI ROAD,VILANKURUCHI COIMBATORE COIMBATORE 641035",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
-        "party_id": "PA0211",
+        "party_id": "PA0188",
         "partyName": "JJ HOTEL",
         "route": "PSR1",
         "phoneNumber": "8610182963",
@@ -2120,7 +1890,7 @@
         "coordinate": "11.097855 77.006666"
     },
     {
-        "party_id": "PA0212",
+        "party_id": "PA0189",
         "partyName": "JOTHI BAKERY",
         "route": "PSR1",
         "phoneNumber": "9789187879",
@@ -2130,7 +1900,7 @@
         "coordinate": "11.088308 77.007523"
     },
     {
-        "party_id": "PA0213",
+        "party_id": "PA0190",
         "partyName": "JOTHI DEPARTMENT STORE",
         "route": "PSR5",
         "phoneNumber": "9597290615",
@@ -2140,7 +1910,7 @@
         "coordinate": "11.046594 76.980684"
     },
     {
-        "party_id": "PA0214",
+        "party_id": "PA0191",
         "partyName": "JR BAKERY",
         "route": "PSR1",
         "phoneNumber": "9488444820",
@@ -2150,7 +1920,7 @@
         "coordinate": "11.058466 77.005531"
     },
     {
-        "party_id": "PA0215",
+        "party_id": "PA0192",
         "partyName": "JSM SWEETS and SNACKS",
         "route": "PSR6",
         "phoneNumber": "9677995318",
@@ -2160,37 +1930,7 @@
         "coordinate": "11.062665 76.993798"
     },
     {
-        "party_id": "PA0216",
-        "partyName": "JUST BAKE",
-        "route": "PSR2",
-        "phoneNumber": "9900040030",
-        "gst": "",
-        "available": 1,
-        "address": "NO 23,SIR SHANMUGAM ROAD,RS PURAM CBE CORP WARD 23,COIMBATORE 641002",
-        "coordinate": "11.079776 76.998959"
-    },
-    {
-        "party_id": "PA0217",
-        "partyName": "JUST BAKE",
-        "route": "PSR2",
-        "phoneNumber": "9900040030",
-        "gst": "",
-        "available": 1,
-        "address": "37E,THUDIYALUR ROAD,SARAVANAMPATTY CBE CORP WAR 28,COIMBATORE 641035",
-        "coordinate": "11.079876 76.99865"
-    },
-    {
-        "party_id": "PA0218",
-        "partyName": "JUST BAKE",
-        "route": "PSR2",
-        "phoneNumber": "9900040030",
-        "gst": "",
-        "available": 1,
-        "address": "DNO 54,GN MILLS PO,METTUPALAYAM ROAD CBE CORP WARD 43,COIMBATORE 641029",
-        "coordinate": "11.079908 76.998678"
-    },
-    {
-        "party_id": "PA0219",
+        "party_id": "PA0193",
         "partyName": "JUST BAKE",
         "route": "PSR2",
         "phoneNumber": "9900040030",
@@ -2200,7 +1940,7 @@
         "coordinate": "11.079856 76.998613"
     },
     {
-        "party_id": "PA0220",
+        "party_id": "PA0194",
         "partyName": "Jallikattu Paramparia Unavagam Restaurant",
         "route": "PSR3",
         "phoneNumber": "7339485665",
@@ -2210,7 +1950,7 @@
         "coordinate": "11.109237 77.026234"
     },
     {
-        "party_id": "PA0221",
+        "party_id": "PA0195",
         "partyName": "Jana Bakery",
         "route": "PSR3",
         "phoneNumber": "9894042525",
@@ -2220,7 +1960,7 @@
         "coordinate": "11.107353 77.011719"
     },
     {
-        "party_id": "PA0222",
+        "party_id": "PA0196",
         "partyName": "K M BAKERY",
         "route": "PSR2",
         "phoneNumber": "9092345335",
@@ -2230,7 +1970,7 @@
         "coordinate": "11.070916 77.001792"
     },
     {
-        "party_id": "PA0223",
+        "party_id": "PA0197",
         "partyName": "K R SUPERMART",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -2240,17 +1980,17 @@
         "coordinate": "11.073696 77.012024"
     },
     {
-        "party_id": "PA0224",
+        "party_id": "PA0198",
         "partyName": "KAFE 2 GO MEN",
         "route": "PSR2",
         "phoneNumber": "9944461226",
         "gst": "",
         "available": 1,
         "address": "CMS COLLEGE CAMPUS,CHINNAVEDAMPATTI,COIMBATORE COIMBATORE COIMBATORE 641035",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
-        "party_id": "PA0225",
+        "party_id": "PA0199",
         "partyName": "KALAPATIYAN KARUPATTI COFEE",
         "route": "PSR1",
         "phoneNumber": "9500979999",
@@ -2260,7 +2000,7 @@
         "coordinate": "11.077356 77.002746"
     },
     {
-        "party_id": "PA0226",
+        "party_id": "PA0200",
         "partyName": "KANAKATHARA",
         "route": "PSR4",
         "phoneNumber": "9677406005",
@@ -2270,7 +2010,7 @@
         "coordinate": "11.046651 76.988065"
     },
     {
-        "party_id": "PA0227",
+        "party_id": "PA0201",
         "partyName": "KANNAN STORE",
         "route": "PSR5",
         "phoneNumber": "9600841814",
@@ -2280,7 +2020,7 @@
         "coordinate": "11.03427 76.96772"
     },
     {
-        "party_id": "PA0228",
+        "party_id": "PA0202",
         "partyName": "KANNAPIRAN BAKERY",
         "route": "PSR5",
         "phoneNumber": "7871027308",
@@ -2290,7 +2030,7 @@
         "coordinate": "11.083926 76.982708"
     },
     {
-        "party_id": "PA0229",
+        "party_id": "PA0203",
         "partyName": "KARAIKUDI CHETTINAD HOTEL",
         "route": "PSR2",
         "phoneNumber": "8248141577",
@@ -2300,7 +2040,7 @@
         "coordinate": "11.079554 77.000865"
     },
     {
-        "party_id": "PA0230",
+        "party_id": "PA0204",
         "partyName": "KARAIKUDI CHETTINADU AACHI MESS",
         "route": "PSR6",
         "phoneNumber": "8489174800",
@@ -2310,7 +2050,7 @@
         "coordinate": "11.053609 76.994369"
     },
     {
-        "party_id": "PA0231",
+        "party_id": "PA0205",
         "partyName": "KARUPPATTI COFFEE",
         "route": "PSR2",
         "phoneNumber": "9790162489",
@@ -2320,7 +2060,7 @@
         "coordinate": "11.037182 76.961087"
     },
     {
-        "party_id": "PA0232",
+        "party_id": "PA0206",
         "partyName": "KARUPPUSAMY STORE",
         "route": "PSR5",
         "phoneNumber": "9943834485",
@@ -2330,7 +2070,7 @@
         "coordinate": "11.035628 76.957966"
     },
     {
-        "party_id": "PA0233",
+        "party_id": "PA0207",
         "partyName": "KASTHURI MALIGAI STORE",
         "route": "PSR6",
         "phoneNumber": "8220958896",
@@ -2340,7 +2080,7 @@
         "coordinate": "11.065128 77.00037"
     },
     {
-        "party_id": "PA0234",
+        "party_id": "PA0208",
         "partyName": "KASTHURI SUPER STORE  P LTD",
         "route": "PSR1",
         "phoneNumber": "9443566786",
@@ -2350,7 +2090,7 @@
         "coordinate": "11.07883 77.003948"
     },
     {
-        "party_id": "PA0235",
+        "party_id": "PA0209",
         "partyName": "KAVIN STORES",
         "route": "PSR1",
         "phoneNumber": "9894791278",
@@ -2360,7 +2100,7 @@
         "coordinate": "11.073303 77.00637"
     },
     {
-        "party_id": "PA0236",
+        "party_id": "PA0210",
         "partyName": "KAVITHA BAKERY",
         "route": "PSR2",
         "phoneNumber": "9443725477",
@@ -2370,7 +2110,7 @@
         "coordinate": "11.083113 76.983563"
     },
     {
-        "party_id": "PA0237",
+        "party_id": "PA0211",
         "partyName": "KEERTHANA BAKERY",
         "route": "PSR4",
         "phoneNumber": "9865555280",
@@ -2380,7 +2120,7 @@
         "coordinate": "11.05211 76.993924"
     },
     {
-        "party_id": "PA0238",
+        "party_id": "PA0212",
         "partyName": "KEERTHANA STORE",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -2390,7 +2130,7 @@
         "coordinate": "11.073693 77.012001"
     },
     {
-        "party_id": "PA0239",
+        "party_id": "PA0213",
         "partyName": "KEERTHI DEPT STORE",
         "route": "PSR5",
         "phoneNumber": "9597750200",
@@ -2400,7 +2140,7 @@
         "coordinate": "11.02574 76.973066"
     },
     {
-        "party_id": "PA0240",
+        "party_id": "PA0214",
         "partyName": "KEVINS STORE",
         "route": "PSR1",
         "phoneNumber": "9442366686",
@@ -2410,7 +2150,7 @@
         "coordinate": "11.097878 77.006651"
     },
     {
-        "party_id": "PA0241",
+        "party_id": "PA0215",
         "partyName": "KG BAKERY",
         "route": "PSR1",
         "phoneNumber": "9865542145",
@@ -2420,7 +2160,7 @@
         "coordinate": "11.057236 77.004196"
     },
     {
-        "party_id": "PA0242",
+        "party_id": "PA0216",
         "partyName": "KINGS PARK",
         "route": "PSR2",
         "phoneNumber": "9952122199",
@@ -2430,7 +2170,7 @@
         "coordinate": "11.080362 76.98031"
     },
     {
-        "party_id": "PA0243",
+        "party_id": "PA0217",
         "partyName": "KISHORE BAKERY",
         "route": "PSR5",
         "phoneNumber": "9176244183",
@@ -2440,7 +2180,7 @@
         "coordinate": "11.045151 76.960421"
     },
     {
-        "party_id": "PA0244",
+        "party_id": "PA0218",
         "partyName": "KM BAKERY",
         "route": "PSR1",
         "phoneNumber": "9092345335",
@@ -2450,7 +2190,7 @@
         "coordinate": "11.069255 77.01695"
     },
     {
-        "party_id": "PA0245",
+        "party_id": "PA0219",
         "partyName": "KM BAKERY 2",
         "route": "PSR2",
         "phoneNumber": "9884444616",
@@ -2460,7 +2200,7 @@
         "coordinate": "11.076083 77.000043"
     },
     {
-        "party_id": "PA0246",
+        "party_id": "PA0220",
         "partyName": "KMS Bakery",
         "route": "PSR3",
         "phoneNumber": "9003595412",
@@ -2470,7 +2210,7 @@
         "coordinate": "11.103729 77.024277"
     },
     {
-        "party_id": "PA0247",
+        "party_id": "PA0221",
         "partyName": "KO KAPPI",
         "route": "PSR6",
         "phoneNumber": "9751463174",
@@ -2480,7 +2220,7 @@
         "coordinate": "11.05649 76.995721"
     },
     {
-        "party_id": "PA0248",
+        "party_id": "PA0222",
         "partyName": "KONGU BAKERY",
         "route": "PSR1",
         "phoneNumber": "9973381791",
@@ -2490,7 +2230,7 @@
         "coordinate": "11.073696 77.012018"
     },
     {
-        "party_id": "PA0249",
+        "party_id": "PA0223",
         "partyName": "KONGU SUPER MARKET",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -2500,7 +2240,7 @@
         "coordinate": "11.073671 77.012013"
     },
     {
-        "party_id": "PA0250",
+        "party_id": "PA0224",
         "partyName": "KOVAI KABAB",
         "route": "PSR2",
         "phoneNumber": "9876543210",
@@ -2510,7 +2250,7 @@
         "coordinate": "11.082936 76.984956"
     },
     {
-        "party_id": "PA0251",
+        "party_id": "PA0225",
         "partyName": "KOVAI STAR BRIYANI",
         "route": "PSR2",
         "phoneNumber": "9894087772",
@@ -2520,7 +2260,7 @@
         "coordinate": "11.08081 76.993691"
     },
     {
-        "party_id": "PA0252",
+        "party_id": "PA0226",
         "partyName": "KOVAI STORE",
         "route": "PSR1",
         "phoneNumber": "9894788523",
@@ -2530,7 +2270,7 @@
         "coordinate": "11.074963 77.003533"
     },
     {
-        "party_id": "PA0253",
+        "party_id": "PA0227",
         "partyName": "KOVILPATTI LAKSHMI STORE",
         "route": "PSR4",
         "phoneNumber": "6369776177",
@@ -2540,7 +2280,7 @@
         "coordinate": "11.040615 77.004273"
     },
     {
-        "party_id": "PA0254",
+        "party_id": "PA0228",
         "partyName": "KPM MALIGAI",
         "route": "PSR1",
         "phoneNumber": "9894548422",
@@ -2550,7 +2290,7 @@
         "coordinate": "11.057831 77.0052"
     },
     {
-        "party_id": "PA0255",
+        "party_id": "PA0229",
         "partyName": "KPR PALAMUTHIR NILAYAM",
         "route": "PSR3",
         "phoneNumber": "9994853441",
@@ -2560,7 +2300,7 @@
         "coordinate": "11.109198 77.025371"
     },
     {
-        "party_id": "PA0256",
+        "party_id": "PA0230",
         "partyName": "KRISHNA AGENCIES",
         "route": "OTC1",
         "phoneNumber": "9898989898",
@@ -2570,17 +2310,7 @@
         "coordinate": "11.006162 76.910411"
     },
     {
-        "party_id": "PA0257",
-        "partyName": "KRISHNA BAKERY",
-        "route": "PSR6",
-        "phoneNumber": "9597133830",
-        "gst": "",
-        "available": 1,
-        "address": "74, AVARAMPALAYAM ROAD ,GANAPATHY COIMBATORE 641006",
-        "coordinate": "11.067421 77.002255"
-    },
-    {
-        "party_id": "PA0258",
+        "party_id": "PA0231",
         "partyName": "KRISHNA BAKERY",
         "route": "PSR5",
         "phoneNumber": "9876543210",
@@ -2590,17 +2320,7 @@
         "coordinate": "11.035586 76.956544"
     },
     {
-        "party_id": "PA0259",
-        "partyName": "KRISHNA BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "9842701535",
-        "gst": "",
-        "available": 1,
-        "address": "CHERANMAA NAGAR COIMBATORE 641035",
-        "coordinate": "11.073698 77.012023"
-    },
-    {
-        "party_id": "PA0260",
+        "party_id": "PA0232",
         "partyName": "KRISHNA STORE",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -2610,7 +2330,7 @@
         "coordinate": "11.095548 77.010156"
     },
     {
-        "party_id": "PA0261",
+        "party_id": "PA0233",
         "partyName": "KUMAR PETTY SHOP",
         "route": "PSR3",
         "phoneNumber": "9898989898",
@@ -2620,7 +2340,7 @@
         "coordinate": "11.112611 77.030338"
     },
     {
-        "party_id": "PA0262",
+        "party_id": "PA0234",
         "partyName": "KUMARAN COMBO HOUSE",
         "route": "PSR3",
         "phoneNumber": "8754174350",
@@ -2630,17 +2350,7 @@
         "coordinate": "11.091263 77.009381"
     },
     {
-        "party_id": "PA0263",
-        "partyName": "KURINJI BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "9942933556",
-        "gst": "",
-        "available": 1,
-        "address": "CHERANMAA NAGAR COIMBATORE 641035",
-        "coordinate": "11.073156 77.016936"
-    },
-    {
-        "party_id": "PA0264",
+        "party_id": "PA0235",
         "partyName": "KURINJI BAKERY",
         "route": "PSR1",
         "phoneNumber": "9865735122",
@@ -2650,7 +2360,7 @@
         "coordinate": "11.073164 77.016933"
     },
     {
-        "party_id": "PA0265",
+        "party_id": "PA0236",
         "partyName": "KURRY KINGDOM FAMILY RESTAURANT",
         "route": "PSR3",
         "phoneNumber": "9965277444",
@@ -2660,7 +2370,7 @@
         "coordinate": "11.104847 77.029755"
     },
     {
-        "party_id": "PA0266",
+        "party_id": "PA0237",
         "partyName": "KV BAKES",
         "route": "PSR2",
         "phoneNumber": "9600610281",
@@ -2670,7 +2380,7 @@
         "coordinate": "11.0743 76.98041"
     },
     {
-        "party_id": "PA0267",
+        "party_id": "PA0238",
         "partyName": "Kabi Fancy and Sarees",
         "route": "PSR3",
         "phoneNumber": "9894224184",
@@ -2680,7 +2390,7 @@
         "coordinate": "11.099293 77.022736"
     },
     {
-        "party_id": "PA0268",
+        "party_id": "PA0239",
         "partyName": "Karaikudi kONNAR Family Restaurant",
         "route": "PSR5",
         "phoneNumber": "9786685304",
@@ -2690,7 +2400,7 @@
         "coordinate": "11.04763 76.969671"
     },
     {
-        "party_id": "PA0269",
+        "party_id": "PA0240",
         "partyName": "Karuna Department store",
         "route": "PSR4",
         "phoneNumber": "9843392569",
@@ -2700,7 +2410,7 @@
         "coordinate": "11.042561 77.003191"
     },
     {
-        "party_id": "PA0270",
+        "party_id": "PA0241",
         "partyName": "Kings Bakery",
         "route": "PSR2",
         "phoneNumber": "9655095843",
@@ -2710,7 +2420,7 @@
         "coordinate": "11.081855 76.983949"
     },
     {
-        "party_id": "PA0271",
+        "party_id": "PA0242",
         "partyName": "Kovai karupatti coffee",
         "route": "PSR2",
         "phoneNumber": "9566673583",
@@ -2720,7 +2430,7 @@
         "coordinate": "11.082955 76.984913"
     },
     {
-        "party_id": "PA0272",
+        "party_id": "PA0243",
         "partyName": "Krishna Bakery",
         "route": "PSR3",
         "phoneNumber": "7708772088",
@@ -2730,7 +2440,7 @@
         "coordinate": "11.097932 77.006548"
     },
     {
-        "party_id": "PA0273",
+        "party_id": "PA0244",
         "partyName": "Kumaran Mess",
         "route": "PSR5",
         "phoneNumber": "8778837086",
@@ -2740,7 +2450,7 @@
         "coordinate": "11.047555 76.969933"
     },
     {
-        "party_id": "PA0274",
+        "party_id": "PA0245",
         "partyName": "LAKSARA STORE",
         "route": "PSR1",
         "phoneNumber": "9944193795",
@@ -2750,7 +2460,7 @@
         "coordinate": "11.082305 77.005504"
     },
     {
-        "party_id": "PA0275",
+        "party_id": "PA0246",
         "partyName": "LAKSHMI HOTEL",
         "route": "PSR1",
         "phoneNumber": "9843675790",
@@ -2760,7 +2470,7 @@
         "coordinate": "11.088003 77.007618"
     },
     {
-        "party_id": "PA0276",
+        "party_id": "PA0247",
         "partyName": "LAKSHMI MALIGAI STORE",
         "route": "PSR4",
         "phoneNumber": "9790454758",
@@ -2770,7 +2480,7 @@
         "coordinate": "11.116449 77.015724"
     },
     {
-        "party_id": "PA0277",
+        "party_id": "PA0248",
         "partyName": "LAKSHMI MESS",
         "route": "PSR2",
         "phoneNumber": "9944278823",
@@ -2780,7 +2490,7 @@
         "coordinate": "11.076906 76.999843"
     },
     {
-        "party_id": "PA0278",
+        "party_id": "PA0249",
         "partyName": "LAKSHMI STORES",
         "route": "PSR6",
         "phoneNumber": "9042081887",
@@ -2790,7 +2500,7 @@
         "coordinate": "11.053978 76.992653"
     },
     {
-        "party_id": "PA0279",
+        "party_id": "PA0250",
         "partyName": "LASKHMI STORE",
         "route": "PSR5",
         "phoneNumber": "9042077955",
@@ -2800,7 +2510,7 @@
         "coordinate": "11.023636 76.965695"
     },
     {
-        "party_id": "PA0280",
+        "party_id": "PA0251",
         "partyName": "LET'Z GRILL",
         "route": "PSR6",
         "phoneNumber": "9500259815",
@@ -2810,17 +2520,17 @@
         "coordinate": "11.046749 76.986087"
     },
     {
-        "party_id": "PA0281",
+        "party_id": "PA0252",
         "partyName": "LMN HAJIYAAR BIRIYANI HOTEL",
         "route": "PSR5",
         "phoneNumber": "9894833105",
         "gst": "",
         "available": 1,
         "address": "SF NO 237/1-A, D.NO 1025-C, SATHY ROAD LAKSHMIPURAM, ganapathy Coimbatore 641006",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
-        "party_id": "PA0282",
+        "party_id": "PA0253",
         "partyName": "M J FOODS (ANDEWALA)",
         "route": "PSR2",
         "phoneNumber": "9994743300",
@@ -2830,7 +2540,7 @@
         "coordinate": "11.079536 77.002024"
     },
     {
-        "party_id": "PA0283",
+        "party_id": "PA0254",
         "partyName": "M N thamarai fast food",
         "route": "PSR5",
         "phoneNumber": "6383852952",
@@ -2840,17 +2550,7 @@
         "coordinate": "11.023554 76.965631"
     },
     {
-        "party_id": "PA0284",
-        "partyName": "M S BAKERY",
-        "route": "PSR2",
-        "phoneNumber": "9865716433",
-        "gst": "",
-        "available": 1,
-        "address": "37/4 tank street c v patty Coimbatore COIMBATORE 641035",
-        "coordinate": "11.073831 76.985235"
-    },
-    {
-        "party_id": "PA0285",
+        "party_id": "PA0255",
         "partyName": "M S BAKERY",
         "route": "PSR2",
         "phoneNumber": "9865716433",
@@ -2860,7 +2560,7 @@
         "coordinate": "11.080698 76.964826"
     },
     {
-        "party_id": "PA0286",
+        "party_id": "PA0256",
         "partyName": "M S BIRIYANI",
         "route": "PSR5",
         "phoneNumber": "9943011310",
@@ -2870,7 +2570,7 @@
         "coordinate": "11.022988 76.965733"
     },
     {
-        "party_id": "PA0287",
+        "party_id": "PA0257",
         "partyName": "M.R.S PAZHAMUDIR",
         "route": "PSR5",
         "phoneNumber": "9043418311",
@@ -2880,7 +2580,7 @@
         "coordinate": "11.023374 76.965723"
     },
     {
-        "party_id": "PA0288",
+        "party_id": "PA0258",
         "partyName": "MAADHU BAKERY",
         "route": "PSR5",
         "phoneNumber": "8675741398",
@@ -2890,7 +2590,7 @@
         "coordinate": "11.042963 76.976871"
     },
     {
-        "party_id": "PA0289",
+        "party_id": "PA0259",
         "partyName": "MADHAVAN BAKERY",
         "route": "PSR5",
         "phoneNumber": "9092012578",
@@ -2900,7 +2600,7 @@
         "coordinate": "11.081484 76.989856"
     },
     {
-        "party_id": "PA0290",
+        "party_id": "PA0260",
         "partyName": "MADURA DEPARTMENTAL STORE",
         "route": "PSR5",
         "phoneNumber": "9626466977",
@@ -2910,7 +2610,7 @@
         "coordinate": "11.04761 76.974688"
     },
     {
-        "party_id": "PA0291",
+        "party_id": "PA0261",
         "partyName": "MADURAI MANIYANDI VILAS",
         "route": "PSR2",
         "phoneNumber": "8754691113",
@@ -2920,7 +2620,7 @@
         "coordinate": "11.083459 76.974733"
     },
     {
-        "party_id": "PA0292",
+        "party_id": "PA0262",
         "partyName": "MAGA AADHI SAKTHI",
         "route": "PSR6",
         "phoneNumber": "8122131323",
@@ -2930,7 +2630,7 @@
         "coordinate": "11.102875 77.011252"
     },
     {
-        "party_id": "PA0293",
+        "party_id": "PA0263",
         "partyName": "MAHALAKSHMI BAKERY",
         "route": "PSR5",
         "phoneNumber": "9443759101",
@@ -2940,7 +2640,7 @@
         "coordinate": "11.04768 76.971866"
     },
     {
-        "party_id": "PA0294",
+        "party_id": "PA0264",
         "partyName": "MAHAYOJANA FOODS",
         "route": "PSR6",
         "phoneNumber": "9585042720",
@@ -2950,7 +2650,7 @@
         "coordinate": "11.09555 77.010155"
     },
     {
-        "party_id": "PA0295",
+        "party_id": "PA0265",
         "partyName": "MAILA MEDICALS",
         "route": "PSR6",
         "phoneNumber": "9894480508",
@@ -2960,7 +2660,7 @@
         "coordinate": "11.031088 76.975498"
     },
     {
-        "party_id": "PA0296",
+        "party_id": "PA0266",
         "partyName": "MALABAR BAKERY",
         "route": "PSR1",
         "phoneNumber": "8300099447",
@@ -2970,7 +2670,7 @@
         "coordinate": "11.082148 77.005619"
     },
     {
-        "party_id": "PA0297",
+        "party_id": "PA0267",
         "partyName": "MANI STORES",
         "route": "PSR3",
         "phoneNumber": "7338702878",
@@ -2980,7 +2680,7 @@
         "coordinate": "11.099491 77.020642"
     },
     {
-        "party_id": "PA0298",
+        "party_id": "PA0268",
         "partyName": "MANISH CHIPS and SWEETS",
         "route": "PSR5",
         "phoneNumber": "9843325160",
@@ -2990,7 +2690,7 @@
         "coordinate": "11.055687 76.968418"
     },
     {
-        "party_id": "PA0299",
+        "party_id": "PA0269",
         "partyName": "MARIMUTHU PROVISIONAL STORE",
         "route": "PSR6",
         "phoneNumber": "9443933054",
@@ -3000,7 +2700,7 @@
         "coordinate": "11.095556 77.010158"
     },
     {
-        "party_id": "PA0300",
+        "party_id": "PA0270",
         "partyName": "MARUTHAMALAI STORES",
         "route": "PSR3",
         "phoneNumber": "9940969636",
@@ -3010,7 +2710,7 @@
         "coordinate": "11.11377 76.995266"
     },
     {
-        "party_id": "PA0301",
+        "party_id": "PA0271",
         "partyName": "MATHAJI GENERAL STORE",
         "route": "PSR3",
         "phoneNumber": "9898989898",
@@ -3020,7 +2720,7 @@
         "coordinate": "11.106214 77.02434"
     },
     {
-        "party_id": "PA0302",
+        "party_id": "PA0272",
         "partyName": "MAYURA STORES",
         "route": "PSR6",
         "phoneNumber": "9443754723",
@@ -3030,7 +2730,7 @@
         "coordinate": "11.062798 76.991633"
     },
     {
-        "party_id": "PA0303",
+        "party_id": "PA0273",
         "partyName": "MBM caterers& restaurant",
         "route": "PSR5",
         "phoneNumber": "7907279362",
@@ -3040,7 +2740,7 @@
         "coordinate": "11.041697 76.971532"
     },
     {
-        "party_id": "PA0304",
+        "party_id": "PA0274",
         "partyName": "MBS MALIGAI",
         "route": "PSR6",
         "phoneNumber": "9715063938",
@@ -3050,7 +2750,7 @@
         "coordinate": "11.09557 77.010151"
     },
     {
-        "party_id": "PA0305",
+        "party_id": "PA0275",
         "partyName": "MEGALA STORE",
         "route": "PSR5",
         "phoneNumber": "9843447347",
@@ -3060,7 +2760,7 @@
         "coordinate": "11.046124 76.952379"
     },
     {
-        "party_id": "PA0306",
+        "party_id": "PA0276",
         "partyName": "MEHALA STORES",
         "route": "PSR5",
         "phoneNumber": "9894035091",
@@ -3070,7 +2770,7 @@
         "coordinate": "11.032466 76.955386"
     },
     {
-        "party_id": "PA0307",
+        "party_id": "PA0277",
         "partyName": "MEON CAFE & CHATS",
         "route": "PSR6",
         "phoneNumber": "9092715129",
@@ -3080,7 +2780,7 @@
         "coordinate": "11.058114 76.996425"
     },
     {
-        "party_id": "PA0308",
+        "party_id": "PA0278",
         "partyName": "MINT BAKERY",
         "route": "PSR5",
         "phoneNumber": "8428007123",
@@ -3090,7 +2790,7 @@
         "coordinate": "11.025653 76.973381"
     },
     {
-        "party_id": "PA0309",
+        "party_id": "PA0279",
         "partyName": "MK BAKERY",
         "route": "PSR3",
         "phoneNumber": "6381653711",
@@ -3100,7 +2800,7 @@
         "coordinate": "11.112501 77.03583"
     },
     {
-        "party_id": "PA0310",
+        "party_id": "PA0280",
         "partyName": "MK MINI MART",
         "route": "PSR1",
         "phoneNumber": "9362167067",
@@ -3110,7 +2810,7 @@
         "coordinate": "11.060485 77.007725"
     },
     {
-        "party_id": "PA0311",
+        "party_id": "PA0281",
         "partyName": "MM HOT KITCHEN",
         "route": "PSR2",
         "phoneNumber": "9597972063",
@@ -3120,7 +2820,7 @@
         "coordinate": "11.087279 76.98218"
     },
     {
-        "party_id": "PA0312",
+        "party_id": "PA0282",
         "partyName": "MODERN BAKERY",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -3130,7 +2830,7 @@
         "coordinate": "11.073681 77.01196"
     },
     {
-        "party_id": "PA0313",
+        "party_id": "PA0283",
         "partyName": "MOONDRU KAMBAM NELLAI MUTHUVILAS SWEETS AND BAKES",
         "route": "PSR5",
         "phoneNumber": "7094951995",
@@ -3140,7 +2840,7 @@
         "coordinate": "11.028163 76.965408"
     },
     {
-        "party_id": "PA0314",
+        "party_id": "PA0284",
         "partyName": "MRK BAKERY",
         "route": "PSR1",
         "phoneNumber": "9655769089",
@@ -3150,7 +2850,7 @@
         "coordinate": "11.08778 77.00729"
     },
     {
-        "party_id": "PA0315",
+        "party_id": "PA0285",
         "partyName": "MS Hotel",
         "route": "PSR5",
         "phoneNumber": "9787272406",
@@ -3160,7 +2860,7 @@
         "coordinate": "11.023236 76.96569"
     },
     {
-        "party_id": "PA0316",
+        "party_id": "PA0286",
         "partyName": "MURUGAN MALIGAI STORE",
         "route": "PSR6",
         "phoneNumber": "9894264465",
@@ -3170,7 +2870,7 @@
         "coordinate": "11.095526 77.01017"
     },
     {
-        "party_id": "PA0317",
+        "party_id": "PA0287",
         "partyName": "MURUGAN RICE MANDI",
         "route": "PSR1",
         "phoneNumber": "9843641290",
@@ -3180,17 +2880,7 @@
         "coordinate": "11.073706 77.012046"
     },
     {
-        "party_id": "PA0318",
-        "partyName": "MURUGAN STORE",
-        "route": "PSR2",
-        "phoneNumber": "9486212807",
-        "gst": "",
-        "available": 1,
-        "address": "1/4,VINAYAGAR KOVIL BUS STOP COIMBATORE 641035",
-        "coordinate": "11.06538 77.003314"
-    },
-    {
-        "party_id": "PA0319",
+        "party_id": "PA0288",
         "partyName": "MURUGAN STORE",
         "route": "PSR5",
         "phoneNumber": "9865747568",
@@ -3200,37 +2890,7 @@
         "coordinate": "11.041809 76.971708"
     },
     {
-        "party_id": "PA0320",
-        "partyName": "MURUGAN STORE",
-        "route": "PSR5",
-        "phoneNumber": "9244472250",
-        "gst": "",
-        "available": 1,
-        "address": "41,SAKTHI NAGAR,CHINNAVEDAMPATTI COIMBATORE 641035",
-        "coordinate": "11.041691 76.971746"
-    },
-    {
-        "party_id": "PA0321",
-        "partyName": "MUTHU STORE",
-        "route": "PSR5",
-        "phoneNumber": "8015303050",
-        "gst": "",
-        "available": 1,
-        "address": "190 MANIAYAKARAM PALAYAM CBE COIMBATORE 190 MANIAYAKARAM PALAYAM CBE 641006",
-        "coordinate": "11.049745 76.967618"
-    },
-    {
-        "party_id": "PA0322",
-        "partyName": "MUTHU STORE",
-        "route": "PSR3",
-        "phoneNumber": "9659656634",
-        "gst": "",
-        "available": 1,
-        "address": "3/69 LAKSHMI GARDEN VARATHAYAGAR PALAYAM Coimbatore Coimbatore 641006",
-        "coordinate": "11.108517 77.012658"
-    },
-    {
-        "party_id": "PA0323",
+        "party_id": "PA0289",
         "partyName": "MUTHU STORE",
         "route": "PSR2",
         "phoneNumber": "9787768472",
@@ -3240,7 +2900,7 @@
         "coordinate": "11.078393 76.999601"
     },
     {
-        "party_id": "PA0324",
+        "party_id": "PA0290",
         "partyName": "MUTHULAKSHMI STORE",
         "route": "PSR1",
         "phoneNumber": "9655562687",
@@ -3250,7 +2910,7 @@
         "coordinate": "11.073759 77.012099"
     },
     {
-        "party_id": "PA0325",
+        "party_id": "PA0291",
         "partyName": "Mahalakshmi Bakery and Mess",
         "route": "PSR3",
         "phoneNumber": "9003337000",
@@ -3260,7 +2920,7 @@
         "coordinate": "11.095402 77.010175"
     },
     {
-        "party_id": "PA0326",
+        "party_id": "PA0292",
         "partyName": "Mani Chips Sweets",
         "route": "PSR5",
         "phoneNumber": "9843325160",
@@ -3270,7 +2930,7 @@
         "coordinate": "11.055718 76.968225"
     },
     {
-        "party_id": "PA0327",
+        "party_id": "PA0293",
         "partyName": "Mathaji Gen Store",
         "route": "PSR3",
         "phoneNumber": "7418180854",
@@ -3280,7 +2940,7 @@
         "coordinate": "11.106204 77.024318"
     },
     {
-        "party_id": "PA0328",
+        "party_id": "PA0294",
         "partyName": "Mayura Cake corner",
         "route": "PSR4",
         "phoneNumber": "9443473055",
@@ -3290,7 +2950,7 @@
         "coordinate": "11.041117 76.998173"
     },
     {
-        "party_id": "PA0329",
+        "party_id": "PA0295",
         "partyName": "NAGASAI FOOD PRODUCTS",
         "route": "PSR5",
         "phoneNumber": "9843439000",
@@ -3300,7 +2960,7 @@
         "coordinate": "11.097825 77.006618"
     },
     {
-        "party_id": "PA0330",
+        "party_id": "PA0296",
         "partyName": "NALLOON RESTAURANT",
         "route": "PSR1",
         "phoneNumber": "9842288888",
@@ -3310,7 +2970,7 @@
         "coordinate": "11.085183 77.016262"
     },
     {
-        "party_id": "PA0331",
+        "party_id": "PA0297",
         "partyName": "NAMMA PALAMUDHIR",
         "route": "PSR2",
         "phoneNumber": "7708379441",
@@ -3320,7 +2980,7 @@
         "coordinate": "11.065393 77.003327"
     },
     {
-        "party_id": "PA0332",
+        "party_id": "PA0298",
         "partyName": "NANDHANAM TEA STALL AND HOTEL",
         "route": "PSR5",
         "phoneNumber": "9042078246",
@@ -3330,7 +2990,7 @@
         "coordinate": "11.044645 76.976368"
     },
     {
-        "party_id": "PA0333",
+        "party_id": "PA0299",
         "partyName": "NANDHINI STORE",
         "route": "PSR1",
         "phoneNumber": "9787306311",
@@ -3340,7 +3000,7 @@
         "coordinate": "11.073702 77.012021"
     },
     {
-        "party_id": "PA0334",
+        "party_id": "PA0300",
         "partyName": "NATCHATHIRA DEPARTMENTAL STORE",
         "route": "PSR1",
         "phoneNumber": "9894510123",
@@ -3350,7 +3010,7 @@
         "coordinate": "11.097838 77.006649"
     },
     {
-        "party_id": "PA0335",
+        "party_id": "PA0301",
         "partyName": "NAYAKI BAKERY",
         "route": "PSR6",
         "phoneNumber": "9864566887",
@@ -3360,7 +3020,7 @@
         "coordinate": "11.05124 76.991498"
     },
     {
-        "party_id": "PA0336",
+        "party_id": "PA0302",
         "partyName": "NELLAI JOSE MALAGAI",
         "route": "PSR6",
         "phoneNumber": "8973028663",
@@ -3370,7 +3030,7 @@
         "coordinate": "11.053655 76.992728"
     },
     {
-        "party_id": "PA0337",
+        "party_id": "PA0303",
         "partyName": "NELLAI PERIYA LALA SWEETS",
         "route": "PSR2",
         "phoneNumber": "9876543210",
@@ -3380,7 +3040,7 @@
         "coordinate": "11.076924 77.002502"
     },
     {
-        "party_id": "PA0338",
+        "party_id": "PA0304",
         "partyName": "NELLAI SELVAM STORE",
         "route": "PSR4",
         "phoneNumber": "9876543210",
@@ -3390,7 +3050,7 @@
         "coordinate": "11.040256 77.00327"
     },
     {
-        "party_id": "PA0339",
+        "party_id": "PA0305",
         "partyName": "NELLAI STORE",
         "route": "PSR6",
         "phoneNumber": "9952208223",
@@ -3400,7 +3060,7 @@
         "coordinate": "11.048595 76.989241"
     },
     {
-        "party_id": "PA0340",
+        "party_id": "PA0306",
         "partyName": "NELLAI STORES ",
         "route": "PSR6",
         "phoneNumber": "9363145309",
@@ -3410,7 +3070,7 @@
         "coordinate": "11.097816 77.00662"
     },
     {
-        "party_id": "PA0341",
+        "party_id": "PA0307",
         "partyName": "NEVELI NATHAN STORE",
         "route": "PSR2",
         "phoneNumber": "9629835481",
@@ -3420,7 +3080,7 @@
         "coordinate": "11.067482 77.001206"
     },
     {
-        "party_id": "PA0342",
+        "party_id": "PA0308",
         "partyName": "NEW BALAJI BAKERY",
         "route": "PSR1",
         "phoneNumber": "9941650451",
@@ -3430,7 +3090,7 @@
         "coordinate": "11.079651 77.004365"
     },
     {
-        "party_id": "PA0343",
+        "party_id": "PA0309",
         "partyName": "NEW FRIENDS BAKERY",
         "route": "PSR4",
         "phoneNumber": "9865944663",
@@ -3440,7 +3100,7 @@
         "coordinate": "11.03567 76.990286"
     },
     {
-        "party_id": "PA0344",
+        "party_id": "PA0310",
         "partyName": "NEW JABA STORE",
         "route": "PSR2",
         "phoneNumber": "9952241063",
@@ -3450,7 +3110,7 @@
         "coordinate": "11.083057 76.983877"
     },
     {
-        "party_id": "PA0345",
+        "party_id": "PA0311",
         "partyName": "NEW MINT BAKERY",
         "route": "PSR5",
         "phoneNumber": "9942689798",
@@ -3460,7 +3120,7 @@
         "coordinate": "11.025616 76.973413"
     },
     {
-        "party_id": "PA0346",
+        "party_id": "PA0312",
         "partyName": "NEWTON BAKERY",
         "route": "PSR5",
         "phoneNumber": "9976807024",
@@ -3470,7 +3130,7 @@
         "coordinate": "11.061113 76.982127"
     },
     {
-        "party_id": "PA0347",
+        "party_id": "PA0313",
         "partyName": "NILIGRI AVIN TEA STALL",
         "route": "PSR5",
         "phoneNumber": "9676961082",
@@ -3480,7 +3140,7 @@
         "coordinate": "11.04964 76.981226"
     },
     {
-        "party_id": "PA0348",
+        "party_id": "PA0314",
         "partyName": "NINJACART PVT LTD (  NINJA FRESH )",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -3490,7 +3150,7 @@
         "coordinate": "11.062701 76.993826"
     },
     {
-        "party_id": "PA0349",
+        "party_id": "PA0315",
         "partyName": "NS STORE",
         "route": "PSR1",
         "phoneNumber": "8807974760",
@@ -3500,17 +3160,17 @@
         "coordinate": "11.074555 77.020516"
     },
     {
-        "party_id": "PA0350",
+        "party_id": "PA0316",
         "partyName": "Nellai thavamani stores",
         "route": "PSR1",
         "phoneNumber": "8122315565",
         "gst": "33DLJPK7938A1Z4",
         "available": 1,
         "address": "No 22, Sathy main road sivanandhapuram 641035",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
-        "party_id": "PA0351",
+        "party_id": "PA0317",
         "partyName": "New V M Palamuthir cholai",
         "route": "PSR1",
         "phoneNumber": "9952046456",
@@ -3520,7 +3180,7 @@
         "coordinate": "11.097815 77.00679"
     },
     {
-        "party_id": "PA0352",
+        "party_id": "PA0318",
         "partyName": "OM SAKTHI STORE",
         "route": "PSR4",
         "phoneNumber": "9790594682",
@@ -3530,7 +3190,7 @@
         "coordinate": "11.040021 76.995537"
     },
     {
-        "party_id": "PA0353",
+        "party_id": "PA0319",
         "partyName": "ONNI FRESH MARKETINGS",
         "route": "PSR4",
         "phoneNumber": "9750279747",
@@ -3540,7 +3200,7 @@
         "coordinate": "11.116335 77.015743"
     },
     {
-        "party_id": "PA0354",
+        "party_id": "PA0320",
         "partyName": "OS BRIYANI",
         "route": "PSR1",
         "phoneNumber": "8825896459",
@@ -3550,7 +3210,7 @@
         "coordinate": "11.073692 77.012009"
     },
     {
-        "party_id": "PA0355",
+        "party_id": "PA0321",
         "partyName": "P A STORE",
         "route": "PSR4",
         "phoneNumber": "9659034855",
@@ -3560,7 +3220,7 @@
         "coordinate": "11.048429 77.000237"
     },
     {
-        "party_id": "PA0356",
+        "party_id": "PA0322",
         "partyName": "P V STORE",
         "route": "PSR1",
         "phoneNumber": "8979598918",
@@ -3570,7 +3230,7 @@
         "coordinate": "11.072907 77.019457"
     },
     {
-        "party_id": "PA0357",
+        "party_id": "PA0323",
         "partyName": "PANDIAN STORE",
         "route": "PSR5",
         "phoneNumber": "9364544909",
@@ -3580,7 +3240,7 @@
         "coordinate": "11.030981 76.955605"
     },
     {
-        "party_id": "PA0358",
+        "party_id": "PA0324",
         "partyName": "PANDIYANADU RESTAURANT",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -3590,7 +3250,7 @@
         "coordinate": "11.060051 76.997643"
     },
     {
-        "party_id": "PA0359",
+        "party_id": "PA0325",
         "partyName": "PARVATHI STORE",
         "route": "PSR2",
         "phoneNumber": "8489287295",
@@ -3600,7 +3260,7 @@
         "coordinate": "11.067482 77.001206"
     },
     {
-        "party_id": "PA0360",
+        "party_id": "PA0326",
         "partyName": "PARVATHY STORE",
         "route": "PSR5",
         "phoneNumber": "7777777777",
@@ -3610,7 +3270,7 @@
         "coordinate": "11.055003 76.968151"
     },
     {
-        "party_id": "PA0361",
+        "party_id": "PA0327",
         "partyName": "PERIYANAYAGI AMMAN BAKERY",
         "route": "PSR1",
         "phoneNumber": "9894647666",
@@ -3620,7 +3280,7 @@
         "coordinate": "11.097797 77.006635"
     },
     {
-        "party_id": "PA0362",
+        "party_id": "PA0328",
         "partyName": "PERUMAL STORE",
         "route": "PSR1",
         "phoneNumber": "9865289072",
@@ -3630,7 +3290,7 @@
         "coordinate": "11.063255 77.011763"
     },
     {
-        "party_id": "PA0363",
+        "party_id": "PA0329",
         "partyName": "PRABA STORE",
         "route": "PSR6",
         "phoneNumber": "8883478747",
@@ -3640,7 +3300,7 @@
         "coordinate": "11.063071 76.99168"
     },
     {
-        "party_id": "PA0364",
+        "party_id": "PA0330",
         "partyName": "PRASANA MALIGAI",
         "route": "PSR6",
         "phoneNumber": "9842672816",
@@ -3650,7 +3310,7 @@
         "coordinate": "11.095546 77.010146"
     },
     {
-        "party_id": "PA0365",
+        "party_id": "PA0331",
         "partyName": "PRIYA BOOK STALL",
         "route": "PSR4",
         "phoneNumber": "9786122573",
@@ -3660,7 +3320,7 @@
         "coordinate": "11.07332 77.00626"
     },
     {
-        "party_id": "PA0366",
+        "party_id": "PA0332",
         "partyName": "PRIYA'M KOFFEE",
         "route": "PSR2",
         "phoneNumber": "9344459287",
@@ -3670,7 +3330,7 @@
         "coordinate": "11.080181 76.996739"
     },
     {
-        "party_id": "PA0367",
+        "party_id": "PA0333",
         "partyName": "R A BROTHERS",
         "route": "PSR2",
         "phoneNumber": "9790641547",
@@ -3680,7 +3340,7 @@
         "coordinate": "11.067482 77.001206"
     },
     {
-        "party_id": "PA0368",
+        "party_id": "PA0334",
         "partyName": "R.S FOODS",
         "route": "PSR1",
         "phoneNumber": "9585950425",
@@ -3690,7 +3350,7 @@
         "coordinate": "11.073693 77.012036"
     },
     {
-        "party_id": "PA0369",
+        "party_id": "PA0335",
         "partyName": "R.V.G. STORE",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -3700,7 +3360,7 @@
         "coordinate": "11.073688 77.012"
     },
     {
-        "party_id": "PA0370",
+        "party_id": "PA0336",
         "partyName": "RADHIKA CHETTINADU MESS",
         "route": "PSR3",
         "phoneNumber": "9876543210",
@@ -3710,7 +3370,7 @@
         "coordinate": "11.100864 77.025879"
     },
     {
-        "party_id": "PA0371",
+        "party_id": "PA0337",
         "partyName": "RAGAM BAKERY",
         "route": "PSR6",
         "phoneNumber": "7667121876",
@@ -3720,17 +3380,7 @@
         "coordinate": "11.065033 77.000665"
     },
     {
-        "party_id": "PA0372",
-        "partyName": "RAINBOW",
-        "route": "PSR5",
-        "phoneNumber": "9943599485",
-        "gst": "",
-        "available": 1,
-        "address": "NO 7,THADAGAM ROAD,KOVILMEDU COIMBATORE 641025",
-        "coordinate": "11.036518 76.960213"
-    },
-    {
-        "party_id": "PA0373",
+        "party_id": "PA0338",
         "partyName": "RAINBOW",
         "route": "PSR5",
         "phoneNumber": "9994315531",
@@ -3740,7 +3390,7 @@
         "coordinate": "11.036673 76.960113"
     },
     {
-        "party_id": "PA0374",
+        "party_id": "PA0339",
         "partyName": "RAINBOW BAKERY",
         "route": "PSR5",
         "phoneNumber": "9898989898",
@@ -3750,7 +3400,7 @@
         "coordinate": "11.036553 76.960264"
     },
     {
-        "party_id": "PA0375",
+        "party_id": "PA0340",
         "partyName": "RAJENDRA STORE",
         "route": "PSR5",
         "phoneNumber": "9486752476",
@@ -3760,7 +3410,7 @@
         "coordinate": "11.097759 77.006641"
     },
     {
-        "party_id": "PA0376",
+        "party_id": "PA0341",
         "partyName": "RAJESHWARI STORES",
         "route": "PSR2",
         "phoneNumber": "7548832444",
@@ -3770,7 +3420,7 @@
         "coordinate": "11.081074 76.964685"
     },
     {
-        "party_id": "PA0377",
+        "party_id": "PA0342",
         "partyName": "RAM LAKSHMAN STORES",
         "route": "PSR1",
         "phoneNumber": "9790199192",
@@ -3780,7 +3430,7 @@
         "coordinate": "11.075143 77.005579"
     },
     {
-        "party_id": "PA0378",
+        "party_id": "PA0343",
         "partyName": "RAMDEV",
         "route": "OTC1",
         "phoneNumber": "9898989898",
@@ -3790,7 +3440,7 @@
         "coordinate": "11.109179 77.025273"
     },
     {
-        "party_id": "PA0379",
+        "party_id": "PA0344",
         "partyName": "RANI STORE",
         "route": "PSR5",
         "phoneNumber": "8861507698",
@@ -3800,7 +3450,7 @@
         "coordinate": "11.033381 76.95512"
     },
     {
-        "party_id": "PA0380",
+        "party_id": "PA0345",
         "partyName": "RANI STORES",
         "route": "PSR1",
         "phoneNumber": "9876543210",
@@ -3810,7 +3460,7 @@
         "coordinate": "11.076863 77.002501"
     },
     {
-        "party_id": "PA0381",
+        "party_id": "PA0346",
         "partyName": "RATHANA STORE",
         "route": "PSR1",
         "phoneNumber": "8056386326",
@@ -3820,7 +3470,7 @@
         "coordinate": "11.097786 77.006658"
     },
     {
-        "party_id": "PA0382",
+        "party_id": "PA0347",
         "partyName": "RATHNA BAKERY",
         "route": "PSR6",
         "phoneNumber": "9944525158",
@@ -3830,7 +3480,7 @@
         "coordinate": "11.095583 77.010186"
     },
     {
-        "party_id": "PA0383",
+        "party_id": "PA0348",
         "partyName": "RAYYA SUPER MART",
         "route": "PSR4",
         "phoneNumber": "9360350000",
@@ -3840,7 +3490,7 @@
         "coordinate": "11.046264 76.998065"
     },
     {
-        "party_id": "PA0384",
+        "party_id": "PA0349",
         "partyName": "RCD DURAI VEGETABLES",
         "route": "PSR6",
         "phoneNumber": "9842653811",
@@ -3850,7 +3500,7 @@
         "coordinate": "11.095526 77.010166"
     },
     {
-        "party_id": "PA0385",
+        "party_id": "PA0350",
         "partyName": "RD STORE",
         "route": "PSR6",
         "phoneNumber": "9842985582",
@@ -3860,7 +3510,7 @@
         "coordinate": "11.050895 76.98941"
     },
     {
-        "party_id": "PA0386",
+        "party_id": "PA0351",
         "partyName": "RED BOWL",
         "route": "PSR4",
         "phoneNumber": "7358959010",
@@ -3870,7 +3520,7 @@
         "coordinate": "11.039443 76.989934"
     },
     {
-        "party_id": "PA0387",
+        "party_id": "PA0352",
         "partyName": "RED BOWL SNACKS",
         "route": "PSR5",
         "phoneNumber": "8220677373",
@@ -3880,17 +3530,17 @@
         "coordinate": "11.046986 76.95621"
     },
     {
-        "party_id": "PA0388",
+        "party_id": "PA0353",
         "partyName": "RELAX TIME",
         "route": "PSR1",
         "phoneNumber": "9047472651",
         "gst": "",
         "available": 1,
         "address": "123,VILANKURUCHI RD,VALLAR NAGAR,CERAN MAA NAGAR COIMBATORE 641018",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
-        "party_id": "PA0389",
+        "party_id": "PA0354",
         "partyName": "RENUGA BAKERY",
         "route": "PSR4",
         "phoneNumber": "9791619313",
@@ -3900,17 +3550,7 @@
         "coordinate": "11.040164 76.995704"
     },
     {
-        "party_id": "PA0390",
-        "partyName": "RENUGA BAKERY",
-        "route": "PSR4",
-        "phoneNumber": "9791619313",
-        "gst": "",
-        "available": 1,
-        "address": "POLICE QTRS RD GANDHIMA NAGAR COIMBATORE 641006",
-        "coordinate": "11.04139 76.998323"
-    },
-    {
-        "party_id": "PA0391",
+        "party_id": "PA0355",
         "partyName": "RENUKA STORE",
         "route": "PSR1",
         "phoneNumber": "9994170266",
@@ -3920,37 +3560,17 @@
         "coordinate": "11.073691 77.012003"
     },
     {
-        "party_id": "PA0392",
-        "partyName": "RENUKA STORE",
-        "route": "PSR6",
-        "phoneNumber": "9865145685",
-        "gst": "",
-        "available": 1,
-        "address": "VG RAM NAGAR EB COLONY Coimbatore Coimbatore Coimbatore Coimbatore 641006",
-        "coordinate": "11.095546 77.010153"
-    },
-    {
-        "party_id": "PA0393",
-        "partyName": "RG STORE",
-        "route": "PSR1",
-        "phoneNumber": "9750762597",
-        "gst": "",
-        "available": 1,
-        "address": "1ST  STREET  NORTH VINAYAKAPURA COIMBATORE 641006",
-        "coordinate": "11.058115 77.006043"
-    },
-    {
-        "party_id": "PA0394",
+        "party_id": "PA0356",
         "partyName": "RG STORE",
         "route": "PSR6",
         "phoneNumber": "6385833215",
         "gst": "",
         "available": 1,
         "address": "64,1ST STREET,VINAYAGAPURAM,SARAVANAMPATTI COIMBATORE COIMBATORE 641035",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
-        "party_id": "PA0395",
+        "party_id": "PA0357",
         "partyName": "RICH BIRYANI CENTRE",
         "route": "PSR6",
         "phoneNumber": "9952833024",
@@ -3960,7 +3580,7 @@
         "coordinate": "11.030292 76.975518"
     },
     {
-        "party_id": "PA0396",
+        "party_id": "PA0358",
         "partyName": "RICHMAN'S CAFE",
         "route": "PSR2",
         "phoneNumber": "9842811385",
@@ -3970,7 +3590,7 @@
         "coordinate": "11.087024 76.987105"
     },
     {
-        "party_id": "PA0397",
+        "party_id": "PA0359",
         "partyName": "RK STORE",
         "route": "PSR1",
         "phoneNumber": "9790517060",
@@ -3980,17 +3600,7 @@
         "coordinate": "11.097885 77.006663"
     },
     {
-        "party_id": "PA0398",
-        "partyName": "ROYAL CAKE SHOP",
-        "route": "PSR5",
-        "phoneNumber": "9876543210",
-        "gst": "",
-        "available": 1,
-        "address": "SANGANOOR ROAD GANAPATHY COIMBATORE Coimbatore 641006",
-        "coordinate": "11.034664 76.968938"
-    },
-    {
-        "party_id": "PA0399",
+        "party_id": "PA0360",
         "partyName": "ROYAL CAKE SHOP",
         "route": "PSR5",
         "phoneNumber": "9443264570",
@@ -4000,7 +3610,7 @@
         "coordinate": "11.03712 76.961175"
     },
     {
-        "party_id": "PA0400",
+        "party_id": "PA0361",
         "partyName": "RS MART",
         "route": "PSR2",
         "phoneNumber": "9159470321",
@@ -4010,7 +3620,7 @@
         "coordinate": "11.087291 76.982221"
     },
     {
-        "party_id": "PA0401",
+        "party_id": "PA0362",
         "partyName": "RS RICE MUNDY",
         "route": "PSR3",
         "phoneNumber": "8122884800",
@@ -4020,7 +3630,7 @@
         "coordinate": "11.110236 77.011903"
     },
     {
-        "party_id": "PA0402",
+        "party_id": "PA0363",
         "partyName": "RSK OIL STORES",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -4030,7 +3640,7 @@
         "coordinate": "11.046388 76.98727"
     },
     {
-        "party_id": "PA0403",
+        "party_id": "PA0364",
         "partyName": "RUTHRA MALIGAI",
         "route": "PSR2",
         "phoneNumber": "8870409589",
@@ -4040,7 +3650,7 @@
         "coordinate": "11.084256 76.981644"
     },
     {
-        "party_id": "PA0404",
+        "party_id": "PA0365",
         "partyName": "Ramasay Pety Shop",
         "route": "PSR3",
         "phoneNumber": "9361733875",
@@ -4050,7 +3660,7 @@
         "coordinate": "11.0494 76.9964"
     },
     {
-        "party_id": "PA0405",
+        "party_id": "PA0366",
         "partyName": "Ravi tea stall ",
         "route": "PSR6",
         "phoneNumber": "8448048041",
@@ -4060,7 +3670,7 @@
         "coordinate": "11.030421 76.980215"
     },
     {
-        "party_id": "PA0406",
+        "party_id": "PA0367",
         "partyName": "Real Tasty Bakery",
         "route": "PSR6",
         "phoneNumber": "9207006388",
@@ -4070,7 +3680,7 @@
         "coordinate": "11.095526 77.010136"
     },
     {
-        "party_id": "PA0407",
+        "party_id": "PA0368",
         "partyName": "Royal Bakes",
         "route": "PSR1",
         "phoneNumber": "9751170825",
@@ -4080,7 +3690,7 @@
         "coordinate": "11.0752 77.005675"
     },
     {
-        "party_id": "PA0408",
+        "party_id": "PA0369",
         "partyName": "S ANITHA STORES",
         "route": "PSR2",
         "phoneNumber": "9843016130",
@@ -4090,7 +3700,7 @@
         "coordinate": "11.070691 76.999335"
     },
     {
-        "party_id": "PA0409",
+        "party_id": "PA0370",
         "partyName": "S K BAKKERY",
         "route": "PSR1",
         "phoneNumber": "7502278859",
@@ -4100,7 +3710,7 @@
         "coordinate": "11.072641 77.016975"
     },
     {
-        "party_id": "PA0410",
+        "party_id": "PA0371",
         "partyName": "S K S FRUITS and VEGETABLES",
         "route": "PSR6",
         "phoneNumber": "8667373728",
@@ -4110,17 +3720,7 @@
         "coordinate": "11.062713 76.991658"
     },
     {
-        "party_id": "PA0411",
-        "partyName": "S R BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "9894414343",
-        "gst": "",
-        "available": 1,
-        "address": "16,VG RAO NAGAR,GANAPATHY COIMBATORE Coimbatore 641006",
-        "coordinate": "11.081617 76.989548"
-    },
-    {
-        "party_id": "PA0412",
+        "party_id": "PA0372",
         "partyName": "S R BAKERY",
         "route": "PSR3",
         "phoneNumber": "9943657986",
@@ -4130,7 +3730,7 @@
         "coordinate": "11.097725 77.020081"
     },
     {
-        "party_id": "PA0413",
+        "party_id": "PA0373",
         "partyName": "S S BAKERY",
         "route": "PSR6",
         "phoneNumber": "9787412010",
@@ -4140,7 +3740,7 @@
         "coordinate": "11.039582 76.981727"
     },
     {
-        "party_id": "PA0414",
+        "party_id": "PA0374",
         "partyName": "S.K TEA STALL",
         "route": "PSR2",
         "phoneNumber": "8122653453",
@@ -4150,7 +3750,7 @@
         "coordinate": "11.082978 76.98387"
     },
     {
-        "party_id": "PA0415",
+        "party_id": "PA0375",
         "partyName": "SABARI BAKERY",
         "route": "PSR5",
         "phoneNumber": "9842920030",
@@ -4160,7 +3760,7 @@
         "coordinate": "11.042906 76.960445"
     },
     {
-        "party_id": "PA0416",
+        "party_id": "PA0376",
         "partyName": "SACHIN INSTANT FOODS and STORES",
         "route": "PSR1",
         "phoneNumber": "9092129388",
@@ -4170,7 +3770,7 @@
         "coordinate": "11.073752 77.012057"
     },
     {
-        "party_id": "PA0417",
+        "party_id": "PA0377",
         "partyName": "SADHANA MALIGAI",
         "route": "PSR3",
         "phoneNumber": "8608922107",
@@ -4180,17 +3780,7 @@
         "coordinate": "11.112751 77.029137"
     },
     {
-        "party_id": "PA0418",
-        "partyName": "SAGAR BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "6374529659",
-        "gst": "",
-        "available": 1,
-        "address": "CHERANMAA NAGAR COIMBATORE 641035",
-        "coordinate": "11.076809 77.025659"
-    },
-    {
-        "party_id": "PA0419",
+        "party_id": "PA0378",
         "partyName": "SAGAR BAKERY",
         "route": "PSR5",
         "phoneNumber": "7708906749",
@@ -4200,7 +3790,7 @@
         "coordinate": "11.060961 76.97218"
     },
     {
-        "party_id": "PA0420",
+        "party_id": "PA0379",
         "partyName": "SAKTHI BAKERY",
         "route": "PSR6",
         "phoneNumber": "6381583710",
@@ -4210,7 +3800,7 @@
         "coordinate": "11.095556 77.010115"
     },
     {
-        "party_id": "PA0421",
+        "party_id": "PA0380",
         "partyName": "SAKTHI MALIGAI",
         "route": "PSR4",
         "phoneNumber": "9486189172",
@@ -4220,7 +3810,7 @@
         "coordinate": "11.116448 77.015724"
     },
     {
-        "party_id": "PA0422",
+        "party_id": "PA0381",
         "partyName": "SAKTHI MURGAN STORES ",
         "route": "PSR6",
         "phoneNumber": "9597976440",
@@ -4230,7 +3820,7 @@
         "coordinate": "11.027317 76.903193"
     },
     {
-        "party_id": "PA0423",
+        "party_id": "PA0382",
         "partyName": "SAKTHI STORE",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -4240,7 +3830,7 @@
         "coordinate": "11.045516 76.985393"
     },
     {
-        "party_id": "PA0424",
+        "party_id": "PA0383",
         "partyName": "SAKTHI STORES",
         "route": "PSR5",
         "phoneNumber": "9345622354",
@@ -4250,7 +3840,7 @@
         "coordinate": "11.037984 76.97334"
     },
     {
-        "party_id": "PA0425",
+        "party_id": "PA0384",
         "partyName": "SAMUTHIRAM DEPT STORE",
         "route": "PSR4",
         "phoneNumber": "9994466176",
@@ -4260,7 +3850,7 @@
         "coordinate": "11.047263 76.997692"
     },
     {
-        "party_id": "PA0426",
+        "party_id": "PA0385",
         "partyName": "SAMUTHIRAM STORE",
         "route": "PSR5",
         "phoneNumber": "9443899765",
@@ -4270,7 +3860,7 @@
         "coordinate": "11.059445 76.982556"
     },
     {
-        "party_id": "PA0427",
+        "party_id": "PA0386",
         "partyName": "SAMY BRIYANI HOUSE",
         "route": "PSR5",
         "phoneNumber": "9843166603",
@@ -4280,7 +3870,7 @@
         "coordinate": "11.065278 76.983809"
     },
     {
-        "party_id": "PA0428",
+        "party_id": "PA0387",
         "partyName": "SANJAY STORE",
         "route": "PSR5",
         "phoneNumber": "7639819082",
@@ -4290,7 +3880,7 @@
         "coordinate": "11.062626 76.980695"
     },
     {
-        "party_id": "PA0429",
+        "party_id": "PA0388",
         "partyName": "SANKARA EYE HOSPITAL",
         "route": "PSR4",
         "phoneNumber": "9600555750",
@@ -4300,7 +3890,7 @@
         "coordinate": "11.054655 76.998714"
     },
     {
-        "party_id": "PA0430",
+        "party_id": "PA0389",
         "partyName": "SANTHOSH BAKERY",
         "route": "PSR5",
         "phoneNumber": "9786584159",
@@ -4310,7 +3900,7 @@
         "coordinate": "11.028716 76.965611"
     },
     {
-        "party_id": "PA0431",
+        "party_id": "PA0390",
         "partyName": "SANTHOSH STORES",
         "route": "PSR2",
         "phoneNumber": "8300404732",
@@ -4320,7 +3910,7 @@
         "coordinate": "11.086753 76.982161"
     },
     {
-        "party_id": "PA0432",
+        "party_id": "PA0391",
         "partyName": "SARASWATHI STORE",
         "route": "PSR1",
         "phoneNumber": "9840717107",
@@ -4330,7 +3920,7 @@
         "coordinate": "11.057173 77.00388"
     },
     {
-        "party_id": "PA0433",
+        "party_id": "PA0392",
         "partyName": "SARATHI BAKES and SNACKS",
         "route": "PSR3",
         "phoneNumber": "8870666089",
@@ -4340,7 +3930,7 @@
         "coordinate": "11.097865 77.006593"
     },
     {
-        "party_id": "PA0434",
+        "party_id": "PA0393",
         "partyName": "SARAVANA BAKES",
         "route": "PSR2",
         "phoneNumber": "9843645735",
@@ -4350,7 +3940,7 @@
         "coordinate": "11.079596 77.002419"
     },
     {
-        "party_id": "PA0435",
+        "party_id": "PA0394",
         "partyName": "SARAVANA STORES",
         "route": "PSR2",
         "phoneNumber": "6383600451",
@@ -4360,7 +3950,7 @@
         "coordinate": "11.083505 76.968668"
     },
     {
-        "party_id": "PA0436",
+        "party_id": "PA0395",
         "partyName": "SARAWATHY STORE",
         "route": "PSR5",
         "phoneNumber": "9092833562",
@@ -4370,7 +3960,7 @@
         "coordinate": "11.047186 76.960511"
     },
     {
-        "party_id": "PA0437",
+        "party_id": "PA0396",
         "partyName": "SATHYAM CATERING SERVICE",
         "route": "PSR2",
         "phoneNumber": "9942147585",
@@ -4380,7 +3970,7 @@
         "coordinate": "11.086732 76.986928"
     },
     {
-        "party_id": "PA0438",
+        "party_id": "PA0397",
         "partyName": "SELVA SHANTHI STORE",
         "route": "PSR5",
         "phoneNumber": "8012304764",
@@ -4390,7 +3980,7 @@
         "coordinate": "11.060134 76.98297"
     },
     {
-        "party_id": "PA0439",
+        "party_id": "PA0398",
         "partyName": "SELVAKANI STORE",
         "route": "PSR5",
         "phoneNumber": "9898989898",
@@ -4400,7 +3990,7 @@
         "coordinate": "11.034313 76.962206"
     },
     {
-        "party_id": "PA0440",
+        "party_id": "PA0399",
         "partyName": "SELVALAKSHMI BAKERY",
         "route": "PSR6",
         "phoneNumber": "9943243933",
@@ -4410,7 +4000,7 @@
         "coordinate": "11.065955 77.00098"
     },
     {
-        "party_id": "PA0441",
+        "party_id": "PA0400",
         "partyName": "SELVAM BAKERY ",
         "route": "PSR6",
         "phoneNumber": "9965962965",
@@ -4420,17 +4010,7 @@
         "coordinate": "11.054356 76.993309"
     },
     {
-        "party_id": "PA0442",
-        "partyName": "SELVAM STORE",
-        "route": "PSR5",
-        "phoneNumber": "9442738498",
-        "gst": "",
-        "available": 1,
-        "address": "11 PUTHU THOTTAM 3RD STREET NALLAMPALAYA COIMBATORE 641006",
-        "coordinate": "11.039578 76.95495"
-    },
-    {
-        "party_id": "PA0443",
+        "party_id": "PA0401",
         "partyName": "SELVAM STORE",
         "route": "PSR5",
         "phoneNumber": "9876543210",
@@ -4440,7 +4020,7 @@
         "coordinate": "11.03958 76.954918"
     },
     {
-        "party_id": "PA0444",
+        "party_id": "PA0402",
         "partyName": "SELVANAYAGI SUPER MARKET",
         "route": "PSR3",
         "phoneNumber": "9095957390",
@@ -4450,7 +4030,7 @@
         "coordinate": "11.110656 77.026696"
     },
     {
-        "party_id": "PA0445",
+        "party_id": "PA0403",
         "partyName": "SELVI BAKERY",
         "route": "PSR2",
         "phoneNumber": "9500831002",
@@ -4460,17 +4040,7 @@
         "coordinate": "11.08233 76.987385"
     },
     {
-        "party_id": "PA0446",
-        "partyName": "SELVI BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "9500831002",
-        "gst": "",
-        "available": 1,
-        "address": "NEAR KCT COLLEGE THUDIYALUR ROAD SARAVANAMPATTI 641035",
-        "coordinate": "11.006391 76.917309"
-    },
-    {
-        "party_id": "PA0447",
+        "party_id": "PA0404",
         "partyName": "SELVI STORE",
         "route": "PSR1",
         "phoneNumber": "9976111578",
@@ -4480,7 +4050,7 @@
         "coordinate": "11.073692 77.012003"
     },
     {
-        "party_id": "PA0448",
+        "party_id": "PA0405",
         "partyName": "SENTHIL ENTERPRISES",
         "route": "PSR5",
         "phoneNumber": "8883915151",
@@ -4490,7 +4060,7 @@
         "coordinate": "11.083924 76.982707"
     },
     {
-        "party_id": "PA0449",
+        "party_id": "PA0406",
         "partyName": "SENTHUR MURUGAN MALIGAI",
         "route": "PSR1",
         "phoneNumber": "9488813900",
@@ -4500,7 +4070,7 @@
         "coordinate": "11.077578 77.004243"
     },
     {
-        "party_id": "PA0450",
+        "party_id": "PA0407",
         "partyName": "SHANMUGA BAKERY",
         "route": "PSR6",
         "phoneNumber": "9894683919",
@@ -4510,7 +4080,7 @@
         "coordinate": "11.060795 76.998686"
     },
     {
-        "party_id": "PA0451",
+        "party_id": "PA0408",
         "partyName": "SHIVAM TRADERS",
         "route": "PSR5",
         "phoneNumber": "9342648886",
@@ -4520,7 +4090,7 @@
         "coordinate": "11.051941 76.983708"
     },
     {
-        "party_id": "PA0452",
+        "party_id": "PA0409",
         "partyName": "SHIWANI STORE",
         "route": "PSR2",
         "phoneNumber": "9746099375",
@@ -4530,7 +4100,7 @@
         "coordinate": "11.081348 76.966023"
     },
     {
-        "party_id": "PA0453",
+        "party_id": "PA0410",
         "partyName": "SHREE KUMARAN BOOK STALL",
         "route": "PSR6",
         "phoneNumber": "9894104913",
@@ -4540,7 +4110,7 @@
         "coordinate": "11.065448 77.000829"
     },
     {
-        "party_id": "PA0454",
+        "party_id": "PA0411",
         "partyName": "SHRI GUHAN STORES",
         "route": "PSR4",
         "phoneNumber": "8489945868",
@@ -4550,7 +4120,7 @@
         "coordinate": "11.040539 76.989702"
     },
     {
-        "party_id": "PA0455",
+        "party_id": "PA0412",
         "partyName": "SHRI KARRUPPANA HOTEL",
         "route": "PSR3",
         "phoneNumber": "8838419639",
@@ -4560,7 +4130,7 @@
         "coordinate": "11.111914 77.030407"
     },
     {
-        "party_id": "PA0456",
+        "party_id": "PA0413",
         "partyName": "SHRI KRISHNA MESS",
         "route": "PSR2",
         "phoneNumber": "9003316244",
@@ -4570,7 +4140,7 @@
         "coordinate": "11.083447 76.981658"
     },
     {
-        "party_id": "PA0457",
+        "party_id": "PA0414",
         "partyName": "SITHA PANNI",
         "route": "PSR6",
         "phoneNumber": "7871625689",
@@ -4580,7 +4150,7 @@
         "coordinate": "11.039713 76.981086"
     },
     {
-        "party_id": "PA0458",
+        "party_id": "PA0415",
         "partyName": "SIVA SAKTHI PALAMUDIR",
         "route": "PSR3",
         "phoneNumber": "9865437071",
@@ -4590,7 +4160,7 @@
         "coordinate": "11.112937 77.029189"
     },
     {
-        "party_id": "PA0459",
+        "party_id": "PA0416",
         "partyName": "SIVA TEA STALL",
         "route": "PSR1",
         "phoneNumber": "9629392200",
@@ -4600,7 +4170,7 @@
         "coordinate": "11.097901 77.006523"
     },
     {
-        "party_id": "PA0460",
+        "party_id": "PA0417",
         "partyName": "SIVALAKSHMI STORES",
         "route": "PSR1",
         "phoneNumber": "9944836595",
@@ -4610,7 +4180,7 @@
         "coordinate": "11.088041 77.007706"
     },
     {
-        "party_id": "PA0461",
+        "party_id": "PA0418",
         "partyName": "SIVASAKTHI STORE",
         "route": "PSR4",
         "phoneNumber": "9675432161",
@@ -4620,7 +4190,7 @@
         "coordinate": "11.040352 76.981807"
     },
     {
-        "party_id": "PA0462",
+        "party_id": "PA0419",
         "partyName": "SIVASAKTHI STORES",
         "route": "PSR6",
         "phoneNumber": "7502639976",
@@ -4630,7 +4200,7 @@
         "coordinate": "11.097828 77.006526"
     },
     {
-        "party_id": "PA0463",
+        "party_id": "PA0420",
         "partyName": "SIYON MALIGAI",
         "route": "PSR1",
         "phoneNumber": "9585379566",
@@ -4640,7 +4210,7 @@
         "coordinate": "11.059138 77.002325"
     },
     {
-        "party_id": "PA0464",
+        "party_id": "PA0421",
         "partyName": "SKSMART",
         "route": "PSR3",
         "phoneNumber": "9942555155",
@@ -4650,7 +4220,7 @@
         "coordinate": "11.109628 77.012022"
     },
     {
-        "party_id": "PA0465",
+        "party_id": "PA0422",
         "partyName": "SKT OOTY VEGETABLES AND FRUITS",
         "route": "PSR2",
         "phoneNumber": "9965120983",
@@ -4660,7 +4230,7 @@
         "coordinate": "11.075965 76.999245"
     },
     {
-        "party_id": "PA0466",
+        "party_id": "PA0423",
         "partyName": "SMART SHOPPE ",
         "route": "PSR5",
         "phoneNumber": "9943292848",
@@ -4670,7 +4240,7 @@
         "coordinate": "11.049395 76.98079"
     },
     {
-        "party_id": "PA0467",
+        "party_id": "PA0424",
         "partyName": "SMS KARUPTTI COFFEE",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -4680,7 +4250,7 @@
         "coordinate": "11.097915 77.006684"
     },
     {
-        "party_id": "PA0468",
+        "party_id": "PA0425",
         "partyName": "SMS Sri mutharamman store",
         "route": "PSR3",
         "phoneNumber": "9566598828",
@@ -4690,7 +4260,7 @@
         "coordinate": "11.096904 77.019538"
     },
     {
-        "party_id": "PA0469",
+        "party_id": "PA0426",
         "partyName": "SNS COLLEGE CANTEEN",
         "route": "PSR2",
         "phoneNumber": "9788177664",
@@ -4700,7 +4270,7 @@
         "coordinate": "11.081682 76.975461"
     },
     {
-        "party_id": "PA0470",
+        "party_id": "PA0427",
         "partyName": "SONA STORE",
         "route": "PSR1",
         "phoneNumber": "8608910873",
@@ -4710,7 +4280,7 @@
         "coordinate": "11.005817 76.910259"
     },
     {
-        "party_id": "PA0471",
+        "party_id": "PA0428",
         "partyName": "SR BAKERY ",
         "route": "PSR6",
         "phoneNumber": "9566772737",
@@ -4720,7 +4290,7 @@
         "coordinate": "11.040725 76.982054"
     },
     {
-        "party_id": "PA0472",
+        "party_id": "PA0429",
         "partyName": "SREE AISWARYAA BAKERY",
         "route": "PSR6",
         "phoneNumber": "9443043381",
@@ -4730,17 +4300,7 @@
         "coordinate": "11.041765 76.983486"
     },
     {
-        "party_id": "PA0473",
-        "partyName": "SREE AISWARYAA BAKERY",
-        "route": "PSR3",
-        "phoneNumber": "9361651646",
-        "gst": "",
-        "available": 1,
-        "address": "107 VILLAGER NAGAR SATHY MAIN ROAD KURUMBAPALAYAM CBE Coimbatore 641107",
-        "coordinate": "11.108799 77.02516"
-    },
-    {
-        "party_id": "PA0474",
+        "party_id": "PA0430",
         "partyName": "SREE BAKES",
         "route": "PSR3",
         "phoneNumber": "9952303558",
@@ -4750,7 +4310,7 @@
         "coordinate": "11.099723 77.019375"
     },
     {
-        "party_id": "PA0475",
+        "party_id": "PA0431",
         "partyName": "SREE CHARMAN STORE",
         "route": "PSR1",
         "phoneNumber": "9944581774",
@@ -4760,7 +4320,7 @@
         "coordinate": "11.07373 77.012112"
     },
     {
-        "party_id": "PA0476",
+        "party_id": "PA0432",
         "partyName": "SREE CHENNI DEPARTMENTAL STORES",
         "route": "PSR2",
         "phoneNumber": "9677966430",
@@ -4770,7 +4330,7 @@
         "coordinate": "11.081981 76.988025"
     },
     {
-        "party_id": "PA0477",
+        "party_id": "PA0433",
         "partyName": "SREE FOOD VILLA",
         "route": "PSR2",
         "phoneNumber": "7397701515",
@@ -4780,7 +4340,7 @@
         "coordinate": "11.081216 76.991755"
     },
     {
-        "party_id": "PA0478",
+        "party_id": "PA0434",
         "partyName": "SREE JEE MINI MART",
         "route": "PSR5",
         "phoneNumber": "9500004600",
@@ -4790,7 +4350,7 @@
         "coordinate": "11.042363 76.976615"
     },
     {
-        "party_id": "PA0479",
+        "party_id": "PA0435",
         "partyName": "SREE KUMARAN MESS",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -4800,7 +4360,7 @@
         "coordinate": "11.067693 77.002846"
     },
     {
-        "party_id": "PA0480",
+        "party_id": "PA0436",
         "partyName": "SREE MURUGAN SUPER MARKET",
         "route": "PSR4",
         "phoneNumber": "8939015317",
@@ -4810,7 +4370,7 @@
         "coordinate": "11.048277 77.000426"
     },
     {
-        "party_id": "PA0481",
+        "party_id": "PA0437",
         "partyName": "SREE SABARI SASTHA BAKERY",
         "route": "PSR5",
         "phoneNumber": "9626875932",
@@ -4820,7 +4380,7 @@
         "coordinate": "11.035513 76.957711"
     },
     {
-        "party_id": "PA0482",
+        "party_id": "PA0438",
         "partyName": "SREE SAI BAKERY",
         "route": "PSR2",
         "phoneNumber": "8220807308",
@@ -4830,7 +4390,7 @@
         "coordinate": "11.08339 76.975252"
     },
     {
-        "party_id": "PA0483",
+        "party_id": "PA0439",
         "partyName": "SREE SAI STORES",
         "route": "PSR4",
         "phoneNumber": "7200211688",
@@ -4840,7 +4400,7 @@
         "coordinate": "11.115927 77.016323"
     },
     {
-        "party_id": "PA0484",
+        "party_id": "PA0440",
         "partyName": "SREE SARAVANAS KITCHEN",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -4850,7 +4410,7 @@
         "coordinate": "11.097876 77.006575"
     },
     {
-        "party_id": "PA0485",
+        "party_id": "PA0441",
         "partyName": "SREE SUBRAMANIYA SPECIALITEA COFFEE",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -4860,7 +4420,7 @@
         "coordinate": "11.097884 77.006678"
     },
     {
-        "party_id": "PA0486",
+        "party_id": "PA0442",
         "partyName": "SREE SUPER MARKET",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -4870,7 +4430,7 @@
         "coordinate": "11.068198 77.002334"
     },
     {
-        "party_id": "PA0487",
+        "party_id": "PA0443",
         "partyName": "SREE SWAMI HYPERMARKET PVT LTD",
         "route": "PSR1",
         "phoneNumber": "9894322558",
@@ -4880,7 +4440,7 @@
         "coordinate": "11.081494 76.989858"
     },
     {
-        "party_id": "PA0488",
+        "party_id": "PA0444",
         "partyName": "SREYA STORE",
         "route": "PSR4",
         "phoneNumber": "7708356179",
@@ -4890,7 +4450,7 @@
         "coordinate": "11.116449 77.015721"
     },
     {
-        "party_id": "PA0489",
+        "party_id": "PA0445",
         "partyName": "SRI ADITHYA RESTAURANTS",
         "route": "PSR4",
         "phoneNumber": "6380257431",
@@ -4900,7 +4460,7 @@
         "coordinate": "11.034362 77.003429"
     },
     {
-        "party_id": "PA0490",
+        "party_id": "PA0446",
         "partyName": "SRI ALAGU NACHIAMMAN STORES",
         "route": "PSR1",
         "phoneNumber": "9943803888",
@@ -4910,7 +4470,7 @@
         "coordinate": "11.060488 77.007723"
     },
     {
-        "party_id": "PA0491",
+        "party_id": "PA0447",
         "partyName": "SRI AMMAN  BAKERY ",
         "route": "PSR6",
         "phoneNumber": "9600841478",
@@ -4920,7 +4480,7 @@
         "coordinate": "11.095545 77.010181"
     },
     {
-        "party_id": "PA0492",
+        "party_id": "PA0448",
         "partyName": "SRI AMMAN PAZHAMUDIR",
         "route": "PSR5",
         "phoneNumber": "9443063862",
@@ -4930,7 +4490,7 @@
         "coordinate": "11.035653 76.955833"
     },
     {
-        "party_id": "PA0493",
+        "party_id": "PA0449",
         "partyName": "SRI AMMAN STORE",
         "route": "PSR6",
         "phoneNumber": "9894547862",
@@ -4940,7 +4500,7 @@
         "coordinate": "11.058114 76.996425"
     },
     {
-        "party_id": "PA0494",
+        "party_id": "PA0450",
         "partyName": "SRI AYYANAR MESS",
         "route": "PSR2",
         "phoneNumber": "9842652469",
@@ -4950,7 +4510,7 @@
         "coordinate": "11.081676 76.984025"
     },
     {
-        "party_id": "PA0495",
+        "party_id": "PA0451",
         "partyName": "SRI BAKIYAM MESS",
         "route": "PSR1",
         "phoneNumber": "9003706333",
@@ -4960,7 +4520,7 @@
         "coordinate": "11.074546 77.008768"
     },
     {
-        "party_id": "PA0496",
+        "party_id": "PA0452",
         "partyName": "SRI BALAJI STORE",
         "route": "PSR4",
         "phoneNumber": "9047415157",
@@ -4970,17 +4530,7 @@
         "coordinate": "11.04102 76.989611"
     },
     {
-        "party_id": "PA0497",
-        "partyName": "SRI BALAJI STORE",
-        "route": "PSR6",
-        "phoneNumber": "9043164460",
-        "gst": "",
-        "available": 1,
-        "address": "1 THENDRAL NGR NEW HOUSINGUNIT GANAPA Coimbatore Coimbatore Coimbatore Coimbatore 641006",
-        "coordinate": "11.063015 76.995955"
-    },
-    {
-        "party_id": "PA0498",
+        "party_id": "PA0453",
         "partyName": "SRI BANNARI AMMAN STORE",
         "route": "PSR6",
         "phoneNumber": "9489022413",
@@ -4990,7 +4540,7 @@
         "coordinate": "11.049781 76.99033"
     },
     {
-        "party_id": "PA0499",
+        "party_id": "PA0454",
         "partyName": "SRI BARANI BAKERY",
         "route": "PSR4",
         "phoneNumber": "9942956651",
@@ -5000,7 +4550,7 @@
         "coordinate": "11.037704 76.981151"
     },
     {
-        "party_id": "PA0500",
+        "party_id": "PA0455",
         "partyName": "SRI GANAPATHY IYANGAR BAKERY",
         "route": "PSR6",
         "phoneNumber": "9443804426",
@@ -5010,7 +4560,7 @@
         "coordinate": "11.09785 77.006593"
     },
     {
-        "party_id": "PA0501",
+        "party_id": "PA0456",
         "partyName": "SRI GANAPATHY NELLAI LALA SWEETS",
         "route": "PSR4",
         "phoneNumber": "9626013728",
@@ -5020,7 +4570,7 @@
         "coordinate": "11.042587 76.992682"
     },
     {
-        "party_id": "PA0502",
+        "party_id": "PA0457",
         "partyName": "SRI GANAPATHY PALAMUDIR",
         "route": "PSR6",
         "phoneNumber": "9994463046",
@@ -5030,7 +4580,7 @@
         "coordinate": "11.047044 76.988175"
     },
     {
-        "party_id": "PA0503",
+        "party_id": "PA0458",
         "partyName": "SRI GANAPATHY STORE",
         "route": "PSR1",
         "phoneNumber": "9655514115",
@@ -5040,7 +4590,7 @@
         "coordinate": "11.097793 77.006526"
     },
     {
-        "party_id": "PA0504",
+        "party_id": "PA0459",
         "partyName": "SRI GURU COLLEGE CANTEEN",
         "route": "PSR3",
         "phoneNumber": "9865371587",
@@ -5050,7 +4600,7 @@
         "coordinate": "11.112589 77.030489"
     },
     {
-        "party_id": "PA0505",
+        "party_id": "PA0460",
         "partyName": "SRI HARI NELLAI LALA SWEET",
         "route": "PSR3",
         "phoneNumber": "9865686250",
@@ -5060,7 +4610,7 @@
         "coordinate": "11.102016 77.011699"
     },
     {
-        "party_id": "PA0506",
+        "party_id": "PA0461",
         "partyName": "SRI JOTHI BAKERY",
         "route": "PSR2",
         "phoneNumber": "9895994949",
@@ -5070,17 +4620,7 @@
         "coordinate": "11.075308 77.002252"
     },
     {
-        "party_id": "PA0507",
-        "partyName": "SRI JOTHI BAKERY",
-        "route": "PSR2",
-        "phoneNumber": "9940987011",
-        "gst": "",
-        "available": 1,
-        "address": "241-B,JOTHI COMPLEX,SATHY MAIN ROAD SARAVANAMPATTI,COIMBATORE COIMBATORE 641035",
-        "coordinate": "11.078416 77.003467"
-    },
-    {
-        "party_id": "PA0508",
+        "party_id": "PA0462",
         "partyName": "SRI KANCHI KAMAKOTI MEDICAL TRUST",
         "route": "PSR6",
         "phoneNumber": "9600555750",
@@ -5090,7 +4630,7 @@
         "coordinate": "11.054363 76.999118"
     },
     {
-        "party_id": "PA0509",
+        "party_id": "PA0463",
         "partyName": "SRI KANNAPIRAN BAKERY SWEET&PAZHAMUDIR NILAYAM",
         "route": "PSR5",
         "phoneNumber": "9585327863",
@@ -5100,7 +4640,7 @@
         "coordinate": "11.056644 76.968197"
     },
     {
-        "party_id": "PA0510",
+        "party_id": "PA0464",
         "partyName": "SRI KRINA STORE",
         "route": "PSR5",
         "phoneNumber": "9807858692",
@@ -5110,7 +4650,7 @@
         "coordinate": "11.047498 76.971193"
     },
     {
-        "party_id": "PA0511",
+        "party_id": "PA0465",
         "partyName": "SRI KRISHNA AYYANGAR BAKERY",
         "route": "PSR4",
         "phoneNumber": "9952483103",
@@ -5120,17 +4660,7 @@
         "coordinate": "11.053248 76.996156"
     },
     {
-        "party_id": "PA0512",
-        "partyName": "SRI KRISHNA AYYANGAR BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "9750764103",
-        "gst": "",
-        "available": 1,
-        "address": "190/13 GANDI STREET THANEERPANDAL ROAD, VILANKURICHI,coimbatore Coimbatore 641006",
-        "coordinate": "11.07181 77.013108"
-    },
-    {
-        "party_id": "PA0513",
+        "party_id": "PA0466",
         "partyName": "SRI KRISHNA BAKERY",
         "route": "PSR4",
         "phoneNumber": "8056403736",
@@ -5140,7 +4670,7 @@
         "coordinate": "11.047215 76.997886"
     },
     {
-        "party_id": "PA0514",
+        "party_id": "PA0467",
         "partyName": "SRI KRISHNA BAKES",
         "route": "PSR1",
         "phoneNumber": "9787828235",
@@ -5150,7 +4680,7 @@
         "coordinate": "11.005817 76.910257"
     },
     {
-        "party_id": "PA0515",
+        "party_id": "PA0468",
         "partyName": "SRI KRISHNA PALAMUDHIR NILAYAM",
         "route": "PSR6",
         "phoneNumber": "9655050429",
@@ -5160,7 +4690,7 @@
         "coordinate": "11.095436 77.010171"
     },
     {
-        "party_id": "PA0516",
+        "party_id": "PA0469",
         "partyName": "SRI KRISHNA PAZHAMUDIR AND MALIGAI",
         "route": "PSR5",
         "phoneNumber": "7904130980",
@@ -5170,7 +4700,7 @@
         "coordinate": "11.047198 76.974318"
     },
     {
-        "party_id": "PA0517",
+        "party_id": "PA0470",
         "partyName": "SRI KRISHNA S OOTY TEA",
         "route": "PSR2",
         "phoneNumber": "9003316244",
@@ -5180,17 +4710,7 @@
         "coordinate": "11.081287 76.990772"
     },
     {
-        "party_id": "PA0518",
-        "partyName": "SRI KUMAR STORE",
-        "route": "PSR4",
-        "phoneNumber": "9976232677",
-        "gst": "",
-        "available": 1,
-        "address": "42/72 VG RAOV NAGAR  GANAPATHY Coimbatore 641006",
-        "coordinate": "11.037601 76.980777"
-    },
-    {
-        "party_id": "PA0519",
+        "party_id": "PA0471",
         "partyName": "SRI KUMAR STORE",
         "route": "PSR4",
         "phoneNumber": "9942198005",
@@ -5200,7 +4720,7 @@
         "coordinate": "11.037985 76.990174"
     },
     {
-        "party_id": "PA0520",
+        "party_id": "PA0472",
         "partyName": "SRI KUMAR SUPER MARKET",
         "route": "PSR4",
         "phoneNumber": "9865454858",
@@ -5210,7 +4730,7 @@
         "coordinate": "11.041979 76.989429"
     },
     {
-        "party_id": "PA0521",
+        "party_id": "PA0473",
         "partyName": "SRI LAKSHMI AYYANGAR CAKES",
         "route": "PSR3",
         "phoneNumber": "7539910299",
@@ -5220,7 +4740,7 @@
         "coordinate": "11.1021 77.010487"
     },
     {
-        "party_id": "PA0522",
+        "party_id": "PA0474",
         "partyName": "SRI LAKSHMI BAKERY",
         "route": "PSR3",
         "phoneNumber": "9843772283",
@@ -5230,7 +4750,7 @@
         "coordinate": "11.112437 77.028936"
     },
     {
-        "party_id": "PA0523",
+        "party_id": "PA0475",
         "partyName": "SRI LAKSHMI IYENGAR CAKE SHOP",
         "route": "PSR4",
         "phoneNumber": "9943130434",
@@ -5240,7 +4760,7 @@
         "coordinate": "11.041725 77.003381"
     },
     {
-        "party_id": "PA0524",
+        "party_id": "PA0476",
         "partyName": "SRI LAKSHMI IYYANGAR BAKERY",
         "route": "PSR6",
         "phoneNumber": "9876543210",
@@ -5250,7 +4770,7 @@
         "coordinate": "11.036286 76.978001"
     },
     {
-        "party_id": "PA0525",
+        "party_id": "PA0477",
         "partyName": "SRI LAKSHMI STORE",
         "route": "PSR5",
         "phoneNumber": "9843118952",
@@ -5260,17 +4780,7 @@
         "coordinate": "11.023625 76.965673"
     },
     {
-        "party_id": "PA0526",
-        "partyName": "SRI LAKSHMI STORE",
-        "route": "PSR2",
-        "phoneNumber": "9994631486",
-        "gst": "",
-        "available": 1,
-        "address": "NO15  MARUDHAM NAGAR  SARAVANAMPATTI Coimbatore COIMBATORE 641035",
-        "coordinate": "11.075885 76.999149"
-    },
-    {
-        "party_id": "PA0527",
+        "party_id": "PA0478",
         "partyName": "SRI MAHALAKSHMI RICE MANDY",
         "route": "PSR6",
         "phoneNumber": "9894525949",
@@ -5280,7 +4790,7 @@
         "coordinate": "11.046936 76.988239"
     },
     {
-        "party_id": "PA0528",
+        "party_id": "PA0479",
         "partyName": "SRI MANI SUPER MARKET",
         "route": "PSR4",
         "phoneNumber": "9788820312",
@@ -5290,17 +4800,17 @@
         "coordinate": "11.046265 76.998017"
     },
     {
-        "party_id": "PA0529",
+        "party_id": "PA0480",
         "partyName": "SRI MM NATURAL FOOD COMPANY",
         "route": "PSR1",
         "phoneNumber": "7598241188",
         "gst": "33AQJPJ5831B1Z8",
         "available": 1,
         "address": "43,RATHINAGIRI ROAD,VILANKURUCHI,COIMBATORE COIMBATORE 641035",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
-        "party_id": "PA0530",
+        "party_id": "PA0481",
         "partyName": "SRI MUNISWARAR PALAMUTHIR NILAYAM",
         "route": "PSR3",
         "phoneNumber": "9600236835",
@@ -5310,7 +4820,7 @@
         "coordinate": "11.11305 77.032212"
     },
     {
-        "party_id": "PA0531",
+        "party_id": "PA0482",
         "partyName": "SRI MURUGAN PALAMUDHIR NILAYAM",
         "route": "PSR3",
         "phoneNumber": "9843514486",
@@ -5320,7 +4830,7 @@
         "coordinate": "11.101766 77.010567"
     },
     {
-        "party_id": "PA0532",
+        "party_id": "PA0483",
         "partyName": "SRI MURUGAN STORE",
         "route": "PSR4",
         "phoneNumber": "9362937743",
@@ -5330,27 +4840,7 @@
         "coordinate": "11.115927 77.016323"
     },
     {
-        "party_id": "PA0533",
-        "partyName": "SRI MURUGAN STORE",
-        "route": "PSR1",
-        "phoneNumber": "9942068503",
-        "gst": "",
-        "available": 1,
-        "address": "9942068503 A 127 V K MAIN ROAD COIMBATORE 641006",
-        "coordinate": "11.097824 77.006647"
-    },
-    {
-        "party_id": "PA0534",
-        "partyName": "SRI MURUGAN STORE",
-        "route": "PSR1",
-        "phoneNumber": "8754129013",
-        "gst": "",
-        "available": 1,
-        "address": "GANAPATHY MANAGAR COIMBATORE 641006",
-        "coordinate": "11.081605 76.989521"
-    },
-    {
-        "party_id": "PA0535",
+        "party_id": "PA0484",
         "partyName": "SRI MURUGAN STORE VINAYAKAPURAM",
         "route": "PSR1",
         "phoneNumber": "8675537228",
@@ -5360,7 +4850,7 @@
         "coordinate": "11.082757 77.013001"
     },
     {
-        "party_id": "PA0536",
+        "party_id": "PA0485",
         "partyName": "SRI OM SAKTHI SWEETS AND SNAKS",
         "route": "PSR5",
         "phoneNumber": "9159686699",
@@ -5370,7 +4860,7 @@
         "coordinate": "11.0434 76.976824"
     },
     {
-        "party_id": "PA0537",
+        "party_id": "PA0486",
         "partyName": "SRI PALANIMURUGAN TRADERS",
         "route": "PSR5",
         "phoneNumber": "8925368859",
@@ -5380,7 +4870,7 @@
         "coordinate": "11.046218 76.952468"
     },
     {
-        "party_id": "PA0538",
+        "party_id": "PA0487",
         "partyName": "SRI PARVATHY AMMAN STORES",
         "route": "PSR5",
         "phoneNumber": "9790439214",
@@ -5390,7 +4880,7 @@
         "coordinate": "11.046154 76.952458"
     },
     {
-        "party_id": "PA0539",
+        "party_id": "PA0488",
         "partyName": "SRI PRATHIK FRUITS STALL",
         "route": "PSR2",
         "phoneNumber": "9994842676",
@@ -5400,7 +4890,7 @@
         "coordinate": "11.081294 76.975914"
     },
     {
-        "party_id": "PA0540",
+        "party_id": "PA0489",
         "partyName": "SRI RAGAVENDRA IYYENGHARs CAKE SHOP",
         "route": "PSR5",
         "phoneNumber": "9043931362",
@@ -5410,7 +4900,7 @@
         "coordinate": "11.0477 76.973999"
     },
     {
-        "party_id": "PA0541",
+        "party_id": "PA0490",
         "partyName": "SRI RAGAVENDRA STORE",
         "route": "PSR1",
         "phoneNumber": "9750856055",
@@ -5420,7 +4910,7 @@
         "coordinate": "11.055316 77.004605"
     },
     {
-        "party_id": "PA0542",
+        "party_id": "PA0491",
         "partyName": "SRI RAGHAVA HOTEL",
         "route": "PSR6",
         "phoneNumber": "9898989898",
@@ -5430,7 +4920,7 @@
         "coordinate": "11.097481 77.006741"
     },
     {
-        "party_id": "PA0543",
+        "party_id": "PA0492",
         "partyName": "SRI SAI BAKERY",
         "route": "PSR6",
         "phoneNumber": "9751502341",
@@ -5440,7 +4930,7 @@
         "coordinate": "11.037607 76.978891"
     },
     {
-        "party_id": "PA0544",
+        "party_id": "PA0493",
         "partyName": "SRI SAI MART",
         "route": "PSR5",
         "phoneNumber": "7871040444",
@@ -5450,7 +4940,7 @@
         "coordinate": "11.046453 76.96433"
     },
     {
-        "party_id": "PA0545",
+        "party_id": "PA0494",
         "partyName": "SRI SAI STORE",
         "route": "PSR1",
         "phoneNumber": "9790329622",
@@ -5460,7 +4950,7 @@
         "coordinate": "11.073711 77.012041"
     },
     {
-        "party_id": "PA0546",
+        "party_id": "PA0495",
         "partyName": "SRI SAKTHI MALIGAI",
         "route": "PSR1",
         "phoneNumber": "9171000984",
@@ -5470,7 +4960,7 @@
         "coordinate": "11.069684 77.016974"
     },
     {
-        "party_id": "PA0547",
+        "party_id": "PA0496",
         "partyName": "SRI SARAVANA BHAVAN",
         "route": "PSR3",
         "phoneNumber": "9600333546",
@@ -5480,7 +4970,7 @@
         "coordinate": "11.108491 77.024993"
     },
     {
-        "party_id": "PA0548",
+        "party_id": "PA0497",
         "partyName": "SRI SASTHA BAKERY",
         "route": "PSR3",
         "phoneNumber": "9898989898",
@@ -5490,7 +4980,7 @@
         "coordinate": "11.11154 77.02807"
     },
     {
-        "party_id": "PA0549",
+        "party_id": "PA0498",
         "partyName": "SRI SELVALAKSHMI BAKERY",
         "route": "PSR1",
         "phoneNumber": "9787724353",
@@ -5500,7 +4990,7 @@
         "coordinate": "11.073658 77.012758"
     },
     {
-        "party_id": "PA0550",
+        "party_id": "PA0499",
         "partyName": "SRI SIVA SAKTHI STORE",
         "route": "PSR5",
         "phoneNumber": "9789197674",
@@ -5510,7 +5000,7 @@
         "coordinate": "11.062755 76.98101"
     },
     {
-        "party_id": "PA0551",
+        "party_id": "PA0500",
         "partyName": "SRI SUYAMBU LINGA SWAMY MALIGA",
         "route": "PSR2",
         "phoneNumber": "8508898698",
@@ -5520,7 +5010,7 @@
         "coordinate": "11.081617 76.983964"
     },
     {
-        "party_id": "PA0552",
+        "party_id": "PA0501",
         "partyName": "SRI THIRUPATHI MESS",
         "route": "PSR6",
         "phoneNumber": "9994569510",
@@ -5530,7 +5020,7 @@
         "coordinate": "11.097078 77.006901"
     },
     {
-        "party_id": "PA0553",
+        "party_id": "PA0502",
         "partyName": "SRI VELAVAN PAZHAMUDIR NILAYAM",
         "route": "PSR3",
         "phoneNumber": "9585370259",
@@ -5540,7 +5030,7 @@
         "coordinate": "11.100754 77.01071"
     },
     {
-        "party_id": "PA0554",
+        "party_id": "PA0503",
         "partyName": "SRI VETRI VINAYAGAR STORES",
         "route": "PSR6",
         "phoneNumber": "8526794775",
@@ -5550,7 +5040,7 @@
         "coordinate": "11.095471 77.010171"
     },
     {
-        "party_id": "PA0555",
+        "party_id": "PA0504",
         "partyName": "SRI VIGNESHWARA DEPARTMENTAL STORE",
         "route": "PSR5",
         "phoneNumber": "8754761143",
@@ -5560,7 +5050,7 @@
         "coordinate": "11.034641 76.96941"
     },
     {
-        "party_id": "PA0556",
+        "party_id": "PA0505",
         "partyName": "SRI VINAYAGA BAKERY",
         "route": "PSR5",
         "phoneNumber": "8678904503",
@@ -5570,7 +5060,7 @@
         "coordinate": "11.0339 76.9358"
     },
     {
-        "party_id": "PA0557",
+        "party_id": "PA0506",
         "partyName": "SRI VINAYAGA STORE",
         "route": "PSR1",
         "phoneNumber": "9677602627",
@@ -5580,7 +5070,7 @@
         "coordinate": "11.08763 77.013073"
     },
     {
-        "party_id": "PA0558",
+        "party_id": "PA0507",
         "partyName": "SRI VINAYAKA TEA TIFFIN CENTER AND MALIGAI KADAI",
         "route": "PSR2",
         "phoneNumber": "9442599916",
@@ -5590,7 +5080,7 @@
         "coordinate": "11.080264 76.996712"
     },
     {
-        "party_id": "PA0559",
+        "party_id": "PA0508",
         "partyName": "SRIMAA BAKERY",
         "route": "PSR1",
         "phoneNumber": "9894196709",
@@ -5600,7 +5090,7 @@
         "coordinate": "11.073695 77.012019"
     },
     {
-        "party_id": "PA0560",
+        "party_id": "PA0509",
         "partyName": "SRIVARI BAKES",
         "route": "PSR1",
         "phoneNumber": "9940764346",
@@ -5610,7 +5100,7 @@
         "coordinate": "11.097893 77.006679"
     },
     {
-        "party_id": "PA0561",
+        "party_id": "PA0510",
         "partyName": "SRM BAKERY",
         "route": "PSR6",
         "phoneNumber": "9843772283",
@@ -5620,7 +5110,7 @@
         "coordinate": "11.114984 77.029717"
     },
     {
-        "party_id": "PA0562",
+        "party_id": "PA0511",
         "partyName": "SS BAKERY",
         "route": "PSR6",
         "phoneNumber": "9364224467",
@@ -5630,7 +5120,7 @@
         "coordinate": "11.0396 76.981608"
     },
     {
-        "party_id": "PA0563",
+        "party_id": "PA0512",
         "partyName": "SS PAZHAMUDIR NILAYAM",
         "route": "PSR6",
         "phoneNumber": "9025698458",
@@ -5640,7 +5130,7 @@
         "coordinate": "11.097845 77.00665"
     },
     {
-        "party_id": "PA0564",
+        "party_id": "PA0513",
         "partyName": "SSS Bakery",
         "route": "PSR2",
         "phoneNumber": "9787830570",
@@ -5650,7 +5140,7 @@
         "coordinate": "11.073867 76.98531"
     },
     {
-        "party_id": "PA0565",
+        "party_id": "PA0514",
         "partyName": "SUBAKRISHNA BAKERY",
         "route": "PSR3",
         "phoneNumber": "9361360780",
@@ -5660,7 +5150,7 @@
         "coordinate": "11.096676 77.018954"
     },
     {
-        "party_id": "PA0566",
+        "party_id": "PA0515",
         "partyName": "SUDHA DEPT STORE",
         "route": "PSR1",
         "phoneNumber": "9894988309",
@@ -5670,7 +5160,7 @@
         "coordinate": "11.073681 77.012026"
     },
     {
-        "party_id": "PA0567",
+        "party_id": "PA0516",
         "partyName": "SUDHARSAN STORE",
         "route": "PSR1",
         "phoneNumber": "6382153454",
@@ -5680,7 +5170,7 @@
         "coordinate": "11.073698 77.012004"
     },
     {
-        "party_id": "PA0568",
+        "party_id": "PA0517",
         "partyName": "SURESH MALIGAI",
         "route": "PSR6",
         "phoneNumber": "8903931425",
@@ -5690,7 +5180,7 @@
         "coordinate": "11.054983 76.99249"
     },
     {
-        "party_id": "PA0569",
+        "party_id": "PA0518",
         "partyName": "SURIYA STORE",
         "route": "PSR1",
         "phoneNumber": "9443849691",
@@ -5700,7 +5190,7 @@
         "coordinate": "11.095133 77.01013"
     },
     {
-        "party_id": "PA0570",
+        "party_id": "PA0519",
         "partyName": "SURIYA STORES",
         "route": "PSR5",
         "phoneNumber": "9751727295",
@@ -5710,7 +5200,7 @@
         "coordinate": "11.083926 76.982709"
     },
     {
-        "party_id": "PA0571",
+        "party_id": "PA0520",
         "partyName": "SURIYA SUPER MARKET",
         "route": "PSR1",
         "phoneNumber": "9003569188",
@@ -5720,7 +5210,7 @@
         "coordinate": "11.087689 77.007342"
     },
     {
-        "party_id": "PA0572",
+        "party_id": "PA0521",
         "partyName": "SURYA HOSIPTAL",
         "route": "PSR6",
         "phoneNumber": "9944247699",
@@ -5730,7 +5220,7 @@
         "coordinate": "11.038969 76.979568"
     },
     {
-        "party_id": "PA0573",
+        "party_id": "PA0522",
         "partyName": "SUTHA MALIGAI",
         "route": "PSR2",
         "phoneNumber": "9842770327",
@@ -5740,7 +5230,7 @@
         "coordinate": "11.082138 76.993359"
     },
     {
-        "party_id": "PA0574",
+        "party_id": "PA0523",
         "partyName": "SWAMI DEPT STORE",
         "route": "PSR1",
         "phoneNumber": "9788370555",
@@ -5750,7 +5240,7 @@
         "coordinate": "11.073689 77.012005"
     },
     {
-        "party_id": "PA0575",
+        "party_id": "PA0524",
         "partyName": "Sanmugam Store",
         "route": "PSR1",
         "phoneNumber": "9944061186",
@@ -5760,7 +5250,7 @@
         "coordinate": "11.095642 77.015624"
     },
     {
-        "party_id": "PA0576",
+        "party_id": "PA0525",
         "partyName": "Santhosh Bakery",
         "route": "PSR5",
         "phoneNumber": "8344781241",
@@ -5770,7 +5260,7 @@
         "coordinate": "11.060134 76.98297"
     },
     {
-        "party_id": "PA0577",
+        "party_id": "PA0526",
         "partyName": "Saravana Store",
         "route": "PSR1",
         "phoneNumber": "9689016251",
@@ -5780,7 +5270,7 @@
         "coordinate": "11.07622 77.016301"
     },
     {
-        "party_id": "PA0578",
+        "party_id": "PA0527",
         "partyName": "Shanmuga Store",
         "route": "PSR3",
         "phoneNumber": "9944061186",
@@ -5790,7 +5280,7 @@
         "coordinate": "11.094637 77.015558"
     },
     {
-        "party_id": "PA0579",
+        "party_id": "PA0528",
         "partyName": "Shanmugavalli catering service",
         "route": "PSR4",
         "phoneNumber": "9578031673",
@@ -5800,7 +5290,7 @@
         "coordinate": "11.039038 77.003995"
     },
     {
-        "party_id": "PA0580",
+        "party_id": "PA0529",
         "partyName": "Shumuga Hotel",
         "route": "PSR6",
         "phoneNumber": "9842214221",
@@ -5810,7 +5300,7 @@
         "coordinate": "11.037906 76.979005"
     },
     {
-        "party_id": "PA0581",
+        "party_id": "PA0530",
         "partyName": "Sivasakthi Store",
         "route": "PSR3",
         "phoneNumber": "9976957705",
@@ -5820,7 +5310,7 @@
         "coordinate": "11.112657 77.005835"
     },
     {
-        "party_id": "PA0582",
+        "party_id": "PA0531",
         "partyName": "Sona Bakery",
         "route": "PSR5",
         "phoneNumber": "9608832445",
@@ -5830,7 +5320,7 @@
         "coordinate": "11.0444 76.97206"
     },
     {
-        "party_id": "PA0583",
+        "party_id": "PA0532",
         "partyName": "Sri Muthulakshmi Departmental Store",
         "route": "PSR3",
         "phoneNumber": "7940926889",
@@ -5840,7 +5330,7 @@
         "coordinate": "11.109661 77.012087"
     },
     {
-        "party_id": "PA0584",
+        "party_id": "PA0533",
         "partyName": "Sri Senthamizh Palporul sandhai",
         "route": "PSR3",
         "phoneNumber": "9629161316",
@@ -5850,7 +5340,7 @@
         "coordinate": "11.103062 77.010018"
     },
     {
-        "party_id": "PA0585",
+        "party_id": "PA0534",
         "partyName": "Sri sai store",
         "route": "PSR3",
         "phoneNumber": "9994500934",
@@ -5860,7 +5350,7 @@
         "coordinate": "11.101201 77.024681"
     },
     {
-        "party_id": "PA0586",
+        "party_id": "PA0535",
         "partyName": "T R S STORE",
         "route": "PSR5",
         "phoneNumber": "7845481814",
@@ -5870,7 +5360,7 @@
         "coordinate": "11.042594 76.960483"
     },
     {
-        "party_id": "PA0587",
+        "party_id": "PA0536",
         "partyName": "T.G TEA STALL",
         "route": "PSR6",
         "phoneNumber": "9443893556",
@@ -5880,7 +5370,7 @@
         "coordinate": "11.062665 76.992428"
     },
     {
-        "party_id": "PA0588",
+        "party_id": "PA0537",
         "partyName": "TASMAC 1516",
         "route": "PSR4",
         "phoneNumber": "9626333999",
@@ -5890,7 +5380,7 @@
         "coordinate": "11.0588 77.0052"
     },
     {
-        "party_id": "PA0589",
+        "party_id": "PA0538",
         "partyName": "TASMAC 1548",
         "route": "PSR5",
         "phoneNumber": "9095362050",
@@ -5900,7 +5390,7 @@
         "coordinate": "11.081599 76.989578"
     },
     {
-        "party_id": "PA0590",
+        "party_id": "PA0539",
         "partyName": "TASMAC 1550",
         "route": "PSR4",
         "phoneNumber": "9842084143",
@@ -5910,7 +5400,7 @@
         "coordinate": "11.039581 76.995806"
     },
     {
-        "party_id": "PA0591",
+        "party_id": "PA0540",
         "partyName": "TASMAC 1561",
         "route": "PSR4",
         "phoneNumber": "9842187667",
@@ -5920,7 +5410,7 @@
         "coordinate": "11.046188 76.988622"
     },
     {
-        "party_id": "PA0592",
+        "party_id": "PA0541",
         "partyName": "TASMAC 1573",
         "route": "PSR5",
         "phoneNumber": "9898989898",
@@ -5930,7 +5420,7 @@
         "coordinate": "11.044608 76.96012"
     },
     {
-        "party_id": "PA0593",
+        "party_id": "PA0542",
         "partyName": "TASMAC 1585",
         "route": "PSR1",
         "phoneNumber": "9750777788",
@@ -5940,7 +5430,7 @@
         "coordinate": "11.097905 77.006684"
     },
     {
-        "party_id": "PA0594",
+        "party_id": "PA0543",
         "partyName": "TASMAC 1597",
         "route": "PSR4",
         "phoneNumber": "9942545411",
@@ -5950,7 +5440,7 @@
         "coordinate": "11.05271 76.994993"
     },
     {
-        "party_id": "PA0595",
+        "party_id": "PA0544",
         "partyName": "TASMAC 1618",
         "route": "PSR5",
         "phoneNumber": "9786756099",
@@ -5960,7 +5450,7 @@
         "coordinate": "11.055735 76.9683"
     },
     {
-        "party_id": "PA0596",
+        "party_id": "PA0545",
         "partyName": "TASMAC 1638",
         "route": "PSR6",
         "phoneNumber": "9790062723",
@@ -5970,7 +5460,7 @@
         "coordinate": "11.034154 76.975025"
     },
     {
-        "party_id": "PA0597",
+        "party_id": "PA0546",
         "partyName": "TASMAC 1724",
         "route": "PSR5",
         "phoneNumber": "9898989898",
@@ -5980,7 +5470,7 @@
         "coordinate": "11.035528 76.956543"
     },
     {
-        "party_id": "PA0598",
+        "party_id": "PA0547",
         "partyName": "TASMAC BAR 1547",
         "route": "PSR6",
         "phoneNumber": "9894630005",
@@ -5990,7 +5480,7 @@
         "coordinate": "11.058496 76.996555"
     },
     {
-        "party_id": "PA0599",
+        "party_id": "PA0548",
         "partyName": "TASMAC WINES",
         "route": "PSR4",
         "phoneNumber": "9942545411",
@@ -6000,7 +5490,7 @@
         "coordinate": "11.052721 76.99489"
     },
     {
-        "party_id": "PA0600",
+        "party_id": "PA0549",
         "partyName": "TASMAC WINES   1559",
         "route": "PSR6",
         "phoneNumber": "9626371960",
@@ -6010,7 +5500,7 @@
         "coordinate": "11.032591 76.975985"
     },
     {
-        "party_id": "PA0601",
+        "party_id": "PA0550",
         "partyName": "TASMAC-1552",
         "route": "PSR5",
         "phoneNumber": "9655521403",
@@ -6020,7 +5510,7 @@
         "coordinate": "11.029605 76.965816"
     },
     {
-        "party_id": "PA0602",
+        "party_id": "PA0551",
         "partyName": "TASMAC-1554",
         "route": "PSR5",
         "phoneNumber": "6369252346",
@@ -6030,7 +5520,7 @@
         "coordinate": "11.02542 76.965335"
     },
     {
-        "party_id": "PA0603",
+        "party_id": "PA0552",
         "partyName": "TASMAC-1555",
         "route": "PSR5",
         "phoneNumber": "8508154418",
@@ -6040,7 +5530,7 @@
         "coordinate": "11.035664 76.958258"
     },
     {
-        "party_id": "PA0604",
+        "party_id": "PA0553",
         "partyName": "TASMAC-1596",
         "route": "PSR5",
         "phoneNumber": "7868942460",
@@ -6050,7 +5540,7 @@
         "coordinate": "11.025153 76.964995"
     },
     {
-        "party_id": "PA0605",
+        "party_id": "PA0554",
         "partyName": "TASMAC1564",
         "route": "PSR1",
         "phoneNumber": "9790062723",
@@ -6060,7 +5550,7 @@
         "coordinate": "11.065095 77.012636"
     },
     {
-        "party_id": "PA0606",
+        "party_id": "PA0555",
         "partyName": "TASTEA",
         "route": "PSR4",
         "phoneNumber": "6382932532",
@@ -6070,17 +5560,7 @@
         "coordinate": "11.040235 77.002854"
     },
     {
-        "party_id": "PA0607",
-        "partyName": "TASTY BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "8870888898",
-        "gst": "",
-        "available": 1,
-        "address": "134 sathy main road saravampatty bus stop Saravanampatty 641035",
-        "coordinate": "11.078599 77.003801"
-    },
-    {
-        "party_id": "PA0608",
+        "party_id": "PA0556",
         "partyName": "TASTY BAKERY",
         "route": "PSR6",
         "phoneNumber": "8217034413",
@@ -6090,7 +5570,7 @@
         "coordinate": "11.035931 76.97806"
     },
     {
-        "party_id": "PA0609",
+        "party_id": "PA0557",
         "partyName": "TEA JUNCTION",
         "route": "PSR2",
         "phoneNumber": "8825970615",
@@ -6100,7 +5580,7 @@
         "coordinate": "11.083432 76.974766"
     },
     {
-        "party_id": "PA0610",
+        "party_id": "PA0558",
         "partyName": "THANGAM PALAMUTHIR NILAYAM",
         "route": "PSR5",
         "phoneNumber": "9865835932",
@@ -6110,7 +5590,7 @@
         "coordinate": "11.046168 76.955095"
     },
     {
-        "party_id": "PA0611",
+        "party_id": "PA0559",
         "partyName": "THANGAM RICE MUNDY",
         "route": "PSR3",
         "phoneNumber": "6382818203",
@@ -6120,7 +5600,7 @@
         "coordinate": "11.109453 77.025302"
     },
     {
-        "party_id": "PA0612",
+        "party_id": "PA0560",
         "partyName": "THANGAM STORE",
         "route": "PSR4",
         "phoneNumber": "7558156742",
@@ -6130,27 +5610,7 @@
         "coordinate": "11.049413 77.000074"
     },
     {
-        "party_id": "PA0613",
-        "partyName": "THANGAM STORE",
-        "route": "PSR4",
-        "phoneNumber": "9942386741",
-        "gst": "",
-        "available": 1,
-        "address": "9942386741 L282  Police colony  ganapath COIMBATORE 641006",
-        "coordinate": "11.037798 76.981793"
-    },
-    {
-        "party_id": "PA0614",
-        "partyName": "THANGAM STORE",
-        "route": "PSR6",
-        "phoneNumber": "8098076641",
-        "gst": "",
-        "available": 1,
-        "address": "JANATHANAGAR,CHINNAVEDAMPATTY ROAD COIMBATORE 641006",
-        "coordinate": "11.062635 76.992854"
-    },
-    {
-        "party_id": "PA0615",
+        "party_id": "PA0561",
         "partyName": "THANGAM STORES",
         "route": "PSR1",
         "phoneNumber": "9176488480",
@@ -6160,7 +5620,7 @@
         "coordinate": "11.064039 77.007812"
     },
     {
-        "party_id": "PA0616",
+        "party_id": "PA0562",
         "partyName": "THE ACACIA PARK ",
         "route": "PSR2",
         "phoneNumber": "7373012613",
@@ -6170,7 +5630,7 @@
         "coordinate": "11.079549 76.999995"
     },
     {
-        "party_id": "PA0617",
+        "party_id": "PA0563",
         "partyName": "THE BURGER CROWN",
         "route": "PSR2",
         "phoneNumber": "9092929066",
@@ -6180,7 +5640,7 @@
         "coordinate": "11.080646 77.002389"
     },
     {
-        "party_id": "PA0618",
+        "party_id": "PA0564",
         "partyName": "THE CURRY KINGDOM",
         "route": "PSR3",
         "phoneNumber": "9600601266",
@@ -6190,7 +5650,7 @@
         "coordinate": "11.10499 77.029928"
     },
     {
-        "party_id": "PA0619",
+        "party_id": "PA0565",
         "partyName": "THE HUB and CBE RESTAURANT and CAFE",
         "route": "PSR2",
         "phoneNumber": "9944274705",
@@ -6200,7 +5660,7 @@
         "coordinate": "11.083046 76.985529"
     },
     {
-        "party_id": "PA0620",
+        "party_id": "PA0566",
         "partyName": "THE ROYAL COFFEE HOUSE",
         "route": "PSR4",
         "phoneNumber": "9524887889",
@@ -6210,7 +5670,7 @@
         "coordinate": "11.043134 77.002898"
     },
     {
-        "party_id": "PA0621",
+        "party_id": "PA0567",
         "partyName": "THEE CAFE",
         "route": "PSR6",
         "phoneNumber": "9952722100",
@@ -6220,7 +5680,7 @@
         "coordinate": "11.038951 76.979689"
     },
     {
-        "party_id": "PA0622",
+        "party_id": "PA0568",
         "partyName": "THEJAS FOODS MEAT and EAT",
         "route": "PSR6",
         "phoneNumber": "8629278722",
@@ -6230,7 +5690,7 @@
         "coordinate": "11.040093 76.981603"
     },
     {
-        "party_id": "PA0623",
+        "party_id": "PA0569",
         "partyName": "THIRUKUMARAN BAKERY",
         "route": "PSR1",
         "phoneNumber": "8122099123",
@@ -6240,7 +5700,7 @@
         "coordinate": "11.074348 77.009588"
     },
     {
-        "party_id": "PA0624",
+        "party_id": "PA0570",
         "partyName": "THIRUMURUGAN STORES",
         "route": "PSR1",
         "phoneNumber": "9150961413",
@@ -6250,7 +5710,7 @@
         "coordinate": "11.072981 77.019549"
     },
     {
-        "party_id": "PA0625",
+        "party_id": "PA0571",
         "partyName": "THIRUPATHI BAKERY",
         "route": "PSR2",
         "phoneNumber": "8489535108",
@@ -6260,7 +5720,7 @@
         "coordinate": "11.076091 77.00019"
     },
     {
-        "party_id": "PA0626",
+        "party_id": "PA0572",
         "partyName": "THIRUPATHI STORE",
         "route": "PSR1",
         "phoneNumber": "9786370231",
@@ -6270,7 +5730,7 @@
         "coordinate": "11.073694 77.012013"
     },
     {
-        "party_id": "PA0627",
+        "party_id": "PA0573",
         "partyName": "THOPPU KARI VIRUNTHU",
         "route": "PSR1",
         "phoneNumber": "9944439271",
@@ -6280,7 +5740,7 @@
         "coordinate": "11.07175 77.013003"
     },
     {
-        "party_id": "PA0628",
+        "party_id": "PA0574",
         "partyName": "THRUPATHI MALIGAI STORE",
         "route": "PSR6",
         "phoneNumber": "9488341266",
@@ -6290,7 +5750,7 @@
         "coordinate": "11.097898 77.006598"
     },
     {
-        "party_id": "PA0629",
+        "party_id": "PA0575",
         "partyName": "TN-38 TEA STALL",
         "route": "PSR1",
         "phoneNumber": "8148834353",
@@ -6300,7 +5760,7 @@
         "coordinate": "11.073643 77.012033"
     },
     {
-        "party_id": "PA0630",
+        "party_id": "PA0576",
         "partyName": "TST STORE",
         "route": "PSR5",
         "phoneNumber": "8089483399",
@@ -6310,7 +5770,7 @@
         "coordinate": "11.056701 76.968182"
     },
     {
-        "party_id": "PA0631",
+        "party_id": "PA0577",
         "partyName": "Take a break",
         "route": "PSR1",
         "phoneNumber": "9150850408",
@@ -6320,7 +5780,7 @@
         "coordinate": "11.060483 77.007711"
     },
     {
-        "party_id": "PA0632",
+        "party_id": "PA0578",
         "partyName": "Tasmac 1682",
         "route": "PSR5",
         "phoneNumber": "9486394861",
@@ -6330,7 +5790,7 @@
         "coordinate": "11.035553 76.957483"
     },
     {
-        "party_id": "PA0633",
+        "party_id": "PA0579",
         "partyName": "Tasmac 1714",
         "route": "PSR3",
         "phoneNumber": "9486356478",
@@ -6340,7 +5800,7 @@
         "coordinate": "11.097172 77.010719"
     },
     {
-        "party_id": "PA0634",
+        "party_id": "PA0580",
         "partyName": "Tasmac 1716",
         "route": "PSR4",
         "phoneNumber": "9487217514",
@@ -6350,7 +5810,7 @@
         "coordinate": "11.053304 76.996646"
     },
     {
-        "party_id": "PA0635",
+        "party_id": "PA0581",
         "partyName": "Tasmac 2225",
         "route": "PSR4",
         "phoneNumber": "9715854775",
@@ -6360,7 +5820,7 @@
         "coordinate": "11.059193 76.996844"
     },
     {
-        "party_id": "PA0636",
+        "party_id": "PA0582",
         "partyName": "Tasmac-1640",
         "route": "PSR3",
         "phoneNumber": "9629499522",
@@ -6370,7 +5830,7 @@
         "coordinate": "11.096833 77.01694"
     },
     {
-        "party_id": "PA0637",
+        "party_id": "PA0583",
         "partyName": "Tenet Hotel(Infinity Endeavours)",
         "route": "PSR2",
         "phoneNumber": "9952253056",
@@ -6380,7 +5840,7 @@
         "coordinate": "11.081238 76.991729"
     },
     {
-        "party_id": "PA0638",
+        "party_id": "PA0584",
         "partyName": "Thendral Super Market",
         "route": "PSR3",
         "phoneNumber": "8680887157",
@@ -6390,7 +5850,7 @@
         "coordinate": "11.108815 77.025066"
     },
     {
-        "party_id": "PA0639",
+        "party_id": "PA0585",
         "partyName": "Thiru Iyangar Bakery",
         "route": "PSR3",
         "phoneNumber": "9655575353",
@@ -6400,7 +5860,7 @@
         "coordinate": "11.109663 77.012016"
     },
     {
-        "party_id": "PA0640",
+        "party_id": "PA0586",
         "partyName": "Thiruchendur Murugan Pazhamudir Nilayam",
         "route": "PSR2",
         "phoneNumber": "9585121803",
@@ -6410,7 +5870,7 @@
         "coordinate": "11.079231 77.002861"
     },
     {
-        "party_id": "PA0641",
+        "party_id": "PA0587",
         "partyName": "Thiruppathi Bakery",
         "route": "PSR3",
         "phoneNumber": "9787194494",
@@ -6420,17 +5880,7 @@
         "coordinate": "11.10483 77.007042"
     },
     {
-        "party_id": "PA0642",
-        "partyName": "UDAYA BAKERY",
-        "route": "PSR6",
-        "phoneNumber": "9443045197",
-        "gst": "",
-        "available": 1,
-        "address": "VILANKURICHI ROAD RAMAKRISHNA PURAM   GA Coimbatore Coimbatore Coimbatore Coimbatore 641006",
-        "coordinate": "11.05447 76.992527"
-    },
-    {
-        "party_id": "PA0643",
+        "party_id": "PA0588",
         "partyName": "UDAYA BAKERY",
         "route": "PSR5",
         "phoneNumber": "9843280488",
@@ -6440,7 +5890,7 @@
         "coordinate": "11.051683 76.983673"
     },
     {
-        "party_id": "PA0644",
+        "party_id": "PA0589",
         "partyName": "UDHAGAI AAVIN BALAGAM",
         "route": "PSR5",
         "phoneNumber": "9865271355",
@@ -6450,37 +5900,7 @@
         "coordinate": "11.034463 76.964933"
     },
     {
-        "party_id": "PA0645",
-        "partyName": "UDHAYA BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "9443045197",
-        "gst": "",
-        "available": 1,
-        "address": "7/14,Athipalayam Road,Chinnavedampatti Coimbatore Coimbatore 641006",
-        "coordinate": "11.049828 76.985001"
-    },
-    {
-        "party_id": "PA0646",
-        "partyName": "UDHAYA BAKERY",
-        "route": "PSR1",
-        "phoneNumber": "9443045197",
-        "gst": "",
-        "available": 1,
-        "address": "VK ROAD VINAYAGAPURAM Coimbatore Coimbatore Coimbatore 641006",
-        "coordinate": "11.088193 77.007381"
-    },
-    {
-        "party_id": "PA0647",
-        "partyName": "UDHAYA BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "9443045197",
-        "gst": "",
-        "available": 1,
-        "address": "ATHIPALAYAM ROAD CHINNAVEDAMPATTI Coimbatore 641006",
-        "coordinate": "11.062463 76.978481"
-    },
-    {
-        "party_id": "PA0648",
+        "party_id": "PA0590",
         "partyName": "UDHAYA BAKERY",
         "route": "PSR5",
         "phoneNumber": "9443045197",
@@ -6490,17 +5910,7 @@
         "coordinate": "11.062766 76.97826"
     },
     {
-        "party_id": "PA0649",
-        "partyName": "UDHAYA BAKERY",
-        "route": "PSR5",
-        "phoneNumber": "9443045197",
-        "gst": "",
-        "available": 1,
-        "address": "81A,Athipalayam Road,Chinnavedampatti Gangapthy,Coimbatore Coimbatore 641006",
-        "coordinate": "11.062951 76.983525"
-    },
-    {
-        "party_id": "PA0650",
+        "party_id": "PA0591",
         "partyName": "ULLOOR TEA KADAI",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -6510,7 +5920,7 @@
         "coordinate": "11.006164 76.910409"
     },
     {
-        "party_id": "PA0651",
+        "party_id": "PA0592",
         "partyName": "UNGAL MALIGAI",
         "route": "PSR3",
         "phoneNumber": "9944930434",
@@ -6520,7 +5930,7 @@
         "coordinate": "11.113376 77.018077"
     },
     {
-        "party_id": "PA0652",
+        "party_id": "PA0593",
         "partyName": "Udhaya Departmental",
         "route": "PSR5",
         "phoneNumber": "9843111820",
@@ -6530,7 +5940,7 @@
         "coordinate": "11.03573 76.95633"
     },
     {
-        "party_id": "PA0653",
+        "party_id": "PA0594",
         "partyName": "V G BAKES",
         "route": "PSR2",
         "phoneNumber": "9865716433",
@@ -6540,7 +5950,7 @@
         "coordinate": "11.083346 76.981803"
     },
     {
-        "party_id": "PA0654",
+        "party_id": "PA0595",
         "partyName": "V SHOP",
         "route": "PSR1",
         "phoneNumber": "8300380067",
@@ -6550,7 +5960,7 @@
         "coordinate": "11.073693 77.012015"
     },
     {
-        "party_id": "PA0655",
+        "party_id": "PA0596",
         "partyName": "V.K. Store",
         "route": "PSR3",
         "phoneNumber": "7502476336",
@@ -6560,7 +5970,7 @@
         "coordinate": "11.107372 77.011927"
     },
     {
-        "party_id": "PA0656",
+        "party_id": "PA0597",
         "partyName": "VAARAGA COFEE",
         "route": "PSR5",
         "phoneNumber": "9080040507",
@@ -6570,7 +5980,7 @@
         "coordinate": "11.047649 76.974633"
     },
     {
-        "party_id": "PA0657",
+        "party_id": "PA0598",
         "partyName": "VALLI BAKERY",
         "route": "PSR1",
         "phoneNumber": "9629257115",
@@ -6580,7 +5990,7 @@
         "coordinate": "11.081143 77.005303"
     },
     {
-        "party_id": "PA0658",
+        "party_id": "PA0599",
         "partyName": "VALLI KAI KANI KADAI",
         "route": "PSR1",
         "phoneNumber": "9629257115",
@@ -6590,7 +6000,7 @@
         "coordinate": "11.005817 76.910258"
     },
     {
-        "party_id": "PA0659",
+        "party_id": "PA0600",
         "partyName": "VASANTHA TEA POINT",
         "route": "PSR2",
         "phoneNumber": "9600969699",
@@ -6600,7 +6010,7 @@
         "coordinate": "11.079714 76.998949"
     },
     {
-        "party_id": "PA0660",
+        "party_id": "PA0601",
         "partyName": "VASANTHAM BAKERY",
         "route": "PSR1",
         "phoneNumber": "9898989898",
@@ -6610,7 +6020,7 @@
         "coordinate": "11.073698 77.012029"
     },
     {
-        "party_id": "PA0661",
+        "party_id": "PA0602",
         "partyName": "VASANTHAM FANCY",
         "route": "PSR1",
         "phoneNumber": "9626823229",
@@ -6620,7 +6030,7 @@
         "coordinate": "11.073699 77.012025"
     },
     {
-        "party_id": "PA0662",
+        "party_id": "PA0603",
         "partyName": "VAYYAL Restaurant",
         "route": "PSR1",
         "phoneNumber": "9994941432",
@@ -6630,7 +6040,7 @@
         "coordinate": "11.076942 77.002707"
     },
     {
-        "party_id": "PA0663",
+        "party_id": "PA0604",
         "partyName": "VEERALAKSHMI PAZHAMUDIR NILAYAM",
         "route": "PSR3",
         "phoneNumber": "9751502274",
@@ -6640,7 +6050,7 @@
         "coordinate": "11.0464 76.9878"
     },
     {
-        "party_id": "PA0664",
+        "party_id": "PA0605",
         "partyName": "VEETU KADAI",
         "route": "PSR2",
         "phoneNumber": "9843487775",
@@ -6650,7 +6060,7 @@
         "coordinate": "11.0743 76.98041"
     },
     {
-        "party_id": "PA0665",
+        "party_id": "PA0606",
         "partyName": "VELAN HOTEL",
         "route": "PSR3",
         "phoneNumber": "8148643096",
@@ -6660,7 +6070,7 @@
         "coordinate": "11.091255 77.009277"
     },
     {
-        "party_id": "PA0666",
+        "party_id": "PA0607",
         "partyName": "VELMURUGAN BAKERY",
         "route": "PSR3",
         "phoneNumber": "9626669104",
@@ -6670,7 +6080,7 @@
         "coordinate": "11.092821 77.012012"
     },
     {
-        "party_id": "PA0667",
+        "party_id": "PA0608",
         "partyName": "VELU BAKES",
         "route": "PSR1",
         "phoneNumber": "9865604777",
@@ -6680,7 +6090,7 @@
         "coordinate": "11.076042 77.019416"
     },
     {
-        "party_id": "PA0668",
+        "party_id": "PA0609",
         "partyName": "VENBA STORE",
         "route": "PSR3",
         "phoneNumber": "9994100468",
@@ -6690,7 +6100,7 @@
         "coordinate": "11.104646 77.007512"
     },
     {
-        "party_id": "PA0669",
+        "party_id": "PA0610",
         "partyName": "VENKATESHWARA BAKERY",
         "route": "PSR5",
         "phoneNumber": "9843047558",
@@ -6700,7 +6110,7 @@
         "coordinate": "11.035606 76.95779"
     },
     {
-        "party_id": "PA0670",
+        "party_id": "PA0611",
         "partyName": "VENKATESHWARA DEPT  STORE",
         "route": "PSR4",
         "phoneNumber": "6382897815",
@@ -6710,7 +6120,7 @@
         "coordinate": "11.04631 76.988481"
     },
     {
-        "party_id": "PA0671",
+        "party_id": "PA0612",
         "partyName": "VENKATESHWARA STORE",
         "route": "PSR4",
         "phoneNumber": "9952437741",
@@ -6720,7 +6130,7 @@
         "coordinate": "11.046304 76.988748"
     },
     {
-        "party_id": "PA0672",
+        "party_id": "PA0613",
         "partyName": "VENKATESHWARA SUPER MARKET",
         "route": "PSR4",
         "phoneNumber": "9842233821",
@@ -6730,7 +6140,7 @@
         "coordinate": "11.046221 76.98845"
     },
     {
-        "party_id": "PA0673",
+        "party_id": "PA0614",
         "partyName": "VENKATESHWARI BAKERY",
         "route": "PSR5",
         "phoneNumber": "9894421343",
@@ -6740,7 +6150,7 @@
         "coordinate": "11.034718 76.969683"
     },
     {
-        "party_id": "PA0674",
+        "party_id": "PA0615",
         "partyName": "VENKATESWARA DEPARTMENTAL STORES",
         "route": "PSR4",
         "phoneNumber": "9898989898",
@@ -6750,7 +6160,7 @@
         "coordinate": "11.046287 76.988644"
     },
     {
-        "party_id": "PA0675",
+        "party_id": "PA0616",
         "partyName": "VENKATESWARA SUPER MARKETS",
         "route": "PSR4",
         "phoneNumber": "9842267111",
@@ -6760,7 +6170,7 @@
         "coordinate": "11.046271 76.988292"
     },
     {
-        "party_id": "PA0676",
+        "party_id": "PA0617",
         "partyName": "VIBE THE TASTE",
         "route": "PSR6",
         "phoneNumber": "8610604928",
@@ -6770,7 +6180,7 @@
         "coordinate": "11.062594 76.991617"
     },
     {
-        "party_id": "PA0677",
+        "party_id": "PA0618",
         "partyName": "VINAYAGA BAKES",
         "route": "PSR4",
         "phoneNumber": "9944103999",
@@ -6780,17 +6190,7 @@
         "coordinate": "11.039991 77.001036"
     },
     {
-        "party_id": "PA0678",
-        "partyName": "VINAYAGA STORE",
-        "route": "PSR2",
-        "phoneNumber": "9626772757",
-        "gst": "",
-        "available": 1,
-        "address": "Shop.No.2,YGS Nagar, Near Donbosco School Vellakinar,Coimbatore Coimbatore 641029",
-        "coordinate": "11.080168 76.968344"
-    },
-    {
-        "party_id": "PA0679",
+        "party_id": "PA0619",
         "partyName": "VINAYAGA STORE",
         "route": "PSR5",
         "phoneNumber": "9894172367",
@@ -6800,7 +6200,7 @@
         "coordinate": "11.037675 76.978336"
     },
     {
-        "party_id": "PA0680",
+        "party_id": "PA0620",
         "partyName": "Vinayaga Bakery",
         "route": "PSR5",
         "phoneNumber": "9894264465",
@@ -6810,7 +6210,7 @@
         "coordinate": "11.053786 76.968011"
     },
     {
-        "party_id": "PA0681",
+        "party_id": "PA0621",
         "partyName": "YASODHA STORE",
         "route": "PSR5",
         "phoneNumber": "8190021600",
@@ -6820,7 +6220,7 @@
         "coordinate": "11.046916 76.95633"
     },
     {
-        "party_id": "PA0682",
+        "party_id": "PA0622",
         "partyName": "YATHAVA BAKERY",
         "route": "PSR3",
         "phoneNumber": "9003566309",
@@ -6830,7 +6230,7 @@
         "coordinate": "11.097084 77.019851"
     },
     {
-        "party_id": "PA0683",
+        "party_id": "PA0623",
         "partyName": "YOUR CHOICE DEPARTMENTAL STORE",
         "route": "PSR1",
         "phoneNumber": "9994422423",
@@ -6840,7 +6240,7 @@
         "coordinate": "11.09786 77.006667"
     },
     {
-        "party_id": "PA0684",
+        "party_id": "PA0624",
         "partyName": "YUMMY GARDEN RESTAURANT",
         "route": "PSR2",
         "phoneNumber": "9898989898",
@@ -6850,7 +6250,7 @@
         "coordinate": "11.081577 76.990172"
     },
     {
-        "party_id": "PA0685",
+        "party_id": "PA0625",
         "partyName": "Yamuna Agencies",
         "route": "PSR3",
         "phoneNumber": "8248189446",
@@ -6860,7 +6260,7 @@
         "coordinate": "11.103312 77.009626"
     },
     {
-        "party_id": "PA0686",
+        "party_id": "PA0626",
         "partyName": "ZOOMBI PIZZA",
         "route": "PSR2",
         "phoneNumber": "9789595984",
@@ -6870,7 +6270,7 @@
         "coordinate": "11.079592 77.002416"
     },
     {
-        "party_id": "PA0687",
+        "party_id": "PA0627",
         "partyName": "ZWARMA RAPID CUISINES",
         "route": "PSR2",
         "phoneNumber": "9994500325",
@@ -6880,7 +6280,7 @@
         "coordinate": "11.080035 76.997412"
     },
     {
-        "party_id": "PA0688",
+        "party_id": "PA0628",
         "partyName": "abis caf\u00e9",
         "route": "PSR3",
         "phoneNumber": "9003151312",
@@ -6890,7 +6290,7 @@
         "coordinate": "11.103324 77.027415"
     },
     {
-        "party_id": "PA0689",
+        "party_id": "PA0629",
         "partyName": "amber star briyani",
         "route": "PSR6",
         "phoneNumber": "9043970024",
@@ -6900,7 +6300,7 @@
         "coordinate": "11.033764 76.978385"
     },
     {
-        "party_id": "PA0690",
+        "party_id": "PA0630",
         "partyName": "ambur star briyani",
         "route": "PSR6",
         "phoneNumber": "6380142042",
@@ -6910,7 +6310,7 @@
         "coordinate": "11.033746 76.978403"
     },
     {
-        "party_id": "PA0691",
+        "party_id": "PA0631",
         "partyName": "annani pharavathy bhavan",
         "route": "PSR3",
         "phoneNumber": "8888088880",
@@ -6920,7 +6320,7 @@
         "coordinate": "11.113867 76.995272"
     },
     {
-        "party_id": "PA0692",
+        "party_id": "PA0632",
         "partyName": "ayyangar bakery",
         "route": "PSR3",
         "phoneNumber": "9942555155",
@@ -6930,7 +6330,7 @@
         "coordinate": "11.097712 77.00665"
     },
     {
-        "party_id": "PA0693",
+        "party_id": "PA0633",
         "partyName": "bhayaialaskshi bakery",
         "route": "PSR6",
         "phoneNumber": "9751032011",
@@ -6940,7 +6340,7 @@
         "coordinate": "11.050437 76.990656"
     },
     {
-        "party_id": "PA0694",
+        "party_id": "PA0634",
         "partyName": "chiyan maligai",
         "route": "PSR3",
         "phoneNumber": "9566333405",
@@ -6950,7 +6350,7 @@
         "coordinate": "11.09866 77.006256"
     },
     {
-        "party_id": "PA0695",
+        "party_id": "PA0635",
         "partyName": "diana store",
         "route": "PSR3",
         "phoneNumber": "9715319279",
@@ -6960,7 +6360,7 @@
         "coordinate": "11.112292 77.020279"
     },
     {
-        "party_id": "PA0696",
+        "party_id": "PA0636",
         "partyName": "family mart",
         "route": "PSR3",
         "phoneNumber": "9698589836",
@@ -6970,7 +6370,7 @@
         "coordinate": "11.11195 77.02102"
     },
     {
-        "party_id": "PA0697",
+        "party_id": "PA0637",
         "partyName": "ganapathy aawin tea stall",
         "route": "PSR6",
         "phoneNumber": "7530076239",
@@ -6980,7 +6380,7 @@
         "coordinate": "11.036985 76.978831"
     },
     {
-        "party_id": "PA0698",
+        "party_id": "PA0638",
         "partyName": "hema store",
         "route": "PSR3",
         "phoneNumber": "9940207898",
@@ -6990,7 +6390,7 @@
         "coordinate": "11.114863 76.993289"
     },
     {
-        "party_id": "PA0699",
+        "party_id": "PA0639",
         "partyName": "hotel kanchana",
         "route": "PSR3",
         "phoneNumber": "8248463731",
@@ -7000,7 +6400,7 @@
         "coordinate": "11.112118 77.030269"
     },
     {
-        "party_id": "PA0700",
+        "party_id": "PA0640",
         "partyName": "hotel sri annamibaga",
         "route": "PSR6",
         "phoneNumber": "8111076999",
@@ -7010,7 +6410,7 @@
         "coordinate": "11.030004 76.975331"
     },
     {
-        "party_id": "PA0701",
+        "party_id": "PA0641",
         "partyName": "jai fun world",
         "route": "PSR3",
         "phoneNumber": "9787714929",
@@ -7020,7 +6420,7 @@
         "coordinate": "11.099989 77.021253"
     },
     {
-        "party_id": "PA0702",
+        "party_id": "PA0642",
         "partyName": "jai ganesh store",
         "route": "PSR3",
         "phoneNumber": "9942288076",
@@ -7030,7 +6430,7 @@
         "coordinate": "11.11304 76.993541"
     },
     {
-        "party_id": "PA0703",
+        "party_id": "PA0643",
         "partyName": "jb bakery",
         "route": "PSR3",
         "phoneNumber": "8681060981",
@@ -7040,17 +6440,17 @@
         "coordinate": "11.113283 76.992581"
     },
     {
-        "party_id": "PA0704",
+        "party_id": "PA0644",
         "partyName": "jb nellai muthumoorthy store",
         "route": "PSR3",
         "phoneNumber": "8220984554",
         "gst": "",
         "available": 1,
         "address": "konayampalyam Coimbatore 641107",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
-        "party_id": "PA0705",
+        "party_id": "PA0645",
         "partyName": "jj store",
         "route": "PSR3",
         "phoneNumber": "9597458367",
@@ -7060,7 +6460,7 @@
         "coordinate": "11.115132 76.99562"
     },
     {
-        "party_id": "PA0706",
+        "party_id": "PA0646",
         "partyName": "jos landmark hotel",
         "route": "PSR3",
         "phoneNumber": "9080371456",
@@ -7070,7 +6470,7 @@
         "coordinate": "11.102092 77.01145"
     },
     {
-        "party_id": "PA0707",
+        "party_id": "PA0647",
         "partyName": "kannan catrering service pvt ltd",
         "route": "PSR2",
         "phoneNumber": "8870034943",
@@ -7080,7 +6480,7 @@
         "coordinate": "11.084258 76.981587"
     },
     {
-        "party_id": "PA0708",
+        "party_id": "PA0648",
         "partyName": "karthik maligai",
         "route": "PSR3",
         "phoneNumber": "8610807173",
@@ -7090,7 +6490,7 @@
         "coordinate": "11.098085 77.017847"
     },
     {
-        "party_id": "PA0709",
+        "party_id": "PA0649",
         "partyName": "kishore aavin",
         "route": "PSR5",
         "phoneNumber": "9176244183",
@@ -7100,7 +6500,7 @@
         "coordinate": "11.03201 76.955301"
     },
     {
-        "party_id": "PA0710",
+        "party_id": "PA0650",
         "partyName": "kms bakery",
         "route": "PSR3",
         "phoneNumber": "9003595412",
@@ -7110,7 +6510,7 @@
         "coordinate": "11.103742 77.023944"
     },
     {
-        "party_id": "PA0711",
+        "party_id": "PA0651",
         "partyName": "krishna agencies",
         "route": "PSR3",
         "phoneNumber": "9994152375",
@@ -7120,7 +6520,7 @@
         "coordinate": "11.09941 77.010873"
     },
     {
-        "party_id": "PA0712",
+        "party_id": "PA0652",
         "partyName": "kumaran mess",
         "route": "PSR3",
         "phoneNumber": "9894939740",
@@ -7130,7 +6530,7 @@
         "coordinate": "11.101747 77.010675"
     },
     {
-        "party_id": "PA0713",
+        "party_id": "PA0653",
         "partyName": "lakshmi tea stall",
         "route": "PSR1",
         "phoneNumber": "9150085171",
@@ -7140,7 +6540,7 @@
         "coordinate": "11.097794 77.006693"
     },
     {
-        "party_id": "PA0714",
+        "party_id": "PA0654",
         "partyName": "madurai pun porratta",
         "route": "PSR4",
         "phoneNumber": "9442816235",
@@ -7150,7 +6550,7 @@
         "coordinate": "11.042105 77.002676"
     },
     {
-        "party_id": "PA0715",
+        "party_id": "PA0655",
         "partyName": "mandira moorthy",
         "route": "PSR3",
         "phoneNumber": "9944053102",
@@ -7160,7 +6560,7 @@
         "coordinate": "11.09553 77.022453"
     },
     {
-        "party_id": "PA0716",
+        "party_id": "PA0656",
         "partyName": "manis kavitha store",
         "route": "PSR3",
         "phoneNumber": "9941255817",
@@ -7170,7 +6570,7 @@
         "coordinate": "11.113386 77.016008"
     },
     {
-        "party_id": "PA0717",
+        "party_id": "PA0657",
         "partyName": "mayogan bakery",
         "route": "PSR3",
         "phoneNumber": "8754289833",
@@ -7180,7 +6580,7 @@
         "coordinate": "11.112483 77.03016"
     },
     {
-        "party_id": "PA0718",
+        "party_id": "PA0658",
         "partyName": "mehana store",
         "route": "PSR3",
         "phoneNumber": "8012406267",
@@ -7190,7 +6590,7 @@
         "coordinate": "11.114825 76.993151"
     },
     {
-        "party_id": "PA0719",
+        "party_id": "PA0659",
         "partyName": "mutharamman 2",
         "route": "PSR3",
         "phoneNumber": "9600498832",
@@ -7200,7 +6600,7 @@
         "coordinate": "11.102142 77.011327"
     },
     {
-        "party_id": "PA0720",
+        "party_id": "PA0660",
         "partyName": "muthramman store 1",
         "route": "PSR3",
         "phoneNumber": "9003483543",
@@ -7210,7 +6610,7 @@
         "coordinate": "11.103412 77.011903"
     },
     {
-        "party_id": "PA0721",
+        "party_id": "PA0661",
         "partyName": "muthu petti shop",
         "route": "PSR3",
         "phoneNumber": "9865552389",
@@ -7220,17 +6620,17 @@
         "coordinate": "11.098537 77.010793"
     },
     {
-        "party_id": "PA0722",
+        "party_id": "PA0662",
         "partyName": "muthumalai vasan maligai",
         "route": "PSR3",
         "phoneNumber": "9988779968",
         "gst": "",
         "available": 1,
         "address": "viswasapuram Coimbatore 641107",
-        "coordinate": ""
+        "coordinate": "nan nan"
     },
     {
-        "party_id": "PA0723",
+        "party_id": "PA0663",
         "partyName": "nst bakery",
         "route": "PSR1",
         "phoneNumber": "9566530990",
@@ -7240,7 +6640,7 @@
         "coordinate": "11.082143 77.005621"
     },
     {
-        "party_id": "PA0724",
+        "party_id": "PA0664",
         "partyName": "olive bakes",
         "route": "PSR3",
         "phoneNumber": "9361068302",
@@ -7250,7 +6650,7 @@
         "coordinate": "11.112452 77.02894"
     },
     {
-        "party_id": "PA0725",
+        "party_id": "PA0665",
         "partyName": "ppg collage nursing",
         "route": "PSR3",
         "phoneNumber": "6381362527",
@@ -7260,7 +6660,7 @@
         "coordinate": "11.094558 77.009653"
     },
     {
-        "party_id": "PA0726",
+        "party_id": "PA0666",
         "partyName": "real tasty bakery",
         "route": "PSR1",
         "phoneNumber": "7904330882",
@@ -7270,7 +6670,7 @@
         "coordinate": "11.087976 77.007486"
     },
     {
-        "party_id": "PA0727",
+        "party_id": "PA0667",
         "partyName": "royal bakery",
         "route": "PSR3",
         "phoneNumber": "9080246052",
@@ -7280,7 +6680,7 @@
         "coordinate": "11.099276 77.010734"
     },
     {
-        "party_id": "PA0728",
+        "party_id": "PA0668",
         "partyName": "sakthi store",
         "route": "PSR3",
         "phoneNumber": "8870201499",
@@ -7290,7 +6690,7 @@
         "coordinate": "11.117254 76.994127"
     },
     {
-        "party_id": "PA0729",
+        "party_id": "PA0669",
         "partyName": "saravana bakery",
         "route": "PSR2",
         "phoneNumber": "9626306600",
@@ -7300,7 +6700,7 @@
         "coordinate": "11.08352 76.973417"
     },
     {
-        "party_id": "PA0730",
+        "party_id": "PA0670",
         "partyName": "sha caf\u00e9",
         "route": "PSR1",
         "phoneNumber": "8098453577",
@@ -7310,7 +6710,7 @@
         "coordinate": "11.088004 77.00761"
     },
     {
-        "party_id": "PA0731",
+        "party_id": "PA0671",
         "partyName": "siva store",
         "route": "PSR3",
         "phoneNumber": "9442412521",
@@ -7320,7 +6720,7 @@
         "coordinate": "11.097022 77.019238"
     },
     {
-        "party_id": "PA0732",
+        "party_id": "PA0672",
         "partyName": "sk super market",
         "route": "PSR3",
         "phoneNumber": "6374925107",
@@ -7330,7 +6730,7 @@
         "coordinate": "11.112781 77.007071"
     },
     {
-        "party_id": "PA0733",
+        "party_id": "PA0673",
         "partyName": "sri bakery",
         "route": "PSR3",
         "phoneNumber": "9488768555",
@@ -7340,7 +6740,7 @@
         "coordinate": "11.10306 77.01016"
     },
     {
-        "party_id": "PA0734",
+        "party_id": "PA0674",
         "partyName": "sri ganapathy palamudir",
         "route": "PSR6",
         "phoneNumber": "9994463046",
@@ -7350,7 +6750,7 @@
         "coordinate": "11.046956 76.987973"
     },
     {
-        "party_id": "PA0735",
+        "party_id": "PA0675",
         "partyName": "sri kumaran store",
         "route": "PSR1",
         "phoneNumber": "9943767744",
@@ -7360,7 +6760,7 @@
         "coordinate": "11.097893 77.006676"
     },
     {
-        "party_id": "PA0736",
+        "party_id": "PA0676",
         "partyName": "sri lakshmi stores",
         "route": "PSR3",
         "phoneNumber": "8220105681",
@@ -7370,7 +6770,7 @@
         "coordinate": "11.109642 77.011959"
     },
     {
-        "party_id": "PA0737",
+        "party_id": "PA0677",
         "partyName": "sri sadhuragiri store",
         "route": "PSR1",
         "phoneNumber": "9043336847",
@@ -7380,7 +6780,7 @@
         "coordinate": "11.059248 77.005906"
     },
     {
-        "party_id": "PA0738",
+        "party_id": "PA0678",
         "partyName": "sri sai mess",
         "route": "PSR3",
         "phoneNumber": "9566420301",
@@ -7390,7 +6790,7 @@
         "coordinate": "11.101308 77.024608"
     },
     {
-        "party_id": "PA0739",
+        "party_id": "PA0679",
         "partyName": "sun rice mundy",
         "route": "PSR3",
         "phoneNumber": "9865296991",
@@ -7400,7 +6800,7 @@
         "coordinate": "11.112643 77.007155"
     },
     {
-        "party_id": "PA0740",
+        "party_id": "PA0680",
         "partyName": "svl enterprises",
         "route": "PSR2",
         "phoneNumber": "8220679398",
@@ -7410,7 +6810,7 @@
         "coordinate": "11.078998 77.002279"
     },
     {
-        "party_id": "PA0741",
+        "party_id": "PA0681",
         "partyName": "svs store",
         "route": "PSR1",
         "phoneNumber": "8903902315",
@@ -7420,7 +6820,7 @@
         "coordinate": "11.087928 77.008956"
     },
     {
-        "party_id": "PA0742",
+        "party_id": "PA0682",
         "partyName": "thaneer caf\u00e9",
         "route": "PSR2",
         "phoneNumber": "9751250150",
@@ -7430,7 +6830,7 @@
         "coordinate": "11.079623 76.999071"
     },
     {
-        "party_id": "PA0743",
+        "party_id": "PA0683",
         "partyName": "thangam maligai",
         "route": "PSR3",
         "phoneNumber": "9789298341",
@@ -7440,7 +6840,7 @@
         "coordinate": "11.113979 76.992164"
     },
     {
-        "party_id": "PA0744",
+        "party_id": "PA0684",
         "partyName": "thiruchendur murugan store",
         "route": "PSR3",
         "phoneNumber": "9952808368",
@@ -7450,7 +6850,7 @@
         "coordinate": "11.103309 77.00959"
     },
     {
-        "party_id": "PA0745",
+        "party_id": "PA0685",
         "partyName": "thulasi department",
         "route": "PSR3",
         "phoneNumber": "8220111820",
@@ -7460,7 +6860,7 @@
         "coordinate": "11.10453 77.011815"
     },
     {
-        "party_id": "PA0746",
+        "party_id": "PA0686",
         "partyName": "vayyal restaurant",
         "route": "PSR1",
         "phoneNumber": "9994941432",
@@ -7470,7 +6870,7 @@
         "coordinate": "11.076954 77.0027"
     },
     {
-        "party_id": "PA0747",
+        "party_id": "PA0687",
         "partyName": "venba adumanai",
         "route": "PSR3",
         "phoneNumber": "8248793711",
