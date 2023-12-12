@@ -8,6 +8,7 @@ import product from "./routes/product.js";
 import purchase from "./routes/purchase.js";
 import party from "./routes/party.js";
 import salescollection from "./routes/salescollection.js";
+import financial from "./routes/financial.js";
 
 const app = express();
 const PORT = process.env.PORT||3001;
@@ -26,6 +27,7 @@ app.use("/api/product",product);
 app.use("/api/purchase",purchase);
 app.use("/api/party",party);
 app.use("/api/salescollection",salescollection);
+app.use("/api/financial",financial)
 
 connect(function (err) {
   if (err) {

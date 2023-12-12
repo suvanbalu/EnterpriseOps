@@ -17,6 +17,10 @@ const financialSchema = new Schema({
     type: String,
     required: true,
   },
+  credit_flag: {
+    type: Number,
+    enum: [1, 0],
+  },
 });
 
 export default model("Financial", financialSchema);
