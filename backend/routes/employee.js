@@ -1,6 +1,9 @@
 import express from 'express';
 import Employee from '../models/Employee.js'; 
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat.js';
 
+dayjs.extend(customParseFormat);
 const router = express.Router();
 
 router.post("/add-employees", async (req, res) => {
@@ -74,6 +77,43 @@ router.put('/update-employee/:Id', async (req, res) => {
     res.json({ message: `Employee with ID ${Id} updated successfully`, updatedEmployee: updateResult });
   } catch (error) {
     console.error('Error updating employee:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+router.get('/get-employees', async (req, res) => {
+  try {
+    const employees = await Employee.find();
+    const updated = employees.map((item) => ({
+      ...item._doc,
+      "dateOfJoining": dayjs(item.dateOfJoining).format("MM-DD-YYYY"),
+      "dateOfLeaving": item.dateOfLeaving ? dayjs(item.dateOfLeaving).format("MM-DD-YYYY") : "",
+    }));
+    res.status(200).json(updated);
+  } catch (error) {
+    console.error('Error fetching employees:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+router.get('/get-employee/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const employee = await Employee.findById(id);
+
+    if (!employee) {
+      return res.status(404).json({ error: 'Employee not found' });
+    }
+
+    const updatedEmployee = {
+      ...employee._doc,
+      dateOfJoining: dayjs(employee.dateOfJoining).format("MM-DD-YYYY"),
+      dateOfLeaving: employee.dateOfLeaving ? dayjs(employee.dateOfLeaving).format("MM-DD-YYYY") : "",
+    };
+
+    res.status(200).json(updatedEmployee);
+  } catch (error) {
+    console.error('Error fetching employee:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });

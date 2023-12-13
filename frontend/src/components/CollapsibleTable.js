@@ -296,9 +296,9 @@ const CollapsibleTable = ({
                                 // window.open(`https://www.google.com/maps/search/?api=1&query=${row[OuterTable[item][0]]}`, '_blank')
                                 window.open(`http://www.google.com/maps/place/${row[OuterTable[item][0]]}`, '_blank')
                               }}>
-                                {row[OuterTable[item][0]]?.split(' ')[0]?.slice(0, 5)}
+                                {/* {row[OuterTable[item][0]]?.split(' ')[0]?.slice(0, 5)}
                                 {'\n'}
-                                {row[OuterTable[item][0]]?.split(' ')[1]?.slice(0, 5)}
+                                {row[OuterTable[item][0]]?.split(' ')[1]?.slice(0, 5)} */}
                                 {row[OuterTable[item][0]] && <LocationOnIcon />}
                               </button> :
                                 OuterTable[item][0] === 'mongoID' ? `...${row['mongoId'].slice(-3)}` :

@@ -4,6 +4,7 @@ import { MdDashboard, MdOutlineSell, MdInventory } from "react-icons/md";
 import { BiSolidPurchaseTag } from "react-icons/bi";
 import { FaMoneyCheck, FaUsers, FaMoneyCheckAlt } from "react-icons/fa";
 import { IoCalendarOutline } from "react-icons/io5";
+import { IoMdPeople } from "react-icons/io";
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ const Navigation = () => {
           <NavButton title='Purchases' link='/purchases' icon={<BiSolidPurchaseTag />} />
           <NavButton title='Inventory' link='/inventory' icon={<MdInventory />} />
           <NavButton title='Financials' link='/financials' icon={<FaMoneyCheck />} />
+          <NavButton title='Employees' link='/employees' icon={<IoMdPeople />} />
           <NavButton title='Parties' link='/parties' icon={<FaUsers />} />
           <NavButton title='Yearly Summary' link='/yearly-summary' icon={<IoCalendarOutline />} />
         </div>
