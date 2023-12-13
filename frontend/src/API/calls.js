@@ -6,3 +6,4 @@ export const SALE_URL = URL + '/sale';
 export const PARTY_URL = URL + '/party';
 export const SALES_COLLECTION_URL = URL + '/salescollection';
 export const FINANCIALS_URL = URL+'/financial'
+export const EMPLOYEE_URL = URL+'/employee'

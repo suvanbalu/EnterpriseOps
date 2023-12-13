@@ -9,6 +9,7 @@ import InventoryRoutes from './screens/Inventory/InventoryRoutes';
 import SalesCollectionRoutes from './screens/SalesCollection/SalesCollectionRoutes';
 import PartiesRoutes from './screens/Parties/PartiesRoutes';
 import FinancialRoutes from './screens/financial/FinancialRoutes';
+import EmployeeRoutes from './screens/employee/EmployeeRoutes';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="parties/*" element={<PartiesRoutes />} />
           <Route path="collection/*" element={<SalesCollectionRoutes />} />
           <Route path="financials/*" element={<FinancialRoutes/>}/>
+          <Route path="employees/*" element={<EmployeeRoutes/>}/>
         </Route>
       </Routes>
     </Router>
