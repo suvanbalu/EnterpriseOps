@@ -279,7 +279,10 @@ const CollapsibleTable = ({
                     }
                   });
 
-                const firstElementKey = row[OuterTable[Object.keys(OuterTable)[0]][0]];
+                let firstElementKey = row[OuterTable[Object.keys(OuterTable)[0]][0]];
+                if (Object.keys(OuterTable)[0] === 'Ref ID') {
+                  firstElementKey = row['_id'];
+                }
 
                 return (
                   <React.Fragment key={index}>
@@ -287,7 +290,7 @@ const CollapsibleTable = ({
                       <TableCell>{index + 1}</TableCell>
                       {Object.keys(OuterTable).map((item) => (
                         <TableCell>{
-                          OuterTable[item][0] === 'date' ? dayjs(row.date).format('DD-MMM-YYYY') :
+                          (OuterTable[item][0] === 'date' || OuterTable[item][0] === 'dateOfJoining' || OuterTable[item][0] === 'dateOfLeaving') ? dayjs(row.date).format('DD-MMM-YYYY') :
                             OuterTable[item][0] === 'available' ? (row[OuterTable[item][0]] ? 'Yes' : 'No') :
                               OuterTable[item][0] === 'coordinate' ? <button className='hover:text-blue-500' onClick={() => {
                                 // window.open(`https://www.google.com/maps/search/?api=1&query=${row[OuterTable[item][0]]}`, '_blank')
@@ -298,8 +301,16 @@ const CollapsibleTable = ({
                                 {row[OuterTable[item][0]]?.split(' ')[1]?.slice(0, 5)}
                                 {row[OuterTable[item][0]] && <LocationOnIcon />}
                               </button> :
+                                OuterTable[item][0] === 'mongoID' ? `...${row['mongoId'].slice(-3)}` :
+                                  (Object.keys(OuterTable).includes('Txn Type') && OuterTable[item][0] === 'amount') ? (
+                                    row['txn_type'] === 'Credit' ? (
+                                      <span className='font-semibold text-green-500'>+{row[OuterTable[item][0]]}</span>
+                                    ) : (
+                                      <span className='font-semibold text-red-500'>-{row[OuterTable[item][0]]}</span>
+                                    )
+                                  ) :
 
-                                row[OuterTable[item][0]]}</TableCell>
+                                    row[OuterTable[item][0]]}</TableCell>
                       ))}
                       <TableCell>
                         <div className='flex items-center gap-2'>

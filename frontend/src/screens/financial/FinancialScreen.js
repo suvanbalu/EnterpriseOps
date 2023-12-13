@@ -14,11 +14,16 @@ const FinancialScreen = () => {
   useEffect(() => {
     axios.get(`${FINANCIALS_URL}/get-financial`)
       .then((res) => {
+        res.data.forEach((item) => {
+          item['mongoId'] = item['_id'];
+        })
+
         setFetchedData(res.data);
       })
   }, [])
 
   const OuterTable = {
+    'Ref ID': ['mongoID', '5vw'],
     'Date': ['date', '15vw'],
     'Description': ['description', '20vw'],
     'Amount': ['amount', '10vw'],
@@ -26,12 +31,24 @@ const FinancialScreen = () => {
     'Txn Type': ['txn_type', '10vw'],
   }
 
+  const metadataFunction = (data) => {
+    const netAmount = data.reduce((sum, row) => {
+      const rowAmount = parseFloat(row.amount);
+      if (row.txn_type === 'Debit') {
+        return isNaN(rowAmount) ? sum : sum - rowAmount;
+      }
+      return isNaN(rowAmount) ? sum : sum + rowAmount;
+    }, 0);
+
+    return `Rs. ${netAmount}`;
+  }
+
   return (
     <div className='pl-4 pr-12 flex flex-col gap-4 w-full -mt-16'>
       <div className='flex justify-between'>
         <PageTitle title={'All Records'} className={'w-1/2 text-right'} />
         <CustomButton
-          onClick={() => { navigate('/inventory/add') }}
+          onClick={() => { navigate('/financials/add') }}
           icon={<IoMdAdd />}
           text={'Add New Data'}
         />
@@ -42,6 +59,8 @@ const FinancialScreen = () => {
         OuterTable={OuterTable}
         editUrl={'/financials/edit'}
         deleteUrl={`${FINANCIALS_URL}/delete-financial`}
+        metadataTitle='Net Amount'
+        metadataFunction={metadataFunction}
       />
     </div>
   )
