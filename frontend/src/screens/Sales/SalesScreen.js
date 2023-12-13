@@ -23,6 +23,10 @@ const SalesScreen = () => {
           })
         })
 
+        res.data.sort((a, b) => {
+          return parseInt(b._id.slice(1)) - parseInt(a._id.slice(1));
+        })
+
         setFetchedData(res.data);
       })
   }, [])

@@ -20,6 +20,10 @@ const PurchasesScreen = () => {
           })
         })
 
+        res.data.sort((a, b) => {
+          return parseInt(b.billno.slice(1)) - parseInt(a.billno.slice(1));
+        })
+
         setFetchedData(res.data);
       })
   }, [])

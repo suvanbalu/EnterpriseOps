@@ -94,7 +94,6 @@ const SalesCollectionScreen = () => {
     InnerTable = {
       'Collection ID': ['sc_id', '15vw'],
       'Bill Number': ['s_billNo', '15vw'],
-      'Date': ['date', '15vw'],
       'PSR': ['psr', '15vw'],
       'Amount Collected': ['amountCollected', '15vw'],
       'Type': ['type', '15vw'],
