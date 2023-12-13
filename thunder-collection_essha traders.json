@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "essha traders",
-    "dateExported": "2023-12-12T08:37:55.625Z",
+    "dateExported": "2023-12-13T09:43:54.246Z",
     "version": "1.1",
     "folders": [
         {
@@ -283,12 +283,12 @@
             "method": "POST",
             "sortNum": 120000,
             "created": "2023-12-09T20:40:30.496Z",
-            "modified": "2023-12-09T21:36:43.210Z",
+            "modified": "2023-12-13T09:41:16.099Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\r\n  \"s_billNo\": \"S001\",\r\n  \"date\": \"2023-12-10T08:00:00Z\",\r\n  \"psr\": \"John Doe\",\r\n  \"amountCollected\": 100,\r\n  \"type\": \"Cash\"\r\n}\r\n",
+                "raw": "{\n  \"s_billNo\": \"S001\",\n  \"date\": \"2023-12-10T08:00:00Z\",\n  \"psr\": \"Suvan\",\n  \"amountCollected\": 1000,\n  \"type\": \"Cash\"\n}\n",
                 "form": []
             },
             "tests": []
@@ -302,7 +302,7 @@
             "method": "GET",
             "sortNum": 130000,
             "created": "2023-12-09T20:57:36.892Z",
-            "modified": "2023-12-09T20:58:15.564Z",
+            "modified": "2023-12-13T09:42:29.916Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -312,16 +312,16 @@
             "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
             "containerId": "a499aab3-620c-44ae-a91f-9ded3f82e562",
             "name": "editcollection",
-            "url": "localhost:3001/api/salescollection/update-collection/1",
+            "url": "localhost:3001/api/salescollection/update-collection/10",
             "method": "PUT",
             "sortNum": 140000,
             "created": "2023-12-09T21:04:49.174Z",
-            "modified": "2023-12-09T21:37:21.848Z",
+            "modified": "2023-12-13T08:54:20.478Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\r\n  \"s_billNo\": \"S001\",\r\n  \"date\": \"2023-12-10T08:00:00Z\",\r\n  \"psr\": \"John Doe\",\r\n  \"amountCollected\": 200,\r\n  \"type\": \"Cash\"\r\n}",
+                "raw": "{\n  \"s_billNo\": \"S001\",\n  \"date\": \"2023-12-10T08:00:00Z\",\n  \"psr\": \"John Doe\",\n  \"amountCollected\": 300,\n  \"type\": \"Cash\"\n}",
                 "form": []
             },
             "tests": []
@@ -369,6 +369,34 @@
             "sortNum": 170000,
             "created": "2023-12-12T08:35:37.449Z",
             "modified": "2023-12-12T08:35:47.194Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a47acefc-5f82-4197-af54-d475e5431c02",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "ff339529-e890-4b85-a5ad-bfb5543c93f8",
+            "name": "update-sale",
+            "url": "localhost:3001/api/sale/update-sale/S001",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2023-12-13T08:58:00.916Z",
+            "modified": "2023-12-13T08:59:24.645Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2fd91614-b81e-4b80-a577-fa8cb602a35e",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "ff339529-e890-4b85-a5ad-bfb5543c93f8",
+            "name": "delete sales",
+            "url": "localhost:3001/api/sale/delete-sale/S001",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2023-12-13T09:09:37.359Z",
+            "modified": "2023-12-13T09:09:54.266Z",
             "headers": [],
             "params": [],
             "tests": []
