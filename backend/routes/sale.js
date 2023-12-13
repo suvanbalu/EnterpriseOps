@@ -14,7 +14,7 @@ router.get("/get-sales", async (req, res) => {
     const sales = await Sale.aggregate([
       {
         $lookup: {
-          from: "parties", // Assuming the Party model's collection name is "parties"
+          from: "parties", 
           localField: "party_id",
           foreignField: "party_id",
           as: "partyData",
@@ -28,7 +28,7 @@ router.get("/get-sales", async (req, res) => {
       },
       {
         $lookup: {
-          from: "products", // Assuming the Product model's collection name is "products"
+          from: "products", 
           localField: "details.p_id",
           foreignField: "p_id",
           as: "productData",
@@ -79,7 +79,7 @@ router.get("/get-sale/:sbillno", async (req, res) => {
       },
       {
         $lookup: {
-          from: "parties", // Assuming the Party model's collection name is "parties"
+          from: "parties", 
           localField: "party_id",
           foreignField: "party_id",
           as: "partyData",
@@ -93,7 +93,7 @@ router.get("/get-sale/:sbillno", async (req, res) => {
       },
       {
         $lookup: {
-          from: "products", // Assuming the Product model's collection name is "products"
+          from: "products", 
           localField: "details.p_id",
           foreignField: "p_id",
           as: "productData",
@@ -129,7 +129,7 @@ router.get("/get-sale/:sbillno", async (req, res) => {
       return res.status(404).json({ error: "Sale not found" });
     }
 
-    res.json(sale[0]); // Assuming sbillno is unique, so we take the first element of the result array
+    res.json(sale[0]); 
   } catch (error) {
     console.error("Error getting sale:", error);
     res.status(500).json({ error: "Internal Server Error" });
@@ -141,20 +141,20 @@ router.post("/add-sale", async (req, res) => {
   try {
     const { sbillno, party_id, date, totalAmount, credit, details } = req.body;
 
-    // Validate required fields
+    
     if (!sbillno || !party_id || !date || !totalAmount || !details) {
       return res.status(400).json({ error: "Missing required fields" });
     }
 
-    // Check if party with the given party_id exists
+    
     const partyfind = await Party.findOne({ party_id: party_id });
 
     if (!partyfind) {
-      // If party is not found, send a response and exit early
+      
       return res.status(400).send("Party Not Found");
     }
 
-    // Create a new Sale instance
+    
     const newSale = new Sale({
       sbillno,
       party_id,
@@ -164,22 +164,62 @@ router.post("/add-sale", async (req, res) => {
       details,
     });
 
-    // Save the sale to the database
+    
     const savedSale = await newSale.save();
 
-    // Send a response after successful save
+    
     res.status(201).json(savedSale);
   } catch (error) {
     console.error("Error adding sale:", error);
-    // Handle other errors and send an appropriate response
+    
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
 
-router.put("/update-sale", async (req, res) => {
+router.put("/update-sale/:id", async (req, res) => {
+  try{
   const updatedData = req.body;
-  const updateResult = await Sale.findOneAndUpdate({})
+  if (updatedData.length==0){
+    return res.status(401).send("No inputs given")
+  }
+  const updateResult = await Sale.findOneAndUpdate({sbillno:req.params.id},{updatedData})
+  if (!updateResult){
+    return res.status(400).send("Item not found")
+  }
+  res.send(`Bill number ${req.params.id} updated successfully`)
+  }
+  catch(err){
+    res.status(500).send(`Error : ${err}`);
+  }
+
 })
+
+router.delete("/delete-sale/:id", async (req, res) => {
+  try {
+    const saleId = req.params.id;
+
+    
+    if (!saleId) {
+      return res.status(400).send("Invalid sale ID");
+    }
+
+    
+    const deleteResult = await Sale.findOneAndDelete({sbillno:saleId});
+
+    
+    if (!deleteResult) {
+      return res.status(404).send("Sale entry not found");
+    }
+
+    res.send(`Sale entry with ID ${saleId} deleted successfully`);
+  } catch (error) {
+    console.error(`Error deleting sale entry: ${error}`);
+    res.status(500).send(`Internal Server Error`);
+  }
+});
+
+
+
 
 export default router;

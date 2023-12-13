@@ -143,7 +143,7 @@ router.put("/update-collection/:sc_id", async (req, res) => {
 
 
     const creditAdjustment = existingCollection.amountCollected - amountCollected;
-    console.log("credit", creditAdjustment);
+    // console.log("credit", creditAdjustment);
 
     await SalesCollection.updateOne({ sc_id }, { $set: { amountCollected } });
 
