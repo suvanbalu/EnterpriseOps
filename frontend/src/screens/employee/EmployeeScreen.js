@@ -15,26 +15,40 @@ const EmployeeScreen = () => {
   useEffect(() => {
     axios.get(`${EMPLOYEE_URL}/get-employees`)
       .then((res) => {
+        res.data.forEach((item) => {
+          item['mongoId'] = item['_id'];
+        })
+
         setFetchedData(res.data);
       })
   }, [])
 
   const OuterTable = {
+    'Ref ID': ['mongoID', '5vw'],
     'Name': ['name', '20vw'],
     'Employee Type': ['empType', '15vw'],
     'Date of Joining': ['dateOfJoining', '15vw'],
     'Date of Leaving': ['dateOfLeaving', '15vw'],
     'Salary': ['salary', '15vw'],
   };
-  
+
+  const metadataFunction = (data) => {
+    const netSalary = data.reduce((sum, row) => {
+      const rowSalary = parseFloat(row.salary);
+      return isNaN(rowSalary) ? sum : sum + rowSalary;
+    }, 0);
+
+    return `Rs. ${netSalary}`;
+  }
+
   return (
     <div className='pl-4 pr-12 flex flex-col gap-4 w-full -mt-16'>
       <div className='flex justify-between'>
-        <PageTitle title={'All Records'} className={'w-1/2 text-right'} />
+        <PageTitle title={'All Employees'} className={'w-1/2 text-right'} />
         <CustomButton
-          onClick={() => { navigate('/inventory/add') }}
+          onClick={() => { navigate('/employees/add') }}
           icon={<IoMdAdd />}
-          text={'Add New Data'}
+          text={'Add New Employee'}
         />
       </div>
 
@@ -43,6 +57,8 @@ const EmployeeScreen = () => {
         OuterTable={OuterTable}
         editUrl={'/employees/edit'}
         deleteUrl={`${EMPLOYEE_URL}/delete-employee`}
+        metadataTitle='Total Salary'
+        metadataFunction={metadataFunction}
       />
     </div>
   )
