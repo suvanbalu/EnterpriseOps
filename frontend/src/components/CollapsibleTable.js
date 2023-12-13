@@ -287,7 +287,7 @@ const CollapsibleTable = ({
                       <TableCell>{index + 1}</TableCell>
                       {Object.keys(OuterTable).map((item) => (
                         <TableCell>{
-                          OuterTable[item][0] === 'date' ? dayjs(row.date, 'MM/DD/YYYY').format('DD-MMM-YYYY') :
+                          OuterTable[item][0] === 'date' ? dayjs(row.date).format('DD-MMM-YYYY') :
                             OuterTable[item][0] === 'available' ? (row[OuterTable[item][0]] ? 'Yes' : 'No') :
                               OuterTable[item][0] === 'coordinate' ? <button className='hover:text-blue-500' onClick={() => {
                                 // window.open(`https://www.google.com/maps/search/?api=1&query=${row[OuterTable[item][0]]}`, '_blank')

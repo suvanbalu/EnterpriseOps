@@ -8,6 +8,7 @@ import { BsCalendar4Week } from "react-icons/bs";
 import { FiHash } from "react-icons/fi";
 import axios from 'axios';
 import { SALES_COLLECTION_URL } from '../../API/calls';
+import dayjs from 'dayjs';
 
 const SalesCollectionScreen = () => {
   const navigate = useNavigate();
@@ -15,34 +16,76 @@ const SalesCollectionScreen = () => {
   const [billViewMode, setBillViewMode] = useState(true);
 
   useEffect(() => {
-    axios.get(`${SALES_COLLECTION_URL}/get-collections`)
-      .then((res) => {
-        // res.data.forEach(element => {
-        //   element?.details?.forEach(item => {
-        //     item['sc_id'] = 'C' + String(item['sc_id']).padStart(3, '0');
-        //   })
-        // })
+    if (billViewMode) {
+      axios.get(`${SALES_COLLECTION_URL}/get-collections`)
+        .then((res) => {
+          // res.data.forEach(element => {
+          //   element?.details?.forEach(item => {
+          //     item['sc_id'] = 'C' + String(item['sc_id']).padStart(3, '0');
+          //   })
+          // })
 
-        res.data.sort((a, b) => {
-          return parseInt(b._id.slice(1)) - parseInt(a._id.slice(1));
+          res.data.sort((a, b) => {
+            return parseInt(b._id.slice(1)) - parseInt(a._id.slice(1));
+          })
+          setFetchedData(res.data);
         })
-        setFetchedData(res.data);
-      })
-  }, [])
+        .catch((err) => {
+          console.log(err);
+        })
+    } else {
+      axios.get(`${SALES_COLLECTION_URL}/get-collections-grouped-by-date`)
+        .then((res) => {
+          res.data.sort((a, b) => {
+            return new Date(b._id) - new Date(a._id);
+          })
 
-  const OuterTable = {
-    'Bill Number': ['_id', '15vw'],
-    'Total Amount': ['totalAmount', '15vw'],
-    'Net Amount Collected': ['netAmountCollected', '15vw'],
-    'Remaining Credit': ['remainingCredit', '15vw'],
-  }
+          res.data.forEach(element => {
+            element['date'] = element['_id'];
+            console.log(element['date']);
+            console.log(dayjs(element['date']).format('DD/MMM/YYYY'));
+          })
 
-  const InnerTable = {
-    'Collection ID': ['sc_id', '15vw'],
-    'Date': ['date', '15vw'],
-    'PSR': ['psr', '15vw'],
-    'Amount Collected': ['amountCollected', '15vw'],
-    'Type': ['type', '15vw'],
+          setFetchedData(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+    }
+  }, [billViewMode])
+
+  let OuterTable = {};
+  let InnerTable = {};
+
+  if (billViewMode) {
+    OuterTable = {
+      'Bill Number': ['_id', '15vw'],
+      'Total Amount': ['totalAmount', '15vw'],
+      'Net Amount Collected': ['netAmountCollected', '15vw'],
+      'Remaining Credit': ['remainingCredit', '15vw'],
+    }
+
+    InnerTable = {
+      'Collection ID': ['sc_id', '15vw'],
+      'Date': ['date', '15vw'],
+      'PSR': ['psr', '15vw'],
+      'Amount Collected': ['amountCollected', '15vw'],
+      'Type': ['type', '15vw'],
+    }
+  } else {
+    OuterTable = {
+      'Date': ['date', '15vw'],
+      'Net Amount Collected': ['netAmountCollected', '15vw'],
+    }
+
+    InnerTable = {
+      'Collection ID': ['sc_id', '15vw'],
+      'Bill Number': ['s_billNo', '15vw'],
+      'Date': ['date', '15vw'],
+      'PSR': ['psr', '15vw'],
+      'Amount Collected': ['amountCollected', '15vw'],
+      'Type': ['type', '15vw'],
+    }
   }
 
   const metadataFunction = (data) => {
@@ -104,8 +147,9 @@ const SalesCollectionScreen = () => {
         innerTableTitle={'Collection Details'}
         metadataTitle={'Total Amount Collected'}
         metadataFunction={metadataFunction}
-        metadataTitle2={'Remaining Credit'}
-        metadataFunction2={metadataFunction2}
+        metadataTitle2={billViewMode && 'Remaining Credit'}
+        metadataFunction2={billViewMode && metadataFunction2}
+        dateQuery={!billViewMode}
       />
 
     </div>

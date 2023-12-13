@@ -102,6 +102,43 @@ router.get("/get-collections", async (req, res) => {
   }
 });
 
+router.get("/get-collections-grouped-by-date", async (req, res) => {
+  try {
+    const collections = await SalesCollection.aggregate([
+      {
+        $group: {
+          _id: "$date",
+          netAmountCollected: { $sum: "$amountCollected" },
+          details: {
+            $push: {
+              sc_id: "$sc_id",
+              s_billNo: "$s_billNo",
+              date: {
+                $dateToString: {
+                  format: "%m/%d/%Y",
+                  date: "$date",
+                },
+              },
+              psr: "$psr",
+              amountCollected: "$amountCollected",
+              type: "$type",
+            },
+          },
+        },
+      },
+    ]);
+
+    if (collections.length === 0) {
+      return res.status(404).json({ error: "No collections found" });
+    }
+
+    res.json(collections);
+  } catch (error) {
+    console.error("Error getting collections:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
 router.get("/get-collection/:s_billNo", async (req, res) => {
   try {
     const s_billNoParam = req.params.s_billNo;
@@ -188,7 +225,7 @@ router.put("/update-collection/:sc_id", async (req, res) => {
       { $inc: { credit: creditAdjustment } }
     );
 
-    res.status(200).json({ message: "SalesCollection updated successfully" ,data:req.body});
+    res.status(200).json({ message: "SalesCollection updated successfully", data: req.body });
   } catch (error) {
     console.error("Error updating sales collection:", error);
     res.status(500).json({ error: "Internal Server Error" });
