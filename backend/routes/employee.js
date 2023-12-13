@@ -84,12 +84,12 @@ router.put('/update-employee/:Id', async (req, res) => {
 router.get('/get-employees', async (req, res) => {
   try {
     const employees = await Employee.find();
-    const updated = employees.map((item) => ({
-      ...item._doc,
-      "dateOfJoining": dayjs(item.dateOfJoining).format("MM-DD-YYYY"),
-      "dateOfLeaving": item.dateOfLeaving ? dayjs(item.dateOfLeaving).format("MM-DD-YYYY") : "",
-    }));
-    res.status(200).json(updated);
+    // const updated = employees.map((item) => ({
+    //   ...item._doc,
+    //   "dateOfJoining": dayjs(item.dateOfJoining).format("MM-DD-YYYY"),
+    //   "dateOfLeaving": item.dateOfLeaving ? dayjs(item.dateOfLeaving).format("MM-DD-YYYY") : "",
+    // }));
+    res.status(200).json(employees);
   } catch (error) {
     console.error('Error fetching employees:', error);
     res.status(500).json({ error: 'Internal Server Error' });
@@ -105,13 +105,13 @@ router.get('/get-employee/:id', async (req, res) => {
       return res.status(404).json({ error: 'Employee not found' });
     }
 
-    const updatedEmployee = {
-      ...employee._doc,
-      dateOfJoining: dayjs(employee.dateOfJoining).format("MM-DD-YYYY"),
-      dateOfLeaving: employee.dateOfLeaving ? dayjs(employee.dateOfLeaving).format("MM-DD-YYYY") : "",
-    };
+    // const updatedEmployee = {
+    //   ...employee._doc,
+    //   dateOfJoining: dayjs(employee.dateOfJoining).format("MM-DD-YYYY"),
+    //   dateOfLeaving: employee.dateOfLeaving ? dayjs(employee.dateOfLeaving).format("MM-DD-YYYY") : "",
+    // };
 
-    res.status(200).json(updatedEmployee);
+    res.status(200).json(employees);
   } catch (error) {
     console.error('Error fetching employee:', error);
     res.status(500).json({ error: 'Internal Server Error' });

@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "essha traders",
-    "dateExported": "2023-12-13T18:28:12.317Z",
+    "dateExported": "2023-12-13T19:13:42.196Z",
     "version": "1.1",
     "folders": [
         {
@@ -494,6 +494,20 @@
             "sortNum": 220000,
             "created": "2023-12-13T18:26:51.203Z",
             "modified": "2023-12-13T18:28:02.714Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8f7fb5e0-cb40-4008-930b-bc45cdcd0c0a",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "76d75edc-c748-43c9-87e4-53bc722bd7f1",
+            "name": "get",
+            "url": "localhost:3001/api/employee/get-employees",
+            "method": "GET",
+            "sortNum": 230000,
+            "created": "2023-12-13T19:02:14.376Z",
+            "modified": "2023-12-13T19:02:34.195Z",
             "headers": [],
             "params": [],
             "tests": []
