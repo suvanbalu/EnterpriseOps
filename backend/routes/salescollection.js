@@ -58,6 +58,7 @@ router.get("/get-collections", async (req, res) => {
       {
         $group: {
           _id: "$s_billNo",
+          netAmountCollected: { $sum: "$amountCollected" },
           details: {
             $push: {
               sc_id: "$sc_id",
@@ -67,11 +68,25 @@ router.get("/get-collections", async (req, res) => {
                   date: "$date",
                 },
               },
-              psr: "$psr" ,
+              psr: "$psr",
               amountCollected: "$amountCollected",
               type: "$type",
             },
           },
+        },
+      },
+      {
+        $lookup: {
+          from: "sales",
+          localField: "_id",
+          foreignField: "sbillno",
+          as: "saleData",
+        },
+      },
+      {
+        $addFields: {
+          remainingCredit: { $ifNull: [{ $first: "$saleData.credit" }, 0] },
+          totalAmount: { $ifNull: [{ $first: "$saleData.totalAmount" }, 0] },
         },
       },
     ]);
@@ -90,8 +105,8 @@ router.get("/get-collections", async (req, res) => {
 router.get("/get-collection/:s_billNo", async (req, res) => {
   try {
     const s_billNoParam = req.params.s_billNo;
-    const billresult = SalesCollection.findOne({s_billNo:req.params.id})
-    if(!billresult){
+    const billresult = SalesCollection.findOne({ s_billNo: req.params.id })
+    if (!billresult) {
       return res.status(401).send("No collection done for the given billno")
     }
     const collections = await SalesCollection.aggregate([
@@ -112,7 +127,7 @@ router.get("/get-collection/:s_billNo", async (req, res) => {
                   date: "$date",
                 },
               },
-              psr: "$psr" ,
+              psr: "$psr",
               amountCollected: "$amountCollected",
               type: "$type",
             },
@@ -128,6 +143,23 @@ router.get("/get-collection/:s_billNo", async (req, res) => {
     res.json(collections[0]);
   } catch (error) {
     console.error("Error getting collections:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+router.get("/get-collection-by-id/:sc_id", async (req, res) => {
+  const { sc_id } = req.params;
+
+  try {
+    const existingCollection = await SalesCollection.findOne({ sc_id });
+
+    if (!existingCollection) {
+      return res.status(404).json({ error: `SalesCollection not found with the provided sc_id: ${sc_id}` });
+    }
+
+    res.json(existingCollection);
+  } catch (error) {
+    console.error("Error getting collection:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
