@@ -17,12 +17,12 @@ const Navigation = () => {
       <div className='flex flex-row gap-6 w-full'>
         <div className='flex flex-col pl-4 w-1/5'>
           <NavButton title='Dashboard' link='/' icon={<MdDashboard />} />
-          <NavButton title='Purchases' link='/purchases' icon={<BiSolidPurchaseTag />} />
+          <NavButton title='Sales Collection' link='/collection' icon={<FaMoneyCheckAlt />} />
           <NavButton title='Sales' link='/sales' icon={<MdOutlineSell />} />
+          <NavButton title='Purchases' link='/purchases' icon={<BiSolidPurchaseTag />} />
           <NavButton title='Inventory' link='/inventory' icon={<MdInventory />} />
           <NavButton title='Financials' link='/financials' icon={<FaMoneyCheck />} />
           <NavButton title='Parties' link='/parties' icon={<FaUsers />} />
-          <NavButton title='Sales Collection' link='/collection' icon={<FaMoneyCheckAlt />} />
           <NavButton title='Yearly Summary' link='/yearly-summary' icon={<IoCalendarOutline />} />
         </div>
 

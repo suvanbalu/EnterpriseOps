@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { IoMdAdd } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import CollapsibleTable from '../../components/CollapsibleTable';
@@ -56,6 +56,19 @@ const SalesCollectionScreen = () => {
 
   let OuterTable = {};
   let InnerTable = {};
+  const handleKeyPress = useCallback((event) => {
+    if (event.ctrlKey && event.code === "Enter") {
+      navigate('/collection/add');
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [handleKeyPress]);
 
   if (billViewMode) {
     OuterTable = {

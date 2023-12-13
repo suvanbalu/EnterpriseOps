@@ -183,11 +183,11 @@ router.put("/update-sale/:id", async (req, res) => {
   if (updatedData.length==0){
     return res.status(401).send("No inputs given")
   }
-  const updateResult = await Sale.findOneAndUpdate({sbillno:req.params.id},{updatedData})
+  const updateResult = await Sale.findOneAndUpdate({sbillno:req.params.id},updatedData, {new:true})
   if (!updateResult){
     return res.status(400).send("Item not found")
   }
-  res.send(`Bill number ${req.params.id} updated successfully`)
+  res.json({data: `Bill number ${req.params.id} updated successfully`, output:req.body})
   }
   catch(err){
     res.status(500).send(`Error : ${err}`);

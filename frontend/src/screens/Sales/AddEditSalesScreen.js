@@ -112,6 +112,7 @@ const AddEditSalesScreen = () => {
     }
   }, [tableData])
 
+
   return (
     <div className='px-8 flex flex-col gap-4 w-full'>
       <div className='flex gap-4 items-center'>

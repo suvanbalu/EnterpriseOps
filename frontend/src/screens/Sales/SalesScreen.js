@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { IoMdAdd } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import CollapsibleTable from '../../components/CollapsibleTable';
@@ -26,6 +26,19 @@ const SalesScreen = () => {
         setFetchedData(res.data);
       })
   }, [])
+  const handleKeyPress = useCallback((event) => {
+    if (event.ctrlKey && event.code === "Enter") {
+      navigate('/sales/add');
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [handleKeyPress]);
 
   console.log(fetchedData);
 
