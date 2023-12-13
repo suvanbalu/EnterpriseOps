@@ -61,6 +61,7 @@ const FinancialScreen = () => {
         deleteUrl={`${FINANCIALS_URL}/delete-financial`}
         metadataTitle='Net Amount'
         metadataFunction={metadataFunction}
+        dateQuery
       />
     </div>
   )

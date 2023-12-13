@@ -20,7 +20,7 @@ import { SALES_COLLECTION_URL } from '../../API/calls';
 
 dayjs.extend(customParseFormat);
 
-const AddEditSalesCollectionScreen = () => {
+const AddSalesCollectionScreen = () => {
   const navigate = useNavigate();
 
   const [date, setDate] = useState(dayjs());
@@ -131,4 +131,4 @@ const AddEditSalesCollectionScreen = () => {
   )
 }
 
-export default AddEditSalesCollectionScreen
+export default AddSalesCollectionScreen

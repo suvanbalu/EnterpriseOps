@@ -111,7 +111,7 @@ router.get('/get-employee/:id', async (req, res) => {
     //   dateOfLeaving: employee.dateOfLeaving ? dayjs(employee.dateOfLeaving).format("MM-DD-YYYY") : "",
     // };
 
-    res.status(200).json(employees);
+    res.status(200).json(employee);
   } catch (error) {
     console.error('Error fetching employee:', error);
     res.status(500).json({ error: 'Internal Server Error' });

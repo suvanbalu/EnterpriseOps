@@ -73,6 +73,27 @@ router.get('/get-financial', async (req, res) => {
   }
 });
 
+router.get('/get-financial-entry/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    if (!id) {
+      return res.status(400).json({ error: 'Invalid ID' });
+    }
+
+    const entry = await Financial.findById(id);
+
+    if (!entry) {
+      return res.status(404).json({ error: 'Entry not found' });
+    }
+
+    res.status(200).json(entry);
+  } catch (error) {
+    console.error('Error fetching financial entry:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
 router.delete('/delete-financial/:id', async (req, res) => {
   try {
     const { id } = req.params;
