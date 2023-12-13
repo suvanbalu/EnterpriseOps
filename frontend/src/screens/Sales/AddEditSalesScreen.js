@@ -300,7 +300,7 @@ const AddEditSalesScreen = () => {
                 party_id: partyID,
                 date: date,
                 totalAmount: totalAmount,
-                credit: credit,
+                credit: totalAmount,
                 details: filteredTableData.map((item) => {
                   return {
                     p_id: item.p_id,
@@ -323,13 +323,14 @@ const AddEditSalesScreen = () => {
                     })
                       .then((res2) => {
                         console.log(res2);
+                        navigate('/sales/');
                       })
                       .catch((err) => {
                         console.log(err);
                       })
+                  } else {
+                    navigate('/sales/');
                   }
-
-                  navigate('/sales/');
                 })
                 .catch((err) => {
                   console.log(err);

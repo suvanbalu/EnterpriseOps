@@ -49,7 +49,17 @@ router.get("/get-sales", async (req, res) => {
           details: {
             $push: {
               p_id: "$details.p_id",
-              productName: "$productData.productName",
+              productName: {
+                $concat: [
+                  "$productData.productName",
+                  " ",
+                  "$productData.category",
+                  " ",
+                  { $toString: "$productData.quantity" },
+                  " ",
+                  "$productData.unit",
+                ],
+              },
               piecesPerCase: "$productData.piecesPerCase",
               case: "$details.case",
               piece: "$details.piece",
@@ -114,7 +124,17 @@ router.get("/get-sale/:sbillno", async (req, res) => {
           details: {
             $push: {
               p_id: "$details.p_id",
-              productName: "$productData.productName",
+              productName: {
+                $concat: [
+                  "$productData.productName",
+                  " ",
+                  "$productData.category",
+                  " ",
+                  { $toString: "$productData.quantity" },
+                  " ",
+                  "$productData.unit",
+                ],
+              },
               piecesPerCase: "$productData.piecesPerCase",
               case: "$details.case",
               piece: "$details.piece",
