@@ -242,6 +242,9 @@ const AddEditSalesScreen = () => {
 
             let valid = true;
             tableData.forEach((item) => {
+              if (Object.values(item).every((value) => value === '')) {
+                return;
+              }
               Object.keys(item).forEach((value) => {
                 if (value === 'piece' || value === 'case') {
                   return;
@@ -264,6 +267,10 @@ const AddEditSalesScreen = () => {
               return window.alert('Enter all fields in the table');
             }
 
+            const filteredTableData = tableData.filter((item) => {
+              return !Object.values(item).every((value) => value === '');
+            });
+
             if (edit) {
               axios.put(`${SALE_URL}/update-sale/${id}`, {
                 sbillno: billno,
@@ -271,7 +278,7 @@ const AddEditSalesScreen = () => {
                 date: date,
                 totalAmount: totalAmount,
                 credit: credit,
-                details: tableData.map((item) => {
+                details: filteredTableData.map((item) => {
                   return {
                     p_id: item.p_id,
                     case: item.case,
@@ -294,7 +301,7 @@ const AddEditSalesScreen = () => {
                 date: date,
                 totalAmount: totalAmount,
                 credit: credit,
-                details: tableData.map((item) => {
+                details: filteredTableData.map((item) => {
                   return {
                     p_id: item.p_id,
                     case: item.case,

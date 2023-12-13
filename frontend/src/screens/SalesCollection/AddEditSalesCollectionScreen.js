@@ -83,6 +83,9 @@ const AddEditSalesCollectionScreen = () => {
 
             let valid = true;
             tableData.forEach((item) => {
+              if (Object.values(item).every((value) => value === '')) {
+                return;
+              }
               Object.values(item).forEach((value) => {
                 if (value === null || value === undefined || value === '') {
                   valid = false;
@@ -93,9 +96,11 @@ const AddEditSalesCollectionScreen = () => {
               return window.alert('Enter all fields in the table');
             }
 
-            console.log(tableData)
+            const filteredTableData = tableData.filter((item) => {
+              return !Object.values(item).every((value) => value === '');
+            });
 
-            const addFormat = tableData.map((item) => {
+            const addFormat = filteredTableData.map((item) => {
               return {
                 s_billNo: item.billno,
                 date: date,

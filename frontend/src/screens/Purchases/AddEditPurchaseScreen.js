@@ -38,7 +38,7 @@ const AddEditPurchaseScreen = () => {
   useEffect(() => {
     if (id) {
       setEdit(true);
-      
+
       axios.get(`${PURCHASE_URL}/get-bill-entry/${id} `)
         .then((res) => {
           console.log(res);
@@ -129,11 +129,18 @@ const AddEditPurchaseScreen = () => {
             }
 
             tableData.forEach((item) => {
+              if (Object.values(item).every((value) => value === '')) {
+                return;
+              }
               Object.values(item).forEach((value) => {
                 if (value === null || value === undefined || value === '') {
                   valid = false;
                 }
               });
+            });
+
+            const filteredTableData = tableData.filter((item) => {
+              return !Object.values(item).every((value) => value === '');
             });
 
             if (valid) {
@@ -146,7 +153,7 @@ const AddEditPurchaseScreen = () => {
                   billno: billno,
                   totalAmount: totalAmount,
                   date: date.format('DD-MMM-YYYY'),
-                  details: tableData.map((item) => {
+                  details: filteredTableData.map((item) => {
                     return {
                       p_id: item.p_id,
                       rateOfProduct: item.rateOfProduct,
@@ -166,7 +173,7 @@ const AddEditPurchaseScreen = () => {
                   billno: billno,
                   totalAmount: totalAmount,
                   date: date.format('DD-MMM-YYYY'),
-                  details: tableData.map((item) => {
+                  details: filteredTableData.map((item) => {
                     return {
                       p_id: item.p_id,
                       rateOfProduct: item.rateOfProduct,
