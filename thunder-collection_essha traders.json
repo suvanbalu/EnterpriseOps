@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "essha traders",
-    "dateExported": "2023-12-13T09:43:54.246Z",
+    "dateExported": "2023-12-13T11:31:29.572Z",
     "version": "1.1",
     "folders": [
         {
@@ -45,6 +45,13 @@
             "containerId": "",
             "created": "2023-12-12T08:11:22.427Z",
             "sortNum": 60000
+        },
+        {
+            "_id": "76d75edc-c748-43c9-87e4-53bc722bd7f1",
+            "name": "Employee",
+            "containerId": "",
+            "created": "2023-12-13T10:54:24.466Z",
+            "sortNum": 70000
         }
     ],
     "requests": [
@@ -399,6 +406,58 @@
             "modified": "2023-12-13T09:09:54.266Z",
             "headers": [],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "343575a9-b1fa-4398-955d-569bdc1cfce4",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "76d75edc-c748-43c9-87e4-53bc722bd7f1",
+            "name": "add",
+            "url": "localhost:3001/api/employee/add-employees",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2023-12-13T10:56:19.049Z",
+            "modified": "2023-12-13T11:24:48.627Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[{\n  \"name\": \"John Doe\",\n  \"empType\": \"Full-time\",\n  \"dateOfJoining\": \"2023-01-01\",\n  \"dateOfLeaving\": null,\n  \"salary\": 50000\n},\n{\n  \"name\": \"John \",\n  \"empType\": \"Full-time\",\n  \"dateOfJoining\": \"2023-01-01\",\n  \"dateOfLeaving\": null,\n  \"salary\": 50000\n},\n{\n  \"name\": \"John D\",\n  \"empType\": \"Full-time\",\n  \"dateOfJoining\": \"2023-01-01\",\n  \"dateOfLeaving\": null,\n  \"salary\": 50000\n}]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "75e59df2-c908-4ba4-a368-5c1f30f722e2",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "76d75edc-c748-43c9-87e4-53bc722bd7f1",
+            "name": "delete",
+            "url": "localhost:3001/api/employee/delete-employee/65799480e97b58311b50f821",
+            "method": "DELETE",
+            "sortNum": 200000,
+            "created": "2023-12-13T11:25:05.817Z",
+            "modified": "2023-12-13T11:26:37.241Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d0910df2-dafc-48e2-a966-c1848179f800",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "76d75edc-c748-43c9-87e4-53bc722bd7f1",
+            "name": "update",
+            "url": "localhost:3001/api/employee/update-employee/65799480e97b58311b50f822",
+            "method": "PUT",
+            "sortNum": 200000,
+            "created": "2023-12-13T11:29:18.932Z",
+            "modified": "2023-12-13T11:30:37.731Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"John Doe\",\n  \"empType\": \"Full-time\",\n  \"dateOfJoining\": \"2023-01-01\",\n  \"dateOfLeaving\": null,\n  \"salary\": 50000\n}",
+                "form": []
+            },
             "tests": []
         }
     ]
