@@ -58,6 +58,8 @@ const CollapsibleTable = ({
   InnerTable = {},
   editUrl = '',
   deleteUrl = '',
+  innerEditUrl = '',
+  innerDeleteUrl = '',
   innerTableTitle = '',
   metadataTitle = '',
   metadataFunction = false,
@@ -389,14 +391,50 @@ const CollapsibleTable = ({
                                   </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                  {filteredRow.map((detail, detailIndex) => (
-                                    <TableRow key={detailIndex}>
-                                      <TableCell>{detailIndex + 1}</TableCell>
-                                      {Object.keys(InnerTable).map((item) => (
-                                        <TableCell>{InnerTable[item][0] === 'date' ? dayjs(detail[InnerTable[item][0]], 'MM/DD/YYYY').format('DD-MMM-YYYY') : detail[InnerTable[item][0]]}</TableCell>
-                                      ))}
-                                    </TableRow>
-                                  ))}
+                                  {filteredRow.map((detail, detailIndex) => {
+                                    const innerElementKey = detail[InnerTable[Object.keys(InnerTable)[0]][0]];
+
+                                    return (
+                                      <TableRow key={detailIndex}>
+                                        <TableCell>{detailIndex + 1}</TableCell>
+                                        {Object.keys(InnerTable).map((item) => (
+                                          <TableCell>{InnerTable[item][0] === 'date' ? dayjs(detail[InnerTable[item][0]], 'MM/DD/YYYY').format('DD-MMM-YYYY') : detail[InnerTable[item][0]]}</TableCell>
+                                        ))}
+                                        <TableCell>
+                                          <div className='flex items-center gap-2'>
+                                            {innerEditUrl && (
+                                              <button className='text-lg text-gray-600 hover:bg-gray-100 rounded-full p-2'
+                                                onClick={() => {
+                                                  navigate(`${innerEditUrl}/${innerElementKey}`)
+                                                }}
+                                              >
+                                                <MdOutlineEdit />
+                                              </button>
+                                            )}
+                                            {innerDeleteUrl && (
+                                              <button className='text-lg text-gray-600 hover:bg-red-100 rounded-full p-2'
+                                                onClick={() => {
+                                                  if (window.confirm("Confirm Delete ?")) {
+                                                    axios.delete(`${innerDeleteUrl}/${innerElementKey}`)
+                                                      .then((res) => {
+                                                        console.log(res)
+                                                        window.location.reload();
+                                                      })
+                                                      .catch((err) => {
+                                                        console.log(err)
+                                                      })
+                                                  }
+                                                }}
+                                              >
+                                                <MdDelete />
+                                              </button>
+                                            )}
+                                          </div>
+                                        </TableCell>
+                                      </TableRow>
+                                    )
+                                  }
+                                  )}
                                 </TableBody>
                               </Table>
                             </Box>
