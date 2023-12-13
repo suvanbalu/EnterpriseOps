@@ -14,12 +14,12 @@ router.post('/add-financial', async (req, res) => {
     }
 
     // Validate each financial entry in the array
-    for (const entry of financialEntries) {
-      const { date, description, amount, category, credit_flag } = entry;
-      if (!date || !description || !amount || !category || credit_flag === undefined) {
-        return res.status(400).json({ error: 'Invalid financial entry' });
-      }
-    }
+    // for (const entry of financialEntries) {
+    //   const { date, description, amount, category, credit_flag } = entry;
+    //   if (!date || !description || !amount || !category || credit_flag === undefined) {
+    //     return res.status(400).json({ error: 'Invalid financial entry' });
+    //   }
+    // }
 
     // Use insertMany to add multiple financial entries to the database
     const insertedEntries = await Financial.insertMany(financialEntries);
@@ -33,30 +33,27 @@ router.post('/add-financial', async (req, res) => {
 
 router.put('/update-financial/:id', async (req, res) => {
   try {
-    const { date, description, amount, category, credit_flag } = req.body;
+    const { date, description, amount, category, txn_type } = req.body;
     const { id } = req.params;
 
-    
-    if (!date || !description || !amount || !category || credit_flag === undefined) {
+    // Validate required fields
+    if (!date || !description || !amount || !category || !txn_type) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    
-    const existingEntry = await Financial.findById(id);
+    // Find and update the entry by ID
+    const updatedEntry = await Financial.findOneAndUpdate(
+      { _id: id },
+      { $set: { date, description, amount, category, txn_type } },
+      { new: true }
+    );
 
-    
-    if (!existingEntry) {
+    // Check if the entry exists
+    if (!updatedEntry) {
       return res.status(404).json({ error: 'Entry not found' });
     }
 
-    existingEntry.date = date;
-    existingEntry.description = description;
-    existingEntry.amount = amount;
-    existingEntry.category = category;
-    existingEntry.credit_flag = credit_flag;
-
-    const updatedEntry = await existingEntry.save();
-
+    // Respond with the updated entry
     res.status(200).json(updatedEntry);
   } catch (error) {
     console.error('Error updating financial entry:', error);
@@ -76,4 +73,28 @@ router.get('/get-financial', async (req, res) => {
   }
 });
 
+router.delete('/delete-financial/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // Validate ID
+    if (!id) {
+      return res.status(400).json({ error: 'Invalid ID' });
+    }
+
+    // Find and delete the entry by ID
+    const deletedEntry = await Financial.findOneAndDelete({ _id: id });
+
+    // Check if the entry exists
+    if (!deletedEntry) {
+      return res.status(404).json({ error: 'Entry not found' });
+    }
+
+    // Respond with success message
+    res.json({ message: 'Entry deleted successfully' });
+  } catch (error) {
+    console.error('Error deleting financial entry:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
 export default router; 

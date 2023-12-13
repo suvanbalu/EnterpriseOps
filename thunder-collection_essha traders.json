@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "essha traders",
-    "dateExported": "2023-12-13T11:31:29.572Z",
+    "dateExported": "2023-12-13T18:28:12.317Z",
     "version": "1.1",
     "folders": [
         {
@@ -164,11 +164,11 @@
             "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
             "containerId": "e052d8e4-52d1-405b-8f6a-8e49096c4cb0",
             "name": "purchaseview",
-            "url": "localhost:3001/purchase/getentry",
+            "url": "localhost:3001/api/purchase/get-all-entry",
             "method": "GET",
             "sortNum": 30000,
             "created": "2023-12-09T12:58:06.010Z",
-            "modified": "2023-12-09T12:58:06.010Z",
+            "modified": "2023-12-13T16:35:19.644Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -178,11 +178,11 @@
             "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
             "containerId": "ff339529-e890-4b85-a5ad-bfb5543c93f8",
             "name": "getSale",
-            "url": "localhost:3001/api/sale/get-sale/S001",
+            "url": "localhost:3001/api/sale/get-sale/2249",
             "method": "GET",
             "sortNum": 30000,
             "created": "2023-12-09T20:40:04.542Z",
-            "modified": "2023-12-09T20:40:04.542Z",
+            "modified": "2023-12-13T16:02:24.882Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -323,12 +323,12 @@
             "method": "PUT",
             "sortNum": 140000,
             "created": "2023-12-09T21:04:49.174Z",
-            "modified": "2023-12-13T08:54:20.478Z",
+            "modified": "2023-12-13T14:43:50.645Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"s_billNo\": \"S001\",\n  \"date\": \"2023-12-10T08:00:00Z\",\n  \"psr\": \"John Doe\",\n  \"amountCollected\": 300,\n  \"type\": \"Cash\"\n}",
+                "raw": "{\n  \"s_billNo\": \"S001\",\n  \"date\": \"2023-12-10T08:00:00Z\",\n  \"psr\": \"John Doe\",\n  \"amountCollected\": 200,\n  \"type\": \"Cash\"\n}",
                 "form": []
             },
             "tests": []
@@ -356,12 +356,12 @@
             "method": "POST",
             "sortNum": 160000,
             "created": "2023-12-12T08:11:32.636Z",
-            "modified": "2023-12-12T08:37:41.189Z",
+            "modified": "2023-12-13T18:19:46.453Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "[{\r\n  \"date\": \"2023-12-01\",\r\n  \"description\": \"Dummy Expense\",\r\n  \"amount\": 100.50,\r\n  \"category\": \"General\",\r\n  \"credit_flag\": 0\r\n}]",
+                "raw": "[{\n  \"date\": \"2023-12-01\",\n  \"description\": \"Expense\",\n  \"amount\": 200.50,\n  \"category\": \"General\",\n  \"txn_type\": \"Debit\"\n}]",
                 "form": []
             },
             "tests": []
@@ -385,13 +385,18 @@
             "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
             "containerId": "ff339529-e890-4b85-a5ad-bfb5543c93f8",
             "name": "update-sale",
-            "url": "localhost:3001/api/sale/update-sale/S001",
+            "url": "localhost:3001/api/sale/update-sale/2249",
             "method": "PUT",
             "sortNum": 180000,
             "created": "2023-12-13T08:58:00.916Z",
-            "modified": "2023-12-13T08:59:24.645Z",
+            "modified": "2023-12-13T16:10:57.024Z",
             "headers": [],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"_id\": \"2249\",\n  \"party_id\": \"PA0197\",\n  \"party_name\": \"K R SUPERMART\",\n  \"date\": \"12-12-2023\",\n  \"route\": \"PSR1\",\n  \"totalAmount\": 1090,\n  \"credit\": 1059,\n  \"details\": [\n    {\n      \"p_id\": \"4351\",\n      \"productName\": \"MIRINDA ORANGE\",\n      \"piecesPerCase\": 9,\n      \"case\": 2,\n      \"piece\": 0,\n      \"saleRate\": 117\n    },\n    {\n      \"p_id\": \"2976\",\n      \"productName\": \"PEPSI COLA\",\n      \"piecesPerCase\": 12,\n      \"case\": 10,\n      \"piece\": 0,\n      \"saleRate\": 60\n    },\n    {\n      \"p_id\": \"1008\",\n      \"productName\": \"7 UP\",\n      \"piecesPerCase\": 24,\n      \"case\": 20,\n      \"piece\": 12,\n      \"saleRate\": 11\n    }\n  ]\n}",
+                "form": []
+            },
             "tests": []
         },
         {
@@ -458,6 +463,39 @@
                 "raw": "{\n  \"name\": \"John Doe\",\n  \"empType\": \"Full-time\",\n  \"dateOfJoining\": \"2023-01-01\",\n  \"dateOfLeaving\": null,\n  \"salary\": 50000\n}",
                 "form": []
             },
+            "tests": []
+        },
+        {
+            "_id": "f7a99175-63f3-4133-a8f9-91803b11f83b",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "bc296b1f-7a7f-41d1-96b2-34bc0ae91905",
+            "name": "update",
+            "url": "localhost:3001/api/financial/update-financial/6579f5a529903dc3d6389f36",
+            "method": "PUT",
+            "sortNum": 210000,
+            "created": "2023-12-13T18:26:02.418Z",
+            "modified": "2023-12-13T18:26:33.007Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"date\": \"2023-12-02T00:00:00.000Z\",\r\n  \"description\": \"Updated Expense\",\r\n  \"amount\": 150.75,\r\n  \"category\": \"Utilities\",\r\n  \"txn_type\": \"Debit\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b6826d34-faf8-4cbe-87b5-f99d9a337b89",
+            "colId": "03f1ba81-2651-4d5d-8de5-0e2f288fb44b",
+            "containerId": "bc296b1f-7a7f-41d1-96b2-34bc0ae91905",
+            "name": "delete",
+            "url": "localhost:3001/api/financial/delete-financial/6579f5c229903dc3d6389f38",
+            "method": "DELETE",
+            "sortNum": 220000,
+            "created": "2023-12-13T18:26:51.203Z",
+            "modified": "2023-12-13T18:28:02.714Z",
+            "headers": [],
+            "params": [],
             "tests": []
         }
     ]

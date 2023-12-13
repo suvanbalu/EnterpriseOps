@@ -17,9 +17,9 @@ const financialSchema = new Schema({
     type: String,
     required: true,
   },
-  credit_flag: {
-    type: Number,
-    enum: [1, 0],
+  txn_type: {
+    type: String,
+    required: true,
   },
 });
 

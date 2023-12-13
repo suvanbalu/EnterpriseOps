@@ -23,13 +23,13 @@ const FinancialScreen = () => {
     'Description': ['description', '20vw'],
     'Amount': ['amount', '10vw'],
     'Category': ['category', '10vw'],
-    'Credit Flag': ['credit_flag', '10vw'],
+    'Txn Type': ['txn_type', '10vw'],
   }
 
   return (
     <div className='pl-4 pr-12 flex flex-col gap-4 w-full -mt-16'>
       <div className='flex justify-between'>
-        <PageTitle title={'All Products'} className={'w-1/2 text-right'} />
+        <PageTitle title={'All Records'} className={'w-1/2 text-right'} />
         <CustomButton
           onClick={() => { navigate('/inventory/add') }}
           icon={<IoMdAdd />}
@@ -41,7 +41,7 @@ const FinancialScreen = () => {
         data={fetchedData}
         OuterTable={OuterTable}
         editUrl={'/financials/edit'}
-        deleteUrl={`${FINANCIALS_URL}/delete-product`}
+        deleteUrl={`${FINANCIALS_URL}/delete-financial`}
       />
     </div>
   )
