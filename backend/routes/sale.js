@@ -14,7 +14,7 @@ router.get("/get-sales", async (req, res) => {
     const sales = await Sale.aggregate([
       {
         $lookup: {
-          from: "parties", 
+          from: "parties",
           localField: "party_id",
           foreignField: "party_id",
           as: "partyData",
@@ -28,7 +28,7 @@ router.get("/get-sales", async (req, res) => {
       },
       {
         $lookup: {
-          from: "products", 
+          from: "products",
           localField: "details.p_id",
           foreignField: "p_id",
           as: "productData",
@@ -42,7 +42,7 @@ router.get("/get-sales", async (req, res) => {
           _id: "$sbillno",
           party_id: { $first: "$party_id" },
           party_name: { $first: "$partyData.partyName" },
-          date: { $first: { $dateToString: { format: "%m-%d-%Y", date: "$date" } } },
+          date: { $first: "$date" },
           route: { $first: "$partyData.route" },
           totalAmount: { $first: "$totalAmount" },
           credit: { $first: "$credit" },
@@ -79,7 +79,7 @@ router.get("/get-sale/:sbillno", async (req, res) => {
       },
       {
         $lookup: {
-          from: "parties", 
+          from: "parties",
           localField: "party_id",
           foreignField: "party_id",
           as: "partyData",
@@ -93,7 +93,7 @@ router.get("/get-sale/:sbillno", async (req, res) => {
       },
       {
         $lookup: {
-          from: "products", 
+          from: "products",
           localField: "details.p_id",
           foreignField: "p_id",
           as: "productData",
@@ -107,7 +107,7 @@ router.get("/get-sale/:sbillno", async (req, res) => {
           _id: "$sbillno",
           party_id: { $first: "$party_id" },
           party_name: { $first: "$partyData.partyName" },
-          date: { $first: { $dateToString: { format: "%m-%d-%Y", date: "$date" } } },
+          date: { $first: "$date" },
           route: { $first: "$partyData.route" },
           totalAmount: { $first: "$totalAmount" },
           credit: { $first: "$credit" },
@@ -129,7 +129,7 @@ router.get("/get-sale/:sbillno", async (req, res) => {
       return res.status(404).json({ error: "Sale not found" });
     }
 
-    res.json(sale[0]); 
+    res.json(sale[0]);
   } catch (error) {
     console.error("Error getting sale:", error);
     res.status(500).json({ error: "Internal Server Error" });
@@ -141,20 +141,20 @@ router.post("/add-sale", async (req, res) => {
   try {
     const { sbillno, party_id, date, totalAmount, credit, details } = req.body;
 
-    
+
     if (!sbillno || !party_id || !date || !totalAmount || !details) {
       return res.status(400).json({ error: "Missing required fields" });
     }
 
-    
+
     const partyfind = await Party.findOne({ party_id: party_id });
 
     if (!partyfind) {
-      
+
       return res.status(400).send("Party Not Found");
     }
 
-    
+
     const newSale = new Sale({
       sbillno,
       party_id,
@@ -164,32 +164,32 @@ router.post("/add-sale", async (req, res) => {
       details,
     });
 
-    
+
     const savedSale = await newSale.save();
 
-    
+
     res.status(201).json(savedSale);
   } catch (error) {
     console.error("Error adding sale:", error);
-    
+
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
 
 router.put("/update-sale/:id", async (req, res) => {
-  try{
-  const updatedData = req.body;
-  if (updatedData.length==0){
-    return res.status(401).send("No inputs given")
+  try {
+    const updatedData = req.body;
+    if (updatedData.length == 0) {
+      return res.status(401).send("No inputs given")
+    }
+    const updateResult = await Sale.findOneAndUpdate({ sbillno: req.params.id }, updatedData, { new: true })
+    if (!updateResult) {
+      return res.status(400).send("Item not found")
+    }
+    res.json({ data: `Bill number ${req.params.id} updated successfully`, output: req.body })
   }
-  const updateResult = await Sale.findOneAndUpdate({sbillno:req.params.id},updatedData, {new:true})
-  if (!updateResult){
-    return res.status(400).send("Item not found")
-  }
-  res.json({data: `Bill number ${req.params.id} updated successfully`, output:req.body})
-  }
-  catch(err){
+  catch (err) {
     res.status(500).send(`Error : ${err}`);
   }
 
@@ -199,15 +199,15 @@ router.delete("/delete-sale/:id", async (req, res) => {
   try {
     const saleId = req.params.id;
 
-    
+
     if (!saleId) {
       return res.status(400).send("Invalid sale ID");
     }
 
-    
-    const deleteResult = await Sale.findOneAndDelete({sbillno:saleId});
 
-    
+    const deleteResult = await Sale.findOneAndDelete({ sbillno: saleId });
+
+
     if (!deleteResult) {
       return res.status(404).send("Sale entry not found");
     }

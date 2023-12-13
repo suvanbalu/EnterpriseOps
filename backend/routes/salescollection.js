@@ -107,7 +107,7 @@ router.get("/get-collections-grouped-by-date", async (req, res) => {
     const collections = await SalesCollection.aggregate([
       {
         $group: {
-          _id: "$date",
+          _id: { $dateToString: { format: "%Y-%m-%d", date: "$date" } },
           netAmountCollected: { $sum: "$amountCollected" },
           details: {
             $push: {

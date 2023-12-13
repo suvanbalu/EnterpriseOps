@@ -218,7 +218,7 @@ const AddEditSalesScreen = () => {
               axios.put(`${SALE_URL}/update-sale/${id}`, {
                 sbillno: billno,
                 party_id: partyID,
-                date: date.format('DD-MMM-YYYY'),
+                date: date,
                 totalAmount: totalAmount,
                 credit: credit,
                 details: tableData.map((item) => {
@@ -241,7 +241,7 @@ const AddEditSalesScreen = () => {
               axios.post(`${SALE_URL}/add-sale`, {
                 sbillno: billno,
                 party_id: partyID,
-                date: date.format('DD-MMM-YYYY'),
+                date: date,
                 totalAmount: totalAmount,
                 credit: credit,
                 details: tableData.map((item) => {
