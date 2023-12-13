@@ -20,6 +20,7 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
   const [tableData, setTableData] = tableState;
   const [products, setProducts] = useState([]);
   const [productNames, setProductNames] = useState([]);
+  const [lastRowDeleted, setLastRowDeleted] = useState(false);
 
   const handleInputChange = (index, field, value) => {
     const newData = [...tableData];
@@ -64,6 +65,12 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
   };
 
   const handleRemoveRow = (index) => {
+    if (index === tableData.length - 1) {
+      setLastRowDeleted(true);
+    } else {
+      setLastRowDeleted(false);
+    }
+
     const newData = [...tableData];
     newData.splice(index, 1);
     setTableData(newData);
@@ -77,6 +84,18 @@ const RealTimeInputTable = ({ tableState = ["", (e) => { }] }) => {
     }
     return '';
   };
+
+  useEffect(() => {
+    const lastRow = tableData[tableData.length - 1];
+
+    if (!lastRowDeleted) {
+      if (lastRow && lastRow.quantity !== '' && lastRow.rateOfProduct !== '' && lastRow.productName !== '') {
+        handleAddRow();
+      }
+    } else {
+      setLastRowDeleted(false);
+    }
+  }, [tableData]);
 
   return (
     <TableContainer component={Paper}>

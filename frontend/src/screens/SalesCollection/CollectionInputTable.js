@@ -20,6 +20,7 @@ const SalesInputTable = ({ tableState = ["", (e) => { }] }) => {
   const [tableData, setTableData] = tableState;
   const [bills, setBills] = useState([]);
   const [billNumbers, setBillNumbers] = useState([]);
+  const [lastRowDeleted, setLastRowDeleted] = useState(false);
 
   const handleInputChange = (index, field, value) => {
     const newData = [...tableData];
@@ -51,10 +52,28 @@ const SalesInputTable = ({ tableState = ["", (e) => { }] }) => {
   };
 
   const handleRemoveRow = (index) => {
+    if (index === tableData.length - 1) {
+      setLastRowDeleted(true);
+    } else {
+      setLastRowDeleted(false);
+    }
+
     const newData = [...tableData];
     newData.splice(index, 1);
     setTableData(newData);
   };
+
+  useEffect(() => {
+    const lastRow = tableData[tableData.length - 1];
+
+    if (!lastRowDeleted) {
+      if (lastRow && lastRow.type !== '' && lastRow.amountCollected !== '' && lastRow.psrName !== '' && lastRow.billno !== '') {
+        handleAddRow();
+      }
+    } else {
+      setLastRowDeleted(false);
+    }
+  }, [tableData]);
 
   return (
     <TableContainer component={Paper}>
