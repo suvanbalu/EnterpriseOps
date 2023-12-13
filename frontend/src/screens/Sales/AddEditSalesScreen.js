@@ -19,7 +19,7 @@ import CustomAutoComplete from '../../components/CustomAutoComplete';
 import NumbersIcon from '@mui/icons-material/Numbers';
 
 import axios from 'axios';
-import { SALE_URL, PARTY_URL } from '../../API/calls';
+import { SALE_URL, PARTY_URL, SALES_COLLECTION_URL } from '../../API/calls';
 import SalesInputTable from './SalesInputTable';
 
 dayjs.extend(customParseFormat);
@@ -40,6 +40,11 @@ const AddEditSalesScreen = () => {
   const [tableData, setTableData] = useState([
     { p_id: '', productName: '', case: '', piece: '', piecesPerCase: '', saleRate: '', amount: '' },
   ]);
+
+  const [psrName, setPsrName] = useState("");
+  const [amountCollected, setAmountCollected] = useState("");
+  const [type, setType] = useState("");
+
   const [edit, setEdit] = useState(false);
 
   const { id } = useParams();
@@ -82,8 +87,8 @@ const AddEditSalesScreen = () => {
     if (tableData) {
       const tot = tableData.reduce((sum, row) => {
         const rowRate = parseFloat(row.saleRate);
-        const rowPiece = parseFloat(row.piece);
-        const rowCase = parseFloat(row.case);
+        const rowPiece = parseFloat(row.piece) || 0;
+        const rowCase = parseFloat(row.case) || 0;
         const rowPiecePerCase = parseFloat(row.piecesPerCase);
 
         const rowAmount = (
@@ -112,6 +117,10 @@ const AddEditSalesScreen = () => {
     }
   }, [tableData])
 
+  useEffect(() => {
+    const collected = parseFloat(amountCollected) || 0;
+    setCredit((totalAmount - collected).toFixed(2));
+  }, [amountCollected, totalAmount])
 
   return (
     <div className='px-8 flex flex-col gap-4 w-full'>
@@ -163,6 +172,12 @@ const AddEditSalesScreen = () => {
           title={'Total Amount'}
           value={`Rs. ${totalAmount} `}
         />
+
+        <HighlightedNumber
+          title={'Credit'}
+          value={`Rs. ${credit} `}
+        />
+
       </div>
 
       <div className='flex flex-row items-center gap-8 w-full'>
@@ -173,24 +188,39 @@ const AddEditSalesScreen = () => {
           options={partyNames}
         />
 
-        <CustomTextField
-          label='Party ID'
-          className='w-1/5'
-          valueState={[partyID, setPartyID]}
+        <HighlightedNumber
+          title={'Party ID'}
+          value={partyID}
         />
 
-        <CustomTextField
-          label='Route'
-          className='w-1/4'
-          valueState={[route, setRoute]}
+        <HighlightedNumber
+          title={'Route'}
+          value={route}
         />
 
-        <CustomTextField
-          label='Credit'
-          className='w-1/4'
-          valueState={[credit, setCredit]}
-          type='number'
-        />
+        <div className={`${edit && 'hidden'} bg-orange-50 flex flex-row items-center gap-8 w-full px-6 py-1 rounded-xl relative`}>
+          <PageTitle title='Sales Collection (Optional)' className='!text-sm absolute -top-5 left-4' />
+          <CustomAutoComplete
+            label='PSR Name'
+            width='33%'
+            valueState={[psrName, setPsrName]}
+            options={['Person 1', 'Person 2', 'Person 3']}
+          />
+
+          <CustomTextField
+            label='Amount Collected'
+            className='w-1/3'
+            valueState={[amountCollected, setAmountCollected]}
+            type='number'
+          />
+
+          <CustomAutoComplete
+            label='Type'
+            width='33%'
+            valueState={[type, setType]}
+            options={['Cash', 'Cheque', 'UPI', 'Others']}
+          />
+        </div>
       </div>
 
       <SalesInputTable tableState={[tableData, setTableData]} />
@@ -198,17 +228,37 @@ const AddEditSalesScreen = () => {
       <div className='flex justify-end mt-4'>
         <CustomButton
           onClick={() => {
-            if (billno === '' || date === '' || partyID === '' || partyName === '' || route === '' || credit === '') {
+            if (billno === '' || date === '' || partyName === '') {
               return window.alert('Enter all fields');
+            }
+
+            if (!edit) {
+              if (psrName !== '' || amountCollected !== '' || type !== '') {
+                if (psrName === '' || amountCollected === '' || type === '') {
+                  return window.alert('Enter all fields in Sales Collection');
+                }
+              }
             }
 
             let valid = true;
             tableData.forEach((item) => {
-              Object.values(item).forEach((value) => {
-                if (value === null || value === undefined || value === '') {
+              Object.keys(item).forEach((value) => {
+                if (value === 'piece' || value === 'case') {
+                  return;
+                }
+                if (item[value] === null || item[value] === undefined || item[value] === '') {
                   valid = false;
                 }
               });
+
+              const piece = parseInt(item.piece);
+              const casee = parseInt(item.case);
+
+              if (isNaN(piece) || piece === 0) {
+                if (isNaN(casee) || casee === 0) {
+                  valid = false;
+                }
+              }
             });
             if (!valid) {
               return window.alert('Enter all fields in the table');
@@ -255,6 +305,23 @@ const AddEditSalesScreen = () => {
               })
                 .then((res) => {
                   console.log(res)
+
+                  if (psrName !== '' || amountCollected !== '' || type !== '') {
+                    axios.post(`${SALES_COLLECTION_URL}/add-collections`, {
+                      s_billNo: billno,
+                      date: date,
+                      psr: psrName,
+                      amountCollected: amountCollected,
+                      type: type,
+                    })
+                      .then((res2) => {
+                        console.log(res2);
+                      })
+                      .catch((err) => {
+                        console.log(err);
+                      })
+                  }
+
                   navigate('/sales/');
                 })
                 .catch((err) => {
