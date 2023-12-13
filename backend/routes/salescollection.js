@@ -148,7 +148,7 @@ router.put("/update-collection/:sc_id", async (req, res) => {
     const creditAdjustment = existingCollection.amountCollected - amountCollected;
     // console.log("credit", creditAdjustment);
 
-    await SalesCollection.updateOne({ sc_id }, { $set: { amountCollected } });
+    await SalesCollection.updateOne({ sc_id }, req.body);
 
 
     await Sale.updateOne(
@@ -156,7 +156,7 @@ router.put("/update-collection/:sc_id", async (req, res) => {
       { $inc: { credit: creditAdjustment } }
     );
 
-    res.status(200).json({ message: "SalesCollection updated successfully" });
+    res.status(200).json({ message: "SalesCollection updated successfully" ,data:req.body});
   } catch (error) {
     console.error("Error updating sales collection:", error);
     res.status(500).json({ error: "Internal Server Error" });
