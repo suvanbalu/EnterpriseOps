@@ -12,6 +12,7 @@ import NumbersIcon from '@mui/icons-material/Numbers';
 import DnsIcon from '@mui/icons-material/Dns';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import CategoryIcon from '@mui/icons-material/Category';
+import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
@@ -26,11 +27,11 @@ const UpdateInventoryScreen = () => {
   const [productName, setProductName] = useState('');
   const [piecesPerCase, setPiecesPerCase] = useState('');
   const [category, setCategory] = useState('');
+  const [salesRate, setSalesRate] = useState('');
   const [price, setPrice] = useState('');
   const [unit, setUnit] = useState('');
   const [quantity, setQuantity] = useState('');
-  const [sgst, setSgst] = useState('');
-  const [cgst, setCgst] = useState('');
+  const [gst, setGst] = useState('');
   const [cess, setCess] = useState('');
   const [edit, setEdit] = useState(false);
 
@@ -46,12 +47,12 @@ const UpdateInventoryScreen = () => {
           setProductName(res.data.productName);
           setPiecesPerCase(res.data.piecesPerCase);
           setCategory(res.data.category);
+          setSalesRate(res.data.salesRate);
           setPrice(res.data.price);
           setUnit(res.data.unit);
           setQuantity(res.data.quantity);
           setCess(res.data.CESS);
-          setCgst(res.data.CGST);
-          setSgst(res.data.SGST);
+          setGst(res.data.GST);
         })
     }
   }, [id]);
@@ -72,7 +73,7 @@ const UpdateInventoryScreen = () => {
       <div className='flex flex-row gap-8'>
         <CustomTextField
           label='Product ID'
-          className='w-1/3'
+          className='w-1/4'
           valueState={[productID, setProductID]}
           type='number'
           icon={<NumbersIcon />}
@@ -80,21 +81,19 @@ const UpdateInventoryScreen = () => {
 
         <CustomTextField
           label='Product Name'
-          className='w-1/3'
+          className='w-1/4'
           valueState={[productName, setProductName]}
           icon={<DnsIcon />}
         />
 
         <CustomTextField
           label='Pieces Per Case'
-          className='w-1/3'
+          className='w-1/4'
           valueState={[piecesPerCase, setPiecesPerCase]}
           type='number'
           icon={<WorkOutlineIcon />}
         />
-      </div>
 
-      <div className='flex flex-row gap-8'>
         <CustomAutoComplete
           label='Category'
           valueState={[category, setCategory]}
@@ -102,9 +101,19 @@ const UpdateInventoryScreen = () => {
           width='25%'
           icon={<CategoryIcon />}
         />
+      </div>
+
+      <div className='flex flex-row gap-8'>
+        <CustomTextField
+          label='Sales Rate'
+          className='w-1/4'
+          valueState={[salesRate, setSalesRate]}
+          type='number'
+          icon={<PointOfSaleIcon />}
+        />
 
         <CustomTextField
-          label='Price'
+          label='MRP'
           className='w-1/4'
           valueState={[price, setPrice]}
           type='number'
@@ -131,24 +140,16 @@ const UpdateInventoryScreen = () => {
       <PageTitle title='Tax Info' className='!text-xl mt-4 -mb-4' />
       <div className='flex flex-row gap-8'>
         <CustomTextField
-          label='SGST'
-          className='w-1/3'
-          valueState={[sgst, setSgst]}
-          type='number'
-          icon={<ReceiptLongIcon />}
-        />
-
-        <CustomTextField
-          label='CGST'
-          className='w-1/3'
-          valueState={[cgst, setCgst]}
+          label='GST'
+          className='w-1/4'
+          valueState={[gst, setGst]}
           type='number'
           icon={<ReceiptLongIcon />}
         />
 
         <CustomTextField
           label='CESS'
-          className='w-1/3'
+          className='w-1/4'
           valueState={[cess, setCess]}
           type='number'
           icon={<ReceiptLongIcon />}
@@ -158,7 +159,7 @@ const UpdateInventoryScreen = () => {
       <div className='flex justify-end mt-4'>
         <CustomButton
           onClick={() => {
-            if (productID === '' || productName === '' || piecesPerCase === '' || category === '' || price === '' || unit === '' || quantity === '' || sgst === '' || cgst === '' || cess === '') {
+            if (productID === '' || productName === '' || piecesPerCase === '' || category === '' || price === '' || unit === '' || quantity === '' || gst === '' || salesRate === '' || cess === '') {
               return window.alert('Enter all fields in the table');
             }
 
@@ -168,12 +169,12 @@ const UpdateInventoryScreen = () => {
                 productName: productName,
                 piecesPerCase: piecesPerCase,
                 category: category,
+                salesRate: salesRate,
                 price: price,
                 unit: unit,
                 quantity: quantity,
                 CESS: cess,
-                CGST: cgst,
-                SGST: sgst,
+                GST: gst,
               })
                 .then((res) => {
                   window.alert('Product Updated Successfully');
@@ -189,12 +190,12 @@ const UpdateInventoryScreen = () => {
                 productName: productName,
                 piecesPerCase: piecesPerCase,
                 category: category,
+                salesRate: salesRate,
                 price: price,
                 unit: unit,
                 quantity: quantity,
                 CESS: cess,
-                CGST: cgst,
-                SGST: sgst,
+                GST: gst,
               })
                 .then((res) => {
                   window.alert('Product Added Successfully');
