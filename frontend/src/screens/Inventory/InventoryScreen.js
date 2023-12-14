@@ -14,6 +14,9 @@ const InventoryScreen = () => {
   useEffect(() => {
     axios.get(`${PRODUCT_URL}/get-products`)
       .then((res) => {
+        res.data.forEach((item, index) => {
+          item['quantity'] = item['quantity'] + ' ' + item['unit'];
+        })
         setFetchedData(res.data);
       })
   }, [])
@@ -26,7 +29,6 @@ const InventoryScreen = () => {
     'Sales Rate': ['salesRate', '5vw'],
     'MRP': ['price', '5vw'],
     'Quantity': ['quantity', '5vw'],
-    'Unit': ['unit', '5vw'],
     'GST': ['GST', '5vw'],
     'CESS': ['CESS', '5vw'],
   }

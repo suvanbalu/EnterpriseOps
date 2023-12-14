@@ -70,6 +70,7 @@ const UpdatePartiesScreen = () => {
           className='w-1/3'
           valueState={[partyID, setPartyID]}
           icon={<NumbersIcon />}
+          autoFocus
         />
 
         <CustomTextField

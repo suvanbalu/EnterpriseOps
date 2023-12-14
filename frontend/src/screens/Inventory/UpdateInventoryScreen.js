@@ -77,6 +77,7 @@ const UpdateInventoryScreen = () => {
           valueState={[productID, setProductID]}
           type='number'
           icon={<NumbersIcon />}
+          autoFocus
         />
 
         <CustomTextField

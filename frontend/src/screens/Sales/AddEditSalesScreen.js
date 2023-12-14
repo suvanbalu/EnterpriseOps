@@ -141,6 +141,7 @@ const AddEditSalesScreen = () => {
           className='w-1/4'
           valueState={[billno, setBillno]}
           icon={<NumbersIcon />}
+          autoFocus
         />
 
         <div className='w-1/4'>

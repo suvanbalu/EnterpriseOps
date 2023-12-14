@@ -71,6 +71,7 @@ const UpdateFinancialScreen = () => {
                 label='Date'
                 format="DD-MMM-YYYY"
                 className='w-full'
+                autoFocus
               />
             </DemoContainer>
           </LocalizationProvider>

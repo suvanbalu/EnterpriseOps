@@ -65,6 +65,7 @@ const UpdateEmployeeScreen = () => {
           label='Name'
           valueState={[name, setName]}
           className='w-1/3'
+          autoFocus
         />
 
         <div className='w-1/3 mt-2'>
