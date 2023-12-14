@@ -57,7 +57,7 @@ const PurchasesScreen = () => {
     if (event.ctrlKey && event.code === "Enter") {
       navigate('/purchases/add');
     }
-  }, []);
+  }, [navigate]);
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyPress);

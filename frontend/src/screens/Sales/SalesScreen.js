@@ -30,11 +30,12 @@ const SalesScreen = () => {
         setFetchedData(res.data);
       })
   }, [])
+  
   const handleKeyPress = useCallback((event) => {
     if (event.ctrlKey && event.code === "Enter") {
       navigate('/sales/add');
     }
-  }, []);
+  }, [navigate]);
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyPress);

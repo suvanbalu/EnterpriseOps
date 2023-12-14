@@ -31,7 +31,7 @@ const SalesInputTable = ({ tableState = ["", (e) => { }] }) => {
       console.log(element)
       newData[index].p_id = element?.p_id;
       newData[index].piecesPerCase = element?.piecesPerCase;
-      newData[index].saleRate = element?.price;
+      newData[index].saleRate = element?.salesRate;
     }
 
     if (field === 'case' || field === 'piece' || field === 'saleRate') {

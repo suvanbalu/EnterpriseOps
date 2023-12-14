@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { IoMdAdd } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../components/PageTitle';
@@ -42,6 +42,20 @@ const FinancialScreen = () => {
 
     return `Rs. ${netAmount}`;
   }
+
+  const handleKeyPress = useCallback((event) => {
+    if (event.ctrlKey && event.code === "Enter") {
+      navigate('/financials/add');
+    }
+  }, [navigate]);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [handleKeyPress]);
 
   return (
     <div className='pl-4 pr-12 flex flex-col gap-4 w-full -mt-16'>

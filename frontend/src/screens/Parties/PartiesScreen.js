@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { IoMdAdd } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import PageTitle from '../../components/PageTitle.js';
@@ -27,6 +27,20 @@ const PartiesScreen = () => {
     'Address': ['address', '15vw'],
     'Maps': ['coordinate', '2vw'],
   }
+
+  const handleKeyPress = useCallback((event) => {
+    if (event.ctrlKey && event.code === "Enter") {
+      navigate('/parties/add');
+    }
+  }, [navigate]);
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [handleKeyPress]);
 
   return (
     <div className='pl-4 pr-12 flex flex-col gap-4 w-full -mt-16'>

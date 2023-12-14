@@ -56,11 +56,12 @@ const SalesCollectionScreen = () => {
 
   let OuterTable = {};
   let InnerTable = {};
+
   const handleKeyPress = useCallback((event) => {
     if (event.ctrlKey && event.code === "Enter") {
       navigate('/collection/add');
     }
-  }, []);
+  }, [navigate]);
 
   useEffect(() => {
     document.addEventListener('keydown', handleKeyPress);
