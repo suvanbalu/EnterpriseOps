@@ -7,7 +7,8 @@
     "server": "npm run dev --prefix backend",
     "client": "npm start --prefix frontend",
     "prod": "npm run build --prefix frontend",
-    "web": "npm --prefix backend start"
+    "web": "npm --prefix backend start",
+    "devrun": "concurrently \"npm run server\" \"npm run client\""
   },
   
   "author": "Jeyam, Suvan",

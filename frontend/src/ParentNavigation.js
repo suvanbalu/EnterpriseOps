@@ -10,25 +10,17 @@ const Navigation = () => {
   const navigate = useNavigate();
 
   const handleKeyPress = useCallback((event) => {
-    if (event.key === 'F1') {
-      navigate('/');
-    } else if (event.key === 'F2') {
+    if (event.key === 'F2') {
       navigate('/collection');
-    } else if (event.key === 'F3') {
-      navigate('/sales');
     } else if (event.key === 'F4') {
-      navigate('/purchases');
+      navigate('/sales');
     } else if (event.key === 'F5') {
-      navigate('/inventory');
-    } else if (event.key === 'F6') {
-      navigate('/financials');
-    } else if (event.key === 'F7') {
-      navigate('/employees');
+      navigate('/purchases');
     } else if (event.key === 'F8') {
-      navigate('/parties');
+      navigate('/inventory');
     } else if (event.key === 'F9') {
-      navigate('/yearly-summary');
-    }
+      navigate('/financials');
+    } 
   }, [navigate]);
 
   useEffect(() => {
@@ -46,15 +38,15 @@ const Navigation = () => {
       </button>
       <div className='flex flex-row gap-6 w-full'>
         <div className='flex flex-col pl-4 w-1/5'>
-          <NavButton title='Dashboard' link='/' icon={<MdDashboard />} shortcut={'F1'} />
+          <NavButton title='Dashboard' link='/' icon={<MdDashboard />}  />
           <NavButton title='Sales Collection' link='/collection' icon={<FaMoneyCheckAlt />} shortcut={'F2'} />
-          <NavButton title='Sales' link='/sales' icon={<MdOutlineSell />} shortcut={'F3'} />
-          <NavButton title='Purchases' link='/purchases' icon={<BiSolidPurchaseTag />} shortcut={'F4'} />
-          <NavButton title='Inventory' link='/inventory' icon={<MdInventory />} shortcut={'F5'} />
-          <NavButton title='Financials' link='/financials' icon={<FaMoneyCheck />} shortcut={'F6'} />
-          <NavButton title='Employees' link='/employees' icon={<IoMdPeople />} shortcut={'F7'} />
-          <NavButton title='Parties' link='/parties' icon={<FaUsers />} shortcut={'F8'} />
-          <NavButton title='Yearly Summary' link='/yearly-summary' icon={<IoCalendarOutline />} shortcut={'F9'} />
+          <NavButton title='Sales' link='/sales' icon={<MdOutlineSell />} shortcut={'F4'} />
+          <NavButton title='Purchases' link='/purchases' icon={<BiSolidPurchaseTag />} shortcut={'F5'} />
+          <NavButton title='Inventory' link='/inventory' icon={<MdInventory />} shortcut={'F8'} />
+          <NavButton title='Financials' link='/financials' icon={<FaMoneyCheck />} shortcut={'F9'} />
+          <NavButton title='Employees' link='/employees' icon={<IoMdPeople />}  />
+          <NavButton title='Parties' link='/parties' icon={<FaUsers />}  />
+          <NavButton title='Yearly Summary' link='/yearly-summary' icon={<IoCalendarOutline />} />
         </div>
 
         <div className='w-full'>
