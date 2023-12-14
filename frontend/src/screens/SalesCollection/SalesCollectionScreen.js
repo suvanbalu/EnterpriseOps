@@ -124,10 +124,10 @@ const SalesCollectionScreen = () => {
       <div className='flex justify-between'>
         <PageTitle title={'All Sales Collections'} className={'w-1/2 text-right'} />
         <div className='absolute left-4 bottom-4'>
-          <div className='flex gap-2 items-center p-1.5 border-2 border-orange-700 rounded-xl relative'>
+          <div className='flex gap-2 items-center p-1.5 border-2 border-orange-700 rounded-3xl relative'>
             <p className='text-orange-700 text-xs absolute -top-2.5 left-4 bg-white px-1 font-medium'>View By</p>
             <CustomButton
-              className={`rounded-md !p-2 text-sm ${billViewMode ? 'bg-orange-700 text-white' : ''}`}
+              className={`rounded-3xl !p-2 text-sm ${billViewMode ? 'bg-orange-700 text-white' : ''}`}
               onClick={() => {
                 setBillViewMode(true);
               }}
@@ -135,7 +135,7 @@ const SalesCollectionScreen = () => {
               text={'Bill No.'}
             />
             <CustomButton
-              className={`rounded-md !p-2 text-sm ${!billViewMode ? 'bg-orange-700 text-white' : ''}`}
+              className={`rounded-3xl !p-2 text-sm ${!billViewMode ? 'bg-orange-700 text-white' : ''}`}
               onClick={() => {
                 setBillViewMode(false);
               }}

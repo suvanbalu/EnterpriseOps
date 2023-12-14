@@ -14,12 +14,13 @@ import {
 import { IoMdAdd, IoMdClose } from 'react-icons/io';
 import CustomButton from '../../components/CustomButton';
 import axios from 'axios';
-import { SALE_URL } from '../../API/calls';
+import { SALE_URL, EMPLOYEE_URL } from '../../API/calls';
 
 const SalesInputTable = ({ tableState = ["", (e) => { }] }) => {
   const [tableData, setTableData] = tableState;
   const [bills, setBills] = useState([]);
   const [billNumbers, setBillNumbers] = useState([]);
+  const [psrOptions, setPsrOptions] = useState([]);
   const [lastRowDeleted, setLastRowDeleted] = useState(false);
 
   const handleInputChange = (index, field, value) => {
@@ -31,6 +32,15 @@ const SalesInputTable = ({ tableState = ["", (e) => { }] }) => {
       newData[index].route = element?.route;
       newData[index].partyName = element?.party_name;
       newData[index].remainingCredit = element?.credit;
+
+      axios.get(`${EMPLOYEE_URL}/get-employees-by-psr/${element?.route}`)
+        .then((res) => {
+          setPsrOptions(res.data.map((item) => item.name));
+          newData[index].psrName = res.data[0]?.name;
+        })
+        .catch((err) => {
+          console.log(err);
+        })
     }
 
     setTableData(newData);
@@ -119,7 +129,7 @@ const SalesInputTable = ({ tableState = ["", (e) => { }] }) => {
                     onChange={(event, newValue) => {
                       handleInputChange(index, 'psrName', newValue);
                     }}
-                    options={billNumbers}
+                    options={psrOptions}
                     sx={{ width: 150 }}
                     renderInput={(params) => <TextField
                       {...params}

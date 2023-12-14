@@ -19,7 +19,7 @@ import CustomAutoComplete from '../../components/CustomAutoComplete';
 import NumbersIcon from '@mui/icons-material/Numbers';
 
 import axios from 'axios';
-import { SALE_URL, PARTY_URL, SALES_COLLECTION_URL } from '../../API/calls';
+import { SALE_URL, PARTY_URL, SALES_COLLECTION_URL, EMPLOYEE_URL } from '../../API/calls';
 import SalesInputTable from './SalesInputTable';
 
 dayjs.extend(customParseFormat);
@@ -41,6 +41,7 @@ const AddEditSalesScreen = () => {
     { p_id: '', productName: '', case: '', piece: '', piecesPerCase: '', saleRate: '', amount: '' },
   ]);
 
+  const [psrOptions, setPsrOptions] = useState([]);
   const [psrName, setPsrName] = useState("");
   const [amountCollected, setAmountCollected] = useState("");
   const [type, setType] = useState("");
@@ -62,6 +63,15 @@ const AddEditSalesScreen = () => {
       const element = parties.filter((item) => item.partyName === partyName)[0];
       setPartyID(element?.party_id);
       setRoute(element?.route);
+
+      axios.get(`${EMPLOYEE_URL}/get-employees-by-psr/${element?.route}`)
+        .then((res) => {
+          setPsrOptions(res.data.map((item) => item.name));
+          setPsrName(res.data[0]?.name);
+        })
+        .catch((err) => {
+          console.log(err);
+        })
     }
   }, [parties, partyName])
 
@@ -205,7 +215,7 @@ const AddEditSalesScreen = () => {
             label='PSR Name'
             width='33%'
             valueState={[psrName, setPsrName]}
-            options={['Person 1', 'Person 2', 'Person 3']}
+            options={psrOptions}
           />
 
           <CustomTextField
