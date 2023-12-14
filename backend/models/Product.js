@@ -24,8 +24,8 @@ const productSchema = new Schema({
   },
 
   CESS: { type: Number },
-  CGST: { type: Number },
-  SGST: { type: Number },
+  GST: { type: Number },
+  salesRate: { type: Number },
 
   quantity: {
     type: Number,

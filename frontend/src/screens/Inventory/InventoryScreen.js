@@ -23,11 +23,11 @@ const InventoryScreen = () => {
     'Product Name': ['productName', '15vw'],
     'Pieces Per Case': ['piecesPerCase', '10vw'],
     'Category': ['category', '10vw'],
-    'Price': ['price', '10vw'],
-    'Quantity': ['quantity', '10vw'],
+    'Sales Rate': ['salesRate', '5vw'],
+    'MRP': ['price', '5vw'],
+    'Quantity': ['quantity', '5vw'],
     'Unit': ['unit', '5vw'],
-    'SGST': ['SGST', '5vw'],
-    'CGST': ['CGST', '5vw'],
+    'GST': ['GST', '5vw'],
     'CESS': ['CESS', '5vw'],
   }
 
