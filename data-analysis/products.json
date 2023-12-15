@@ -1,6 +1,5 @@
 [
     {
-        "S.NO": 1,
         "p_id": 2977,
         "productName": "7 UP",
         "piecesPerCase": 12,
@@ -10,23 +9,23 @@
         "unit": "L",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 620,
+        "S.NO": 1
     },
     {
-        "S.NO": 2,
         "p_id": 4352,
         "productName": "7 UP",
         "piecesPerCase": 9,
         "category": "PET",
-        "price": 99,
+        "price": 100,
         "quantity": 2.25,
         "unit": "L",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 750,
+        "S.NO": 2
     },
     {
-        "S.NO": 3,
         "p_id": 1008,
         "productName": "7 UP",
         "piecesPerCase": 24,
@@ -36,10 +35,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 200,
+        "S.NO": 3
     },
     {
-        "S.NO": 4,
         "p_id": 3591,
         "productName": "7 UP",
         "piecesPerCase": 24,
@@ -49,10 +48,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 720,
+        "S.NO": 4
     },
     {
-        "S.NO": 5,
         "p_id": 1961,
         "productName": "7 UP",
         "piecesPerCase": 30,
@@ -62,10 +61,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 5
     },
     {
-        "S.NO": 6,
         "p_id": 4949,
         "productName": "7 UP",
         "piecesPerCase": 24,
@@ -75,10 +74,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 780,
+        "S.NO": 6
     },
     {
-        "S.NO": 7,
         "p_id": 1742,
         "productName": "7 UP ZERO SUGAR",
         "piecesPerCase": 30,
@@ -88,10 +87,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 390,
+        "S.NO": 7
     },
     {
-        "S.NO": 8,
         "p_id": 4762,
         "productName": "7 UP NIMBOZE",
         "piecesPerCase": 40,
@@ -101,10 +100,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 330,
+        "S.NO": 8
     },
     {
-        "S.NO": 9,
         "p_id": 4395,
         "productName": "7 UP NIMBOZE",
         "piecesPerCase": 30,
@@ -114,10 +113,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 390,
+        "S.NO": 9
     },
     {
-        "S.NO": 10,
         "p_id": 2846,
         "productName": "AQUAFINA",
         "piecesPerCase": 12,
@@ -127,10 +126,10 @@
         "unit": "L",
         "GST": 9,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 144,
+        "S.NO": 10
     },
     {
-        "S.NO": 11,
         "p_id": 4232,
         "productName": "AQUAFINA",
         "piecesPerCase": 30,
@@ -140,10 +139,10 @@
         "unit": "ml",
         "GST": 9,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 192,
+        "S.NO": 11
     },
     {
-        "S.NO": 12,
         "p_id": 2813,
         "productName": "AQUAFINA",
         "piecesPerCase": 24,
@@ -153,10 +152,10 @@
         "unit": "ml",
         "GST": 9,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 190,
+        "S.NO": 12
     },
     {
-        "S.NO": 13,
         "p_id": 4710,
         "productName": "AQUAFINA",
         "piecesPerCase": 9,
@@ -166,10 +165,10 @@
         "unit": "L",
         "GST": 9,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 250,
+        "S.NO": 13
     },
     {
-        "S.NO": 14,
         "p_id": 8554,
         "productName": "CB MILK BUTTERSCOTCH",
         "piecesPerCase": 24,
@@ -179,10 +178,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 680,
+        "S.NO": 14
     },
     {
-        "S.NO": 15,
         "p_id": 8636,
         "productName": "CB MILK CHOCOLATE",
         "piecesPerCase": 24,
@@ -192,10 +191,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 680,
+        "S.NO": 15
     },
     {
-        "S.NO": 16,
         "p_id": 8635,
         "productName": "CB MILK COFFEE",
         "piecesPerCase": 24,
@@ -205,10 +204,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 680,
+        "S.NO": 16
     },
     {
-        "S.NO": 17,
         "p_id": 8627,
         "productName": "CB MILK ELAICHI",
         "piecesPerCase": 24,
@@ -218,10 +217,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 680,
+        "S.NO": 17
     },
     {
-        "S.NO": 18,
         "p_id": 8633,
         "productName": "CB MILK KESAR BADAM",
         "piecesPerCase": 24,
@@ -231,10 +230,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 680,
+        "S.NO": 18
     },
     {
-        "S.NO": 19,
         "p_id": 8630,
         "productName": "CB MILK MANGO",
         "piecesPerCase": 24,
@@ -244,10 +243,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 680,
+        "S.NO": 19
     },
     {
-        "S.NO": 20,
         "p_id": 2655,
         "productName": "EVERVESS SODA",
         "piecesPerCase": 24,
@@ -257,10 +256,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 20
     },
     {
-        "S.NO": 21,
         "p_id": 1381,
         "productName": "MIRINDA ORANGE",
         "piecesPerCase": 12,
@@ -270,23 +269,23 @@
         "unit": "L",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 620,
+        "S.NO": 21
     },
     {
-        "S.NO": 22,
         "p_id": 4351,
         "productName": "MIRINDA ORANGE",
         "piecesPerCase": 9,
         "category": "PET",
-        "price": 99,
+        "price": 100,
         "quantity": 2.25,
         "unit": "L",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 750,
+        "S.NO": 22
     },
     {
-        "S.NO": 23,
         "p_id": 1006,
         "productName": "MIRINDA ORANGE",
         "piecesPerCase": 24,
@@ -296,10 +295,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 200,
+        "S.NO": 23
     },
     {
-        "S.NO": 24,
         "p_id": 1423,
         "productName": "MIRINDA ORANGE",
         "piecesPerCase": 24,
@@ -309,10 +308,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 720,
+        "S.NO": 24
     },
     {
-        "S.NO": 25,
         "p_id": 1962,
         "productName": "MIRINDA ORANGE",
         "piecesPerCase": 30,
@@ -322,10 +321,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 25
     },
     {
-        "S.NO": 26,
         "p_id": 4950,
         "productName": "MIRINDA ORANGE",
         "piecesPerCase": 24,
@@ -335,10 +334,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 780,
+        "S.NO": 26
     },
     {
-        "S.NO": 27,
         "p_id": 1009,
         "productName": "MOUNTAIN DEW",
         "piecesPerCase": 24,
@@ -348,10 +347,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 200,
+        "S.NO": 27
     },
     {
-        "S.NO": 28,
         "p_id": 3588,
         "productName": "MOUNTAIN DEW",
         "piecesPerCase": 24,
@@ -361,23 +360,23 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 720,
+        "S.NO": 28
     },
     {
-        "S.NO": 29,
         "p_id": 1467,
         "productName": "MOUNTAIN DEW",
         "piecesPerCase": 30,
         "category": "PET",
-        "price": 15,
+        "price": 20,
         "quantity": 250.0,
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 29
     },
     {
-        "S.NO": 30,
         "p_id": 4767,
         "productName": "MOUNTAIN DEW",
         "piecesPerCase": 30,
@@ -387,10 +386,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 30
     },
     {
-        "S.NO": 31,
         "p_id": 4951,
         "productName": "MOUNTAIN DEW",
         "piecesPerCase": 24,
@@ -400,10 +399,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 780,
+        "S.NO": 31
     },
     {
-        "S.NO": 32,
         "p_id": 3537,
         "productName": "PEPSI BLACK",
         "piecesPerCase": 24,
@@ -413,10 +412,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 720,
+        "S.NO": 32
     },
     {
-        "S.NO": 33,
         "p_id": 4782,
         "productName": "PEPSI BLACK",
         "piecesPerCase": 24,
@@ -426,10 +425,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 620,
+        "S.NO": 33
     },
     {
-        "S.NO": 34,
         "p_id": 2976,
         "productName": "PEPSI COLA",
         "piecesPerCase": 12,
@@ -439,36 +438,36 @@
         "unit": "L",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 620,
+        "S.NO": 34
     },
     {
-        "S.NO": 35,
         "p_id": 1398,
         "productName": "PEPSI COLA",
         "piecesPerCase": 9,
         "category": "PET",
-        "price": 99,
+        "price": 100,
         "quantity": 2.25,
         "unit": "L",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 750,
+        "S.NO": 35
     },
     {
-        "S.NO": 36,
         "p_id": 3589,
         "productName": "PEPSI COLA",
         "piecesPerCase": 24,
         "category": "CAN",
-        "price": 20,
+        "price": 35,
         "quantity": 250.0,
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 720,
+        "S.NO": 36
     },
     {
-        "S.NO": 37,
         "p_id": 1005,
         "productName": "PEPSI COLA",
         "piecesPerCase": 24,
@@ -478,10 +477,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 200,
+        "S.NO": 37
     },
     {
-        "S.NO": 38,
         "p_id": 1965,
         "productName": "PEPSI COLA",
         "piecesPerCase": 30,
@@ -491,10 +490,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 38
     },
     {
-        "S.NO": 39,
         "p_id": 4906,
         "productName": "PEPSI COLA",
         "piecesPerCase": 24,
@@ -504,10 +503,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 780,
+        "S.NO": 39
     },
     {
-        "S.NO": 40,
         "p_id": 4175,
         "productName": "SLICE MANGO",
         "piecesPerCase": 12,
@@ -517,10 +516,10 @@
         "unit": "L",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 780,
+        "S.NO": 40
     },
     {
-        "S.NO": 41,
         "p_id": 4197,
         "productName": "SLICE MANGO",
         "piecesPerCase": 40,
@@ -530,10 +529,10 @@
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 330,
+        "S.NO": 41
     },
     {
-        "S.NO": 42,
         "p_id": 4198,
         "productName": "SLICE MANGO",
         "piecesPerCase": 24,
@@ -543,10 +542,10 @@
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 220,
+        "S.NO": 42
     },
     {
-        "S.NO": 43,
         "p_id": 4199,
         "productName": "SLICE MANGO",
         "piecesPerCase": 30,
@@ -556,10 +555,10 @@
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 43
     },
     {
-        "S.NO": 44,
         "p_id": 4174,
         "productName": "SLICE MANGO",
         "piecesPerCase": 24,
@@ -569,10 +568,10 @@
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 780,
+        "S.NO": 44
     },
     {
-        "S.NO": 45,
         "p_id": 1886,
         "productName": "STING",
         "piecesPerCase": 24,
@@ -582,10 +581,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 720,
+        "S.NO": 45
     },
     {
-        "S.NO": 46,
         "p_id": 1981,
         "productName": "STING",
         "piecesPerCase": 30,
@@ -595,10 +594,10 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 46
     },
     {
-        "S.NO": 47,
         "p_id": 4785,
         "productName": "STING BLUE",
         "piecesPerCase": 30,
@@ -608,23 +607,23 @@
         "unit": "ml",
         "GST": 7,
         "CESS": 12,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 47
     },
     {
-        "S.NO": 48,
         "p_id": 8325,
         "productName": "TROPICANA APPLE",
         "piecesPerCase": 30,
         "category": "PET",
-        "price": 30,
+        "price": 20,
         "quantity": 180.0,
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 48
     },
     {
-        "S.NO": 49,
         "p_id": 8329,
         "productName": "TROPICANA MIX FRUIT",
         "piecesPerCase": 30,
@@ -634,10 +633,10 @@
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 390,
+        "S.NO": 49
     },
     {
-        "S.NO": 50,
         "p_id": 8317,
         "productName": "TROPICANA ORANGE",
         "piecesPerCase": 30,
@@ -647,10 +646,10 @@
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 50
     },
     {
-        "S.NO": 51,
         "p_id": 8327,
         "productName": "TROPICANA GUAVA",
         "piecesPerCase": 30,
@@ -660,36 +659,36 @@
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 390,
+        "S.NO": 51
     },
     {
-        "S.NO": 52,
         "p_id": 8326,
         "productName": "TROPICANA LYCHEE",
         "piecesPerCase": 30,
         "category": "PET",
-        "price": 15,
-        "quantity": 180.0,
+        "price": 20,
+        "quantity": 250.0,
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 52
     },
     {
-        "S.NO": 53,
         "p_id": 8318,
         "productName": "TROPICANA POMEGRANATE",
         "piecesPerCase": 30,
         "category": "PET",
         "price": 20,
-        "quantity": 180.0,
+        "quantity": 250.0,
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 510,
+        "S.NO": 53
     },
     {
-        "S.NO": 54,
         "p_id": 8519,
         "productName": "TROPICANA APPLE",
         "piecesPerCase": 40,
@@ -699,6 +698,33 @@
         "unit": "ml",
         "GST": 6,
         "CESS": 0,
-        "salesRate": 100
+        "salesRate": 330,
+        "S.NO": 54
+    },
+    {
+        "p_id": 8326,
+        "productName": "TROPICANA LYCHEE",
+        "piecesPerCase": 30,
+        "category": "PET",
+        "price": 15,
+        "quantity": 180.0,
+        "unit": "ml",
+        "GST": 6,
+        "CESS": 0,
+        "salesRate": 390,
+        "S.NO": 55
+    },
+    {
+        "p_id": 8318,
+        "productName": "TROPICANA POMEGRANATE",
+        "piecesPerCase": 30,
+        "category": "PET",
+        "price": 15,
+        "quantity": 180.0,
+        "unit": "ml",
+        "GST": 6,
+        "CESS": 0,
+        "salesRate": 390,
+        "S.NO": 56
     }
 ]
