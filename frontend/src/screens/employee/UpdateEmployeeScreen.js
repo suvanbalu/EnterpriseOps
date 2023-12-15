@@ -104,7 +104,7 @@ const UpdateEmployeeScreen = () => {
           label='Employee Type'
           width={'33%'}
           valueState={[empType, setEmpType]}
-          options={['PSR1', 'PSR2', 'PSR3', 'PSR4', 'PSR5', 'PSR6', 'Driver', 'Loadman']}
+          options={['PSR1', 'PSR2', 'PSR3', 'PSR4', 'PSR5', 'PSR6', 'Driver', 'Loadman', 'Manager']}
         />
 
         <CustomTextField

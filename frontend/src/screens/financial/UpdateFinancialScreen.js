@@ -82,13 +82,14 @@ const UpdateFinancialScreen = () => {
           width={'25%'}
           valueState={[type, setType]}
           options={['Credit', 'Debit']}
+          def='Debit'
         />
 
         <CustomAutoComplete
           label='Category'
           width={'25%'}
           valueState={[category, setCategory]}
-          options={['Salary', 'Advance', 'Fuel', 'Rent', 'Loan Received', 'Loan Repayment', 'Miscellaneous']}
+          options={['Salary', 'Advance', 'Fuel','Repair','Office Supplies', 'Rent', 'Tax', 'Insurance', 'Loan Received', 'Loan Repayment', 'Miscellaneous']}
         />
 
         <CustomTextField

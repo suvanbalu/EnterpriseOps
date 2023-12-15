@@ -122,7 +122,7 @@ router.get('/get-employees-by-psr/:psr', async (req, res) => {
   try {
     const psr = req.params.psr;
     const employees = await Employee.find({
-      empType: { $in: [psr, 'Driver'] },
+      empType: { $in: [psr, 'Driver', 'Manager'] },
       $or: [
         { dateOfLeaving: null },
         { dateOfLeaving: { $gte: new Date() } },
