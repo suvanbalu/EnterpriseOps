@@ -13,6 +13,7 @@ import party from "./routes/party.js";
 import salescollection from "./routes/salescollection.js";
 import financial from "./routes/financial.js";
 import employee from "./routes/employee.js";
+import dashboard from "./routes/dashboard.js";
 
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
@@ -37,6 +38,7 @@ app.use("/api/party", party);
 app.use("/api/salescollection", salescollection);
 app.use("/api/financial", financial);
 app.use("/api/employee", employee);
+app.use("/api/dashboard", dashboard);
 
 connect(function (err) {
   if (err) {
