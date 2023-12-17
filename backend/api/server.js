@@ -2,18 +2,18 @@ import express from "express";
 import cors from "cors";
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import { connect } from './mongo/conn.js';
+import { connect } from '../mongo/conn.js';
 import bodyParser from "body-parser";
 import path from "path";
 
-import sales from "./routes/sale.js"; 
-import product from "./routes/product.js";
-import purchase from "./routes/purchase.js";
-import party from "./routes/party.js";
-import salescollection from "./routes/salescollection.js";
-import financial from "./routes/financial.js";
-import employee from "./routes/employee.js";
-import dashboard from "./routes/dashboard.js";
+import sales from "../routes/sale.js"; 
+import product from "../routes/product.js";
+import purchase from "../routes/purchase.js";
+import party from "../routes/party.js";
+import salescollection from "../routes/salescollection.js";
+import financial from "../routes/financial.js";
+import employee from "../routes/employee.js";
+import dashboard from "../routes/dashboard.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
